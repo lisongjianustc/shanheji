@@ -1,0 +1,72 @@
+{
+  "packageId": "middle-late-tang",
+  "status": "incomplete",
+  "reviewerKind": "agent",
+  "reviewer": "Codex",
+  "checkedAt": "2026-10-01",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "records": [
+    {
+      "id": "an-lushan-755",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 755–759",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "heian-794",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: 794",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "buddhism-845",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: ca.840–846",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "diamond-868",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "idp-diamond",
+          "locator": "The Diamond Sutra：dated 868",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tang-end-907",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Timeline; Key Events: 907–960",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "全部政权疆域几何",
+    "完整周边政权名录",
+    "完整重大事件清单",
+    "都城与事件坐标补核",
+    "十六国部分政权起讫与中断期异说"
+  ]
+}

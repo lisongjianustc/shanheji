@@ -1,0 +1,371 @@
+{
+  "id": "middle-late-tang",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "an-lushan-755",
+      "title": "安禄山起兵",
+      "validity": {
+        "start": {
+          "earliest": "0755-01-01",
+          "latest": "0755-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0756-01-01",
+          "latest": "0756-01-01"
+        },
+        "precision": "year",
+        "label": "755年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "安禄山发动叛乱。",
+      "account": "",
+      "interpretation": "仅记录起事年，不以该条目覆盖整场安史之乱的起讫。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 755–759",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 755–759",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "heian-794",
+      "title": "迁都平安京",
+      "validity": {
+        "start": {
+          "earliest": "0794-01-01",
+          "latest": "0794-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0795-01-01",
+          "latest": "0795-01-01"
+        },
+        "precision": "year",
+        "label": "794年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "japan-court"
+      ],
+      "placeIds": [
+        "heian"
+      ],
+      "summary": "日本朝廷迁至平安京，即今京都。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: 794",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 794",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "buddhism-845",
+      "title": "唐代抑佛措施加剧",
+      "validity": {
+        "start": {
+          "earliest": "0845-01-01",
+          "latest": "0845-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0847-01-01",
+          "latest": "0847-01-01"
+        },
+        "precision": "range",
+        "label": "845—846年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "唐廷加强对佛寺和僧侣的限制。",
+      "account": "",
+      "interpretation": "本条仅收录来源明确强调的845—846年阶段。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: ca.840–846",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: ca.840–846",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "diamond-868",
+      "title": "咸通九年《金刚经》印本",
+      "validity": {
+        "start": {
+          "earliest": "0868-01-01",
+          "latest": "0868-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0869-01-01",
+          "latest": "0869-01-01"
+        },
+        "precision": "year",
+        "label": "868年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "现存《金刚经》卷末题记载有868年的印造年代。",
+      "account": "",
+      "interpretation": "出土地不等于印刷地；本条未将敦煌标作印刷发生地。",
+      "evidence": [
+        {
+          "sourceId": "idp-diamond",
+          "locator": "The Diamond Sutra：dated 868",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "idp-diamond",
+            "locator": "The Diamond Sutra：dated 868",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "tang-end-907",
+      "title": "唐朝终结",
+      "validity": {
+        "start": {
+          "earliest": "0907-01-01",
+          "latest": "0907-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0908-01-01",
+          "latest": "0908-01-01"
+        },
+        "precision": "year",
+        "label": "907年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "唐朝结束，五代十国时期开始。",
+      "account": "",
+      "interpretation": "本条按年收录，未将907年全年视为唐统治。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Timeline; Key Events: 907–960",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Timeline; Key Events: 907–960",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "middle-late-tang-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-korea-territory",
+      "regionId": "korea",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-japan-territory",
+      "regionId": "japan",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "middle-late-tang-china-core-event",
+      "regionId": "china-core",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-steppe-event",
+      "regionId": "steppe",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-korea-event",
+      "regionId": "korea",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-japan-event",
+      "regionId": "japan",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-tibet-event",
+      "regionId": "tibet",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-central-asia-event",
+      "regionId": "central-asia",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "middle-late-tang-southeast-asia-event",
+      "regionId": "southeast-asia",
+      "startYear": 755,
+      "endYear": 907,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    }
+  ]
+}
