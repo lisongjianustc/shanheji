@@ -1,0 +1,331 @@
+{
+  "id": "southern-northern-dynasties",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "yungang-460",
+      "title": "云冈石窟早期营造",
+      "validity": {
+        "start": {
+          "earliest": "0460-01-01",
+          "latest": "0460-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0495-01-01",
+          "latest": "0495-01-01"
+        },
+        "precision": "range",
+        "label": "460—494年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "northern-wei"
+      ],
+      "placeIds": [
+        "yungang"
+      ],
+      "summary": "北魏时期，云冈石窟展开大规模营造。",
+      "account": "",
+      "interpretation": "这里只收录约460—494年的营造阶段，不表示494年后停止开凿。点位为遗产位置参考。",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Key Events: ca.386（Yungang ca.460–94）",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: ca.386（Yungang ca.460–94）",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "luoyang-494",
+      "title": "北魏迁都洛阳",
+      "validity": {
+        "start": {
+          "earliest": "0494-01-01",
+          "latest": "0494-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0495-01-01",
+          "latest": "0495-01-01"
+        },
+        "precision": "year",
+        "label": "494年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "northern-wei"
+      ],
+      "placeIds": [
+        "luoyang"
+      ],
+      "summary": "孝文帝将北魏都城迁往洛阳。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Key Events: 494",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 494",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "sui-581",
+      "title": "隋朝建立",
+      "validity": {
+        "start": {
+          "earliest": "0581-01-01",
+          "latest": "0581-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0582-01-01",
+          "latest": "0582-01-01"
+        },
+        "precision": "year",
+        "label": "581年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "sui",
+        "northern-zhou"
+      ],
+      "placeIds": [],
+      "summary": "杨坚建立隋朝。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 581",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "sui-589",
+      "title": "隋灭陈",
+      "validity": {
+        "start": {
+          "earliest": "0589-01-01",
+          "latest": "0589-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0590-01-01",
+          "latest": "0590-01-01"
+        },
+        "precision": "year",
+        "label": "589年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "sui",
+        "chen"
+      ],
+      "placeIds": [],
+      "summary": "隋灭陈，结束南北长期分立的局面。",
+      "account": "",
+      "interpretation": "统一事件不等于任何未经核验的最大疆域。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581（589年统一记述）",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 581（589年统一记述）",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "southern-northern-dynasties-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-korea-territory",
+      "regionId": "korea",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-japan-territory",
+      "regionId": "japan",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "southern-northern-dynasties-china-core-event",
+      "regionId": "china-core",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-steppe-event",
+      "regionId": "steppe",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-korea-event",
+      "regionId": "korea",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-japan-event",
+      "regionId": "japan",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-tibet-event",
+      "regionId": "tibet",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-central-asia-event",
+      "regionId": "central-asia",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "southern-northern-dynasties-southeast-asia-event",
+      "regionId": "southeast-asia",
+      "startYear": 420,
+      "endYear": 589,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    }
+  ]
+}

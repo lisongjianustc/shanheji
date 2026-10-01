@@ -1,0 +1,61 @@
+{
+  "packageId": "southern-northern-dynasties",
+  "status": "incomplete",
+  "reviewerKind": "agent",
+  "reviewer": "Codex",
+  "checkedAt": "2026-10-01",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "records": [
+    {
+      "id": "yungang-460",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Key Events: ca.386（Yungang ca.460–94）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "luoyang-494",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Key Events: 494",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sui-581",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sui-589",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581（589年统一记述）",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "全部政权疆域几何",
+    "完整周边政权名录",
+    "完整重大事件清单",
+    "都城与事件坐标补核",
+    "十六国部分政权起讫与中断期异说"
+  ]
+}
