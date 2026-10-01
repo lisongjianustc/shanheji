@@ -1,0 +1,11 @@
+{
+  "title": "Natural Earth",
+  "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "license": "Public domain",
+  "downloaded": "2026-10-01",
+  "purpose": "现代自然地理参考；不代表古代河道与海岸",
+  "files": {
+    "rivers.geojson": "55aa4497405afc07cdc931b7fbe062c4d6693ba2a550c0d24899953f5d507c8d",
+    "land.geojson": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+  }
+}
