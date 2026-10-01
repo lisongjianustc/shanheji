@@ -1,0 +1,8 @@
+node_modules/
+.venv/
+dist/
+.superpowers/
+data/raw/
+playwright-report/
+test-results/
+.DS_Store
