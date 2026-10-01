@@ -68,3 +68,4 @@ export interface Scene {
   uncertainTerritoryIds: Id[]; referenceYears: number[];
   territoryTimeLabels: Record<Id, string>; warnings: string[];
 }
+export interface SearchEntry {id:Id;kind:'entity'|'event'|'place';label:string;aliases:string[];startYear:number;endYear:number;regionIds:Id[]}
