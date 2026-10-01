@@ -1,0 +1,173 @@
+{
+  "version": 1,
+  "packages": [
+    {
+      "id": "three-kingdoms-western-jin",
+      "auditStatus": "audited-with-gaps",
+      "sourceIds": [
+        "chgis-v6",
+        "ohm",
+        "natural-earth",
+        "historical-basemaps",
+        "met-early",
+        "met-late",
+        "columbia",
+        "whg"
+      ],
+      "coverageIds": [
+        "three-kingdoms-western-jin-china-core",
+        "three-kingdoms-western-jin-ne-asia",
+        "three-kingdoms-western-jin-inner-asia",
+        "three-kingdoms-western-jin-tibet-southeast",
+        "three-kingdoms-western-jin-event"
+      ]
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms",
+      "auditStatus": "audited-with-gaps",
+      "sourceIds": [
+        "chgis-v6",
+        "ohm",
+        "natural-earth",
+        "historical-basemaps",
+        "met-early",
+        "met-late",
+        "columbia",
+        "whg"
+      ],
+      "coverageIds": [
+        "eastern-jin-sixteen-kingdoms-china-core",
+        "eastern-jin-sixteen-kingdoms-ne-asia",
+        "eastern-jin-sixteen-kingdoms-inner-asia",
+        "eastern-jin-sixteen-kingdoms-tibet-southeast",
+        "eastern-jin-sixteen-kingdoms-event"
+      ]
+    },
+    {
+      "id": "southern-northern-dynasties",
+      "auditStatus": "audited-with-gaps",
+      "sourceIds": [
+        "chgis-v6",
+        "ohm",
+        "natural-earth",
+        "historical-basemaps",
+        "met-early",
+        "met-late",
+        "columbia",
+        "whg"
+      ],
+      "coverageIds": [
+        "southern-northern-dynasties-china-core",
+        "southern-northern-dynasties-ne-asia",
+        "southern-northern-dynasties-inner-asia",
+        "southern-northern-dynasties-tibet-southeast",
+        "southern-northern-dynasties-event"
+      ]
+    },
+    {
+      "id": "sui-early-tang",
+      "auditStatus": "audited-with-gaps",
+      "sourceIds": [
+        "chgis-v6",
+        "ohm",
+        "natural-earth",
+        "historical-basemaps",
+        "met-early",
+        "met-late",
+        "columbia",
+        "whg"
+      ],
+      "coverageIds": [
+        "sui-early-tang-china-core",
+        "sui-early-tang-ne-asia",
+        "sui-early-tang-inner-asia",
+        "sui-early-tang-tibet-southeast",
+        "sui-early-tang-event"
+      ]
+    },
+    {
+      "id": "middle-late-tang",
+      "auditStatus": "audited-with-gaps",
+      "sourceIds": [
+        "chgis-v6",
+        "ohm",
+        "natural-earth",
+        "historical-basemaps",
+        "met-early",
+        "met-late",
+        "columbia",
+        "whg"
+      ],
+      "coverageIds": [
+        "middle-late-tang-china-core",
+        "middle-late-tang-ne-asia",
+        "middle-late-tang-inner-asia",
+        "middle-late-tang-tibet-southeast",
+        "middle-late-tang-event"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "id": "three-kingdoms-western-jin-territory",
+      "packageId": "three-kingdoms-western-jin",
+      "kind": "territory",
+      "title": "三国与西晋疆域",
+      "status": "candidate",
+      "sourceIds": [
+        "historical-basemaps",
+        "chgis-v6"
+      ],
+      "reason": "来源存在许可或年代问题，尚不承诺边界复原完成"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-territory",
+      "packageId": "eastern-jin-sixteen-kingdoms",
+      "kind": "territory",
+      "title": "东晋与十六国疆域",
+      "status": "candidate",
+      "sourceIds": [
+        "historical-basemaps",
+        "chgis-v6"
+      ],
+      "reason": "来源存在许可或年代问题，尚不承诺边界复原完成"
+    },
+    {
+      "id": "southern-northern-dynasties-territory",
+      "packageId": "southern-northern-dynasties",
+      "kind": "territory",
+      "title": "南北朝疆域",
+      "status": "candidate",
+      "sourceIds": [
+        "historical-basemaps",
+        "chgis-v6"
+      ],
+      "reason": "来源存在许可或年代问题，尚不承诺边界复原完成"
+    },
+    {
+      "id": "sui-early-tang-territory",
+      "packageId": "sui-early-tang",
+      "kind": "territory",
+      "title": "隋与唐初疆域",
+      "status": "candidate",
+      "sourceIds": [
+        "historical-basemaps",
+        "chgis-v6"
+      ],
+      "reason": "来源存在许可或年代问题，尚不承诺边界复原完成"
+    },
+    {
+      "id": "middle-late-tang-territory",
+      "packageId": "middle-late-tang",
+      "kind": "territory",
+      "title": "唐中后期至唐末疆域",
+      "status": "candidate",
+      "sourceIds": [
+        "historical-basemaps",
+        "chgis-v6"
+      ],
+      "reason": "来源存在许可或年代问题，尚不承诺边界复原完成"
+    }
+  ],
+  "decisions": []
+}
