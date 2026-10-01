@@ -1,0 +1,101 @@
+{
+  "version": "caa826531ff69fd0",
+  "catalog": {
+    "path": "catalog-e562c7b652df1b57.json",
+    "sha256": "e562c7b652df1b57b68ec8cfa57702aae522ffeb5d4bdb7d80d9f3c3f16bc63c"
+  },
+  "packages": [
+    {
+      "path": "package-d99ad46744f289a2.json",
+      "sha256": "d99ad46744f289a21b955e1c50a7c724dd21d42897dad5b10857d61745224105",
+      "id": "eastern-jin-sixteen-kingdoms",
+      "version": "0.1.0-partial",
+      "startYear": 304,
+      "endYear": 439,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-2c10d01ac6d4d952.json",
+      "sha256": "2c10d01ac6d4d952476ae1c51b211d41d199b5a4e6d76ca980b92f2c0f3033a8",
+      "id": "middle-late-tang",
+      "version": "0.1.0-partial",
+      "startYear": 755,
+      "endYear": 907,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-5bc36c05e20d4995.json",
+      "sha256": "5bc36c05e20d499552a3c45840562e3e7b04c5fc89708c098f7a977d83bb9419",
+      "id": "southern-northern-dynasties",
+      "version": "0.1.0-partial",
+      "startYear": 420,
+      "endYear": 589,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-cb380021e2449075.json",
+      "sha256": "cb380021e2449075038d21d01fed82bb243cf03d36ea07cede47745693c066fd",
+      "id": "sui-early-tang",
+      "version": "0.1.0-partial",
+      "startYear": 581,
+      "endYear": 755,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-fecafb9506e85895.json",
+      "sha256": "fecafb9506e85895e078c0a430dacc7cbad345988ea29b0c19157273cc6b165a",
+      "id": "three-kingdoms-western-jin",
+      "version": "0.1.0-partial",
+      "startYear": 220,
+      "endYear": 316,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    }
+  ],
+  "defaultInterpretationIds": [],
+  "scopeVersion": "1",
+  "searchIndex": {
+    "path": "search-435b5020e734920d.json",
+    "sha256": "435b5020e734920dd37fdc2173fcd0ca7ffee42c0c0feedb9b2f4fe2ba8e9c7b"
+  },
+  "interpretations": []
+}
