@@ -1,0 +1,50 @@
+{
+  "packageId": "eastern-jin-sixteen-kingdoms",
+  "status": "incomplete",
+  "reviewerKind": "agent",
+  "reviewer": "Codex",
+  "checkedAt": "2026-10-01",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "records": [
+    {
+      "id": "eastern-jin-317",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Timeline: Eastern Jin 317–420; Key Events: 317–420",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "fei-383",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "shouxian-fei",
+          "locator": "淝水之战古战场介绍",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "wei-386",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Timeline: Northern Wei 386–534; Key Events: ca.386",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "全部政权疆域几何",
+    "完整周边政权名录",
+    "完整重大事件清单",
+    "都城与事件坐标补核",
+    "十六国部分政权起讫与中断期异说"
+  ]
+}

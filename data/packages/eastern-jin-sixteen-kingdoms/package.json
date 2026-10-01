@@ -1,0 +1,286 @@
+{
+  "id": "eastern-jin-sixteen-kingdoms",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "eastern-jin-317",
+      "title": "东晋政权建立",
+      "validity": {
+        "start": {
+          "earliest": "0317-01-01",
+          "latest": "0317-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0318-01-01",
+          "latest": "0318-01-01"
+        },
+        "precision": "year",
+        "label": "317年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "jin"
+      ],
+      "placeIds": [
+        "jiankang"
+      ],
+      "summary": "东晋开始，定都建康。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Timeline: Eastern Jin 317–420; Key Events: 317–420",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Timeline: Eastern Jin 317–420; Key Events: 317–420",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "fei-383",
+      "title": "淝水之战",
+      "validity": {
+        "start": {
+          "earliest": "0383-01-01",
+          "latest": "0383-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0384-01-01",
+          "latest": "0384-01-01"
+        },
+        "precision": "year",
+        "label": "383年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "jin",
+        "former-qin"
+      ],
+      "placeIds": [
+        "fei-battle-region"
+      ],
+      "summary": "前秦与东晋在淝水一带交战，东晋获胜。",
+      "account": "",
+      "interpretation": "战场位置暂只采用地名关联，不推定战线和兵力。",
+      "evidence": [
+        {
+          "sourceId": "shouxian-fei",
+          "locator": "淝水之战古战场介绍",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "shouxian-fei",
+            "locator": "淝水之战古战场介绍",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "wei-386",
+      "title": "北魏建立",
+      "validity": {
+        "start": {
+          "earliest": "0386-01-01",
+          "latest": "0386-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0387-01-01",
+          "latest": "0387-01-01"
+        },
+        "precision": "year",
+        "label": "386年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "northern-wei"
+      ],
+      "placeIds": [],
+      "summary": "拓跋氏建立北魏。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-early",
+          "locator": "Timeline: Northern Wei 386–534; Key Events: ca.386",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Timeline: Northern Wei 386–534; Key Events: ca.386",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "eastern-jin-sixteen-kingdoms-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-korea-territory",
+      "regionId": "korea",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-japan-territory",
+      "regionId": "japan",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-china-core-event",
+      "regionId": "china-core",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-steppe-event",
+      "regionId": "steppe",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-korea-event",
+      "regionId": "korea",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-japan-event",
+      "regionId": "japan",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-tibet-event",
+      "regionId": "tibet",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-central-asia-event",
+      "regionId": "central-asia",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "eastern-jin-sixteen-kingdoms-southeast-asia-event",
+      "regionId": "southeast-asia",
+      "startYear": 304,
+      "endYear": 439,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    }
+  ]
+}
