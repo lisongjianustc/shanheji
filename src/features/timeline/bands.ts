@@ -1,2 +1,27 @@
-import type {Entity,Filters} from '../../domain/types';import {yearOf} from '../../domain/time';
-export function buildBands(entities:Entity[],filters:Filters){return entities.filter(e=>(!filters.regionIds.length||e.regionIds.some(r=>filters.regionIds.includes(r)))&&(!filters.entityIds.length||filters.entityIds.includes(e.id))).map(e=>({entityId:e.id,label:e.names[0].text,startYear:Math.max(220,yearOf(e.existence.start.earliest)),endYear:Math.min(907,yearOf(e.existence.endExclusive.latest)-Number(e.existence.endExclusive.latest.endsWith('-01-01'))),uncertain:e.existence.start.earliest!==e.existence.start.latest||e.existence.endExclusive.earliest!==e.existence.endExclusive.latest})).filter(e=>e.startYear<=e.endYear)}
+import type { Entity, Filters } from "../../domain/types";
+import { yearOf } from "../../domain/time";
+export function buildBands(entities: Entity[], filters: Filters) {
+  return entities
+    .filter(
+      (e) =>
+        (!filters.regionIds.length ||
+          e.regionIds.some((r) => filters.regionIds.includes(r))) &&
+        (!filters.entityIds.length || filters.entityIds.includes(e.id)),
+    )
+    .flatMap((e) =>
+      (e.activePeriods ?? [e.existence]).map((v) => ({
+        entityId: e.id,
+        label: [...new Set(e.names.map((n) => n.text))].join(" / "),
+        startYear: Math.max(220, yearOf(v.start.earliest)),
+        endYear: Math.min(
+          907,
+          yearOf(v.endExclusive.latest) -
+            Number(v.endExclusive.latest.endsWith("-01-01")),
+        ),
+        uncertain:
+          v.start.earliest !== v.start.latest ||
+          v.endExclusive.earliest !== v.endExclusive.latest,
+      })),
+    )
+    .filter((e) => e.startYear <= e.endYear);
+}
