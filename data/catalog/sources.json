@@ -1,0 +1,123 @@
+[
+  {
+    "id": "moe-chronology",
+    "title": "中国历代纪年表",
+    "creator": "教育部《重编国语辞典修订本》",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://dict.revised.moe.edu.tw/appendix.jsp?ID=1&la=1&powerMode=0",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "ihns-era",
+    "title": "中国历代年号索引表",
+    "creator": "中国科学院自然科学史研究所网站",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://agri-history.ihns.ac.cn/history/historic%20table.htm",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "met-early",
+    "title": "China, 1–500 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.metmuseum.org/toah/ht/05/eac.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "met-late",
+    "title": "China, 500–1000 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.metmuseum.org/toah/ht/06/eac.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "met-korea",
+    "title": "Korea, 500–1000 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.metmuseum.org/toah/ht/06/eak.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "met-japan",
+    "title": "Japan, 500–1000 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.metmuseum.org/toah/ht/06/eaj.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "ezhou-wu",
+    "title": "孙权与古武昌",
+    "creator": "鄂州市人民政府网站",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.ezhou.gov.cn/zjez/ezrw/ezrj/201501/t20150114_44732.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "shouxian-fei",
+    "title": "寿县淝水之战古战场",
+    "creator": "寿县人民政府网站",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://www.shouxian.gov.cn/lyzn/y/7847321.html",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "unesco-yungang",
+    "title": "Yungang Grottoes",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://whc.unesco.org/en/list/1039/",
+    "accessedAt": "2026-10-01",
+    "license": "简介标注 CC BY-SA IGO 3.0；本项目仅摘取年代与位置事实",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "unesco-longmen",
+    "title": "Longmen Grottoes",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://whc.unesco.org/en/list/1003/",
+    "accessedAt": "2026-10-01",
+    "license": "简介标注 CC BY-SA IGO 3.0；本项目仅摘取位置事实",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "idp-diamond",
+    "title": "The Diamond Sutra",
+    "creator": "International Dunhuang Programme, British Library",
+    "edition": "网页版本，2026-10-01核对",
+    "url": "https://idp.bl.uk/blog/the-diamond-sutra/",
+    "accessedAt": "2026-10-01",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  }
+]

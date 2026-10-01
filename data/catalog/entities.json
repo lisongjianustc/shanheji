@@ -1,0 +1,1562 @@
+[
+  {
+    "id": "cao-wei",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "曹魏",
+        "validity": {
+          "start": {
+            "earliest": "0220-01-01",
+            "latest": "0220-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0265-01-01",
+            "latest": "0267-01-01"
+          },
+          "precision": "range",
+          "label": "220—265/266年（纪年口径待细化）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 曹魏",
+            "note": "纪年表列末年265；改朝确日与公历年转换须另核，保留至266年的不确定范围。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0220-01-01",
+        "latest": "0220-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0265-01-01",
+        "latest": "0267-01-01"
+      },
+      "precision": "range",
+      "label": "220—265/266年（纪年口径待细化）"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "shu-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "蜀汉",
+        "validity": {
+          "start": {
+            "earliest": "0221-01-01",
+            "latest": "0221-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0263-01-01",
+            "latest": "0264-01-01"
+          },
+          "precision": "range",
+          "label": "221—263年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 蜀汉",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0221-01-01",
+        "latest": "0221-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0263-01-01",
+        "latest": "0264-01-01"
+      },
+      "precision": "range",
+      "label": "221—263年"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "sun-wu",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "孙吴",
+        "validity": {
+          "start": {
+            "earliest": "0222-01-01",
+            "latest": "0222-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0280-01-01",
+            "latest": "0281-01-01"
+          },
+          "precision": "range",
+          "label": "222—280年；229年称帝"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 孙吴",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0222-01-01",
+        "latest": "0222-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0280-01-01",
+        "latest": "0281-01-01"
+      },
+      "precision": "range",
+      "label": "222—280年；229年称帝"
+    },
+    "color": "#7991a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "jin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西晋",
+        "validity": {
+          "start": {
+            "earliest": "0265-01-01",
+            "latest": "0265-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0316-01-01",
+            "latest": "0317-01-01"
+          },
+          "precision": "range",
+          "label": "265—316年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "晋／西晋行",
+            "note": "起年存在265/266纪年口径。"
+          }
+        ]
+      },
+      {
+        "text": "东晋",
+        "validity": {
+          "start": {
+            "earliest": "0317-01-01",
+            "latest": "0317-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0420-01-01",
+            "latest": "0421-01-01"
+          },
+          "precision": "range",
+          "label": "317—420年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "晋／东晋行",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0265-01-01",
+        "latest": "0265-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0420-01-01",
+        "latest": "0421-01-01"
+      },
+      "precision": "range",
+      "label": "晋：265/266—420年（317年起东晋）"
+    },
+    "color": "#a37d6d",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": [
+      {
+        "placeId": "jiankang",
+        "validity": {
+          "start": {
+            "earliest": "0317-01-01",
+            "latest": "0317-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0420-01-01",
+            "latest": "0421-01-01"
+          },
+          "precision": "range",
+          "label": "317—420年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 317–420",
+            "note": "来源以今名Nanjing指东晋都城；不为城市虚构精确坐标。"
+          }
+        ]
+      }
+    ],
+    "activePeriods": [
+      {
+        "start": {
+          "earliest": "0265-01-01",
+          "latest": "0265-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0316-01-01",
+          "latest": "0317-01-01"
+        },
+        "precision": "range",
+        "label": "265—316年"
+      },
+      {
+        "start": {
+          "earliest": "0317-01-01",
+          "latest": "0317-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0420-01-01",
+          "latest": "0421-01-01"
+        },
+        "precision": "range",
+        "label": "317—420年"
+      }
+    ]
+  },
+  {
+    "id": "han-zhao",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "汉赵（前赵）",
+        "validity": {
+          "start": {
+            "earliest": "0304-01-01",
+            "latest": "0304-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0329-01-01",
+            "latest": "0330-01-01"
+          },
+          "precision": "range",
+          "label": "304—329年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 汉赵（前赵）",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0304-01-01",
+        "latest": "0304-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0329-01-01",
+        "latest": "0330-01-01"
+      },
+      "precision": "range",
+      "label": "304—329年"
+    },
+    "color": "#8b859c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "cheng-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "成汉",
+        "validity": {
+          "start": {
+            "earliest": "0304-01-01",
+            "latest": "0304-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0347-01-01",
+            "latest": "0348-01-01"
+          },
+          "precision": "range",
+          "label": "304—347年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 成汉",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0304-01-01",
+        "latest": "0304-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0347-01-01",
+        "latest": "0348-01-01"
+      },
+      "precision": "range",
+      "label": "304—347年"
+    },
+    "color": "#749a94",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "former-yan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "前燕",
+        "validity": {
+          "start": {
+            "earliest": "0337-01-01",
+            "latest": "0337-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0370-01-01",
+            "latest": "0371-01-01"
+          },
+          "precision": "range",
+          "label": "337—370年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 前燕",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0337-01-01",
+        "latest": "0337-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0370-01-01",
+        "latest": "0371-01-01"
+      },
+      "precision": "range",
+      "label": "337—370年"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-qin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后秦",
+        "validity": {
+          "start": {
+            "earliest": "0384-01-01",
+            "latest": "0384-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0417-01-01",
+            "latest": "0418-01-01"
+          },
+          "precision": "range",
+          "label": "384—417年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后秦",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0384-01-01",
+        "latest": "0384-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0417-01-01",
+        "latest": "0418-01-01"
+      },
+      "precision": "range",
+      "label": "384—417年"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后凉",
+        "validity": {
+          "start": {
+            "earliest": "0386-01-01",
+            "latest": "0386-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0403-01-01",
+            "latest": "0404-01-01"
+          },
+          "precision": "range",
+          "label": "386—403年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后凉",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0386-01-01",
+        "latest": "0386-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0403-01-01",
+        "latest": "0404-01-01"
+      },
+      "precision": "range",
+      "label": "386—403年"
+    },
+    "color": "#7991a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南凉",
+        "validity": {
+          "start": {
+            "earliest": "0397-01-01",
+            "latest": "0397-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0414-01-01",
+            "latest": "0415-01-01"
+          },
+          "precision": "range",
+          "label": "397—414年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 南凉",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0397-01-01",
+        "latest": "0397-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0414-01-01",
+        "latest": "0415-01-01"
+      },
+      "precision": "range",
+      "label": "397—414年"
+    },
+    "color": "#a37d6d",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-yan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南燕",
+        "validity": {
+          "start": {
+            "earliest": "0398-01-01",
+            "latest": "0398-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0410-01-01",
+            "latest": "0411-01-01"
+          },
+          "precision": "range",
+          "label": "398—410年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 南燕",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0398-01-01",
+        "latest": "0398-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0410-01-01",
+        "latest": "0411-01-01"
+      },
+      "precision": "range",
+      "label": "398—410年"
+    },
+    "color": "#8b859c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西凉",
+        "validity": {
+          "start": {
+            "earliest": "0400-01-01",
+            "latest": "0400-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0420-01-01",
+            "latest": "0421-01-01"
+          },
+          "precision": "range",
+          "label": "400—420年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 西凉",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0400-01-01",
+        "latest": "0400-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0420-01-01",
+        "latest": "0421-01-01"
+      },
+      "precision": "range",
+      "label": "400—420年"
+    },
+    "color": "#749a94",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "xia",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "夏（赫连氏）",
+        "validity": {
+          "start": {
+            "earliest": "0407-01-01",
+            "latest": "0407-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0431-01-01",
+            "latest": "0432-01-01"
+          },
+          "precision": "range",
+          "label": "407—431年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 夏（赫连氏）",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0407-01-01",
+        "latest": "0407-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0431-01-01",
+        "latest": "0432-01-01"
+      },
+      "precision": "range",
+      "label": "407—431年"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-yan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北燕",
+        "validity": {
+          "start": {
+            "earliest": "0409-01-01",
+            "latest": "0409-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0436-01-01",
+            "latest": "0437-01-01"
+          },
+          "precision": "range",
+          "label": "409—436年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 北燕",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0409-01-01",
+        "latest": "0409-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0436-01-01",
+        "latest": "0437-01-01"
+      },
+      "precision": "range",
+      "label": "409—436年"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "liu-song",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "刘宋",
+        "validity": {
+          "start": {
+            "earliest": "0420-01-01",
+            "latest": "0420-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0479-01-01",
+            "latest": "0480-01-01"
+          },
+          "precision": "range",
+          "label": "420—479年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 刘宋",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0420-01-01",
+        "latest": "0420-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0479-01-01",
+        "latest": "0480-01-01"
+      },
+      "precision": "range",
+      "label": "420—479年"
+    },
+    "color": "#7991a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-qi",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南齐",
+        "validity": {
+          "start": {
+            "earliest": "0479-01-01",
+            "latest": "0479-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0502-01-01",
+            "latest": "0503-01-01"
+          },
+          "precision": "range",
+          "label": "479—502年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 南齐",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0479-01-01",
+        "latest": "0479-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0502-01-01",
+        "latest": "0503-01-01"
+      },
+      "precision": "range",
+      "label": "479—502年"
+    },
+    "color": "#a37d6d",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "梁",
+        "validity": {
+          "start": {
+            "earliest": "0502-01-01",
+            "latest": "0502-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0557-01-01",
+            "latest": "0558-01-01"
+          },
+          "precision": "range",
+          "label": "502—557年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 梁",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0502-01-01",
+        "latest": "0502-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0557-01-01",
+        "latest": "0558-01-01"
+      },
+      "precision": "range",
+      "label": "502—557年"
+    },
+    "color": "#8b859c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "chen",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "陈",
+        "validity": {
+          "start": {
+            "earliest": "0557-01-01",
+            "latest": "0557-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0589-01-01",
+            "latest": "0590-01-01"
+          },
+          "precision": "range",
+          "label": "557—589年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 陈",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0557-01-01",
+        "latest": "0557-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0589-01-01",
+        "latest": "0590-01-01"
+      },
+      "precision": "range",
+      "label": "557—589年"
+    },
+    "color": "#749a94",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-wei",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北魏",
+        "validity": {
+          "start": {
+            "earliest": "0386-01-01",
+            "latest": "0386-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0534-01-01",
+            "latest": "0535-01-01"
+          },
+          "precision": "range",
+          "label": "386—534年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 北魏",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0386-01-01",
+        "latest": "0386-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0534-01-01",
+        "latest": "0535-01-01"
+      },
+      "precision": "range",
+      "label": "386—534年"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": [
+      {
+        "placeId": "luoyang",
+        "validity": {
+          "start": {
+            "earliest": "0494-01-01",
+            "latest": "0494-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0534-01-01",
+            "latest": "0535-01-01"
+          },
+          "precision": "range",
+          "label": "494—534年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 494",
+            "note": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "eastern-wei",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "东魏",
+        "validity": {
+          "start": {
+            "earliest": "0534-01-01",
+            "latest": "0534-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0550-01-01",
+            "latest": "0551-01-01"
+          },
+          "precision": "range",
+          "label": "534—550年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 东魏",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0534-01-01",
+        "latest": "0534-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0550-01-01",
+        "latest": "0551-01-01"
+      },
+      "precision": "range",
+      "label": "534—550年"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-wei",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西魏",
+        "validity": {
+          "start": {
+            "earliest": "0535-01-01",
+            "latest": "0535-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0557-01-01",
+            "latest": "0558-01-01"
+          },
+          "precision": "range",
+          "label": "535—557年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Timeline / 西魏",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0535-01-01",
+        "latest": "0535-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0557-01-01",
+        "latest": "0558-01-01"
+      },
+      "precision": "range",
+      "label": "535—557年"
+    },
+    "color": "#7991a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-zhou",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北周",
+        "validity": {
+          "start": {
+            "earliest": "0557-01-01",
+            "latest": "0557-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0581-01-01",
+            "latest": "0582-01-01"
+          },
+          "precision": "range",
+          "label": "557—581年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Timeline / 北周",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0557-01-01",
+        "latest": "0557-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0581-01-01",
+        "latest": "0582-01-01"
+      },
+      "precision": "range",
+      "label": "557—581年"
+    },
+    "color": "#a37d6d",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-qi",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北齐",
+        "validity": {
+          "start": {
+            "earliest": "0550-01-01",
+            "latest": "0550-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0577-01-01",
+            "latest": "0578-01-01"
+          },
+          "precision": "range",
+          "label": "550—577年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 北齐",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0550-01-01",
+        "latest": "0550-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0577-01-01",
+        "latest": "0578-01-01"
+      },
+      "precision": "range",
+      "label": "550—577年"
+    },
+    "color": "#8b859c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "sui",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "隋",
+        "validity": {
+          "start": {
+            "earliest": "0581-01-01",
+            "latest": "0581-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0618-01-01",
+            "latest": "0619-01-01"
+          },
+          "precision": "range",
+          "label": "581—618年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 隋",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0581-01-01",
+        "latest": "0581-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0618-01-01",
+        "latest": "0619-01-01"
+      },
+      "precision": "range",
+      "label": "581—618年"
+    },
+    "color": "#749a94",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "former-qin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "前秦",
+        "validity": {
+          "start": {
+            "earliest": "0351-01-01",
+            "latest": "0351-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0394-01-01",
+            "latest": "0396-01-01"
+          },
+          "precision": "range",
+          "label": "351—394/395年（末年口径待细化）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 前秦",
+            "note": "本表列394；末年另有395口径，条带末端保留不确定范围。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0351-01-01",
+        "latest": "0351-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0394-01-01",
+        "latest": "0396-01-01"
+      },
+      "precision": "range",
+      "label": "351—394/395年（末年口径待细化）"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "tang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "唐",
+        "validity": {
+          "start": {
+            "earliest": "0618-01-01",
+            "latest": "0618-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0907-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "618—690、705—907年（年精度）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 唐",
+            "note": "采用年精度；首尾年不推定具体日期。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0618-01-01",
+        "latest": "0618-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0907-01-01",
+        "latest": "0908-01-01"
+      },
+      "precision": "range",
+      "label": "618—690、705—907年（年精度）"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": [],
+    "activePeriods": [
+      {
+        "start": {
+          "earliest": "0618-01-01",
+          "latest": "0618-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0690-01-01",
+          "latest": "0691-01-01"
+        },
+        "precision": "range",
+        "label": "618—690年"
+      },
+      {
+        "start": {
+          "earliest": "0705-01-01",
+          "latest": "0705-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0907-01-01",
+          "latest": "0908-01-01"
+        },
+        "precision": "range",
+        "label": "705—907年"
+      }
+    ]
+  },
+  {
+    "id": "wu-zhou",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "武周",
+        "validity": {
+          "start": {
+            "earliest": "0690-01-01",
+            "latest": "0690-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0705-01-01",
+            "latest": "0706-01-01"
+          },
+          "precision": "range",
+          "label": "690—705年（周天授至长安）"
+        },
+        "evidence": [
+          {
+            "sourceId": "ihns-era",
+            "locator": "Timeline / 武周",
+            "note": "天授690—692，长安701—705；不把摄政年直接作为改国号年。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0690-01-01",
+        "latest": "0690-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0705-01-01",
+        "latest": "0706-01-01"
+      },
+      "precision": "range",
+      "label": "690—705年（周天授至长安）"
+    },
+    "color": "#7991a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "goguryeo",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "高句丽",
+        "validity": {
+          "start": {
+            "earliest": "0220-01-01",
+            "latest": "0220-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0668-01-01",
+            "latest": "0669-01-01"
+          },
+          "precision": "range",
+          "label": "220年以前已存续—668年（样板从220年截取）"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Timeline / 高句丽",
+            "note": "早期建国年代不在本样板范围；220仅为视窗起点。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0220-01-01",
+        "latest": "0220-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0668-01-01",
+        "latest": "0669-01-01"
+      },
+      "precision": "range",
+      "label": "220年以前已存续—668年（样板从220年截取）"
+    },
+    "color": "#a37d6d",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "baekje",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "百济",
+        "validity": {
+          "start": {
+            "earliest": "0220-01-01",
+            "latest": "0220-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0660-01-01",
+            "latest": "0661-01-01"
+          },
+          "precision": "range",
+          "label": "220年以前已存续—660年（样板从220年截取）"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Timeline / 百济",
+            "note": "早期建国年代不在本样板范围；220仅为视窗起点。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0220-01-01",
+        "latest": "0220-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0660-01-01",
+        "latest": "0661-01-01"
+      },
+      "precision": "range",
+      "label": "220年以前已存续—660年（样板从220年截取）"
+    },
+    "color": "#8b859c",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "silla",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "新罗",
+        "validity": {
+          "start": {
+            "earliest": "0220-01-01",
+            "latest": "0220-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0935-01-01",
+            "latest": "0936-01-01"
+          },
+          "precision": "range",
+          "label": "220年以前已存续—935年（样板从220年截取）"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Timeline / 新罗",
+            "note": "早期建国年代不在本样板范围；220仅为视窗起点。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0220-01-01",
+        "latest": "0220-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0935-01-01",
+        "latest": "0936-01-01"
+      },
+      "precision": "range",
+      "label": "220年以前已存续—935年（样板从220年截取）"
+    },
+    "color": "#749a94",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "balhae",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "渤海",
+        "validity": {
+          "start": {
+            "earliest": "0698-01-01",
+            "latest": "0698-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0926-01-01",
+            "latest": "0927-01-01"
+          },
+          "precision": "range",
+          "label": "698—926年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Timeline / 渤海",
+            "note": "采用表列698年建立；仅用于年代名录，不推定当时国号或疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0698-01-01",
+        "latest": "0698-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0926-01-01",
+        "latest": "0927-01-01"
+      },
+      "precision": "range",
+      "label": "698—926年"
+    },
+    "color": "#668772",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "japan-court",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "日本列岛朝廷",
+        "validity": {
+          "start": {
+            "earliest": "0538-01-01",
+            "latest": "0538-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0907-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "本次目录覆盖538—907年；非建国起讫"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Timeline / 日本列岛朝廷",
+            "note": "用于飞鸟、奈良与平安早期事件关联；不把时期名当作新国家。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0538-01-01",
+        "latest": "0538-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0907-01-01",
+        "latest": "0908-01-01"
+      },
+      "precision": "range",
+      "label": "本次目录覆盖538—907年；非建国起讫"
+    },
+    "color": "#b49959",
+    "regionIds": [
+      "japan"
+    ],
+    "capitals": []
+  }
+]

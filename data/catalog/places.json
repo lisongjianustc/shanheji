@@ -1,0 +1,424 @@
+[
+  {
+    "id": "wuchang-ezhou",
+    "names": [
+      {
+        "text": "武昌（今鄂州）",
+        "validity": {
+          "start": {
+            "earliest": "0221-01-01",
+            "latest": "0221-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0281-01-01",
+            "latest": "0281-01-01"
+          },
+          "precision": "range",
+          "label": "221—280年"
+        },
+        "evidence": [
+          {
+            "sourceId": "ezhou-wu",
+            "locator": "孙权迁鄂、229年称帝及武昌城段",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      },
+      {
+        "text": "鄂州",
+        "validity": {
+          "start": {
+            "earliest": "0221-01-01",
+            "latest": "0221-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0281-01-01",
+            "latest": "0281-01-01"
+          },
+          "precision": "range",
+          "label": "221—280年"
+        },
+        "evidence": [
+          {
+            "sourceId": "ezhou-wu",
+            "locator": "孙权迁鄂、229年称帝及武昌城段",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "jiankang",
+    "names": [
+      {
+        "text": "建康",
+        "validity": {
+          "start": {
+            "earliest": "0317-01-01",
+            "latest": "0317-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0590-01-01",
+            "latest": "0590-01-01"
+          },
+          "precision": "range",
+          "label": "317—589年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 317–420",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      },
+      {
+        "text": "南京",
+        "validity": {
+          "start": {
+            "earliest": "0317-01-01",
+            "latest": "0317-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0590-01-01",
+            "latest": "0590-01-01"
+          },
+          "precision": "range",
+          "label": "317—589年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 317–420",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "luoyang",
+    "names": [
+      {
+        "text": "洛阳",
+        "validity": {
+          "start": {
+            "earliest": "0494-01-01",
+            "latest": "0494-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "494—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 494",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "fei-battle-region",
+    "names": [
+      {
+        "text": "淝水／寿阳附近",
+        "validity": {
+          "start": {
+            "earliest": "0383-01-01",
+            "latest": "0383-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0384-01-01",
+            "latest": "0384-01-01"
+          },
+          "precision": "year",
+          "label": "383年"
+        },
+        "evidence": [
+          {
+            "sourceId": "shouxian-fei",
+            "locator": "古战场介绍；383年秦晋战争",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      },
+      {
+        "text": "寿县",
+        "validity": {
+          "start": {
+            "earliest": "0383-01-01",
+            "latest": "0383-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0384-01-01",
+            "latest": "0384-01-01"
+          },
+          "precision": "year",
+          "label": "383年"
+        },
+        "evidence": [
+          {
+            "sourceId": "shouxian-fei",
+            "locator": "古战场介绍；383年秦晋战争",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "yungang",
+    "names": [
+      {
+        "text": "云冈石窟",
+        "validity": {
+          "start": {
+            "earliest": "0460-01-01",
+            "latest": "0460-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "460—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-yungang",
+            "locator": "Outstanding Universal Value; N40 6 34.992 E113 7 19.992",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.12222,
+            40.10972
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0460-01-01",
+            "latest": "0460-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "460—907年"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-yungang",
+            "locator": "Outstanding Universal Value; N40 6 34.992 E113 7 19.992",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "longmen",
+    "names": [
+      {
+        "text": "龙门石窟",
+        "validity": {
+          "start": {
+            "earliest": "0672-01-01",
+            "latest": "0672-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "672—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-longmen",
+            "locator": "Outstanding Universal Value; N34 28 0 E112 28 0",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.46666666666667,
+            34.46666666666667
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0672-01-01",
+            "latest": "0672-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "672—907年"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-longmen",
+            "locator": "Outstanding Universal Value; N34 28 0 E112 28 0",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nara",
+    "names": [
+      {
+        "text": "平城京（奈良）",
+        "validity": {
+          "start": {
+            "earliest": "0710-01-01",
+            "latest": "0710-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0795-01-01",
+            "latest": "0795-01-01"
+          },
+          "precision": "range",
+          "label": "710—794年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 710",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      },
+      {
+        "text": "奈良",
+        "validity": {
+          "start": {
+            "earliest": "0710-01-01",
+            "latest": "0710-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0795-01-01",
+            "latest": "0795-01-01"
+          },
+          "precision": "range",
+          "label": "710—794年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 710",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "heian",
+    "names": [
+      {
+        "text": "平安京（京都）",
+        "validity": {
+          "start": {
+            "earliest": "0794-01-01",
+            "latest": "0794-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "794—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 794",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      },
+      {
+        "text": "京都",
+        "validity": {
+          "start": {
+            "earliest": "0794-01-01",
+            "latest": "0794-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "794—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 794",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  },
+  {
+    "id": "horyuji",
+    "names": [
+      {
+        "text": "法隆寺",
+        "validity": {
+          "start": {
+            "earliest": "0607-01-01",
+            "latest": "0607-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "range",
+          "label": "607—907年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: ca. 607",
+            "note": "地名用于历史条目关联；坐标如有，仅为遗产点位的近似参考。"
+          }
+        ]
+      }
+    ],
+    "locations": []
+  }
+]
