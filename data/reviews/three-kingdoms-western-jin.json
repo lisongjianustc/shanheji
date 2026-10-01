@@ -1,0 +1,39 @@
+{
+  "packageId": "three-kingdoms-western-jin",
+  "status": "incomplete",
+  "reviewerKind": "agent",
+  "reviewer": "Codex",
+  "checkedAt": "2026-10-01",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "records": [
+    {
+      "id": "wu-emperor-229",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "ezhou-wu",
+          "locator": "武昌宫与229年称帝段",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "wu-fall-280",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "ezhou-wu",
+          "locator": "末段：太康元年（280）晋军进击与吴覆灭",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "全部政权疆域几何",
+    "完整周边政权名录",
+    "完整重大事件清单",
+    "都城与事件坐标补核",
+    "十六国部分政权起讫与中断期异说"
+  ]
+}

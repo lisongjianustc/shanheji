@@ -1,0 +1,240 @@
+{
+  "id": "three-kingdoms-western-jin",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "wu-emperor-229",
+      "title": "孙权在武昌称帝",
+      "validity": {
+        "start": {
+          "earliest": "0229-01-01",
+          "latest": "0229-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0230-01-01",
+          "latest": "0230-01-01"
+        },
+        "precision": "year",
+        "label": "229年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "sun-wu"
+      ],
+      "placeIds": [
+        "wuchang-ezhou"
+      ],
+      "summary": "孙权在武昌称帝。古武昌对应今鄂州。",
+      "account": "",
+      "interpretation": "地图不使用今武汉武昌区代替古武昌。",
+      "evidence": [
+        {
+          "sourceId": "ezhou-wu",
+          "locator": "武昌宫与229年称帝段",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "ezhou-wu",
+            "locator": "武昌宫与229年称帝段",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "wu-fall-280",
+      "title": "晋灭吴",
+      "validity": {
+        "start": {
+          "earliest": "0280-01-01",
+          "latest": "0280-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0281-01-01",
+          "latest": "0281-01-01"
+        },
+        "precision": "year",
+        "label": "280年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "jin",
+        "sun-wu"
+      ],
+      "placeIds": [],
+      "summary": "晋军攻灭孙吴。",
+      "account": "",
+      "interpretation": "暂不绘制未经核对的行军路线。",
+      "evidence": [
+        {
+          "sourceId": "ezhou-wu",
+          "locator": "末段：太康元年（280）晋军进击与吴覆灭",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "ezhou-wu",
+            "locator": "末段：太康元年（280）晋军进击与吴覆灭",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "three-kingdoms-western-jin-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-korea-territory",
+      "regionId": "korea",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-japan-territory",
+      "regionId": "japan",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-china-core-event",
+      "regionId": "china-core",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-steppe-event",
+      "regionId": "steppe",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-korea-event",
+      "regionId": "korea",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-japan-event",
+      "regionId": "japan",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-tibet-event",
+      "regionId": "tibet",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-central-asia-event",
+      "regionId": "central-asia",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "three-kingdoms-western-jin-southeast-asia-event",
+      "regionId": "southeast-asia",
+      "startYear": 220,
+      "endYear": 316,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    }
+  ]
+}
