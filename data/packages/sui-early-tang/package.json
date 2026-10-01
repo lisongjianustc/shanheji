@@ -1,0 +1,691 @@
+{
+  "id": "sui-early-tang",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "sui-581",
+      "title": "隋朝建立",
+      "validity": {
+        "start": {
+          "earliest": "0581-01-01",
+          "latest": "0581-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0582-01-01",
+          "latest": "0582-01-01"
+        },
+        "precision": "year",
+        "label": "581年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "sui",
+        "northern-zhou"
+      ],
+      "placeIds": [],
+      "summary": "杨坚建立隋朝。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 581",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "sui-589",
+      "title": "隋灭陈",
+      "validity": {
+        "start": {
+          "earliest": "0589-01-01",
+          "latest": "0589-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0590-01-01",
+          "latest": "0590-01-01"
+        },
+        "precision": "year",
+        "label": "589年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "sui",
+        "chen"
+      ],
+      "placeIds": [],
+      "summary": "隋灭陈，结束南北长期分立的局面。",
+      "account": "",
+      "interpretation": "统一事件不等于任何未经核验的最大疆域。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581（589年统一记述）",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 581（589年统一记述）",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "sui-goguryeo",
+      "title": "隋与高句丽的战争",
+      "validity": {
+        "start": {
+          "earliest": "0598-01-01",
+          "latest": "0598-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0615-01-01",
+          "latest": "0615-01-01"
+        },
+        "precision": "range",
+        "label": "598—614年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "sui",
+        "goguryeo"
+      ],
+      "placeIds": [],
+      "summary": "隋在这一时期多次进攻高句丽，未能将其征服。",
+      "account": "",
+      "interpretation": "范围表示多次战事所在时期，不表示逐年连续交战。",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 598–614",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Key Events: 598–614",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "horyuji-607",
+      "title": "法隆寺创建",
+      "validity": {
+        "start": {
+          "earliest": "0607-01-01",
+          "latest": "0607-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0608-01-01",
+          "latest": "0608-01-01"
+        },
+        "precision": "year",
+        "label": "607年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "japan-court"
+      ],
+      "placeIds": [
+        "horyuji"
+      ],
+      "summary": "法隆寺约建于607年。",
+      "account": "",
+      "interpretation": "约年记录；现存建筑的年代不能直接等同于创建年。",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: ca.607",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: ca.607",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "tang-618",
+      "title": "唐朝建立",
+      "validity": {
+        "start": {
+          "earliest": "0618-01-01",
+          "latest": "0618-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0619-01-01",
+          "latest": "0619-01-01"
+        },
+        "precision": "year",
+        "label": "618年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "tang",
+        "sui"
+      ],
+      "placeIds": [],
+      "summary": "李渊建立唐朝。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 618",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 618",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "xuanzang-629",
+      "title": "玄奘西行",
+      "validity": {
+        "start": {
+          "earliest": "0629-01-01",
+          "latest": "0629-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0646-01-01",
+          "latest": "0646-01-01"
+        },
+        "precision": "range",
+        "label": "629—645年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "玄奘赴印度求法，后返回中国。",
+      "account": "",
+      "interpretation": "暂缺可核验路线，不用直线连点替代实际旅程。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 629–645",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 629–645",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "baekje-660",
+      "title": "百济覆亡",
+      "validity": {
+        "start": {
+          "earliest": "0660-01-01",
+          "latest": "0660-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0661-01-01",
+          "latest": "0661-01-01"
+        },
+        "precision": "year",
+        "label": "660年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "baekje",
+        "silla",
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "唐与新罗联合攻灭百济。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 660",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Key Events: 660",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "goguryeo-668",
+      "title": "高句丽覆亡",
+      "validity": {
+        "start": {
+          "earliest": "0668-01-01",
+          "latest": "0668-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0669-01-01",
+          "latest": "0669-01-01"
+        },
+        "precision": "year",
+        "label": "668年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "goguryeo",
+        "silla",
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "唐与新罗联军攻灭高句丽。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 668",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Key Events: 668",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "longmen-672",
+      "title": "龙门奉先寺大像营造",
+      "validity": {
+        "start": {
+          "earliest": "0672-01-01",
+          "latest": "0672-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0676-01-01",
+          "latest": "0676-01-01"
+        },
+        "precision": "range",
+        "label": "672—675年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [
+        "longmen"
+      ],
+      "summary": "龙门卢舍那大像工程得到武则天支持。",
+      "account": "",
+      "interpretation": "遗产公布坐标只作为石窟群近似定位，不表示单尊造像测量位置。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 672–675",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 672–675",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "balhae-698",
+      "title": "渤海政权建立",
+      "validity": {
+        "start": {
+          "earliest": "0698-01-01",
+          "latest": "0698-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0699-01-01",
+          "latest": "0699-01-01"
+        },
+        "precision": "year",
+        "label": "698年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "balhae"
+      ],
+      "placeIds": [],
+      "summary": "东北地区出现渤海政权。",
+      "account": "",
+      "interpretation": "沿用后世通称；未据此推定698年的具体疆界。",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 698",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-korea",
+            "locator": "Key Events: 698",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "nara-710",
+      "title": "迁都平城京",
+      "validity": {
+        "start": {
+          "earliest": "0710-01-01",
+          "latest": "0710-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0711-01-01",
+          "latest": "0711-01-01"
+        },
+        "precision": "year",
+        "label": "710年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "japan-court"
+      ],
+      "placeIds": [
+        "nara"
+      ],
+      "summary": "日本朝廷迁至平城京，奈良时代开始。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: 710",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 710",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "an-lushan-755",
+      "title": "安禄山起兵",
+      "validity": {
+        "start": {
+          "earliest": "0755-01-01",
+          "latest": "0755-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0756-01-01",
+          "latest": "0756-01-01"
+        },
+        "precision": "year",
+        "label": "755年"
+      },
+      "kind": "military",
+      "entityIds": [
+        "tang"
+      ],
+      "placeIds": [],
+      "summary": "安禄山发动叛乱。",
+      "account": "",
+      "interpretation": "仅记录起事年，不以该条目覆盖整场安史之乱的起讫。",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 755–759",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 逐条对照公开资料",
+        "checkedAt": "2026-10-01",
+        "evidence": [
+          {
+            "sourceId": "met-late",
+            "locator": "Key Events: 755–759",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "sui-early-tang-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-korea-territory",
+      "regionId": "korea",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-japan-territory",
+      "regionId": "japan",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "尚缺可核验且可用于本项目的历史疆域图幅或矢量；不推算边界。"
+    },
+    {
+      "id": "sui-early-tang-china-core-event",
+      "regionId": "china-core",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-steppe-event",
+      "regionId": "steppe",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-korea-event",
+      "regionId": "korea",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-japan-event",
+      "regionId": "japan",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-tibet-event",
+      "regionId": "tibet",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-central-asia-event",
+      "regionId": "central-asia",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    },
+    {
+      "id": "sui-early-tang-southeast-asia-event",
+      "regionId": "southeast-asia",
+      "startYear": 581,
+      "endYear": 755,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "仅收录部分有据事件；未完成全部重大事件的系统核查。"
+    }
+  ]
+}

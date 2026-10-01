@@ -1,0 +1,149 @@
+{
+  "packageId": "sui-early-tang",
+  "status": "incomplete",
+  "reviewerKind": "agent",
+  "reviewer": "Codex",
+  "checkedAt": "2026-10-01",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "records": [
+    {
+      "id": "sui-581",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sui-589",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 581（589年统一记述）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sui-goguryeo",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 598–614",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "horyuji-607",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: ca.607",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tang-618",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 618",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "xuanzang-629",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 629–645",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "baekje-660",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 660",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "goguryeo-668",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 668",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "longmen-672",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 672–675",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "balhae-698",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-korea",
+          "locator": "Key Events: 698",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nara-710",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-japan",
+          "locator": "Key Events: 710",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "an-lushan-755",
+      "decision": "verified-factual-summary",
+      "evidence": [
+        {
+          "sourceId": "met-late",
+          "locator": "Key Events: 755–759",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "remaining": [
+    "全部政权疆域几何",
+    "完整周边政权名录",
+    "完整重大事件清单",
+    "都城与事件坐标补核",
+    "十六国部分政权起讫与中断期异说"
+  ]
+}
