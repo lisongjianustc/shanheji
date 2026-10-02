@@ -17,7 +17,10 @@ export interface HistoryController {
   getSnapshot(): HistoryState;
   subscribe(fn: () => void): () => void;
   preview(year: number): void;
-  request(query: Query): Promise<void>;
+  request(
+    query: Query,
+    options?: { requireTerritory?: boolean },
+  ): Promise<void>;
   acceptRendered(id: number): void;
   select(value: Selection | null): void;
   setPlaying(v: boolean): void;
@@ -54,7 +57,7 @@ export function createHistoryController(
       if (Number.isInteger(year) && year >= 220 && year <= 907)
         update({ previewYear: year });
     },
-    async request(query) {
+    async request(query, options) {
       const requestId = ++serial;
       abort?.abort();
       abort = new AbortController();
@@ -66,6 +69,20 @@ export function createHistoryController(
       });
       try {
         const scene = await repository.loadScene(query, abort.signal);
+        if (
+          requestId === serial &&
+          !disposed &&
+          options?.requireTerritory &&
+          !scene.territories.length &&
+          s.committed
+        ) {
+          update({
+            status: "ready",
+            pending: null,
+            previewYear: s.committed.query.year,
+          });
+          return;
+        }
         if (requestId === serial && !disposed)
           update({ pending: { requestId, scene }, status: "staging" });
       } catch (e) {

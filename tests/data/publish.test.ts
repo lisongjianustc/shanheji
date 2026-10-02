@@ -35,3 +35,32 @@ it("rejects invalid source data without publishing a new manifest", async () => 
     "old-manifest",
   );
 });
+it("publishes only explicitly configured default interpretations", async () => {
+  for (const k of ["sources", "entities", "places"])
+    await writeFile(join(root, `input/catalog/${k}.json`), "[]");
+  await writeFile(
+    join(root, "input/packages/a/package.json"),
+    JSON.stringify({
+      id: "a",
+      version: "1",
+      territories: [],
+      events: [],
+      coverage: [],
+    }),
+  );
+  await writeFile(
+    join(root, "input/catalog/interpretations.json"),
+    JSON.stringify([
+      { id: "a", label: "A", reason: "A" },
+      { id: "b", label: "B", reason: "B" },
+    ]),
+  );
+  await writeFile(
+    join(root, "input/catalog/default-interpretations.json"),
+    '["a"]',
+  );
+  expect(
+    (await publishDataset(join(root, "input"), join(root, "output")))
+      .defaultInterpretationIds,
+  ).toEqual(["a"]);
+});

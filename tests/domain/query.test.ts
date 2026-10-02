@@ -79,3 +79,83 @@ it("rejects out-of-scope years and mismatched day", () => {
     queryScene(makeCatalog(), [], { ...makeQuery(), at: "0301-01-01" }),
   ).toThrow();
 });
+it("uses editorial defaults instead of overlaying interpretations", () => {
+  const p = makePackage();
+  const b = structuredClone(p.territories[0]);
+  b.properties.id = "alternative";
+  b.properties.interpretationId = "alternative";
+  p.territories.push(b);
+  const q = makeQuery();
+  q.filters.interpretationIds = [];
+  expect(
+    queryScene(makeCatalog(), [p], q, ["test-interpretation"]).territories.map(
+      (t) => t.properties.id,
+    ),
+  ).toEqual(["test-territory"]);
+});
+it("never resurrects an invalid snapshot for an exact date with nearby enabled", () => {
+  const p = makePackage();
+  Object.assign(p.territories[0].properties, {
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+    validity: {
+      ...time(),
+      endExclusive: { earliest: "0300-07-01", latest: "0300-07-01" },
+    },
+  });
+  const q = makeQuery();
+  q.at = "0300-10-01";
+  q.filters.nearbyReference = true;
+  expect(queryScene(makeCatalog(), [p], q).territories).toHaveLength(0);
+});
+it("selects one annual phase and allows the earlier phase to be chosen", () => {
+  const p = makePackage();
+  const a = p.territories[0];
+  Object.assign(a.properties, {
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+    validity: {
+      ...time(),
+      endExclusive: { earliest: "0300-07-01", latest: "0300-07-01" },
+      label: "上半年",
+    },
+  });
+  const b = structuredClone(a);
+  b.properties.id = "later";
+  b.properties.validity = {
+    ...time(),
+    start: { earliest: "0300-07-01", latest: "0300-07-01" },
+    label: "下半年",
+  };
+  p.territories.push(b);
+  const s = queryScene(makeCatalog(), [p], makeQuery());
+  expect(s.territories.map((t) => t.properties.id)).toEqual(["later"]);
+  expect(s.snapshotChoices).toHaveLength(2);
+  expect(
+    queryScene(makeCatalog(), [p], {
+      ...makeQuery(),
+      snapshotId: "test-territory",
+    }).territories.map((t) => t.properties.id),
+  ).toEqual(["test-territory"]);
+});
+it("warns when different polities use different reference periods", () => {
+  const p = makePackage();
+  const b = structuredClone(p.territories[0]);
+  b.properties.id = "other";
+  b.properties.entityId = "other";
+  b.properties.validity = time(300, 301);
+  p.territories.push(b);
+  expect(
+    queryScene(makeCatalog(), [p], makeQuery()).warnings.join(" "),
+  ).toContain("本年资料，参考时点不一");
+});
+it("requires a version choice if competing versions have no editorial default", () => {
+  const p = makePackage();
+  const b = structuredClone(p.territories[0]);
+  b.properties.id = "other";
+  b.properties.interpretationId = "other";
+  p.territories.push(b);
+  const q = makeQuery();
+  q.filters.interpretationIds = [];
+  expect(() => queryScene(makeCatalog(), [p], q)).toThrow(/默认版本/);
+});

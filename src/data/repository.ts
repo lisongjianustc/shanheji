@@ -85,7 +85,7 @@ export function createRepository(
         }),
       );
       signal.throwIfAborted();
-      return queryScene(c, packs, query);
+      return queryScene(c, packs, query, m.defaultInterpretationIds);
     },
     async overview(signal) {
       const m = await getManifest(signal);

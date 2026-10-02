@@ -21,7 +21,11 @@ export function FilterPanel({
 }) {
   const f = scene.query.filters;
   const change = (patch: Partial<Filters>) =>
-    onRequest({ ...scene.query, filters: { ...f, ...patch } });
+    onRequest({
+      ...scene.query,
+      snapshotId: null,
+      filters: { ...f, ...patch },
+    });
   const count =
     f.regionIds.length +
     f.entityIds.length +
@@ -127,7 +131,7 @@ export function FilterPanel({
               })
             }
           >
-            <option value="">全部已发布版本</option>
+            <option value="">默认编制版本</option>
             {manifest.interpretations.map((i) => (
               <option key={i.id} value={i.id}>
                 {i.label}
@@ -135,10 +139,11 @@ export function FilterPanel({
             ))}
           </select>
           {manifest.interpretations
-            .filter(
-              (i) =>
-                !f.interpretationIds.length ||
-                f.interpretationIds.includes(i.id),
+            .filter((i) =>
+              (f.interpretationIds.length
+                ? f.interpretationIds
+                : manifest.defaultInterpretationIds
+              ).includes(i.id),
             )
             .map((i) => (
               <small key={i.id}>

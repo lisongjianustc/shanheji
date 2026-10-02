@@ -68,3 +68,24 @@ it("rejects an obsolete map acknowledgement", async () => {
   c.acceptRendered(c.getSnapshot().pending?.requestId ?? 0);
   expect(c.getSnapshot().committed?.query.year).toBe(400);
 });
+it("queries an event date even if current geometry differs, retaining old scene if unsupported", async () => {
+  const calls: string[] = [];
+  const c = createHistoryController({
+    loadScene: async (q) => {
+      calls.push(q.at ?? "annual");
+      const s = makeScene(q.year);
+      s.query = q;
+      return s;
+    },
+  });
+  await c.request(makeQuery());
+  c.acceptRendered(c.getSnapshot().pending!.requestId);
+  await c.request(
+    { ...makeQuery(), at: "0300-05-01" },
+    { requireTerritory: true },
+  );
+  expect(calls).toEqual(["annual", "0300-05-01"]);
+  expect(c.getSnapshot().pending).toBeNull();
+  expect(c.getSnapshot().committed?.query.at).toBeNull();
+  expect(c.getSnapshot().status).toBe("ready");
+});

@@ -105,14 +105,22 @@ export function HistoryMap(props: MapProps) {
               type: "fill",
               paint: {
                 "fill-color": ["get", "displayColor"],
-                "fill-opacity": 0.3,
+                "fill-opacity": ["get", "fillOpacity"],
               },
             });
             map.addLayer({
               id: "territory-border",
               source: "territories",
               type: "line",
-              filter: ["==", ["get", "approximate"], false],
+              filter: [
+                "all",
+                ["==", ["get", "approximate"], false],
+                [
+                  "in",
+                  ["get", "relation"],
+                  ["literal", ["control", "administration"]],
+                ],
+              ],
               paint: {
                 "line-color": ["get", "displayColor"],
                 "line-width": 1.5,
@@ -122,13 +130,38 @@ export function HistoryMap(props: MapProps) {
               id: "territory-uncertain",
               source: "territories",
               type: "line",
-              filter: ["==", ["get", "approximate"], true],
+              filter: [
+                "all",
+                ["==", ["get", "approximate"], true],
+                [
+                  "in",
+                  ["get", "relation"],
+                  ["literal", ["control", "administration"]],
+                ],
+              ],
               paint: {
                 "line-color": ["get", "displayColor"],
                 "line-width": 1.5,
                 "line-dasharray": [3, 2],
               },
             });
+            for (const [relation, dash] of [
+              ["vassal", [6, 3]],
+              ["influence", [1, 3]],
+              ["claim", [6, 2, 1, 2]],
+            ] as const) {
+              map.addLayer({
+                id: `territory-${relation}`,
+                source: "territories",
+                type: "line",
+                filter: ["==", ["get", "relation"], relation],
+                paint: {
+                  "line-color": ["get", "displayColor"],
+                  "line-width": 2.5,
+                  "line-dasharray": [...dash],
+                },
+              });
+            }
             map.on("click", "territory-fill", (e) => {
               const id = e.features?.[0]?.properties?.entityId;
               if (id) latest.current.onSelect({ kind: "entity", id });

@@ -41,3 +41,26 @@ it("不输出危险来源链接", () => {
   );
   expect(screen.queryByRole("link")).toBeNull();
 });
+it.each([
+  [299, "所选年份之外"],
+  [300, "始见于本年"],
+  [301, "持续事件"],
+  [302, "结束于本年"],
+  [303, "所选年份之外"],
+])("event phase at %i is accurate", (year, label) => {
+  const s = makeScene(year as number);
+  s.events[0].validity.endExclusive = {
+    earliest: "0303-01-01",
+    latest: "0303-01-01",
+  };
+  render(
+    <DetailPanel
+      scene={s}
+      selection={{ kind: "event", id: "test-event" }}
+      onSelect={() => {}}
+      onRequest={() => {}}
+      onClose={() => {}}
+    />,
+  );
+  expect(screen.getByText(label)).toBeTruthy();
+});

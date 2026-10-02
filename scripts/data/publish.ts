@@ -71,11 +71,52 @@ export async function publishDataset(
   } catch (e) {
     if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
   }
+  let defaultInterpretationIds: string[] = [];
+  try {
+    defaultInterpretationIds = JSON.parse(
+      await readFile(
+        join(inputRoot, "catalog/default-interpretations.json"),
+        "utf8",
+      ),
+    );
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+  }
+  if (
+    !Array.isArray(defaultInterpretationIds) ||
+    defaultInterpretationIds.some(
+      (id) => !interpretations.some((i) => i.id === id),
+    )
+  )
+    throw new Error("默认编制版本必须来自已发布解释版本");
+  if (features.length && !defaultInterpretationIds.length)
+    throw new Error("发布疆域前须明确默认编制版本");
+  for (const a of features.filter((t) =>
+    defaultInterpretationIds.includes(t.properties.interpretationId),
+  )) {
+    if (
+      features.some(
+        (b) =>
+          defaultInterpretationIds.includes(b.properties.interpretationId) &&
+          a.properties.entityId === b.properties.entityId &&
+          a.properties.relation === b.properties.relation &&
+          a.properties.interpretationId !== b.properties.interpretationId &&
+          a.properties.validity.start.earliest <
+            b.properties.validity.endExclusive.latest &&
+          b.properties.validity.start.earliest <
+            a.properties.validity.endExclusive.latest,
+      )
+    )
+      throw new Error("默认编制版本存在同政权同时段的不同解释，请选定一种");
+  }
   const manifest: Manifest = {
-    version: createHash("sha256").update(sourceText).digest("hex").slice(0, 16),
+    version: createHash("sha256")
+      .update(stable({ sourceText, interpretations, defaultInterpretationIds }))
+      .digest("hex")
+      .slice(0, 16),
     catalog: catalogResource,
     packages,
-    defaultInterpretationIds: interpretations.map((i) => i.id),
+    defaultInterpretationIds,
     scopeVersion: "1",
     searchIndex: await store("search", [
       ...new Map(entries.map((e) => [`${e.kind}:${e.id}`, e])).values(),

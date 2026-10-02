@@ -128,6 +128,7 @@ export interface Filters {
   nearbyReference: boolean;
 }
 export interface Query {
+  snapshotId?: Id | null;
   year: number;
   at: Day | null;
   filters: Filters;
@@ -142,6 +143,7 @@ export interface Scene {
   uncertainTerritoryIds: Id[];
   referenceYears: number[];
   territoryTimeLabels: Record<Id, string>;
+  snapshotChoices?: { id: Id; label: string }[];
   warnings: string[];
 }
 export interface SearchEntry {

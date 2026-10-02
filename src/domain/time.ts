@@ -47,3 +47,14 @@ export function entityActiveAt(e: import("./types").Entity, at: Day) {
     (v) => classifyAt(v, at) !== "outside",
   );
 }
+
+export function eventPhase(v: Validity, year: number) {
+  if (!overlapsYear(v, year)) return "所选年份之外";
+  const uncertain =
+    v.start.earliest !== v.start.latest ||
+    v.endExclusive.earliest !== v.endExclusive.latest;
+  if (uncertain) return "可能处于事件范围内";
+  if (year === yearOf(v.start.earliest)) return "始见于本年";
+  if (!overlapsYear(v, year + 1)) return "结束于本年";
+  return "持续事件";
+}

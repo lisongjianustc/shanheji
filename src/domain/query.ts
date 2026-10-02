@@ -32,7 +32,12 @@ function unique<T>(a: T[], id: (x: T) => string): T[] {
   }
   return [...m.values()];
 }
-export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
+export function queryScene(
+  c: Catalog,
+  packs: DataPackage[],
+  q: Query,
+  defaultInterpretationIds: string[] = [],
+): Scene {
   if (!Number.isInteger(q.year) || q.year < 220 || q.year > 907)
     throw new Error("年份必须在220—907之间");
   if (q.at && yearOf(parseDay(q.at)) !== q.year)
@@ -43,14 +48,21 @@ export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
     packs.flatMap((p) => p.territories),
     (t) => t.properties.id,
   ).filter((t) => t.properties.review.status === "verified");
+  const versions = f.interpretationIds.length
+    ? f.interpretationIds
+    : defaultInterpretationIds;
+  if (
+    !versions.length &&
+    new Set(all.map((t) => t.properties.interpretationId)).size > 1
+  )
+    throw new Error("存在多个编制版本，请先指定默认版本或选择版本");
   const allowed = all.filter(
     ({ properties: p }) =>
       (!f.regionIds.length ||
         p.regionIds.some((x) => f.regionIds.includes(x))) &&
       (!f.entityIds.length || f.entityIds.includes(p.entityId)) &&
       f.relations.includes(p.relation) &&
-      (!f.interpretationIds.length ||
-        f.interpretationIds.includes(p.interpretationId)),
+      (!versions.length || versions.includes(p.interpretationId)),
   );
   let territories = allowed.filter(({ properties: p }) =>
     p.temporalSupport === "snapshot"
@@ -59,7 +71,7 @@ export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
       : classifyAt(p.validity, at) !== "outside",
   );
   const referenceYears: number[] = [];
-  if (f.nearbyReference) {
+  if (f.nearbyReference && !q.at) {
     const groups = new Map<string, Territory[]>();
     for (const t of allowed.filter(
       (t) => t.properties.temporalSupport === "snapshot",
@@ -85,6 +97,47 @@ export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
       )[0];
       territories.push(chosen);
       referenceYears.push(chosen.properties.snapshotYear!);
+    }
+  }
+  const snapshotChoices: { id: string; label: string }[] = [];
+  let multiplePhases = false;
+  if (!q.at) {
+    const groups = new Map<string, Territory[]>();
+    for (const t of territories.filter(
+      (t) => t.properties.temporalSupport === "snapshot",
+    )) {
+      const p = t.properties,
+        key = `${p.entityId}/${p.relation}/${p.interpretationId}`;
+      groups.set(key, [...(groups.get(key) ?? []), t]);
+    }
+    for (const list of groups.values()) {
+      const signature = (t: Territory) =>
+        JSON.stringify([
+          t.properties.validity.start,
+          t.properties.validity.endExclusive,
+        ]);
+      const phases = [...new Map(list.map((t) => [signature(t), t])).values()];
+      if (phases.length < 2) continue;
+      multiplePhases = true;
+      snapshotChoices.push(
+        ...phases.map((t) => ({
+          id: t.properties.id,
+          label: `${c.entities.find((e) => e.id === t.properties.entityId)?.names[0]?.text ?? t.properties.entityId} · ${t.properties.validity.label}`,
+        })),
+      );
+      const chosen =
+        list.find((t) => t.properties.id === q.snapshotId) ??
+        phases.sort((a, b) =>
+          b.properties.validity.start.earliest.localeCompare(
+            a.properties.validity.start.earliest,
+          ),
+        )[0];
+      const excluded = new Set(
+        list
+          .filter((t) => signature(t) !== signature(chosen))
+          .map((t) => t.properties.id),
+      );
+      territories = territories.filter((t) => !excluded.has(t.properties.id));
     }
   }
   const events = unique(
@@ -120,6 +173,22 @@ export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
       (!f.regionIds.length || f.regionIds.includes(v.regionId)),
   );
   const warnings: string[] = [];
+  if (multiplePhases)
+    warnings.push("本年存在多个疆域阶段；每个政权默认显示较晚切片，可切换阶段");
+  if (
+    !q.at &&
+    new Set(
+      territories.map((t) =>
+        JSON.stringify([
+          t.properties.validity.start,
+          t.properties.validity.endExclusive,
+        ]),
+      ),
+    ).size > 1
+  )
+    warnings.push("本年资料，参考时点不一；各切片不代表同一瞬间");
+  if (q.at && f.nearbyReference)
+    warnings.push("具体日期模式仅显示该日有效资料，不使用近年参考切片");
   if (!territories.length)
     warnings.push(
       all.length && allowed.length === 0
@@ -148,6 +217,7 @@ export function queryScene(c: Catalog, packs: DataPackage[], q: Query): Scene {
       .map((t) => t.properties.id),
     referenceYears: [...new Set(referenceYears)].sort((a, b) => a - b),
     territoryTimeLabels,
+    snapshotChoices,
     warnings,
   };
 }

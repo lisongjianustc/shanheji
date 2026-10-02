@@ -10,7 +10,7 @@ async function year(page: Page, value: number) {
   await expect(page.getByTestId("committed-year")).toHaveText(String(value));
   await expect(page.getByTestId("scene-status")).toHaveText("已更新");
 }
-async function fixture(page: Page, corrupt = false) {
+async function fixture(page: Page, corrupt = false, temporal = false) {
   const catalog = makeCatalog(),
     pack = makePackage();
   pack.events.push({
@@ -26,6 +26,32 @@ async function fixture(page: Page, corrupt = false) {
     existence: time(618),
     names: [{ ...catalog.entities[0].names[0], validity: time(618) }],
   });
+  if (temporal) {
+    const a = pack.territories[0];
+    Object.assign(a.properties, {
+      temporalSupport: "snapshot",
+      snapshotYear: 300,
+      validity: {
+        ...time(),
+        endExclusive: { earliest: "0300-07-01", latest: "0300-07-01" },
+        label: "300年上半年切片",
+      },
+    });
+    const b = structuredClone(a);
+    b.properties.id = "test-later";
+    b.properties.validity = {
+      ...time(),
+      start: { earliest: "0300-07-01", latest: "0300-07-01" },
+      label: "300年下半年切片",
+    };
+    pack.territories.push(b);
+    pack.events[0].validity = {
+      start: { earliest: "0300-05-01", latest: "0300-05-01" },
+      endExclusive: { earliest: "0300-05-02", latest: "0300-05-02" },
+      precision: "day",
+      label: "300年5月1日",
+    };
+  }
   const resources = new Map<string, string>();
   const store = (path: string, value: unknown) => {
     const body = JSON.stringify(value);
@@ -179,7 +205,7 @@ test("手机抽屉与时间轴不重叠，事件来源可关闭", async ({ page 
   );
 });
 
-test("快速跨年份与地图底图失败仍保持最终选择", async ({ page }) => {
+test("快速跨年份且WebGL关闭仍保持最终选择", async ({ page }) => {
   await page.addInitScript(() =>
     Object.defineProperty(window, "WebGLRenderingContext", {
       value: undefined,
@@ -203,4 +229,42 @@ test("快速跨年份与地图底图失败仍保持最终选择", async ({ page 
   await expect(page.getByTestId("committed-year")).toHaveText("383");
   await expect(page.getByTestId("scene-status")).toHaveText("已更新");
   await expect(page.locator(".event-card")).toContainText("淝水之战");
+});
+
+test("WebGL可用时底图请求失败仍可查看历史条目", async ({ page }) => {
+  let requested = 0;
+  await page.route("**/basemap/**", (route) => {
+    requested++;
+    return route.abort();
+  });
+  await page.goto("/");
+  await expect(
+    page.getByText("自然地理底图加载失败；历史条目仍可查阅。"),
+  ).toBeVisible({ timeout: 20000 });
+  expect(requested).toBeGreaterThan(0);
+  await year(page, 383);
+  await expect(page.locator(".event-card")).toContainText("淝水之战");
+});
+test("同年阶段不叠加且精确事件查询早期切片", async ({ page }) => {
+  await fixture(page, false, true);
+  await page.goto("/");
+  await year(page, 300);
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "疆域参考：300年下半年切片",
+  );
+  await page
+    .getByLabel("疆域阶段", { exact: true })
+    .selectOption("test-territory");
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "疆域参考：300年上半年切片",
+  );
+  await page.getByLabel("疆域阶段", { exact: true }).selectOption("");
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "疆域参考：300年下半年切片",
+  );
+  await page.locator(".event-card").filter({ hasText: "测试事件" }).click();
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "疆域参考：300年上半年切片",
+  );
+  await expect(page.getByLabel("疆域阶段", { exact: true })).toHaveCount(0);
 });

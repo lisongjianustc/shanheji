@@ -6,8 +6,15 @@ import type {
   HistoricalEvent,
 } from "../../domain/types";
 import type { Selection } from "../../state/controller";
-import { entityActiveAt, nameAt, yearOf, yearSpan } from "../../domain/time";
+import {
+  entityActiveAt,
+  nameAt,
+  yearOf,
+  yearSpan,
+  eventPhase,
+} from "../../domain/time";
 import { eventLabels, buildEventLocations } from "./eventModel";
+import { relationLabels } from "../coverage/CoveragePanel";
 export interface DetailProps {
   scene: Scene;
   selection: Selection | null;
@@ -111,13 +118,7 @@ export function DetailPanel(p: DetailProps) {
           <p className="detail-date">{event.validity.label}</p>
           <div className="detail-tags">
             <span>{eventLabels[event.kind]}</span>
-            <span>
-              {scene.query.year === yearOf(event.validity.start.earliest)
-                ? "始见于本年"
-                : scene.query.year < yearOf(event.validity.endExclusive.latest)
-                  ? "持续事件"
-                  : "所选年份之外"}
-            </span>
+            <span>{eventPhase(event.validity, scene.query.year)}</span>
           </div>
           <p className="detail-summary">{event.summary}</p>
           {event.account && (
@@ -266,6 +267,7 @@ export function DetailPanel(p: DetailProps) {
               .filter((t) => t.properties.entityId === entity.id)
               .map((t) => (
                 <p key={t.properties.id}>
+                  {relationLabels[t.properties.relation]} ·{" "}
                   {t.properties.validity.label} ·{" "}
                   {t.properties.compilation.errorNote}
                 </p>

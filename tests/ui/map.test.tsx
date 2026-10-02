@@ -25,3 +25,11 @@ it("preserves identity and uncertainty in rendered territory features", () => {
   expect(f?.properties?.displayColor).toBe("#567766");
   expect(f?.properties?.approximate).toBe(true);
 });
+it("does not fill claims or vassal relations as controlled territory", () => {
+  const s = makeScene();
+  s.territories = makePackage().territories;
+  for (const relation of ["claim", "vassal", "influence"] as const) {
+    s.territories[0].properties.relation = relation;
+    expect(buildTerritoryLayers(s).features[0].properties?.fillOpacity).toBe(0);
+  }
+});

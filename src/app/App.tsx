@@ -15,7 +15,7 @@ import type { Manifest } from "../data/manifest";
 import { createHistoryController, type Selection } from "../state/controller";
 import { useHistory } from "../state/useHistory";
 import { defaultQuery } from "../domain/query";
-import { classifyAt, nameAt, entityActiveInYear } from "../domain/time";
+import { nameAt, entityActiveInYear, yearOf } from "../domain/time";
 import type { Catalog, SearchEntry, Query } from "../domain/types";
 const emptyCatalog: Catalog = { sources: [], entities: [], places: [] };
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
     [sidebarOpen, setSidebarOpen] = useState(false),
     [overviewError, setOverviewError] = useState("");
   const timelineRef = useRef<HTMLDivElement>(null),
-    lastRequest = useRef(defaultQuery());
+    lastRequest = useRef({ query: defaultQuery(), requireTerritory: false });
   const loadOverview = (signal: AbortSignal) =>
     repository
       .overview(signal)
@@ -72,9 +72,10 @@ export default function App() {
   }, []);
   const scene = state.committed,
     query = scene?.query ?? defaultQuery();
-  const request = (q: Query) => {
-    lastRequest.current = q;
-    void controller.request(q);
+  const request = (q: Query, requireTerritory = false) => {
+    if (q.year !== scene?.query.year) q = { ...q, snapshotId: null };
+    lastRequest.current = { query: q, requireTerritory };
+    void controller.request(q, { requireTerritory });
   };
   const select = (s: Selection) => {
     controller.select(s);
@@ -85,14 +86,17 @@ export default function App() {
       scene &&
       e?.validity.precision === "day" &&
       e.validity.start.earliest === e.validity.start.latest &&
-      scene.query.at !== e.validity.start.earliest &&
-      scene.territories.some(
-        (t) =>
-          classifyAt(t.properties.validity, e.validity.start.earliest) ===
-          "certain",
-      )
+      scene.query.at !== e.validity.start.earliest
     )
-      request({ ...scene.query, at: e.validity.start.earliest });
+      request(
+        {
+          ...scene.query,
+          year: yearOf(e.validity.start.earliest),
+          at: e.validity.start.earliest,
+          snapshotId: null,
+        },
+        true,
+      );
   };
   const choose = (e: SearchEntry) => {
     select({ id: e.id, kind: e.kind });
@@ -173,7 +177,44 @@ export default function App() {
           </div>
           {scene && (
             <div className="coverage-banner">
-              {scene.warnings[0] ?? "显示已核验资料"}
+              {scene.warnings.join("；") || "显示已核验资料"}
+              {!!scene.territories.length && (
+                <span>
+                  疆域参考：
+                  {[...new Set(Object.values(scene.territoryTimeLabels))].join(
+                    "；",
+                  )}
+                </span>
+              )}
+              {!!scene.snapshotChoices?.length && (
+                <label>
+                  疆域阶段{" "}
+                  <select
+                    aria-label="疆域阶段"
+                    value={query.snapshotId ?? ""}
+                    onChange={(e) =>
+                      request({
+                        ...query,
+                        at: null,
+                        snapshotId: e.target.value || null,
+                      })
+                    }
+                  >
+                    <option value="">各政权较晚切片</option>
+                    {scene.snapshotChoices.map((c) => (
+                      <option key={c.id} value={c.id}>
+                        {c.label}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              )}
+              {!!scene.territories.length && (
+                <span>
+                  实控：实色 · 行政：浅色 · 朝贡／藩属：长虚线 · 影响：点线 ·
+                  主张：点划线；空心范围不表示实际控制
+                </span>
+              )}
               <span>
                 {scene.referenceYears.length
                   ? `参考切片年份：${scene.referenceYears.join("、")} · `
@@ -330,7 +371,10 @@ export default function App() {
             <button
               onClick={() => {
                 void loadOverview(new AbortController().signal);
-                request(lastRequest.current);
+                request(
+                  lastRequest.current.query,
+                  lastRequest.current.requireTerritory,
+                );
               }}
             >
               重新加载
