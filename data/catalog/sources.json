@@ -119,5 +119,60 @@
     "license": "原网页保留权利；仅采用事实并独立编写摘要",
     "redistribution": "unknown",
     "permissionEvidence": "只发布独立事实条目及链接；未复制原文、原图或受限数据集。"
+  },
+  {
+    "id": "commons-kanguole-tang-661",
+    "title": "唐661年范围图（存在边界争议）",
+    "creator": "Kanguole；Wikimedia Commons",
+    "edition": "SVG原文件2024-03-27；来源说明页2026-10-03核对",
+    "url": "https://commons.wikimedia.org/wiki/File:Tang_outline_map,_661.svg",
+    "accessedAt": "2026-10-03",
+    "license": "CC BY-SA 4.0；本项目转换的GIS几何亦按同许可提供",
+    "redistribution": "allowed",
+    "permissionEvidence": "来源页Licensing明确列出CC BY-SA 4.0；作者署名及许可链接保留。https://creativecommons.org/licenses/by-sa/4.0/ 原SVG在data/sources/commons/，转换及限制见编制记录。"
+  },
+  {
+    "id": "commons-three-kingdoms-262",
+    "title": "三国州郡参考图",
+    "creator": "Zhoudadudu",
+    "edition": "2023-11-24原图的Commons 3840px缩略版；只缩小像素，未修改图形",
+    "url": "https://commons.wikimedia.org/wiki/File:ThreeKingdoms262.png",
+    "accessedAt": "2026-10-04",
+    "license": "CC BY-SA 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons文件页Licensing；遵守署名及相同方式共享，保留版本与修改说明。"
+  },
+  {
+    "id": "commons-china-572",
+    "title": "南北朝后期州域参考图",
+    "creator": "SY（Seasonsinthesun）；Sgnpkd修订",
+    "edition": "2020-04-29 17:54 UTC修订版",
+    "url": "https://commons.wikimedia.org/wiki/File:China_Divisions_in_572.png",
+    "accessedAt": "2026-10-04",
+    "license": "CC BY-SA 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons文件页Licensing；遵守署名及相同方式共享，保留版本与修改说明。"
+  },
+  {
+    "id": "commons-china-610",
+    "title": "隋朝疆域与政区参考图",
+    "creator": "Yug；Manlleus等译者",
+    "edition": "2026-09-21 08:15 UTC文件版",
+    "url": "https://commons.wikimedia.org/wiki/File:China,_610.svg",
+    "accessedAt": "2026-10-04",
+    "license": "CC BY-SA 3.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons文件页Licensing；遵守署名及相同方式共享，保留版本与修改说明。"
+  },
+  {
+    "id": "commons-china-742",
+    "title": "唐朝疆域与道参考图",
+    "creator": "Yug；Kanguole西部范围修订",
+    "edition": "2020-03-12 01:45 UTC恢复的2012修订版",
+    "url": "https://commons.wikimedia.org/wiki/File:China,_742.svg",
+    "accessedAt": "2026-10-04",
+    "license": "CC BY-SA 3.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons文件页Licensing；遵守署名及相同方式共享，保留版本与修改说明。"
   }
 ]

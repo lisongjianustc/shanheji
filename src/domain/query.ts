@@ -64,12 +64,14 @@ export function queryScene(
       f.relations.includes(p.relation) &&
       (!versions.length || versions.includes(p.interpretationId)),
   );
-  let territories = allowed.filter(({ properties: p }) =>
+  const matchesTime = ({ properties: p }: Territory) =>
     p.temporalSupport === "snapshot"
       ? p.snapshotYear === q.year &&
-        (!q.at || classifyAt(p.validity, at) !== "outside")
-      : classifyAt(p.validity, at) !== "outside",
-  );
+        (!q.at ||
+          (p.validity.precision !== "year" &&
+            classifyAt(p.validity, at) !== "outside"))
+      : classifyAt(p.validity, at) !== "outside";
+  let territories = allowed.filter(matchesTime);
   const referenceYears: number[] = [];
   if (f.nearbyReference && !q.at) {
     const groups = new Map<string, Territory[]>();
@@ -95,7 +97,11 @@ export function queryScene(
             Math.abs(b.properties.snapshotYear! - q.year) ||
           a.properties.snapshotYear! - b.properties.snapshotYear!,
       )[0];
-      territories.push(chosen);
+      territories.push(
+        ...list.filter(
+          (t) => t.properties.snapshotYear === chosen.properties.snapshotYear,
+        ),
+      );
       referenceYears.push(chosen.properties.snapshotYear!);
     }
   }
@@ -173,6 +179,8 @@ export function queryScene(
       (!f.regionIds.length || f.regionIds.includes(v.regionId)),
   );
   const warnings: string[] = [];
+  if (territories.some((t) => t.properties.spatialPrecision === "disputed"))
+    warnings.push("本来源版本存在边界争议；行政与主张范围不等于已证实实控疆域");
   if (multiplePhases)
     warnings.push("本年存在多个疆域阶段；每个政权默认显示较晚切片，可切换阶段");
   if (
@@ -191,7 +199,13 @@ export function queryScene(
     warnings.push("具体日期模式仅显示该日有效资料，不使用近年参考切片");
   if (!territories.length)
     warnings.push(
-      all.length && allowed.length === 0
+      all.some(
+        (t) =>
+          matchesTime(t) ||
+          (f.nearbyReference &&
+            !q.at &&
+            t.properties.temporalSupport === "snapshot"),
+      )
         ? "当前筛选条件下没有疆域记录"
         : "当前年份缺少可用疆域资料",
     );

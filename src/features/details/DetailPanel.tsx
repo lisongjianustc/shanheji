@@ -319,6 +319,20 @@ export function DetailPanel(p: DetailProps) {
                 <span>{s?.title ?? "来源待核"}</span>
               )}
               <small>{r.locator}</small>
+              {s && (
+                <small>
+                  {s.creator} · {s.license}
+                </small>
+              )}
+              {s?.license.startsWith("CC BY-SA 4.0") && (
+                <a
+                  href="https://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  许可条款（转换几何同许可）
+                </a>
+              )}
               {r.note && <p>{r.note}</p>}
             </div>
           );

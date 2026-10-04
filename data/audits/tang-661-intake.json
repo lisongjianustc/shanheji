@@ -1,0 +1,25 @@
+{
+  "input": "data/sources/commons/tang-661.svg",
+  "sha256": "2c04b2d23d26cbc505d52b4d842f7906395cab4a9f984da44b29b2c8a81bfeee",
+  "features": 3,
+  "interpretationId": "kanguole-661-disputed",
+  "relations": [
+    "administration",
+    "administration",
+    "claim"
+  ],
+  "excluded": "admin_client的朝鲜半岛单独多边形；关系口径待复核",
+  "historicalAccuracy": "disputed",
+  "checked": "source geometry and layer interpretation only",
+  "geographicBounds": [
+    61,
+    16,
+    130,
+    50
+  ],
+  "inverseScale": [
+    18.672076113398028,
+    22.263898158654715
+  ],
+  "output": "data/derived/tang-661.geojson"
+}

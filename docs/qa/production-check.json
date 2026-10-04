@@ -1,7 +1,15 @@
 {
-  "checkedAt": "2026-10-02T14:31:36.525Z",
+  "checkedAt": "2026-10-04T05:45:16.317Z",
   "url": "http://127.0.0.1:4174",
-  "year": 460,
+  "years": [
+    460,
+    661
+  ],
   "workerVerified": true,
+  "disputedAdministrationVisible": true,
+  "claimsOffByDefault": true,
+  "mobileNoOverflow": true,
+  "referencePlateYear": 742,
+  "referencePlateLoaded": true,
   "errors": []
 }

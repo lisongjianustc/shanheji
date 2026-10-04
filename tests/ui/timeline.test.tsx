@@ -63,3 +63,21 @@ it("stops playback at the right endpoint", () => {
   vi.advanceTimersByTime(1000);
   expect(playing).toBe(false);
 });
+it("pauses on an available territory evidence year", () => {
+  vi.useFakeTimers();
+  const onPlaying = vi.fn(),
+    onRequest = vi.fn();
+  render(
+    <Timeline
+      state={{ ...makeReadyState(660), playing: true }}
+      catalog={makeCatalog()}
+      territoryYears={[661]}
+      onPreview={() => {}}
+      onRequest={onRequest}
+      onPlaying={onPlaying}
+    />,
+  );
+  vi.advanceTimersByTime(1000);
+  expect(onRequest.mock.calls[0][0].year).toBe(661);
+  expect(onPlaying).toHaveBeenCalledWith(false);
+});

@@ -9,9 +9,11 @@ import {
 } from "../features/details/eventModel";
 import { SearchPanel } from "../features/search/SearchPanel";
 import { FilterPanel } from "../features/search/FilterPanel";
+import { MapPlateViewer } from "../features/coverage/MapPlateViewer";
+import { TerritoryPanel } from "../features/coverage/TerritoryPanel";
 import { CoveragePanel } from "../features/coverage/CoveragePanel";
 import { createRepository } from "../data/repository";
-import type { Manifest } from "../data/manifest";
+import type { Manifest, MapPlate } from "../data/manifest";
 import { createHistoryController, type Selection } from "../state/controller";
 import { useHistory } from "../state/useHistory";
 import { defaultQuery } from "../domain/query";
@@ -32,6 +34,7 @@ export default function App() {
     [tab, setTab] = useState("events"),
     [sidebarOpen, setSidebarOpen] = useState(false),
     [overviewError, setOverviewError] = useState("");
+  const [plate, setPlate] = useState<MapPlate | null>(null);
   const timelineRef = useRef<HTMLDivElement>(null),
     lastRequest = useRef({ query: defaultQuery(), requireTerritory: false });
   const loadOverview = (signal: AbortSignal) =>
@@ -139,6 +142,13 @@ export default function App() {
   const locations = scene ? buildEventLocations(scene) : null;
   return (
     <div className="app">
+      {plate && (
+        <MapPlateViewer
+          key={plate.id}
+          plate={plate}
+          onClose={() => setPlate(null)}
+        />
+      )}
       <header className="masthead">
         <div className="brand">
           <span className="brand-seal" aria-hidden="true">
@@ -264,6 +274,7 @@ export default function App() {
             {[
               ["events", "本年事件"],
               ["entities", "并行政权"],
+              ["territories", "疆域图幅"],
               ["coverage", "资料覆盖"],
             ].map(([id, label]) => (
               <button
@@ -356,6 +367,26 @@ export default function App() {
                 )}
               </>
             )}
+            {tab === "territories" && scene && (
+              <TerritoryPanel
+                scene={scene}
+                slices={manifest?.territorySlices ?? []}
+                interpretations={manifest?.interpretations ?? []}
+                plates={manifest?.mapPlates ?? []}
+                onOpenPlate={(p) => {
+                  controller.setPlaying(false);
+                  controller.select(null);
+                  setPlate(p);
+                  request({ ...defaultQuery(), year: p.year });
+                }}
+                onRequest={(q) => {
+                  controller.setPlaying(false);
+                  controller.select(null);
+                  setSidebarOpen(false);
+                  request(q);
+                }}
+              />
+            )}
             {tab === "coverage" && scene && <CoveragePanel scene={scene} />}
           </div>
           <div className="browse-foot">
@@ -398,6 +429,22 @@ export default function App() {
           onPreview={controller.preview}
           onRequest={request}
           onPlaying={controller.setPlaying}
+          territoryYears={(manifest?.territorySlices ?? [])
+            .filter(
+              (s) =>
+                (!query.filters.entityIds.length ||
+                  query.filters.entityIds.includes(s.entityId)) &&
+                (!query.filters.regionIds.length ||
+                  s.regionIds.some((r) =>
+                    query.filters.regionIds.includes(r),
+                  )) &&
+                (!query.filters.interpretationIds.length ||
+                  query.filters.interpretationIds.includes(
+                    s.interpretationId,
+                  )) &&
+                s.relations.some((r) => query.filters.relations.includes(r)),
+            )
+            .map((s) => s.year)}
           eventYears={eventYears.sort((a, b) => a - b)}
           onEntity={(id) => select({ kind: "entity", id })}
         />

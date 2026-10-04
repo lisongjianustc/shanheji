@@ -5,7 +5,9 @@ import { pathToFileURL } from "node:url";
 import { spawnSync } from "node:child_process";
 import { readDataset, validateDataset, stable } from "./validate";
 import type { Manifest, Resource } from "../../src/data/manifest";
+import { mapPlateSchema } from "../../src/data/manifest";
 import { buildSearchIndex } from "../../src/features/search/index";
+import { buildTerritorySlices } from "../../src/domain/territorySlices";
 export async function publishDataset(
   inputRoot: string,
   outputRoot: string,
@@ -122,7 +124,57 @@ export async function publishDataset(
       ...new Map(entries.map((e) => [`${e.kind}:${e.id}`, e])).values(),
     ]),
     interpretations,
+    territorySlices: buildTerritorySlices(features),
   };
+  let plateInputs: unknown[] = [];
+  try {
+    plateInputs = JSON.parse(
+      await readFile(join(inputRoot, "catalog/map-plates.json"), "utf8"),
+    );
+  } catch (e) {
+    if ((e as NodeJS.ErrnoException).code !== "ENOENT") throw e;
+  }
+  if (!Array.isArray(plateInputs)) throw new Error("参考图幅目录必须为数组");
+  const mapPlates: NonNullable<Manifest["mapPlates"]> = [];
+  for (const value of plateInputs) {
+    const { file, sha256, ...metadata } = value as Record<string, unknown>;
+    if (
+      typeof file !== "string" ||
+      !/^sources\/commons\/[a-z0-9-]+\.(png|svg)$/.test(file)
+    )
+      throw new Error("参考图幅路径不合法");
+    const bytes = await readFile(join(inputRoot, file));
+    const actualHash = createHash("sha256").update(bytes).digest("hex");
+    if (actualHash !== sha256) throw new Error(`参考图幅校验失败：${file}`);
+    const path = `plate-${actualHash.slice(0, 16)}.${file.split(".").pop()}`;
+    const plate = mapPlateSchema.parse({
+      ...metadata,
+      image: { path, sha256: actualHash },
+    });
+    const source = catalog.sources.find((s) => s.id === plate.sourceId);
+    if (
+      !source ||
+      source.redistribution !== "allowed" ||
+      source.license !== plate.license
+    )
+      throw new Error(`参考图幅来源或许可未核对：${plate.id}`);
+    if (mapPlates.some((p) => p.id === plate.id))
+      throw new Error("参考图幅编号重复");
+    await writeFile(join(outputRoot, path), bytes);
+    mapPlates.push(plate);
+  }
+  manifest.mapPlates = mapPlates;
+  manifest.version = createHash("sha256")
+    .update(
+      stable({
+        sourceText,
+        interpretations,
+        defaultInterpretationIds,
+        mapPlates,
+      }),
+    )
+    .digest("hex")
+    .slice(0, 16);
   const temporary = join(outputRoot, `.manifest-${randomUUID()}.json`);
   await writeFile(temporary, JSON.stringify(manifest, null, 2));
   await rename(temporary, join(outputRoot, "manifest.json"));

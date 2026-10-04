@@ -1,8 +1,8 @@
 {
-  "version": "0c1673e30548b5fb",
+  "version": "6068e3c31ddea0c2",
   "catalog": {
-    "path": "catalog-e562c7b652df1b57.json",
-    "sha256": "e562c7b652df1b57b68ec8cfa57702aae522ffeb5d4bdb7d80d9f3c3f16bc63c"
+    "path": "catalog-5efcd06d0f79ab1d.json",
+    "sha256": "5efcd06d0f79ab1dafc649cac82379dd1b1f4a19976b7d83e23c9efa5d95f202"
   },
   "packages": [
     {
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "path": "package-cb380021e2449075.json",
-      "sha256": "cb380021e2449075038d21d01fed82bb243cf03d36ea07cede47745693c066fd",
+      "path": "package-08cbe4c9b70758db.json",
+      "sha256": "08cbe4c9b70758dbce181a0d029aa524811cd8f302787f6b45d1692864aa48b7",
       "id": "sui-early-tang",
-      "version": "0.1.0-partial",
+      "version": "2",
       "startYear": 581,
       "endYear": 755,
       "regionIds": [
@@ -91,11 +91,114 @@
       ]
     }
   ],
-  "defaultInterpretationIds": [],
+  "defaultInterpretationIds": [
+    "kanguole-661-disputed"
+  ],
   "scopeVersion": "1",
   "searchIndex": {
     "path": "search-435b5020e734920d.json",
     "sha256": "435b5020e734920dd37fdc2173fcd0ca7ffee42c0c0feedb9b2f4fe2ba8e9c7b"
   },
-  "interpretations": []
+  "interpretations": [
+    {
+      "id": "kanguole-661-disputed",
+      "label": "Kanguole 661年图幅（争议版）",
+      "reason": "按来源图幅分离民政、军事行政与西部主张；原图准确性有争议。行政范围不表示持续实控，默认不显示主张。",
+      "evidence": [
+        {
+          "sourceId": "commons-kanguole-tang-661",
+          "locator": "Summary、Map legend、Geotemporal data、Licensing及Disputed标注",
+          "note": "只复核来源图幅与坐标转换，未独立验证书籍原图。"
+        }
+      ]
+    }
+  ],
+  "territorySlices": [
+    {
+      "year": 661,
+      "entityId": "tang",
+      "interpretationId": "kanguole-661-disputed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "administration",
+        "claim"
+      ],
+      "featureCount": 3,
+      "disputed": true
+    }
+  ],
+  "mapPlates": [
+    {
+      "id": "three-kingdoms-262",
+      "year": 262,
+      "title": "三国州郡参考图",
+      "sourceId": "commons-three-kingdoms-262",
+      "creator": "Zhoudadudu",
+      "edition": "2023-11-24原图的Commons 3840px缩略版；只缩小像素，未修改图形",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThreeKingdoms262.png",
+      "limitations": "原作者据《中国历史地图集》及HydroSHEDS绘制州郡与郡治。颜色表示州级区划，不能直接当作魏蜀吴实控边界；未配准，未逐项核对地图集原图。",
+      "width": 3840,
+      "height": 2715,
+      "image": {
+        "path": "plate-a2092d3bc8b6b7ef.png",
+        "sha256": "a2092d3bc8b6b7ef05df4e0f4ad691a04050742eeb70840f025f0110dbf981f5"
+      }
+    },
+    {
+      "id": "china-572",
+      "year": 572,
+      "title": "南北朝后期州域参考图",
+      "sourceId": "commons-china-572",
+      "creator": "SY（Seasonsinthesun）；Sgnpkd修订",
+      "edition": "2020-04-29 17:54 UTC修订版",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:China_Divisions_in_572.png",
+      "limitations": "原作者绘制陈、北齐、北周时期州域；2020年修订交趾归属。未标注所据图幅及配准参数，边界与周边范围仍待核对。",
+      "width": 1588,
+      "height": 1123,
+      "image": {
+        "path": "plate-1e02269e7b9d08b8.png",
+        "sha256": "1e02269e7b9d08b820c8859989422315a2067577d377c6a4af445713a42611ea"
+      }
+    },
+    {
+      "id": "china-610",
+      "year": 610,
+      "title": "隋朝疆域与政区参考图",
+      "sourceId": "commons-china-610",
+      "creator": "Yug；Manlleus等译者",
+      "edition": "2026-09-21 08:15 UTC文件版",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_610.svg",
+      "limitations": "原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。未配准，未独立核对书籍图幅。",
+      "width": 1000,
+      "height": 850,
+      "image": {
+        "path": "plate-099c7e9e314f9513.svg",
+        "sha256": "099c7e9e314f95136fe460e63e779d3a2fa3a598a25dd0cbdea6352abe0d7dd1"
+      }
+    },
+    {
+      "id": "china-742",
+      "year": 742,
+      "title": "唐朝疆域与道参考图",
+      "sourceId": "commons-china-742",
+      "creator": "Yug；Kanguole西部范围修订",
+      "edition": "2020-03-12 01:45 UTC恢复的2012修订版",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_742.svg",
+      "limitations": "主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径，未配准、未独立核对原书，不代表742年完整实控边界。",
+      "width": 1000,
+      "height": 850,
+      "image": {
+        "path": "plate-d3dc48a4630d27b0.svg",
+        "sha256": "d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08"
+      }
+    }
+  ]
 }

@@ -21,12 +21,42 @@ export interface MapProps {
   selected?: Selection | null;
 }
 const empty = { type: "FeatureCollection" as const, features: [] };
+function fitTerritories(map: MapInstance, scene: Scene | null) {
+  if (!scene?.territories.length) return false;
+  let west = Infinity,
+    east = -Infinity,
+    south = Infinity,
+    north = -Infinity;
+  for (const t of scene.territories) {
+    const polygons =
+      t.geometry.type === "Polygon"
+        ? [t.geometry.coordinates]
+        : t.geometry.coordinates;
+    for (const polygon of polygons)
+      for (const [x, y] of polygon[0]) {
+        west = Math.min(west, x);
+        east = Math.max(east, x);
+        south = Math.min(south, y);
+        north = Math.max(north, y);
+      }
+  }
+  if (!Number.isFinite(west)) return false;
+  map.fitBounds(
+    [
+      [west, south],
+      [east, north],
+    ],
+    { padding: 50, maxZoom: 5, duration: 0 },
+  );
+  return true;
+}
 export function HistoryMap(props: MapProps) {
   const host = useRef<HTMLDivElement>(null),
     mapRef = useRef<MapInstance | null>(null),
     latest = useRef(props);
   latest.current = props;
   const markers = useRef<Marker[]>([]);
+  const framedTerritories = useRef("");
   const [ready, setReady] = useState(false),
     [error, setError] = useState(""),
     [basemapError, setBasemapError] = useState(false);
@@ -174,7 +204,13 @@ export function HistoryMap(props: MapProps) {
             });
             setReady(true);
           });
-          observer = new ResizeObserver(() => map.resize());
+          observer = new ResizeObserver(() => {
+            map.resize();
+            fitTerritories(
+              map,
+              latest.current.pending?.scene ?? latest.current.scene,
+            );
+          });
           observer.observe(host.current);
         } catch (e) {
           fail(e instanceof Error ? e.message : "无法创建地图");
@@ -201,6 +237,14 @@ export function HistoryMap(props: MapProps) {
     (map.getSource("territories") as GeoJSONSource).setData(
       buildTerritoryLayers(scene),
     );
+    const frameKey = scene.territories
+      .map((t) => t.properties.id)
+      .sort()
+      .join("/");
+    if (frameKey && frameKey !== framedTerritories.current) {
+      fitTerritories(map, scene);
+    }
+    framedTerritories.current = frameKey;
     const locations = buildEventLocations(scene);
     (map.getSource("event-areas") as GeoJSONSource).setData(
       locations.areaFeatures,
@@ -367,15 +411,17 @@ export function HistoryMap(props: MapProps) {
       </div>
       <button
         className="map-reset"
-        onClick={() =>
-          mapRef.current?.easeTo({
-            center: [108, 35],
-            zoom: 3.35,
-            duration: matchMedia("(prefers-reduced-motion: reduce)").matches
-              ? 0
-              : 500,
-          })
-        }
+        onClick={() => {
+          const map = mapRef.current;
+          if (map && !fitTerritories(map, props.scene))
+            map.easeTo({
+              center: [108, 35],
+              zoom: 3.35,
+              duration: matchMedia("(prefers-reduced-motion: reduce)").matches
+                ? 0
+                : 500,
+            });
+        }}
       >
         回到全图
       </button>

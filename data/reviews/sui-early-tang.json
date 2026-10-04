@@ -145,5 +145,24 @@
     "完整重大事件清单",
     "都城与事件坐标补核",
     "十六国部分政权起讫与中断期异说"
+  ],
+  "intakes": [
+    {
+      "date": "2026-10-03",
+      "ids": [
+        "tang-661-civil",
+        "tang-661-military",
+        "tang-661-western-claim"
+      ],
+      "decision": "source-geometry-checked-historical-accuracy-disputed",
+      "evidence": [
+        {
+          "sourceId": "commons-kanguole-tang-661",
+          "locator": "Summary、Map legend、Geotemporal data、Licensing及Disputed标注",
+          "note": "只复核来源图幅与坐标转换，未独立验证书籍原图。"
+        }
+      ],
+      "limitation": "图幅一致性核对不代表历史专家审定；保持包status=incomplete。"
+    }
   ]
 }

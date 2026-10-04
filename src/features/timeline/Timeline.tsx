@@ -10,6 +10,7 @@ export interface TimelineProps {
   onRequest: (q: Query) => void;
   onPlaying: (v: boolean) => void;
   eventYears?: number[];
+  territoryYears?: number[];
   onEntity?: (id: string) => void;
 }
 export const periods = [
@@ -52,7 +53,11 @@ export function Timeline(p: TimelineProps) {
       const next = year + 1;
       const c = current.current;
       c.onRequest({ ...c.state.committed!.query, year: next, at: null });
-      if (autoPause && c.eventYears?.includes(next)) c.onPlaying(false);
+      if (
+        autoPause &&
+        (c.eventYears?.includes(next) || c.territoryYears?.includes(next))
+      )
+        c.onPlaying(false);
     }, 1000 / speed);
     return () => clearTimeout(timer);
   }, [state.playing, state.status, year, speed, autoPause]);
@@ -139,7 +144,7 @@ export function Timeline(p: TimelineProps) {
               checked={autoPause}
               onChange={(e) => setAutoPause(e.target.checked)}
             />
-            事件处暂停
+            {p.territoryYears?.length ? "事件／疆域资料处暂停" : "事件处暂停"}
           </label>
           <button
             aria-expanded={expanded}

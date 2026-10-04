@@ -1170,3 +1170,123 @@ p {
     max-height: 24vh;
   }
 }
+
+.coverage-banner select {
+  pointer-events: auto;
+  max-width: 100%;
+}
+.territory-panel h2 {
+  font-family: var(--serif);
+  font-size: 21px;
+}
+.territory-slice {
+  border: 1px solid var(--line);
+  padding: 14px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+.territory-slice strong {
+  color: var(--accent);
+}
+.territory-slice p {
+  line-height: 1.65;
+  font-size: 13px;
+}
+.territory-slice small {
+  color: var(--muted);
+  font-size: 11px;
+}
+.territory-slice > button {
+  padding: 8px 12px;
+  color: #faf9f3;
+  background: var(--accent);
+}
+
+.plate-viewer {
+  width: min(1200px, calc(100vw - 40px));
+  height: calc(100dvh - 40px);
+  max-height: calc(100dvh - 40px);
+  max-width: none;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--ink);
+}
+.plate-viewer[open] {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plate-viewer::backdrop {
+  background: #20352f99;
+}
+.plate-viewer header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.plate-viewer h2 {
+  margin: 5px 0 0;
+  font-family: var(--serif);
+  font-size: 23px;
+}
+.plate-viewer button {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.plate-viewer button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.plate-limits {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+}
+.plate-tools {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+.plate-image-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  background: #eeeedd;
+  border: 1px solid var(--line);
+}
+.plate-image-scroll img {
+  max-width: none;
+  height: auto;
+  display: block;
+}
+.plate-viewer footer {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.plate-viewer footer p {
+  margin: 0;
+}
+.territory-slice > small {
+  display: block;
+  margin-top: 8px;
+}
+@media (max-width: 600px) {
+  .plate-viewer {
+    width: calc(100vw - 16px);
+    height: calc(100dvh - 16px);
+    max-height: calc(100dvh - 16px);
+    padding: 12px;
+  }
+  .plate-viewer h2 {
+    font-size: 18px;
+  }
+}

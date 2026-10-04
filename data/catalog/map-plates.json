@@ -1,0 +1,62 @@
+[
+  {
+    "id": "three-kingdoms-262",
+    "year": 262,
+    "title": "三国州郡参考图",
+    "sourceId": "commons-three-kingdoms-262",
+    "creator": "Zhoudadudu",
+    "edition": "2023-11-24原图的Commons 3840px缩略版；只缩小像素，未修改图形",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThreeKingdoms262.png",
+    "limitations": "原作者据《中国历史地图集》及HydroSHEDS绘制州郡与郡治。颜色表示州级区划，不能直接当作魏蜀吴实控边界；未配准，未逐项核对地图集原图。",
+    "width": 3840,
+    "height": 2715,
+    "file": "sources/commons/three-kingdoms-262.png",
+    "sha256": "a2092d3bc8b6b7ef05df4e0f4ad691a04050742eeb70840f025f0110dbf981f5"
+  },
+  {
+    "id": "china-572",
+    "year": 572,
+    "title": "南北朝后期州域参考图",
+    "sourceId": "commons-china-572",
+    "creator": "SY（Seasonsinthesun）；Sgnpkd修订",
+    "edition": "2020-04-29 17:54 UTC修订版",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:China_Divisions_in_572.png",
+    "limitations": "原作者绘制陈、北齐、北周时期州域；2020年修订交趾归属。未标注所据图幅及配准参数，边界与周边范围仍待核对。",
+    "width": 1588,
+    "height": 1123,
+    "file": "sources/commons/china-572.png",
+    "sha256": "1e02269e7b9d08b820c8859989422315a2067577d377c6a4af445713a42611ea"
+  },
+  {
+    "id": "china-610",
+    "year": 610,
+    "title": "隋朝疆域与政区参考图",
+    "sourceId": "commons-china-610",
+    "creator": "Yug；Manlleus等译者",
+    "edition": "2026-09-21 08:15 UTC文件版",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_610.svg",
+    "limitations": "原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。未配准，未独立核对书籍图幅。",
+    "width": 1000,
+    "height": 850,
+    "file": "sources/commons/china-610.svg",
+    "sha256": "099c7e9e314f95136fe460e63e779d3a2fa3a598a25dd0cbdea6352abe0d7dd1"
+  },
+  {
+    "id": "china-742",
+    "year": 742,
+    "title": "唐朝疆域与道参考图",
+    "sourceId": "commons-china-742",
+    "creator": "Yug；Kanguole西部范围修订",
+    "edition": "2020-03-12 01:45 UTC恢复的2012修订版",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_742.svg",
+    "limitations": "主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径，未配准、未独立核对原书，不代表742年完整实控边界。",
+    "width": 1000,
+    "height": 850,
+    "file": "sources/commons/china-742.svg",
+    "sha256": "d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08"
+  }
+]

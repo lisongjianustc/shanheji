@@ -31,6 +31,20 @@ it("does not combine vassal geometry into default control", () => {
     0,
   );
 });
+it("distinguishes unavailable years from filtered current-year geometry", () => {
+  const p = makePackage();
+  Object.assign(p.territories[0].properties, {
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+    relation: "administration",
+  });
+  expect(queryScene(makeCatalog(), [p], makeQuery(301)).warnings).toContain(
+    "当前年份缺少可用疆域资料",
+  );
+  expect(queryScene(makeCatalog(), [p], makeQuery(300)).warnings).toContain(
+    "当前筛选条件下没有疆域记录",
+  );
+});
 it("distinguishes possible dates from certain dates", () => {
   const p = makePackage();
   p.territories[0].properties.validity.start.latest = "0301-12-31";
@@ -158,4 +172,40 @@ it("requires a version choice if competing versions have no editorial default", 
   const q = makeQuery();
   q.filters.interpretationIds = [];
   expect(() => queryScene(makeCatalog(), [p], q)).toThrow(/默认版本/);
+});
+it("does not turn an undated annual snapshot into evidence for an exact day", () => {
+  const p = makePackage();
+  Object.assign(p.territories[0].properties, {
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+    validity: time(300),
+  });
+  expect(
+    queryScene(makeCatalog(), [p], { ...makeQuery(), at: "0300-05-01" })
+      .territories,
+  ).toHaveLength(0);
+});
+it("warns prominently when a disputed interpretation is selected", () => {
+  const p = makePackage();
+  p.territories[0].properties.spatialPrecision = "disputed";
+  expect(
+    queryScene(makeCatalog(), [p], makeQuery()).warnings.join(" "),
+  ).toContain("边界争议");
+});
+it("keeps all parts of the same nearest snapshot", () => {
+  const p = makePackage();
+  Object.assign(p.territories[0].properties, {
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+  });
+  const b = structuredClone(p.territories[0]);
+  b.properties.id = "second-part";
+  p.territories.push(b);
+  const q = makeQuery(304);
+  q.filters.nearbyReference = true;
+  expect(
+    queryScene(makeCatalog(), [p], q)
+      .territories.map((t) => t.properties.id)
+      .sort(),
+  ).toEqual(["second-part", "test-territory"]);
 });

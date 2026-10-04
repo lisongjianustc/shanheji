@@ -35,6 +35,7 @@ async function fixture(page: Page, corrupt = false, temporal = false) {
         ...time(),
         endExclusive: { earliest: "0300-07-01", latest: "0300-07-01" },
         label: "300年上半年切片",
+        precision: "range",
       },
     });
     const b = structuredClone(a);
@@ -43,6 +44,7 @@ async function fixture(page: Page, corrupt = false, temporal = false) {
       ...time(),
       start: { earliest: "0300-07-01", latest: "0300-07-01" },
       label: "300年下半年切片",
+      precision: "range",
     };
     pack.territories.push(b);
     pack.events[0].validity = {
@@ -267,4 +269,69 @@ test("同年阶段不叠加且精确事件查询早期切片", async ({ page }) 
     "疆域参考：300年上半年切片",
   );
   await expect(page.getByLabel("疆域阶段", { exact: true })).toHaveCount(0);
+});
+
+test("661年争议图幅可查看，主张单独开启，邻年不外推", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新");
+  await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
+  await expect(page.locator(".territory-panel")).toContainText("存在边界争议");
+  await page.getByRole("button", { name: "查看661年图幅" }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("661");
+  await expect(page.locator(".coverage-banner")).toContainText("民政范围");
+  await expect(page.locator(".coverage-banner")).toContainText("边界争议");
+  await page.locator(".filter-panel summary").click();
+  await expect(page.getByLabel("主张范围", { exact: true })).not.toBeChecked();
+  // Filters commit only after the replacement scene is ready.
+  await page.getByLabel("主张范围", { exact: true }).click();
+  await expect(page.getByLabel("主张范围", { exact: true })).toBeChecked();
+  await expect(page.locator(".coverage-banner")).toContainText("西部主张范围");
+  await page.screenshot({ path: "docs/qa/screenshots/territory-661.png" });
+  await page.getByRole("button", { name: "并行政权", exact: true }).click();
+  await page.locator(".entity-card").filter({ hasText: "唐" }).click();
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("Kanguole");
+  await expect(
+    page.getByRole("link", { name: "许可条款（转换几何同许可）" }).first(),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await year(page, 662);
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "缺少可用疆域资料",
+  );
+});
+
+test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新");
+  await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
+  for (const n of [262, 572, 610, 742]) {
+    await page.getByRole("button", { name: `查阅${n}年参考图` }).click();
+    const viewer = page.getByRole("dialog");
+    await expect(viewer).toContainText(`${n} 年`);
+    const img = viewer.getByRole("img");
+    await expect
+      .poll(() => img.evaluate((e) => (e as HTMLImageElement).naturalWidth))
+      .toBeGreaterThan(0);
+    await expect(page.getByTestId("committed-year")).toHaveText(String(n));
+    await expect(page.locator(".coverage-banner")).toContainText(
+      "缺少可用疆域资料",
+    );
+    await viewer.getByRole("button", { name: "放大图幅" }).click();
+    await expect(viewer.getByLabel("图幅比例")).toHaveText("150%");
+    await viewer.getByRole("button", { name: "适合窗口" }).click();
+    await page.screenshot({ path: `docs/qa/screenshots/reference-${n}.png` });
+    await viewer.getByRole("button", { name: "关闭参考图幅" }).click();
+    await expect(viewer).toHaveCount(0);
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole("button", { name: "条目 · 搜索 · 图层" }).click();
+  await page.getByRole("button", { name: "查阅572年参考图" }).click();
+  await page.screenshot({ path: "docs/qa/screenshots/reference-mobile.png" });
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("dialog")).toHaveCount(0);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    390,
+  );
 });

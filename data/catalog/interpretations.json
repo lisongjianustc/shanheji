@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "kanguole-661-disputed",
+    "label": "Kanguole 661年图幅（争议版）",
+    "reason": "按来源图幅分离民政、军事行政与西部主张；原图准确性有争议。行政范围不表示持续实控，默认不显示主张。",
+    "evidence": [
+      {
+        "sourceId": "commons-kanguole-tang-661",
+        "locator": "Summary、Map legend、Geotemporal data、Licensing及Disputed标注",
+        "note": "只复核来源图幅与坐标转换，未独立验证书籍原图。"
+      }
+    ]
+  }
+]
