@@ -1,5 +1,6 @@
 import type { Scene, Query } from "../domain/types";
 import type { HistoryRepository } from "../data/repository";
+import { defaultQuery } from "../domain/query";
 export interface Selection {
   kind: "entity" | "event" | "place";
   id: string;
@@ -30,7 +31,7 @@ export function createHistoryController(
   repository: HistoryRepository,
 ): HistoryController {
   let s: HistoryState = {
-    previewYear: 589,
+    previewYear: defaultQuery().year,
     committed: null,
     pending: null,
     selection: null,

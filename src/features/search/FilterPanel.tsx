@@ -30,14 +30,17 @@ export function FilterPanel({
     f.regionIds.length +
     f.entityIds.length +
     f.eventKinds.length +
-    (f.relations.length === 1 && f.relations[0] === "control" ? 0 : 1) +
+    (f.relations.length === DEFAULT_FILTERS.relations.length &&
+    DEFAULT_FILTERS.relations.every((r) => f.relations.includes(r))
+      ? 0
+      : 1) +
     Number(f.nearbyReference) +
     f.interpretationIds.length;
   return (
     <details className="filter-panel">
       <summary>
         筛选与图层{" "}
-        <span>{count ? "已启用 " + count + " 项" : "默认：实际控制"}</span>
+        <span>{count ? "已启用 " + count + " 项" : "默认：实控／行政"}</span>
       </summary>
       <label>
         地区

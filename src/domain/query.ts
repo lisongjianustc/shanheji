@@ -13,11 +13,11 @@ export const DEFAULT_FILTERS = {
   regionIds: [],
   entityIds: [],
   eventKinds: [],
-  relations: ["control"],
+  relations: ["control", "administration"],
   interpretationIds: [],
   nearbyReference: false,
 } satisfies Query["filters"];
-export const defaultQuery = (year = 589): Query => ({
+export const defaultQuery = (year = 661): Query => ({
   year,
   at: null,
   filters: structuredClone(DEFAULT_FILTERS),

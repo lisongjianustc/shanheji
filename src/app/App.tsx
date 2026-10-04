@@ -11,7 +11,10 @@ import { SearchPanel } from "../features/search/SearchPanel";
 import { FilterPanel } from "../features/search/FilterPanel";
 import { MapPlateViewer } from "../features/coverage/MapPlateViewer";
 import { TerritoryPanel } from "../features/coverage/TerritoryPanel";
-import { CoveragePanel } from "../features/coverage/CoveragePanel";
+import {
+  CoveragePanel,
+  relationLabels,
+} from "../features/coverage/CoveragePanel";
 import { createRepository } from "../data/repository";
 import type { Manifest, MapPlate } from "../data/manifest";
 import { createHistoryController, type Selection } from "../state/controller";
@@ -185,6 +188,42 @@ export default function App() {
             <h2>看见同一时代</h2>
             <p>拖动时间，查阅政权与历史事件。</p>
           </div>
+          {!!scene?.territories.length && (
+            <section className="map-territory-key" aria-label="当前地图疆域">
+              <span>本年地图范围</span>
+              {[
+                ...new Map(
+                  scene.territories.map((t) => [
+                    `${t.properties.entityId}/${t.properties.relation}`,
+                    t,
+                  ]),
+                ).values(),
+              ].map((t) => {
+                const entity = scene.catalog.entities.find(
+                  (e) => e.id === t.properties.entityId,
+                );
+                const label = `${entity ? nameAt(entity.names, query.year) : t.properties.entityId} · ${relationLabels[t.properties.relation]}`;
+                return (
+                  <button
+                    key={`${t.properties.entityId}/${t.properties.relation}`}
+                    aria-label={`查看${label}来源`}
+                    onClick={() =>
+                      select({ kind: "entity", id: t.properties.entityId })
+                    }
+                  >
+                    <i
+                      style={{ background: entity?.color ?? "#8a8b80" }}
+                      aria-hidden="true"
+                    />
+                    {label}
+                    {t.properties.spatialPrecision === "disputed" && (
+                      <small>有争议</small>
+                    )}
+                  </button>
+                );
+              })}
+            </section>
+          )}
           {scene && (
             <div className="coverage-banner">
               {scene.warnings.join("；") || "显示已核验资料"}

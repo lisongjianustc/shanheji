@@ -364,7 +364,22 @@ export function HistoryMap(props: MapProps) {
       if (props.pending) {
         const id = props.pending.requestId;
         const ack = () => {
-          if (!stopped) latest.current.onRendered(id);
+          if (!stopped) {
+            // Report features actually painted by MapLibre, after the scene is idle.
+            const paintedIds = [
+              ...new Set(
+                map
+                  .queryRenderedFeatures({ layers: ["territory-fill"] })
+                  .map((f) => f.properties?.id)
+                  .filter(Boolean),
+              ),
+            ].sort();
+            host.current?.setAttribute(
+              "data-rendered-territory-ids",
+              paintedIds.join(" "),
+            );
+            latest.current.onRendered(id);
+          }
         };
         map.once("idle", ack);
         map.triggerRepaint();

@@ -1,4 +1,4 @@
-import { queryScene } from "../../src/domain/query";
+import { queryScene, defaultQuery } from "../../src/domain/query";
 import { makeCatalog, makePackage, makeQuery, time } from "../fixtures/make";
 it("shows events without assigning an invented point", () => {
   const p = makePackage();
@@ -208,4 +208,24 @@ it("keeps all parts of the same nearest snapshot", () => {
       .territories.map((t) => t.properties.id)
       .sort(),
   ).toEqual(["second-part", "test-territory"]);
+});
+it("shows dated administration through the default year query, without claims", () => {
+  const p = makePackage();
+  Object.assign(p.territories[0].properties, {
+    relation: "administration",
+    temporalSupport: "snapshot",
+    snapshotYear: 300,
+  });
+  const claim = structuredClone(p.territories[0]);
+  claim.properties.id = "test-claim";
+  claim.properties.relation = "claim";
+  p.territories.push(claim);
+  const q = defaultQuery(300);
+  q.filters.interpretationIds = ["test-interpretation"];
+  expect(
+    queryScene(makeCatalog(), [p], q).territories.map((t) => t.properties.id),
+  ).toEqual(["test-territory"]);
+  expect(
+    queryScene(makeCatalog(), [p], { ...q, year: 301 }).territories,
+  ).toHaveLength(0);
 });

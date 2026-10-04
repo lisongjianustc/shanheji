@@ -335,3 +335,63 @@ test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ pa
     390,
   );
 });
+
+test("时间轴直接驱动主图疆域：初始、输入、拖动、播放及节点点击", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("/");
+  await expect(page.getByTestId("committed-year")).toHaveText("661");
+  const painted = page.locator(".map-canvas");
+  const ids = "tang-661-civil tang-661-military";
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expect(
+    page.getByRole("region", { name: "当前地图疆域" }),
+  ).toContainText("唐 · 行政设置");
+  await expect(page.locator(".coverage-banner")).toContainText("边界争议");
+  await expect(page.locator(".coverage-banner")).not.toContainText(
+    "西部主张范围",
+  );
+  await page.screenshot({
+    path: "docs/qa/screenshots/timeline-direct-661.png",
+  });
+  await year(page, 662);
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
+  await expect(page.getByRole("region", { name: "当前地图疆域" })).toHaveCount(
+    0,
+  );
+  await year(page, 661);
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await year(page, 660);
+  await page.getByRole("slider", { name: "拖动年份" }).evaluate((el) => {
+    Object.getOwnPropertyDescriptor(
+      HTMLInputElement.prototype,
+      "value",
+    )!.set!.call(el, "661");
+    el.dispatchEvent(new Event("input", { bubbles: true }));
+  });
+  // No pointer release: the drag itself must request and paint the selected year.
+  await expect(page.getByTestId("committed-year")).toHaveText("661");
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await year(page, 660);
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("661");
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  await year(page, 662);
+  await page.getByRole("button", { name: "跳至661年疆域" }).click();
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.screenshot({
+    path: "docs/qa/screenshots/timeline-mobile-661.png",
+  });
+  const timeline = await page
+    .getByRole("region", { name: "历史时间轴" })
+    .boundingBox();
+  const banner = await page.locator(".coverage-banner").boundingBox();
+  expect(banner!.y + banner!.height).toBeLessThanOrEqual(timeline!.y);
+  expect(errors).toEqual([]);
+});

@@ -31,17 +31,45 @@ export function Timeline(p: TimelineProps) {
     [autoPause, setAutoPause] = useState(true),
     [expanded, setExpanded] = useState(false);
   const current = useRef(p);
+  const dragTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const dragYear = useRef<number | null>(null);
   current.current = p;
+  const cancelDrag = () => {
+    if (dragTimer.current !== null) clearTimeout(dragTimer.current);
+    dragTimer.current = null;
+    dragYear.current = null;
+  };
+  useEffect(() => cancelDrag, []);
   const query = state.committed?.query ?? defaultQuery(),
     year = state.committed?.query.year ?? state.previewYear;
   useEffect(() => setEntry(String(state.previewYear)), [state.previewYear]);
   const go = (n: number) => {
+    cancelDrag();
     if (!Number.isInteger(n) || n < 220 || n > 907) {
       setError("请输入220至907之间的年份");
       return;
     }
     setError("");
+    p.onPlaying(false);
     p.onRequest({ ...query, year: n, at: null });
+  };
+  const drag = (n: number) => {
+    p.onPlaying(false);
+    p.onPreview(n);
+    dragYear.current = n;
+    if (dragTimer.current !== null) return;
+    dragTimer.current = setTimeout(() => {
+      dragTimer.current = null;
+      const next = dragYear.current;
+      dragYear.current = null;
+      if (next === null) return;
+      const c = current.current;
+      c.onRequest({
+        ...(c.state.committed?.query ?? defaultQuery()),
+        year: next,
+        at: null,
+      });
+    }, 100);
   };
   useEffect(() => {
     if (!state.playing || state.status !== "ready") return;
@@ -62,7 +90,9 @@ export function Timeline(p: TimelineProps) {
     return () => clearTimeout(timer);
   }, [state.playing, state.status, year, speed, autoPause]);
   const jump = (direction: -1 | 1) => {
-    const years = [...new Set(p.eventYears ?? [])].sort((a, b) => a - b);
+    const years = [
+      ...new Set([...(p.eventYears ?? []), ...(p.territoryYears ?? [])]),
+    ].sort((a, b) => a - b);
     const target =
       direction > 0
         ? years.find((y) => y > year)
@@ -132,11 +162,11 @@ export function Timeline(p: TimelineProps) {
           </select>
         </div>
         <div className="timeline-options">
-          <button onClick={() => jump(-1)} title="上一个事件年份">
-            上一事件
+          <button onClick={() => jump(-1)} title="上一事件或疆域资料年份">
+            上一节点
           </button>
-          <button onClick={() => jump(1)} title="下一个事件年份">
-            下一事件
+          <button onClick={() => jump(1)} title="下一事件或疆域资料年份">
+            下一节点
           </button>
           <label>
             <input
@@ -174,7 +204,7 @@ export function Timeline(p: TimelineProps) {
           min="220"
           max="907"
           value={state.previewYear}
-          onChange={(e) => p.onPreview(Number(e.target.value))}
+          onChange={(e) => drag(Number(e.target.value))}
           onPointerUp={(e) => go(Number(e.currentTarget.value))}
           onKeyUp={(e) => {
             if (
@@ -201,6 +231,21 @@ export function Timeline(p: TimelineProps) {
                 aria-label={`跳至${n}年事件`}
                 onClick={() => go(n)}
               />
+            ))}
+        </div>
+        <div className="territory-ticks" aria-label="疆域资料节点">
+          {[...new Set(p.territoryYears ?? [])]
+            .filter((n) => n >= 220 && n <= 907)
+            .map((n) => (
+              <button
+                key={n}
+                style={{ left: `${((n - 220) / 687) * 100}%` }}
+                title={`${n}年有可叠加疆域资料`}
+                aria-label={`跳至${n}年疆域`}
+                onClick={() => go(n)}
+              >
+                <i aria-hidden="true" /> <span>{n}</span>
+              </button>
             ))}
         </div>
       </div>
