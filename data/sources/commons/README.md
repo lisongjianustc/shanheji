@@ -66,4 +66,3 @@ These plates are displayed independently; no georeferencing or territory extract
 - SHA-256: `d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08`.
 - Changes: 262 uses the Commons-generated 3840px reduced image; other files are unchanged. Browser sizing and zoom do not alter the stored files.
 - Qualifications: 主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径，未配准、未独立核对原书，不代表742年完整实控边界。
-
