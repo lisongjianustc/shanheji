@@ -141,6 +141,7 @@ const properties = z
         controlPoints: z.array(point),
         errorNote: text,
         extent: z.literal("partial-source").optional(),
+        extentNote: text.optional(),
         boundaryGeometry: z
           .strictObject({
             type: z.literal("MultiLineString"),

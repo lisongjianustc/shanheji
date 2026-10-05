@@ -205,7 +205,42 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            116.79291,
+            32.58162
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0383-01-01",
+            "latest": "0383-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0384-01-01",
+            "latest": "0384-01-01"
+          },
+          "precision": "year",
+          "label": "383年"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-shouchun",
+            "locator": "CN.txt 1794781; Shouchun; WGS84 32.58162 116.79291",
+            "note": "现代寿春镇的参考点，非战场确点，不标战线、渡河处或部队位置。"
+          },
+          {
+            "sourceId": "shouxian-fei",
+            "locator": "首段：公元383年、八公山麓、寿阳城下",
+            "note": "仅支持寿阳附近这一地区关联。正文兵力与月日叙述存在问题，不采用兵力数字，也不推算发生确日。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yungang",

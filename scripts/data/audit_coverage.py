@@ -52,11 +52,16 @@ def main():
         available = set().union(*(
             {f["properties"]["snapshotYear"]} if f["properties"]["temporalSupport"] == "snapshot"
             else years(f["properties"]["validity"]) for f in fs))
-        for name in entity["names"]:
-            scope = active & years(name["validity"])
+        # The first active name is the displayed identity; overlapping aliases
+        # do not represent additional historical phases.
+        phase_years = {}
+        for value in sorted(active):
+            name = next((n for n in entity["names"] if value in years(n["validity"])), entity["names"][0])
+            phase_years.setdefault(name["text"], set()).add(value)
+        for name, scope in phase_years.items():
             if not scope:
                 continue
-            records.append({"entityId": entity["id"], "name": name["text"],
+            records.append({"entityId": entity["id"], "name": name,
                             "registeredYears": spans(scope), "availableYears": spans(scope & available),
                             "missingYears": spans(scope - available), "geometryRecords": len(fs)})
     result = {"checkedAt": "2026-10-05", "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",

@@ -6,7 +6,7 @@ intervals are retained as annual reconstructions, not evidence of exact-day cont
 import json, hashlib, zipfile, sys
 from pathlib import Path
 from collections import Counter
-from shapely.geometry import shape, mapping
+from shapely.geometry import shape, mapping, MultiPolygon
 ROOT=Path(__file__).resolve().parents[2]
 SOURCE='cliopatria-v021'
 VERSION='cliopatria-v021-reviewed'
@@ -69,6 +69,14 @@ def extract():
   g=shape(f['geometry'])
   if not g.is_valid or g.is_empty or g.geom_type not in ('Polygon','MultiPolygon'):
    records.append({**record,'status':'excluded','reason':'无效源几何；未自动修复'});continue
+  part_scope=c.get('componentSelection',{}).get(id)
+  if part_scope:
+   parts=list(g.geoms) if g.geom_type=='MultiPolygon' else [g]
+   kept=[part for part in parts if part.bounds[1]>=part_scope['minLatitude'] and part.bounds[3]<=part_scope['maxLatitude']]
+   if not kept:
+    records.append({**record,'status':'excluded','reason':'本轮源图组成部分筛选后无可用范围'});continue
+   g=MultiPolygon(kept)
+   record['componentSelection']={'kept':len(kept),'omitted':len(parts)-len(kept),'note':part_scope['note']}
   g=g.simplify(c['simplificationDegrees'],preserve_topology=True)
   geom=json.loads(json.dumps(mapping(g)),parse_float=lambda n:round(float(n),6))
   simplified=shape(geom)
@@ -83,6 +91,12 @@ def extract():
         'evidence':ev,'review':{'status':'verified','reviewerKind':'agent','reviewer':'Codex（来源身份、年代和几何检查；非历史专家审定）','checkedAt':'2026-10-05','evidence':ev},
         'compilation':{'method':'CC BY 4.0源WGS84轮廓；显式身份映射，整段越界则排除；0.01度保拓扑简化、6位取整；不补界、不沿现代国界裁切、不插值。','sourceScale':None,'controlPoints':[],
                        'errorNote':'研究数据的疆域复原；底层图按不等间距年代采样，细节及政权转折可能缺漏，误差未量化。0.01度简化仅为显示处理，不是历史精度；确日查询不使用按年区间。'}}
+  if part_scope:
+   prop['compilation'].update({'extent':'partial-source','extentNote':part_scope['note'],
+     'boundaryGeometry':{'type':'MultiLineString','coordinates':[ring for polygon in geom['coordinates'] for ring in polygon]}})
+   prop['compilation']['method'] += ' 另按配置选取完整源图组成部分，未用纬线裁切或补绘边界。'
+   prop['compilation']['errorNote'] += ' '+part_scope['note']
+   prop['evidence'][0]['note'] += ' '+part_scope['note']
   out.append({'type':'Feature','geometry':geom,'properties':prop});records.append({**record,'status':'accepted','entityId':id,'featureId':prop['id'],'displayFromYear':a,'displayToYear':b})
  return out,{'sourceId':SOURCE,'sourceVersion':c['version'],'zipSha256':c['zipSha256'],'geojsonSha256':c['geojsonSha256'],'sourceFeatureCount':len(raw),
              'accepted':len(out),'excluded':sum(r['status']=='excluded' for r in records),'entities':len(set(f['properties']['entityId'] for f in out)),

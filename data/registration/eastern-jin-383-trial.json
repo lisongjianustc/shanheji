@@ -1,0 +1,271 @@
+{
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_383.svg",
+  "sourceSha256": "0b5c9be1a41d5aa938378acdcaa405617194c3f5bcf20091e52fcda6ed41a288",
+  "coordinateUrl": "https://download.geonames.org/export/dump/CN.zip",
+  "coordinateSha256": "8142581f3db78810938d26ff92d41dc947818f8c1585ce6c472266f00becda82",
+  "controls": [
+    {
+      "label": "Chengdu",
+      "geonameId": 1815286,
+      "coordinates": [
+        104.06667,
+        30.66667
+      ],
+      "pixel": [
+        510.3911,
+        1020.13915
+      ],
+      "role": "fit",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    },
+    {
+      "label": "Chang’an",
+      "geonameId": 1790630,
+      "coordinates": [
+        108.92861,
+        34.25833
+      ],
+      "pixel": [
+        780.51255,
+        723.45015
+      ],
+      "role": "fit",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    },
+    {
+      "label": "Jiangling/Jingzhou",
+      "geonameId": 1805540,
+      "coordinates": [
+        112.19028,
+        30.35028
+      ],
+      "pixel": [
+        968.90336,
+        1082.21172
+      ],
+      "role": "fit",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    },
+    {
+      "label": "Jiankang/Nanjing",
+      "geonameId": 1799962,
+      "coordinates": [
+        118.77778,
+        32.06167
+      ],
+      "pixel": [
+        1471.256965,
+        935.667511
+      ],
+      "role": "fit",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    },
+    {
+      "label": "Xiangyang",
+      "geonameId": 1790587,
+      "coordinates": [
+        112.14479,
+        32.0422
+      ],
+      "pixel": [
+        959.07428,
+        956.07181
+      ],
+      "role": "check",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    },
+    {
+      "label": "Shouchun",
+      "geonameId": 1794781,
+      "coordinates": [
+        116.79291,
+        32.58162
+      ],
+      "pixel": [
+        1353.51315,
+        868.05855
+      ],
+      "role": "check",
+      "coordinateMeaning": "现代地名近似坐标用于配准；非古代城址精确位置"
+    }
+  ],
+  "acceptanceGateKm": 50,
+  "models": [
+    {
+      "crs": "+proj=eqc +lat_ts=0 +lon_0=0 +datum=WGS84",
+      "affine": [
+        [
+          0.0005878481915405663,
+          2.360593211183368e-05
+        ],
+        [
+          -7.951610899072958e-06,
+          -0.0007935462223515791
+        ],
+        [
+          -6302.180278611474,
+          3460.8515543987496
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "Chengdu",
+          "role": "fit",
+          "errorPixels": 30.148761535528596,
+          "errorKm": 44.30195394754195
+        },
+        {
+          "label": "Chang’an",
+          "role": "fit",
+          "errorPixels": 15.385961151006557,
+          "errorKm": 21.770718257184576
+        },
+        {
+          "label": "Jiangling/Jingzhou",
+          "role": "fit",
+          "errorPixels": 44.3237647549705,
+          "errorKm": 65.39304481614727
+        },
+        {
+          "label": "Jiankang/Nanjing",
+          "role": "fit",
+          "errorPixels": 29.56096437044396,
+          "errorKm": 42.82201379621283
+        },
+        {
+          "label": "Xiangyang",
+          "role": "check",
+          "errorPixels": 58.023777574799055,
+          "errorKm": 82.540188496959
+        },
+        {
+          "label": "Shouchun",
+          "role": "check",
+          "errorPixels": 46.95568033495955,
+          "errorKm": 66.80958002586026
+        }
+      ],
+      "maxCheckErrorKm": 82.540188496959,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "accepted": false
+    },
+    {
+      "crs": "EPSG:3857",
+      "affine": [
+        [
+          0.0005878591373701126,
+          2.2765933700691057e-05
+        ],
+        [
+          -7.3453610860776455e-06,
+          -0.0006699668956659052
+        ],
+        [
+          -6302.998426264447,
+          3166.961137209565
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "Chengdu",
+          "role": "fit",
+          "errorPixels": 30.155583851352198,
+          "errorKm": 44.331142187561824
+        },
+        {
+          "label": "Chang’an",
+          "role": "fit",
+          "errorPixels": 15.221862785791625,
+          "errorKm": 21.520191460532523
+        },
+        {
+          "label": "Jiangling/Jingzhou",
+          "role": "fit",
+          "errorPixels": 44.58434866909419,
+          "errorKm": 65.82079215780641
+        },
+        {
+          "label": "Jiankang/Nanjing",
+          "role": "fit",
+          "errorPixels": 29.650627603526445,
+          "errorKm": 42.949605183361555
+        },
+        {
+          "label": "Xiangyang",
+          "role": "check",
+          "errorPixels": 57.422841225664904,
+          "errorKm": 81.92321203311273
+        },
+        {
+          "label": "Shouchun",
+          "role": "check",
+          "errorPixels": 47.340179886985794,
+          "errorKm": 67.23432308458194
+        }
+      ],
+      "maxCheckErrorKm": 81.92321203311273,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "accepted": false
+    },
+    {
+      "crs": "+proj=lcc +lat_1=23 +lat_2=45 +lat_0=0 +lon_0=105 +datum=WGS84",
+      "affine": [
+        [
+          0.0007003699054266863,
+          8.146504048992872e-05
+        ],
+        [
+          3.4628676597510184e-05,
+          -0.0008205643180447291
+        ],
+        [
+          415.51536593214917,
+          3937.074659276421
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "Chengdu",
+          "role": "fit",
+          "errorPixels": 33.763991657726365,
+          "errorKm": 48.675213282528006
+        },
+        {
+          "label": "Chang’an",
+          "role": "fit",
+          "errorPixels": 20.601679870601163,
+          "errorKm": 29.75697414000561
+        },
+        {
+          "label": "Jiangling/Jingzhou",
+          "role": "fit",
+          "errorPixels": 45.50703839951485,
+          "errorKm": 65.58282021948487
+        },
+        {
+          "label": "Jiankang/Nanjing",
+          "role": "fit",
+          "errorPixels": 32.34472661238986,
+          "errorKm": 46.6841603312745
+        },
+        {
+          "label": "Xiangyang",
+          "role": "check",
+          "errorPixels": 53.42932026202514,
+          "errorKm": 77.21651619857153
+        },
+        {
+          "label": "Shouchun",
+          "role": "check",
+          "errorPixels": 50.387656032725374,
+          "errorKm": 72.65125124502211
+        }
+      ],
+      "maxCheckErrorKm": 77.21651619857153,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "accepted": false
+    }
+  ],
+  "decision": "rejected",
+  "meaning": "四点拟合，襄阳和寿春独立检查，未为通过而换用检查点参与拟合或放宽50公里门槛；不生成疆域。"
+}

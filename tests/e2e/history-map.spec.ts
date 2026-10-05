@@ -132,6 +132,10 @@ test("正式资源：边界年份、来源详情、连续年份状态与无发�
   await page.screenshot({ path: "docs/qa/screenshots/desktop-589.png" });
   await page.getByRole("button", { name: "并行政权", exact: true }).click();
   await year(page, 383);
+  await page.locator(".event-glow").click();
+  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("淝水之战");
+  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("非古战场确点");
+  await page.getByRole("button", { name: "关闭详情", exact: true }).click();
   await page.getByRole("button", { name: "展开政权带" }).click();
   await page.screenshot({ path: "docs/qa/screenshots/desktop-383.png" });
   expect(errors).toEqual([]);
@@ -740,7 +744,7 @@ test("来源年份区间随时间轴切换：七雄、明、清，边界不延�
   await year(page, 1420);
   await expect(canvas).toHaveAttribute(
     "data-rendered-territory-ids",
-    "clio-v021-6943",
+    "clio-v021-6396 clio-v021-6943 clio-v021-6963",
   );
   await page.getByRole("button", { name: "查看明 · 疆域复原来源" }).click();
   const detail = page.getByRole("complementary", { name: "条目详情" });
@@ -751,7 +755,7 @@ test("来源年份区间随时间轴切换：七雄、明、清，边界不延�
   await year(page, 1421);
   await expect(canvas).toHaveAttribute(
     "data-rendered-territory-ids",
-    "clio-v021-6943",
+    "clio-v021-6396 clio-v021-6943 clio-v021-6963",
   );
   await year(page, 1422);
   await expect(canvas).not.toHaveAttribute(
@@ -765,16 +769,19 @@ test("来源年份区间随时间轴切换：七雄、明、清，边界不延�
   await year(page, 1820);
   await expect(canvas).toHaveAttribute(
     "data-rendered-territory-ids",
-    "clio-v021-11022",
+    "clio-v021-10503 clio-v021-11022 clio-v021-8854",
   );
   await expect(page.locator(".coverage-banner")).toContainText("非确日格局");
+  await expect(page.locator(".coverage-banner")).toContainText("德川幕府为部分岛屿复原");
+  await expect(page.locator(".coverage-banner")).not.toContainText("null年");
+  await expect(page.locator(".coverage-banner")).not.toContainText("西部未录入");
   await page.locator(".filter-panel summary").click();
   await page.getByRole("checkbox", { name: "疆域复原", exact: true }).click();
   await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
   await page.getByRole("checkbox", { name: "疆域复原", exact: true }).click();
   await expect(canvas).toHaveAttribute(
     "data-rendered-territory-ids",
-    "clio-v021-11022",
+    "clio-v021-10503 clio-v021-11022 clio-v021-8854",
   );
 });
 

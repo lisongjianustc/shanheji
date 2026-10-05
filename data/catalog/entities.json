@@ -1526,17 +1526,22 @@
             "latest": "0538-12-31"
           },
           "endExclusive": {
-            "earliest": "0907-01-01",
-            "latest": "0908-01-01"
+            "earliest": "1186-01-01",
+            "latest": "1186-01-01"
           },
-          "precision": "range",
-          "label": "本次目录覆盖538—907年；非建国起讫"
+          "precision": "year",
+          "label": "目录展示538—1185年；非日本建国与朝廷消亡年"
         },
         "evidence": [
           {
             "sourceId": "met-japan",
             "locator": "Timeline / 日本列岛朝廷",
             "note": "用于飞鸟、奈良与平安早期事件关联；不把时期名当作新国家。"
+          },
+          {
+            "sourceId": "met-heian",
+            "locator": "794迁平安京／1185 military government",
+            "note": "延伸平安期朝廷资料至1185年，后续军政权分别登记；不将时期名当作新国家。"
           }
         ]
       }
@@ -1547,11 +1552,11 @@
         "latest": "0538-12-31"
       },
       "endExclusive": {
-        "earliest": "0907-01-01",
-        "latest": "0908-01-01"
+        "earliest": "1186-01-01",
+        "latest": "1186-01-01"
       },
-      "precision": "range",
-      "label": "本次目录覆盖538—907年；非建国起讫"
+      "precision": "year",
+      "label": "目录展示538—1185年；非日本建国与朝廷消亡年"
     },
     "color": "#b49959",
     "regionIds": [
@@ -4688,6 +4693,286 @@
     "color": "#b29977",
     "regionIds": [
       "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "goryeo",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "高丽",
+        "validity": {
+          "start": {
+            "earliest": "0918-01-01",
+            "latest": "0918-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1393-01-01",
+            "latest": "1393-01-01"
+          },
+          "precision": "year",
+          "label": "918—1392年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "nmk-history",
+            "locator": "Medieval and Early Modern History / Goryeo Dynasty(918-1392)",
+            "note": "与朝鲜王朝分开登记。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0918-01-01",
+        "latest": "0918-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1393-01-01",
+        "latest": "1393-01-01"
+      },
+      "precision": "year",
+      "label": "918—1392年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#738d8c",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "joseon",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "朝鲜王朝",
+        "validity": {
+          "start": {
+            "earliest": "1392-01-01",
+            "latest": "1392-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1898-01-01",
+            "latest": "1898-01-01"
+          },
+          "precision": "year",
+          "label": "1392—1897年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "nmk-history",
+            "locator": "Joseon Dynasty(1392-1897)",
+            "note": "采用国家博物馆的王朝与帝国分期；部分艺术史目录将朝鲜时期延续至1910年。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1392-01-01",
+        "latest": "1392-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1898-01-01",
+        "latest": "1898-01-01"
+      },
+      "precision": "year",
+      "label": "1392—1897年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#728397",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "korean-empire",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "大韩帝国",
+        "validity": {
+          "start": {
+            "earliest": "1897-01-01",
+            "latest": "1897-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1911-01-01",
+            "latest": "1911-01-01"
+          },
+          "precision": "year",
+          "label": "1897—1910年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "nmk-history",
+            "locator": "Korean Empire (1897-1910)",
+            "note": "1897年帝国阶段另列；年范围不表示全年持续独立。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1897-01-01",
+        "latest": "1897-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1911-01-01",
+        "latest": "1911-01-01"
+      },
+      "precision": "year",
+      "label": "1897—1910年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#8c7794",
+    "regionIds": [
+      "korea"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "kamakura",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "镰仓幕府",
+        "validity": {
+          "start": {
+            "earliest": "1185-01-01",
+            "latest": "1185-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1334-01-01",
+            "latest": "1334-01-01"
+          },
+          "precision": "year",
+          "label": "1185—1333年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-kamakura",
+            "locator": "1185—1333; 1333 toppled Kamakura regime",
+            "note": "1185取军政体制形成口径，1192将军任官另有口径；京都朝廷继续存在，不以幕府成立为天皇朝廷消失。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1185-01-01",
+        "latest": "1185-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1334-01-01",
+        "latest": "1334-01-01"
+      },
+      "precision": "year",
+      "label": "1185—1333年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#928253",
+    "regionIds": [
+      "japan"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "ashikaga",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "足利幕府",
+        "validity": {
+          "start": {
+            "earliest": "1336-01-01",
+            "latest": "1336-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1574-01-01",
+            "latest": "1574-01-01"
+          },
+          "precision": "year",
+          "label": "1336—1573年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-kamakura",
+            "locator": "1336 Ashikaga military government / rival Northern and Southern Courts",
+            "note": "记录足利军政府，不能据此将南北朝竞争或战国时期解释为全国连续实控。"
+          },
+          {
+            "sourceId": "met-japan-medieval",
+            "locator": "Muromachi 1392—1573",
+            "note": "时期间隔与军政府成立口径不同；本目录从1336年政权成立记，不从1392年时期名倒推建国。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1336-01-01",
+        "latest": "1336-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1574-01-01",
+        "latest": "1574-01-01"
+      },
+      "precision": "year",
+      "label": "1336—1573年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#a38e63",
+    "regionIds": [
+      "japan"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "tokugawa",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "德川幕府",
+        "validity": {
+          "start": {
+            "earliest": "1603-01-01",
+            "latest": "1603-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1868-01-01",
+            "latest": "1868-01-01"
+          },
+          "precision": "year",
+          "label": "1603—1867年（年度目录口径，非全年确日状态）"
+        },
+        "evidence": [
+          {
+            "sourceId": "naj-tokugawa-start",
+            "locator": "慶長8年（1603）幕府開設",
+            "note": "目录采用1603年幕府设立；不将1600年关原战后优势直接视为同名幕府。"
+          },
+          {
+            "sourceId": "naj-tokugawa-end",
+            "locator": "慶応3年（1867）大政奉還、王政復古、幕府廃止",
+            "note": "1867年旧历月份不直接换为公历确日；1868—1869旧幕府残余与战争阶段不得延用为全日本幕府政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1603-01-01",
+        "latest": "1603-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1868-01-01",
+        "latest": "1868-01-01"
+      },
+      "precision": "year",
+      "label": "1603—1867年（年度目录口径，非全年确日状态）"
+    },
+    "color": "#a78660",
+    "regionIds": [
+      "japan"
     ],
     "capitals": []
   }

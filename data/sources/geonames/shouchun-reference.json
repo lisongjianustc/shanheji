@@ -1,0 +1,24 @@
+{
+  "sourceUrl": "https://download.geonames.org/export/dump/CN.zip",
+  "zipSha256": "8142581f3db78810938d26ff92d41dc947818f8c1585ce6c472266f00becda82",
+  "geonameId": 1794781,
+  "sourceName": "Shouchun",
+  "aliases": [
+    "Shou",
+    "Shou-hsien",
+    "Shouchun",
+    "Shouxian",
+    "Shouyang",
+    "Showchow",
+    "Showhsien",
+    "Shuo-hsien",
+    "shou chun",
+    "寿春"
+  ],
+  "coordinates": [
+    116.79291,
+    32.58162
+  ],
+  "sourceMeaning": "现代地名地区参考；不等同古战场确点",
+  "license": "CC BY 4.0"
+}

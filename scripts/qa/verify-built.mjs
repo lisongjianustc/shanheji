@@ -211,8 +211,8 @@ try {
   const researchPaint = {};
   for (const [n, ids] of [
     [-300, "clio-v021-375 clio-v021-434 clio-v021-447 clio-v021-448 clio-v021-483 clio-v021-513 clio-v021-514"],
-    [1420, "clio-v021-6943"],
-    [1820, "clio-v021-11022"],
+    [1420, "clio-v021-6396 clio-v021-6943 clio-v021-6963"],
+    [1820, "clio-v021-10503 clio-v021-11022 clio-v021-8854"],
   ]) {
     await entry.fill(String(n));
     await entry.press("Enter");
@@ -225,12 +225,17 @@ try {
   await expect(mobile.getByTestId("scene-status")).toHaveText("已更新");
   await mobile.getByRole("spinbutton", { name: "年份", exact: true }).fill("1820");
   await mobile.getByRole("spinbutton", { name: "年份", exact: true }).press("Enter");
-  await expect(mobile.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", "clio-v021-11022");
+  await expect(mobile.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", "clio-v021-10503 clio-v021-11022 clio-v021-8854");
+  await expect(mobile.locator(".coverage-banner")).toContainText("德川幕府为部分岛屿复原");
+  await expect(mobile.locator(".coverage-banner")).not.toContainText("西部未录入");
+  await expect(mobile.locator(".coverage-banner")).not.toContainText("null年");
   await mobile.screenshot({ path: "docs/qa/screenshots/production-research-mobile-1820.png" });
   if ((await mobile.evaluate(() => document.documentElement.scrollWidth)) > 390)
     throw Error("Research mobile overflow");
   const mobileTimeline = await mobile.getByRole("region", { name: "历史时间轴" }).boundingBox();
   if (mobileTimeline.y + mobileTimeline.height > 844) throw Error("Research timeline below viewport");
+  const mobileBanner = await mobile.locator(".coverage-banner").boundingBox();
+  if (mobileBanner.y + mobileBanner.height > mobileTimeline.y) throw Error("Research banner overlaps timeline");
   await mobile.close();
   for (const [n, title] of [[634, "大明宫"], [652, "大雁塔"]]) {
     await entry.fill(String(n));
@@ -246,6 +251,11 @@ try {
   await entry.fill("383");
   await entry.press("Enter");
   await expect(page.getByTestId("committed-year")).toHaveText("383");
+  await page.locator(".event-glow").click();
+  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("淝水之战");
+  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("非古战场确点");
+  await page.screenshot({ path: "docs/qa/screenshots/production-fei-383.png" });
+  await page.getByRole("button", { name: "关闭详情", exact: true }).click();
   await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
   await expect(page.getByTestId("missing-polities")).toContainText("东晋");
   await page.screenshot({ path: "docs/qa/screenshots/production-missing-eastern-jin.png" });
@@ -281,6 +291,9 @@ try {
         researchPaintedTerritoryIds: researchPaint,
         missingEasternJinVisible: true,
         culturalPointsClickableOverPolity: true,
+        feiRegionalPointClickable: true,
+        tokugawaPartialScopeVisible: true,
+        researchMobileNoOverlap: true,
         disputedAdministrationVisible: true,
         claimsOffByDefault: true,
         mobileNoOverflow: true,

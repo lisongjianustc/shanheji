@@ -97,10 +97,23 @@ export default function App() {
         .filter((t) => t.properties.compilation.extent === "partial-source")
         .map(
           (t) =>
-            `${t.properties.validity.label.startsWith("约") ? "约" : ""}${t.properties.snapshotYear}`,
+            `${t.properties.validity.label.startsWith("约") ? "约" : ""}${t.properties.snapshotYear ?? scene!.query.year}`,
         ),
     ),
   ].join("、");
+  const westernPartial = scene?.territories.some(
+    (t) =>
+      t.properties.compilation.extent === "partial-source" &&
+      !t.properties.compilation.extentNote,
+  );
+  const otherPartialNotes = [
+    ...new Set(
+      scene?.territories
+        .filter((t) => t.properties.compilation.extent === "partial-source")
+        .map((t) => t.properties.compilation.extentNote)
+        .filter(Boolean),
+    ),
+  ];
   const reconstructed = scene?.territories.some(
     (t) => t.properties.relation === "reconstruction",
   );
@@ -300,7 +313,7 @@ export default function App() {
                   title={Object.values(scene.territoryTimeLabels).join("；")}
                 >
                   疆域参考：
-                  {partialOnly
+                  {partialOnly && westernPartial
                     ? `${partialYears}年 · 部分行政参考（西部未录入，不代表实控）`
                     : reconstructed
                       ? `${polityCount}个政权 · 来源年份区间复原（非确日格局，详情可查）`
@@ -316,12 +329,15 @@ export default function App() {
               {partialSource && (
                 <span>
                   {!partialOnly &&
+                    westernPartial &&
                     `${partialYears}年部分行政参考：西部未录入；`}
                   {scene.territories.some(
                     (t) =>
                       t.properties.id === "tang-742-eastern-administration",
                   ) && "仅105°E以东；"}
-                  填色截断处为资料空缺，未绘制为国界。
+                  {westernPartial && "填色截断处为资料空缺，未绘制为国界。"}
+                  {!!otherPartialNotes.length &&
+                    "德川幕府为部分岛屿复原；琉球、虾夷及北方争议范围未录入，详情可查。"}
                 </span>
               )}
               {!!scene.snapshotChoices?.length && (

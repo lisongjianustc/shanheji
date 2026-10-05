@@ -86,6 +86,7 @@ export interface TerritoryProperties {
     controlPoints: [number, number][];
     errorNote: string;
     extent?: "partial-source";
+    extentNote?: string;
     boundaryGeometry?: MultiLineString; // 排除数据裁切产生的人工闭合边线
   };
 }

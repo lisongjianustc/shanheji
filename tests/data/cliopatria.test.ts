@@ -85,7 +85,7 @@ it("retains source interval endpoints in the navigation index and deduplicates o
     ).toBe(true);
     expect(t.properties.validity.precision).toBe("year");
   }
-  expect(seen.size).toBe(515);
+  expect(seen.size).toBe(552);
 });
 it("reports a missing Eastern Jin outline even when its northern neighbors are drawn", () => {
   const scene = queryScene(catalog, packs, defaultQuery(383), defaults);
@@ -100,4 +100,40 @@ it("reports a missing Eastern Jin outline even when its northern neighbors are d
   expect(
     missingPolities(queryScene(catalog, packs, q, defaults)).map((e) => e.id),
   ).toEqual(["qing"]);
+});
+it.each([
+  [1200, ["goryeo", "kamakura"]],
+  [1420, ["joseon", "ashikaga"]],
+  [1820, ["joseon", "tokugawa"]],
+  [1900, ["korean-empire"]],
+] as const)(
+  "keeps later neighbors alongside Chinese polities at %i",
+  (year, entities) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    expect(scene.territories.map((t) => t.properties.entityId)).toEqual(
+      expect.arrayContaining([...entities]),
+    );
+  },
+);
+it("does not publish Tokugawa's outlying component claims or extend the shogunate past its phase", () => {
+  const row = queryScene(
+    catalog,
+    packs,
+    defaultQuery(1820),
+    defaults,
+  ).territories.find((t) => t.properties.entityId === "tokugawa")!;
+  expect(row.properties.compilation.extent).toBe("partial-source");
+  expect(row.properties.compilation.extentNote).toContain("未录入");
+  const coordinates =
+    row.geometry.type === "Polygon"
+      ? row.geometry.coordinates.flat()
+      : row.geometry.coordinates.flat(2);
+  expect(coordinates.every((c) => c[1] >= 30 && c[1] <= 41.6)).toBe(true);
+  expect(row.properties.compilation.boundaryGeometry).toBeDefined();
+  for (const year of [1600, 1602, 1868, 1869])
+    expect(
+      queryScene(catalog, packs, defaultQuery(year), defaults).territories.some(
+        (t) => t.properties.entityId === "tokugawa",
+      ),
+    ).toBe(false);
 });

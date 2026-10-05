@@ -559,5 +559,82 @@
     "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
     "redistribution": "unknown",
     "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
+  },
+  {
+    "id": "nmk-history",
+    "title": "Medieval and Early Modern History",
+    "creator": "National Museum of Korea",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.museum.go.kr/ENG/contents/E0201040400.do",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "met-heian",
+    "title": "Heian Period (794–1185)",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.metmuseum.org/essays/heian-period-794-1185",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "met-kamakura",
+    "title": "Kamakura and Nanbokucho Periods (1185–1392)",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.metmuseum.org/essays/kamakura-and-nanbokucho-periods-1185-1392",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "met-japan-medieval",
+    "title": "Japan, 1000–1400 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.metmuseum.org/zh/toah/ht/07/eaj.html",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "naj-tokugawa-start",
+    "title": "関ヶ原の戦い／1603年幕府開設",
+    "creator": "National Archives of Japan",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.archives.go.jp/exhibition/digital/ieyasu/contents3_01/",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "naj-tokugawa-end",
+    "title": "変貌／1867年大政奉還と幕府廃止",
+    "creator": "National Archives of Japan",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.archives.go.jp/exhibition/digital/henbou/contents/01.html",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；只采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文和原图，只记录史实与链接。"
+  },
+  {
+    "id": "geonames-shouchun",
+    "title": "GeoNames 中国地名：Shouchun／寿春 1794781",
+    "creator": "GeoNames contributors",
+    "edition": "CN.zip 2026-10-05下载；1794781单记录参考",
+    "url": "https://www.geonames.org/1794781/shouchun.html",
+    "accessedAt": "2026-10-05",
+    "license": "CC BY 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "GeoNames官方about.html和dump/readme.txt声明CC BY 4.0。保留单记录与原始ZIP SHA-256，只作现代城镇附近的地区参考，不作古战场确点。https://creativecommons.org/licenses/by/4.0/"
   }
 ]

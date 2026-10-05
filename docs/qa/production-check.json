@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-05T11:59:46.791Z",
+  "checkedAt": "2026-10-05T12:31:20.117Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "2cda0f1b03a3e52f",
+  "dataVersion": "c1a990d183016bb9",
   "years": [
     -1300,
     -300,
@@ -51,10 +51,14 @@
   },
   "researchPaintedTerritoryIds": {
     "1420": [
-      "clio-v021-6943"
+      "clio-v021-6396",
+      "clio-v021-6943",
+      "clio-v021-6963"
     ],
     "1820": [
-      "clio-v021-11022"
+      "clio-v021-10503",
+      "clio-v021-11022",
+      "clio-v021-8854"
     ],
     "-300": [
       "clio-v021-375",
@@ -68,6 +72,9 @@
   },
   "missingEasternJinVisible": true,
   "culturalPointsClickableOverPolity": true,
+  "feiRegionalPointClickable": true,
+  "tokugawaPartialScopeVisible": true,
+  "researchMobileNoOverlap": true,
   "disputedAdministrationVisible": true,
   "claimsOffByDefault": true,
   "mobileNoOverflow": true,

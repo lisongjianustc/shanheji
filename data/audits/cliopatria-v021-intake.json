@@ -4,9 +4,9 @@
   "zipSha256": "e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4",
   "geojsonSha256": "fc6f0d1e4cc42f45da83522b3696db6f2cc85ec0d12259a85c89b31347b8fc0a",
   "sourceFeatureCount": 13797,
-  "accepted": 515,
-  "excluded": 114,
-  "entities": 81,
+  "accepted": 552,
+  "excluded": 120,
+  "entities": 87,
   "records": [
     {
       "rowIndex": 56,
@@ -4649,11 +4649,8 @@
       "fromYear": 793,
       "toYear": 799,
       "wikidata": "Q193292",
-      "status": "accepted",
-      "entityId": "japan-court",
-      "featureId": "clio-v021-2991",
-      "displayFromYear": 793,
-      "displayToYear": 799
+      "status": "excluded",
+      "reason": "来源Heian Japan始于793年，与794年迁都分期冲突，整段排除。"
     },
     {
       "rowIndex": 2995,
@@ -4697,8 +4694,11 @@
       "fromYear": 814,
       "toYear": 1093,
       "wikidata": "Q193292",
-      "status": "excluded",
-      "reason": "来源区间越过已登记政权存续或阶段"
+      "status": "accepted",
+      "entityId": "japan-court",
+      "featureId": "clio-v021-3056",
+      "displayFromYear": 814,
+      "displayToYear": 1093
     },
     {
       "rowIndex": 3060,
@@ -5100,6 +5100,18 @@
       "displayToYear": 925
     },
     {
+      "rowIndex": 3697,
+      "sourceName": "Goryeo",
+      "fromYear": 922,
+      "toYear": 935,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-3697",
+      "displayFromYear": 922,
+      "displayToYear": 935
+    },
+    {
       "rowIndex": 3699,
       "sourceName": "Balhae",
       "fromYear": 922,
@@ -5224,6 +5236,18 @@
       "featureId": "clio-v021-3784",
       "displayFromYear": 936,
       "displayToYear": 946
+    },
+    {
+      "rowIndex": 3787,
+      "sourceName": "Goryeo",
+      "fromYear": 936,
+      "toYear": 1138,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-3787",
+      "displayFromYear": 936,
+      "displayToYear": 1138
     },
     {
       "rowIndex": 3790,
@@ -5564,8 +5588,11 @@
       "fromYear": 1094,
       "toYear": 1176,
       "wikidata": "Q193292",
-      "status": "excluded",
-      "reason": "来源区间越过已登记政权存续或阶段"
+      "status": "accepted",
+      "entityId": "japan-court",
+      "featureId": "clio-v021-4702",
+      "displayFromYear": 1094,
+      "displayToYear": 1176
     },
     {
       "rowIndex": 4759,
@@ -5649,6 +5676,18 @@
       "displayToYear": 1205
     },
     {
+      "rowIndex": 4895,
+      "sourceName": "Goryeo",
+      "fromYear": 1139,
+      "toYear": 1215,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-4895",
+      "displayFromYear": 1139,
+      "displayToYear": 1215
+    },
+    {
       "rowIndex": 5056,
       "sourceName": "Heian Japan",
       "fromYear": 1177,
@@ -5656,6 +5695,30 @@
       "wikidata": "Q193292",
       "status": "excluded",
       "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 5125,
+      "sourceName": "Kamakura Shogunate",
+      "fromYear": 1188,
+      "toYear": 1191,
+      "wikidata": "Q736839",
+      "status": "accepted",
+      "entityId": "kamakura",
+      "featureId": "clio-v021-5125",
+      "displayFromYear": 1188,
+      "displayToYear": 1191
+    },
+    {
+      "rowIndex": 5188,
+      "sourceName": "Kamakura Shogunate",
+      "fromYear": 1192,
+      "toYear": 1325,
+      "wikidata": "Q736839",
+      "status": "accepted",
+      "entityId": "kamakura",
+      "featureId": "clio-v021-5188",
+      "displayFromYear": 1192,
+      "displayToYear": 1325
     },
     {
       "rowIndex": 5272,
@@ -5704,6 +5767,18 @@
       "featureId": "clio-v021-5364",
       "displayFromYear": 1210,
       "displayToYear": 1215
+    },
+    {
+      "rowIndex": 5401,
+      "sourceName": "Goryeo",
+      "fromYear": 1216,
+      "toYear": 1226,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-5401",
+      "displayFromYear": 1216,
+      "displayToYear": 1226
     },
     {
       "rowIndex": 5417,
@@ -5785,6 +5860,18 @@
       "wikidata": "Q5066",
       "status": "excluded",
       "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 5549,
+      "sourceName": "Goryeo",
+      "fromYear": 1227,
+      "toYear": 1259,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-5549",
+      "displayFromYear": 1227,
+      "displayToYear": 1259
     },
     {
       "rowIndex": 5630,
@@ -5931,6 +6018,30 @@
       "displayToYear": 1351
     },
     {
+      "rowIndex": 6188,
+      "sourceName": "Kamakura Shogunate",
+      "fromYear": 1326,
+      "toYear": 1332,
+      "wikidata": "Q736839",
+      "status": "accepted",
+      "entityId": "kamakura",
+      "featureId": "clio-v021-6188",
+      "displayFromYear": 1326,
+      "displayToYear": 1332
+    },
+    {
+      "rowIndex": 6396,
+      "sourceName": "Ashikaga Shogunate",
+      "fromYear": 1344,
+      "toYear": 1458,
+      "wikidata": "Q1154406",
+      "status": "accepted",
+      "entityId": "ashikaga",
+      "featureId": "clio-v021-6396",
+      "displayFromYear": 1344,
+      "displayToYear": 1458
+    },
+    {
       "rowIndex": 6415,
       "sourceName": "Yuan Dynasty",
       "fromYear": 1352,
@@ -5941,6 +6052,18 @@
       "featureId": "clio-v021-6415",
       "displayFromYear": 1352,
       "displayToYear": 1362
+    },
+    {
+      "rowIndex": 6520,
+      "sourceName": "Goryeo",
+      "fromYear": 1363,
+      "toYear": 1374,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-6520",
+      "displayFromYear": 1363,
+      "displayToYear": 1374
     },
     {
       "rowIndex": 6542,
@@ -5976,6 +6099,18 @@
       "displayToYear": 1401
     },
     {
+      "rowIndex": 6658,
+      "sourceName": "Goryeo",
+      "fromYear": 1375,
+      "toYear": 1384,
+      "wikidata": "Q28208",
+      "status": "accepted",
+      "entityId": "goryeo",
+      "featureId": "clio-v021-6658",
+      "displayFromYear": 1375,
+      "displayToYear": 1384
+    },
+    {
       "rowIndex": 6682,
       "sourceName": "Ming Dynasty",
       "fromYear": 1385,
@@ -5986,6 +6121,27 @@
       "featureId": "clio-v021-6682",
       "displayFromYear": 1385,
       "displayToYear": 1401
+    },
+    {
+      "rowIndex": 6707,
+      "sourceName": "Goryeo",
+      "fromYear": 1385,
+      "toYear": 1394,
+      "wikidata": "Q28208",
+      "status": "excluded",
+      "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 6753,
+      "sourceName": "Joseon",
+      "fromYear": 1395,
+      "toYear": 1414,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-6753",
+      "displayFromYear": 1395,
+      "displayToYear": 1414
     },
     {
       "rowIndex": 6863,
@@ -6042,6 +6198,18 @@
       "displayToYear": 1421
     },
     {
+      "rowIndex": 6963,
+      "sourceName": "Joseon",
+      "fromYear": 1415,
+      "toYear": 1439,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-6963",
+      "displayFromYear": 1415,
+      "displayToYear": 1439
+    },
+    {
       "rowIndex": 7028,
       "sourceName": "Northern Yuan",
       "fromYear": 1422,
@@ -6084,6 +6252,18 @@
       "reason": "越过本目录采用的1402年国号口径；后续蒙古诸部需另核身份，未自动合并。"
     },
     {
+      "rowIndex": 7147,
+      "sourceName": "Joseon",
+      "fromYear": 1440,
+      "toYear": 1515,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-7147",
+      "displayFromYear": 1440,
+      "displayToYear": 1515
+    },
+    {
       "rowIndex": 7188,
       "sourceName": "Ming Dynasty",
       "fromYear": 1440,
@@ -6108,6 +6288,27 @@
       "displayToYear": 1467
     },
     {
+      "rowIndex": 7327,
+      "sourceName": "Ashikaga Shogunate",
+      "fromYear": 1459,
+      "toYear": 1467,
+      "wikidata": "Q1154406",
+      "status": "accepted",
+      "entityId": "ashikaga",
+      "featureId": "clio-v021-7327",
+      "displayFromYear": 1459,
+      "displayToYear": 1467
+    },
+    {
+      "rowIndex": 7401,
+      "sourceName": "Ashikaga Shogunate",
+      "fromYear": 1468,
+      "toYear": 1539,
+      "wikidata": "Q1154406",
+      "status": "excluded",
+      "reason": "应仁之乱以后不将足利幕府源轮廓视为全国统一范围；缺少分权地图，整段隔离。"
+    },
+    {
       "rowIndex": 7414,
       "sourceName": "Ming Dynasty",
       "fromYear": 1468,
@@ -6130,6 +6331,27 @@
       "featureId": "clio-v021-7826",
       "displayFromYear": 1516,
       "displayToYear": 1546
+    },
+    {
+      "rowIndex": 7846,
+      "sourceName": "Joseon",
+      "fromYear": 1516,
+      "toYear": 1571,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-7846",
+      "displayFromYear": 1516,
+      "displayToYear": 1571
+    },
+    {
+      "rowIndex": 8057,
+      "sourceName": "Ashikaga Shogunate",
+      "fromYear": 1540,
+      "toYear": 1563,
+      "wikidata": "Q1154406",
+      "status": "excluded",
+      "reason": "应仁之乱以后不将足利幕府源轮廓视为全国统一范围；缺少分权地图，整段隔离。"
     },
     {
       "rowIndex": 8109,
@@ -6168,6 +6390,27 @@
       "displayToYear": 1578
     },
     {
+      "rowIndex": 8283,
+      "sourceName": "Ashikaga Shogunate",
+      "fromYear": 1564,
+      "toYear": 1571,
+      "wikidata": "Q1154406",
+      "status": "excluded",
+      "reason": "应仁之乱以后不将足利幕府源轮廓视为全国统一范围；缺少分权地图，整段隔离。"
+    },
+    {
+      "rowIndex": 8317,
+      "sourceName": "Joseon",
+      "fromYear": 1572,
+      "toYear": 1594,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8317",
+      "displayFromYear": 1572,
+      "displayToYear": 1594
+    },
+    {
       "rowIndex": 8347,
       "sourceName": "Ming Dynasty",
       "fromYear": 1579,
@@ -6204,6 +6447,18 @@
       "displayToYear": 1594
     },
     {
+      "rowIndex": 8454,
+      "sourceName": "Joseon",
+      "fromYear": 1595,
+      "toYear": 1599,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8454",
+      "displayFromYear": 1595,
+      "displayToYear": 1599
+    },
+    {
       "rowIndex": 8484,
       "sourceName": "Ming Dynasty",
       "fromYear": 1595,
@@ -6216,6 +6471,27 @@
       "displayToYear": 1599
     },
     {
+      "rowIndex": 8502,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1600,
+      "toYear": 1601,
+      "wikidata": "Q205662",
+      "status": "excluded",
+      "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 8504,
+      "sourceName": "Joseon",
+      "fromYear": 1600,
+      "toYear": 1621,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8504",
+      "displayFromYear": 1600,
+      "displayToYear": 1621
+    },
+    {
       "rowIndex": 8531,
       "sourceName": "Ming Dynasty",
       "fromYear": 1600,
@@ -6226,6 +6502,32 @@
       "featureId": "clio-v021-8531",
       "displayFromYear": 1600,
       "displayToYear": 1618
+    },
+    {
+      "rowIndex": 8549,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1602,
+      "toYear": 1608,
+      "wikidata": "Q205662",
+      "status": "excluded",
+      "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 8581,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1609,
+      "toYear": 1798,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 10,
+        "omitted": 5,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-8581",
+      "displayFromYear": 1609,
+      "displayToYear": 1798
     },
     {
       "rowIndex": 8647,
@@ -6276,6 +6578,18 @@
       "displayToYear": 1625
     },
     {
+      "rowIndex": 8687,
+      "sourceName": "Joseon",
+      "fromYear": 1622,
+      "toYear": 1631,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8687",
+      "displayFromYear": 1622,
+      "displayToYear": 1631
+    },
+    {
       "rowIndex": 8716,
       "sourceName": "Ming Dynasty",
       "fromYear": 1626,
@@ -6322,6 +6636,18 @@
       "featureId": "clio-v021-8729",
       "displayFromYear": 1629,
       "displayToYear": 1631
+    },
+    {
+      "rowIndex": 8766,
+      "sourceName": "Joseon",
+      "fromYear": 1632,
+      "toYear": 1635,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8766",
+      "displayFromYear": 1632,
+      "displayToYear": 1635
     },
     {
       "rowIndex": 8776,
@@ -6372,6 +6698,18 @@
       "displayToYear": 1639
     },
     {
+      "rowIndex": 8825,
+      "sourceName": "Joseon",
+      "fromYear": 1636,
+      "toYear": 1639,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8825",
+      "displayFromYear": 1636,
+      "displayToYear": 1639
+    },
+    {
       "rowIndex": 8835,
       "sourceName": "Later Jin Dynasty",
       "fromYear": 1640,
@@ -6394,6 +6732,18 @@
       "featureId": "clio-v021-8839",
       "displayFromYear": 1640,
       "displayToYear": 1641
+    },
+    {
+      "rowIndex": 8854,
+      "sourceName": "Joseon",
+      "fromYear": 1640,
+      "toYear": 1859,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-8854",
+      "displayFromYear": 1640,
+      "displayToYear": 1859
     },
     {
       "rowIndex": 8895,
@@ -6831,6 +7181,23 @@
       "displayToYear": 1804
     },
     {
+      "rowIndex": 10503,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1799,
+      "toYear": 1821,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 10,
+        "omitted": 5,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-10503",
+      "displayFromYear": 1799,
+      "displayToYear": 1821
+    },
+    {
       "rowIndex": 10645,
       "sourceName": "Qing Dynasty",
       "fromYear": 1805,
@@ -6901,6 +7268,23 @@
       "featureId": "clio-v021-11022",
       "displayFromYear": 1820,
       "displayToYear": 1821
+    },
+    {
+      "rowIndex": 11087,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1822,
+      "toYear": 1855,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 10,
+        "omitted": 5,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-11087",
+      "displayFromYear": 1822,
+      "displayToYear": 1855
     },
     {
       "rowIndex": 11108,
@@ -6999,6 +7383,23 @@
       "displayToYear": 1856
     },
     {
+      "rowIndex": 11593,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1856,
+      "toYear": 1863,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 10,
+        "omitted": 9,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-11593",
+      "displayFromYear": 1856,
+      "displayToYear": 1863
+    },
+    {
       "rowIndex": 11600,
       "sourceName": "Qing Dynasty",
       "fromYear": 1857,
@@ -7021,6 +7422,18 @@
       "featureId": "clio-v021-11658",
       "displayFromYear": 1859,
       "displayToYear": 1859
+    },
+    {
+      "rowIndex": 11661,
+      "sourceName": "Joseon",
+      "fromYear": 1860,
+      "toYear": 1894,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-11661",
+      "displayFromYear": 1860,
+      "displayToYear": 1894
     },
     {
       "rowIndex": 11670,
@@ -7071,6 +7484,23 @@
       "displayToYear": 1864
     },
     {
+      "rowIndex": 11742,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1864,
+      "toYear": 1864,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 11,
+        "omitted": 9,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-11742",
+      "displayFromYear": 1864,
+      "displayToYear": 1864
+    },
+    {
       "rowIndex": 11759,
       "sourceName": "Qing Dynasty",
       "fromYear": 1865,
@@ -7081,6 +7511,40 @@
       "featureId": "clio-v021-11759",
       "displayFromYear": 1865,
       "displayToYear": 1865
+    },
+    {
+      "rowIndex": 11767,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1865,
+      "toYear": 1865,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 10,
+        "omitted": 11,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-11767",
+      "displayFromYear": 1865,
+      "displayToYear": 1865
+    },
+    {
+      "rowIndex": 11772,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1866,
+      "toYear": 1867,
+      "wikidata": "Q205662",
+      "componentSelection": {
+        "kept": 11,
+        "omitted": 11,
+        "note": "仅保留源图内整体落在北纬30—41.6度间的岛屿组成部分；保留本州、四国、九州及附近岛屿复原。琉球、虾夷及北方争议地区未录入，不能据此理解其历史归属。不是按纬线切割多边形，未补绘新边界。"
+      },
+      "status": "accepted",
+      "entityId": "tokugawa",
+      "featureId": "clio-v021-11772",
+      "displayFromYear": 1866,
+      "displayToYear": 1867
     },
     {
       "rowIndex": 11796,
@@ -7105,6 +7569,15 @@
       "featureId": "clio-v021-11822",
       "displayFromYear": 1868,
       "displayToYear": 1872
+    },
+    {
+      "rowIndex": 11839,
+      "sourceName": "Tokugawa Shogunate",
+      "fromYear": 1868,
+      "toYear": 1869,
+      "wikidata": "Q205662",
+      "status": "excluded",
+      "reason": "来源区间越过已登记政权存续或阶段"
     },
     {
       "rowIndex": 11933,
@@ -7167,6 +7640,18 @@
       "displayToYear": 1897
     },
     {
+      "rowIndex": 12132,
+      "sourceName": "Joseon",
+      "fromYear": 1895,
+      "toYear": 1897,
+      "wikidata": "Q28405",
+      "status": "accepted",
+      "entityId": "joseon",
+      "featureId": "clio-v021-12132",
+      "displayFromYear": 1895,
+      "displayToYear": 1897
+    },
+    {
       "rowIndex": 12150,
       "sourceName": "Qing Dynasty",
       "fromYear": 1898,
@@ -7177,6 +7662,30 @@
       "featureId": "clio-v021-12150",
       "displayFromYear": 1898,
       "displayToYear": 1899
+    },
+    {
+      "rowIndex": 12170,
+      "sourceName": "Korean Empire",
+      "fromYear": 1898,
+      "toYear": 1899,
+      "wikidata": "Q28233",
+      "status": "accepted",
+      "entityId": "korean-empire",
+      "featureId": "clio-v021-12170",
+      "displayFromYear": 1898,
+      "displayToYear": 1899
+    },
+    {
+      "rowIndex": 12188,
+      "sourceName": "Korean Empire",
+      "fromYear": 1900,
+      "toYear": 1904,
+      "wikidata": "Q28233",
+      "status": "accepted",
+      "entityId": "korean-empire",
+      "featureId": "clio-v021-12188",
+      "displayFromYear": 1900,
+      "displayToYear": 1904
     },
     {
       "rowIndex": 12207,
@@ -7200,6 +7709,30 @@
       "entityId": "qing",
       "featureId": "clio-v021-12221",
       "displayFromYear": 1905,
+      "displayToYear": 1910
+    },
+    {
+      "rowIndex": 12241,
+      "sourceName": "Korean Empire",
+      "fromYear": 1905,
+      "toYear": 1907,
+      "wikidata": "Q28233",
+      "status": "accepted",
+      "entityId": "korean-empire",
+      "featureId": "clio-v021-12241",
+      "displayFromYear": 1905,
+      "displayToYear": 1907
+    },
+    {
+      "rowIndex": 12277,
+      "sourceName": "Korean Empire",
+      "fromYear": 1908,
+      "toYear": 1910,
+      "wikidata": "Q28233",
+      "status": "accepted",
+      "entityId": "korean-empire",
+      "featureId": "clio-v021-12277",
+      "displayFromYear": 1908,
       "displayToYear": 1910
     },
     {

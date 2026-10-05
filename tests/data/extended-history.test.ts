@@ -52,6 +52,13 @@ it("uses BCE location validity for a real Shang event point", () => {
     ),
   ).toBe(false);
 });
+it("locates Fei River's regional reference without claiming a precise battlefield", () => {
+  const scene = queryScene(catalog, packs, defaultQuery(383), defaults);
+  const point = buildEventLocations(scene).features.features.find((f) => f.properties.eventId === "fei-383")!;
+  expect(point.geometry.coordinates).toEqual([116.79291, 32.58162]);
+  expect(point.properties.approximate).toBe(true);
+  expect(scene.events.find((e) => e.id === "fei-383")?.interpretation).toContain("非古战场确点");
+});
 it.each([
   [494, "luoyang-494"],
   [634, "daming-founded"],
