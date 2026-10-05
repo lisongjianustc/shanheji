@@ -153,7 +153,7 @@ export function HistoryMap(props: MapProps) {
                 [
                   "in",
                   ["get", "relation"],
-                  ["literal", ["control", "administration"]],
+                  ["literal", ["control", "administration", "reconstruction"]],
                 ],
               ],
               paint: {
@@ -171,7 +171,7 @@ export function HistoryMap(props: MapProps) {
                 [
                   "in",
                   ["get", "relation"],
-                  ["literal", ["control", "administration"]],
+                  ["literal", ["control", "administration", "reconstruction"]],
                 ],
               ],
               paint: {
@@ -198,6 +198,18 @@ export function HistoryMap(props: MapProps) {
               });
             }
             map.on("click", "territory-fill", (e) => {
+              const target = e.originalEvent.target;
+              if (
+                target instanceof Element &&
+                target.closest(".event-glow, .capital-label, .cluster-list")
+              )
+                return;
+              if (
+                map.queryRenderedFeatures(e.point, {
+                  layers: ["event-areas-fill"],
+                }).length
+              )
+                return;
               const id = e.features?.[0]?.properties?.entityId;
               if (id) latest.current.onSelect({ kind: "entity", id });
             });
@@ -292,8 +304,10 @@ export function HistoryMap(props: MapProps) {
             el.className = "capital-label";
             el.textContent = `◇ ${nameAt(place!.names, scene.query.year)}`;
             el.title = `${nameAt(entity.names, scene.query.year)}都城（近似位置）`;
-            el.onclick = () =>
+            el.onclick = (event) => {
+              event.stopPropagation();
               latest.current.onSelect({ kind: "entity", id: entity.id });
+            };
             markers.current.push(
               new lib.Marker({ element: el })
                 .setLngLat(location.geometry.coordinates as [number, number])
@@ -336,7 +350,8 @@ export function HistoryMap(props: MapProps) {
             .join("、");
           el.setAttribute("aria-label", label);
           el.title = label;
-          el.onclick = () => {
+          el.onclick = (event) => {
+            event.stopPropagation();
             if (unique.length === 1)
               latest.current.onSelect({ kind: "event", id: unique[0] });
             else {
@@ -349,7 +364,8 @@ export function HistoryMap(props: MapProps) {
                 const e = scene.events.find((e) => e.id === id)!;
                 const button = document.createElement("button");
                 button.textContent = `${eventLabels[e.kind]} · ${e.title}`;
-                button.onclick = () => {
+                button.onclick = (event) => {
+                  event.stopPropagation();
                   latest.current.onSelect({ kind: "event", id });
                   popup?.remove();
                 };

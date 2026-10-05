@@ -1,5 +1,29 @@
 import { formatYearRange } from "../../domain/chronology";
 import type { Scene, Relation } from "../../domain/types";
+import { entityActiveAt, entityActiveInYear, nameAt } from "../../domain/time";
+export function missingPolities(scene: Scene) {
+  const { query, catalog, territories } = scene;
+  const drawn = new Set(
+    territories
+      .filter(
+        (t) =>
+          t.properties.temporalSupport !== "snapshot" ||
+          t.properties.snapshotYear === query.year,
+      )
+      .map((t) => t.properties.entityId),
+  );
+  return catalog.entities.filter(
+    (e) =>
+      (query.at
+        ? entityActiveAt(e, query.at)
+        : entityActiveInYear(e, query.year)) &&
+      (!query.filters.entityIds.length ||
+        query.filters.entityIds.includes(e.id)) &&
+      (!query.filters.regionIds.length ||
+        e.regionIds.some((r) => query.filters.regionIds.includes(r))) &&
+      !drawn.has(e.id),
+  );
+}
 export const regionLabels: Record<string, string> = {
   "china-core": "中国主要地区",
   steppe: "北方草原",
@@ -12,17 +36,30 @@ export const regionLabels: Record<string, string> = {
 export const relationLabels: Record<Relation, string> = {
   control: "实际控制",
   administration: "行政设置",
+  reconstruction: "疆域复原",
   vassal: "臣属关系",
   influence: "影响范围",
   claim: "主张范围",
 };
 export function CoveragePanel({ scene }: { scene: Scene }) {
+  const missing = missingPolities(scene);
   return (
     <section className="coverage-panel">
       <h3>资料覆盖</h3>
       <p className="empty-copy">
         空白表示尚缺资料，不表示当时没有政权或事件。底图为现代自然地理参考。
       </p>
+      {!!missing.length && (
+        <div className="coverage-row" data-testid="missing-polities">
+          <strong>当前筛选下，本年已登记政权无可用范围</strong>
+          <p>
+            {missing.map((e) => nameAt(e.names, scene.query.year)).join("、")}
+          </p>
+          <small>
+            仅列目录中已登记的政权；已有范围也可能不完整。取消来源或关系筛选可查看其他资料。
+          </small>
+        </div>
+      )}
       {scene.coverage.map((c) => (
         <div className="coverage-row" key={c.id}>
           <span className={`coverage-status ${c.status}`}>
@@ -56,6 +93,7 @@ export function CoveragePanel({ scene }: { scene: Scene }) {
               {
                 control: "直接统治或有效占领",
                 administration: "有建制记录，不等于持续控制",
+                reconstruction: "研究来源的年代区间轮廓，非确日实控审定",
                 vassal: "隶属关系，不等于本土疆域",
                 influence: "交往或影响范围",
                 claim: "主张但未证实有效控制",

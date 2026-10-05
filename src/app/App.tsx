@@ -23,6 +23,7 @@ import { useHistory } from "../state/useHistory";
 import { defaultQuery } from "../domain/query";
 import { nameAt, entityActiveInYear, yearOf } from "../domain/time";
 import type { Catalog, SearchEntry, Query } from "../domain/types";
+import { territoryAvailabilityYears } from "../domain/territorySlices";
 const emptyCatalog: Catalog = { sources: [], entities: [], places: [] };
 export default function App() {
   const repository = useMemo(() => createRepository(), []),
@@ -100,6 +101,9 @@ export default function App() {
         ),
     ),
   ].join("、");
+  const reconstructed = scene?.territories.some(
+    (t) => t.properties.relation === "reconstruction",
+  );
   const annualDistribution =
     polityCount > 1 &&
     new Set(scene?.territories.map((t) => t.properties.snapshotYear)).size ===
@@ -266,32 +270,31 @@ export default function App() {
           {scene && (
             <div className="coverage-banner">
               {scene.warnings.join("；") || "显示已核验资料"}
-              {!scene.territories.length &&
-                manifest?.mapPlates
-                  ?.filter((p) =>
-                    p.entityIds?.some((id) =>
-                      scene.catalog.entities.some(
-                        (e) => e.id === id && entityActiveInYear(e, query.year),
-                      ),
+              {manifest?.mapPlates
+                ?.filter((p) =>
+                  p.entityIds?.some((id) =>
+                    scene.catalog.entities.some(
+                      (e) => e.id === id && entityActiveInYear(e, query.year),
                     ),
-                  )
-                  .map((p) => (
-                    <button
-                      key={p.id}
-                      className="source-plate-shortcut"
-                      onClick={() => {
-                        controller.setPlaying(false);
-                        controller.select(null);
-                        setPlate(p);
-                      }}
-                    >
-                      查阅{formatYearRange(p.year, p.endYear ?? p.year)}来源原图
-                      {p.year !== query.year && !p.endYear
-                        ? "（其他年份）"
-                        : ""}{" "}
-                      ↗
-                    </button>
-                  ))}
+                  ),
+                )
+                .map((p) => (
+                  <button
+                    key={p.id}
+                    className="source-plate-shortcut"
+                    onClick={() => {
+                      controller.setPlaying(false);
+                      controller.select(null);
+                      setPlate(p);
+                    }}
+                  >
+                    查阅{formatYearRange(p.year, p.endYear ?? p.year)}来源原图
+                    {p.year !== query.year && !p.endYear
+                      ? "（其他年份）"
+                      : ""}{" "}
+                    ↗
+                  </button>
+                ))}
               {!!scene.territories.length && (
                 <span
                   title={Object.values(scene.territoryTimeLabels).join("；")}
@@ -299,15 +302,21 @@ export default function App() {
                   疆域参考：
                   {partialOnly
                     ? `${partialYears}年 · 部分行政参考（西部未录入，不代表实控）`
-                    : annualDistribution
-                      ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
-                      : [
-                          ...new Set(Object.values(scene.territoryTimeLabels)),
-                        ].join("；")}
+                    : reconstructed
+                      ? `${polityCount}个政权 · 来源年份区间复原（非确日格局，详情可查）`
+                      : annualDistribution
+                        ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
+                        : [
+                            ...new Set(
+                              Object.values(scene.territoryTimeLabels),
+                            ),
+                          ].join("；")}
                 </span>
               )}
               {partialSource && (
                 <span>
+                  {!partialOnly &&
+                    `${partialYears}年部分行政参考：西部未录入；`}
                   {scene.territories.some(
                     (t) =>
                       t.properties.id === "tang-742-eastern-administration",
@@ -340,8 +349,8 @@ export default function App() {
               )}
               {!!scene.territories.length && (
                 <span>
-                  实控：实色 · 行政：浅色 · 朝贡／藩属：长虚线 · 影响：点线 ·
-                  主张：点划线；空心范围不表示实际控制
+                  实控：实色 · 行政／复原：浅色 · 朝贡／藩属：长虚线 ·
+                  影响：点线 · 主张：点划线；空心范围不表示实际控制
                 </span>
               )}
               <span>
@@ -548,8 +557,11 @@ export default function App() {
           onPreview={controller.preview}
           onRequest={request}
           onPlaying={controller.setPlaying}
-          territoryYears={(manifest?.territorySlices ?? [])
-            .filter(
+          territoryMarkerYears={(manifest?.territorySlices ?? [])
+            .filter((s) => s.endYear === undefined)
+            .map((s) => s.year)}
+          territoryYears={territoryAvailabilityYears(
+            (manifest?.territorySlices ?? []).filter(
               (s) =>
                 (!query.filters.entityIds.length ||
                   query.filters.entityIds.includes(s.entityId)) &&
@@ -562,8 +574,8 @@ export default function App() {
                     s.interpretationId,
                   )) &&
                 s.relations.some((r) => query.filters.relations.includes(r)),
-            )
-            .map((s) => s.year)}
+            ),
+          )}
           eventYears={eventYears.sort((a, b) => a - b)}
           onEntity={(id) => select({ kind: "entity", id })}
         />

@@ -1,0 +1,51 @@
+# 年份区间疆域接入 · 2026-10-05
+
+## 本地发布
+
+版本 `2cda0f1b03a3e52f`，9 包、86 个登记政权、57 件唯一事件（60 条跨包引用）、13 个地点（9 个有参考位置）、51 个来源。疆域 527 条唯一记录（579 条跨包引用）：原有 12 条单年来源几何，加本轮 515 条研究复原区间。七张原图继续保留。
+
+时间轴覆盖约公元前2100年至1912年，不含0年。有来源区间时按区间切换，在来源结束后的下一年清空或切换；无资料时不做几何插值。起止节点表示资料可用性变化，不能当作所有实际历史边界变化的年代。
+
+## 来源及使用条件
+
+- [Seshat Cliopatria 官方 v0.2.1](https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.1)，官方标注 CC BY 4.0。本地保存许可，标明作者、版本、源记录号及编制改动。未使用不明转存版本。
+- [官方文档](https://seshat-global-history-databank.readthedocs.io/en/latest/cliopatria.html)及[数据论文](https://www.nature.com/articles/s41597-025-04516-9)说明采样和史料限制。本项目将其作为 `reconstruction`，年精度、争议范围，不能解释为逐日实控测绘或完整历史版图。
+- 固定下载 ZIP SHA-256：`e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4`；内含 GeoJSON SHA-256：`fc6f0d1e4cc42f45da83522b3696db6f2cc85ec0d12259a85c89b31347b8fc0a`。源记录13797条，当前身份映射清单内629条，接入515／排除114；并非全库已审查。
+
+## 编制与排除
+
+只采用独立政权 `POLITY`；完整来源区间须落在已登记的存续、复立及名称阶段。区间不能为了绕过错误而裁成所谓精确史实。原始几何无效则排除；0.01度保拓扑简化、六位小数舍入，验证有效性及面积变化阈值。这是压缩误差检查，不表示历史位置精度。
+
+- “Western Jin”在316年后的记录未自动改名为东晋；265—282年不含建康的记录也排除。
+- 北宋1126—1138年、唐682—691与692—704年跨武周、明清南明误合并、柔然546—554年跨552年瓦解等条目隔离。
+- 西秦400—409年间中断、吐谷浑隋征服与复立阶段、北元国号与南明政权群的口径均在目录和排除记录写明。
+- 战国七国单独登记；目录展示起点不等于各国建国年份。前凉、后赵、北凉及北元等异说保留来源口径，不把单一数值宣称为无争议共识。
+
+逐条清单：[接入审计](../../data/audits/cliopatria-v021-intake.json)。[年度可用性表](annual-availability.md)按名称阶段列出已登记年份、有资料及缺口；“有范围”也可能只含局部，不等于完成该政权疆界。
+
+## 地图显示与交互
+
+默认显示实控、行政设置、疆域复原；主张单独开启。相同政权有单年编制图时默认优先该版本，周边研究范围继续显示。742年默认为东部部分行政参考；选择 Cliopatria 解释版本可看其705—749年研究轮廓，743年默认切换为该研究范围。两种版本不合并成一个新政权疆域。
+
+年度研究数据不进入确日查询；详情显示来源原始区间。当前筛选下无范围的登记政权单独列出，邻国有面积不能掩盖本国缺口。资料未完整区域维持待核状态。
+
+修复地图填色点击覆盖事件标点的错误，事件、聚合与首都标注点击优先响应。新增634年大明宫营建、652年大雁塔创建、896年大明宫毁坏纪事。UNESCO遗产地图给出汉魏洛阳城、奈良宫、法隆寺、大明宫、大雁塔参考坐标；只标“遗址附近”，不作为事件发生确点或持续首都证明。大明宫来源中663年的可疑纪年未采用。
+
+## 独立东晋候选核查
+
+[Zunkir 383年淝水图](https://commons.wikimedia.org/wiki/File:Seize_Royaumes_383.svg)为CC BY-SA 4.0，图中分战前与反攻后边界。SVG主要为边界线、箭头和嵌入底图，不是完整政权面，且底图裁切重排尚无可靠配准。本轮不据此生成东晋填色，详见[候选审计](../../data/audits/seize-royaumes-383-intake.json)。
+
+[Ian Kiu 376年东晋与前秦图](https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png)已下载查看，CC BY 3.0可用，但无坐标网与城市配准点，尚未转换。夏、东晋、武周、周王室本土、部分五代政权及后期邻国等缺口不能因此称为完成。
+
+## 复现
+
+```sh
+curl -L --fail https://raw.githubusercontent.com/Seshat-Global-History-Databank/cliopatria/v0.2.1/cliopatria.geojson.zip -o data/raw/cliopatria-v0.2.1.zip
+.venv/bin/python scripts/data/import_cliopatria.py --apply
+.venv/bin/python scripts/data/audit_coverage.py
+npm run data:validate
+npm run data:publish
+npm run build
+```
+
+Python依赖沿用项目环境。原始大文件不提交；固定配置、来源几何、许可及审计提交，原始哈希变化会终止重建。自动测试证明数据和软件行为，不证明古代疆界已通过专家审定。

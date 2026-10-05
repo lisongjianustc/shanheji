@@ -95,11 +95,19 @@ export const manifestSchema = z.object({
     .array(
       z.object({
         year: z.number().int().refine(isSupportedYear),
+        endYear: z.number().int().refine(isSupportedYear).optional(),
         entityId: z.string(),
         interpretationId: z.string(),
         regionIds: z.array(z.string()),
         relations: z.array(
-          z.enum(["control", "administration", "vassal", "influence", "claim"]),
+          z.enum([
+            "control",
+            "administration",
+            "reconstruction",
+            "vassal",
+            "influence",
+            "claim",
+          ]),
         ),
         featureCount: z.number().int().positive(),
         disputed: z.boolean(),

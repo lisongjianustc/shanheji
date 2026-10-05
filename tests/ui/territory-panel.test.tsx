@@ -58,5 +58,9 @@ it("opens all polities for a year and clears a previous single-polity restrictio
   expect(q.year).toBe(262);
   expect(q.filters.entityIds).toEqual([]);
   expect(q.filters.interpretationIds).toEqual([]);
-  expect(q.filters.relations).toEqual(["control", "administration"]);
+  expect(q.filters.relations).toEqual([
+    "control",
+    "administration",
+    "reconstruction",
+  ]);
 });

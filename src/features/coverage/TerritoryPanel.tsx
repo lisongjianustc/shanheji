@@ -24,10 +24,14 @@ export function TerritoryPanel({
     <section className="territory-panel">
       <h2>可用疆域图幅</h2>
       <p className="empty-copy">
-        按图幅标示年份查看。资料节点不等于边界实际变化年，空缺年份不外推。
+        单年图幅与来源年份区间分别标注。资料节点不等于确切边界变化日，空缺年份不外推。单年参考图全部列出；年份区间列出当前年份可用范围，输入年份可查看其他区间。
       </p>
       {!slices.length && <p>尚无可用疆域图幅。</p>}
-      {[...new Set(slices.map((s) => s.year))].map((year) => (
+      {[
+        ...new Set(
+          slices.filter((s) => s.endYear === undefined).map((s) => s.year),
+        ),
+      ].map((year) => (
         <button
           key={year}
           onClick={() =>
@@ -42,57 +46,67 @@ export function TerritoryPanel({
           查看{formatYear(year)}全部已录入政权
         </button>
       ))}
-      {slices.map((s) => {
-        const version = interpretations.find(
-          (i) => i.id === s.interpretationId,
-        );
-        const entity = scene.catalog.entities.find((e) => e.id === s.entityId);
-        return (
-          <article
-            className="territory-slice"
-            key={`${s.year}-${s.entityId}-${s.interpretationId}`}
-          >
-            <strong>
-              {formatYear(s.year)} ·{" "}
-              {entity ? nameAt(entity.names, s.year) : s.entityId}
-            </strong>
-            <p>{version?.label ?? s.interpretationId}</p>
-            <small>
-              {s.relations.map((r) => relationLabels[r]).join("／")} ·{" "}
-              {s.featureCount} 条范围
-            </small>
-            {s.disputed && (
-              <p className="evidence-note">
-                存在边界争议，仅呈现此来源的编制版本；未经历史专家审定。
-              </p>
-            )}
-            <button
-              onClick={() =>
-                onRequest({
-                  year: s.year,
-                  at: null,
-                  snapshotId: null,
-                  filters: {
-                    ...structuredClone(DEFAULT_FILTERS),
-                    entityIds: [s.entityId],
-                    interpretationIds: [s.interpretationId],
-                    relations: s.relations.filter(
-                      (r) =>
-                        r !== "claim" && r !== "influence" && r !== "vassal",
-                    ),
-                  },
-                })
-              }
+      {slices
+        .filter(
+          (s) =>
+            s.endYear === undefined ||
+            (s.year <= scene.query.year && s.endYear >= scene.query.year),
+        )
+        .map((s) => {
+          const version = interpretations.find(
+            (i) => i.id === s.interpretationId,
+          );
+          const entity = scene.catalog.entities.find(
+            (e) => e.id === s.entityId,
+          );
+          return (
+            <article
+              className="territory-slice"
+              key={`${s.year}-${s.endYear ?? s.year}-${s.entityId}-${s.interpretationId}`}
             >
-              查看{formatYear(s.year)}图幅
-            </button>
-            <p className="empty-copy">
-              主张、影响及臣属范围需在“筛选与图层”中另行开启。
-            </p>
-            {version?.reason && <p className="empty-copy">{version.reason}</p>}
-          </article>
-        );
-      })}
+              <strong>
+                {formatYearRange(s.year, s.endYear ?? s.year)} ·{" "}
+                {entity ? nameAt(entity.names, s.year) : s.entityId}
+              </strong>
+              <p>{version?.label ?? s.interpretationId}</p>
+              <small>
+                {s.relations.map((r) => relationLabels[r]).join("／")} ·{" "}
+                {s.featureCount} 条范围
+              </small>
+              {s.disputed && (
+                <p className="evidence-note">
+                  存在边界争议，仅呈现此来源的编制版本；本项目核对未经历史专家审定。
+                </p>
+              )}
+              <button
+                onClick={() =>
+                  onRequest({
+                    year: s.year,
+                    at: null,
+                    snapshotId: null,
+                    filters: {
+                      ...structuredClone(DEFAULT_FILTERS),
+                      entityIds: [s.entityId],
+                      interpretationIds: [s.interpretationId],
+                      relations: s.relations.filter(
+                        (r) =>
+                          r !== "claim" && r !== "influence" && r !== "vassal",
+                      ),
+                    },
+                  })
+                }
+              >
+                查看{formatYear(s.year)}图幅
+              </button>
+              <p className="empty-copy">
+                主张、影响及臣属范围需在“筛选与图层”中另行开启。
+              </p>
+              {version?.reason && (
+                <p className="empty-copy">{version.reason}</p>
+              )}
+            </article>
+          );
+        })}
       {!!plates.length && (
         <>
           <h2>来源参考图幅</h2>

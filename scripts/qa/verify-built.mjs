@@ -1,6 +1,17 @@
 import { chromium, expect } from "@playwright/test";
 import { writeFile } from "node:fs/promises";
-const browser = await chromium.launch({
+async function expectCuratedPaint(target, ids) {
+  await expect
+    .poll(async () =>
+      ((await target.getAttribute("data-rendered-territory-ids")) ?? "")
+        .split(" ")
+        .filter((id) => id && !id.startsWith("clio-"))
+        .sort()
+        .join(" "),
+    )
+    .toBe(ids.split(" ").filter(Boolean).sort().join(" "));
+}
+  const browser = await chromium.launch({
   channel: "chrome",
   headless: true,
   args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"],
@@ -22,8 +33,8 @@ try {
     timeout: 20000,
   });
   await expect(page.getByTestId("committed-year")).toHaveText("661");
-  await expect(page.locator(".map-canvas")).toHaveAttribute(
-    "data-rendered-territory-ids",
+  await expectCuratedPaint(
+    page.locator(".map-canvas"),
     "tang-661-civil tang-661-military",
   );
   await page.getByRole("spinbutton", { name: "年份", exact: true }).fill("460");
@@ -62,10 +73,7 @@ try {
     await input.fill(String(n));
     await input.press("Enter");
     await expect(page.getByTestId("committed-year")).toHaveText(String(n));
-    await expect(page.locator(".map-canvas")).toHaveAttribute(
-      "data-rendered-territory-ids",
-      ids,
-    );
+    await expectCuratedPaint(page.locator(".map-canvas"), ids);
     await page.screenshot({ path: `docs/qa/screenshots/production-${n}.png` });
   }
   await page.setViewportSize({ width: 390, height: 844 });
@@ -84,8 +92,8 @@ try {
   const entry = page.getByRole("spinbutton", { name: "年份", exact: true });
   await entry.fill("610");
   await entry.press("Enter");
-  await expect(page.locator(".map-canvas")).toHaveAttribute(
-    "data-rendered-territory-ids",
+  await expectCuratedPaint(
+    page.locator(".map-canvas"),
     "sui-610-partial-administration",
   );
   await expect(page.locator(".coverage-banner")).toContainText("西部未录入");
@@ -131,8 +139,8 @@ try {
   });
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
-  await expect(page.locator(".map-canvas")).toHaveAttribute(
-    "data-rendered-territory-ids",
+  await expectCuratedPaint(
+    page.locator(".map-canvas"),
     "tang-742-eastern-administration",
   );
   await expect(page.locator(".coverage-banner")).toContainText("仅105°E以东");
@@ -151,10 +159,7 @@ try {
   await entry.fill("743");
   await entry.press("Enter");
   await expect(page.getByTestId("committed-year")).toHaveText("743");
-  await expect(page.locator(".map-canvas")).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "",
-  );
+  await expectCuratedPaint(page.locator(".map-canvas"), "");
   await page.getByRole("button", { name: "条目 · 搜索 · 图层" }).click();
   // Check the expanded chronology against the final production build.
   await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
@@ -172,10 +177,7 @@ try {
   await entry.press("Enter");
   await expect(page.getByTestId("committed-year")).toHaveText("1300");
   await expect(page.locator(".event-glow")).toHaveCount(1);
-  await expect(page.locator(".map-canvas")).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "",
-  );
+  await expectCuratedPaint(page.locator(".map-canvas"), "");
   await page.screenshot({
     path: "docs/qa/screenshots/production-bce-1300.png",
   });
@@ -206,6 +208,47 @@ try {
     path: "docs/qa/screenshots/production-ming-1420.png",
   });
   await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  const researchPaint = {};
+  for (const [n, ids] of [
+    [-300, "clio-v021-375 clio-v021-434 clio-v021-447 clio-v021-448 clio-v021-483 clio-v021-513 clio-v021-514"],
+    [1420, "clio-v021-6943"],
+    [1820, "clio-v021-11022"],
+  ]) {
+    await entry.fill(String(n));
+    await entry.press("Enter");
+    await expect(page.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", ids);
+    researchPaint[n] = ids.split(" ");
+    await page.screenshot({ path: `docs/qa/screenshots/production-research-${n}.png` });
+  }
+  const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  await mobile.goto("http://127.0.0.1:4174/");
+  await expect(mobile.getByTestId("scene-status")).toHaveText("已更新");
+  await mobile.getByRole("spinbutton", { name: "年份", exact: true }).fill("1820");
+  await mobile.getByRole("spinbutton", { name: "年份", exact: true }).press("Enter");
+  await expect(mobile.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", "clio-v021-11022");
+  await mobile.screenshot({ path: "docs/qa/screenshots/production-research-mobile-1820.png" });
+  if ((await mobile.evaluate(() => document.documentElement.scrollWidth)) > 390)
+    throw Error("Research mobile overflow");
+  const mobileTimeline = await mobile.getByRole("region", { name: "历史时间轴" }).boundingBox();
+  if (mobileTimeline.y + mobileTimeline.height > 844) throw Error("Research timeline below viewport");
+  await mobile.close();
+  for (const [n, title] of [[634, "大明宫"], [652, "大雁塔"]]) {
+    await entry.fill(String(n));
+    await entry.press("Enter");
+    await expect(page.getByTestId("committed-year")).toHaveText(String(n));
+    await page.locator(".event-glow").click();
+    const detail = page.getByRole("complementary", { name: "条目详情" });
+    await expect(detail).toContainText(title);
+    await expect(detail).toContainText("遗址附近");
+    await page.screenshot({ path: `docs/qa/screenshots/production-cultural-${n}.png` });
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  }
+  await entry.fill("383");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("383");
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await expect(page.getByTestId("missing-polities")).toContainText("东晋");
+  await page.screenshot({ path: "docs/qa/screenshots/production-missing-eastern-jin.png" });
   await entry.fill("1912");
   await entry.press("Enter");
   await expect(page.getByTestId("committed-year")).toHaveText("1912");
@@ -222,24 +265,27 @@ try {
         checkedAt: new Date().toISOString(),
         url: "http://127.0.0.1:4174",
         dataVersion: manifest.version,
-        years: [-1300, -221, 262, 572, 610, 460, 661, 742, 743, 1420, 1912],
+        years: [-1300, -300, -221, 262, 383, 572, 610, 460, 634, 652, 661, 742, 743, 1420, 1820, 1912],
         workerVerified: true,
         expandedChronology: true,
         bceMobileNoOverflow: true,
         sourceShortcutPreservesYear: true,
         newEventPointVerified: true,
         timelineDirectInitial: true,
-        paintedTerritoryIds: {
+        curatedPaintedTerritoryIds: {
           ...Object.fromEntries(
             dated.map(([year, ids]) => [year, ids.split(" ")]),
           ),
           661: ["tang-661-civil", "tang-661-military"],
         },
+        researchPaintedTerritoryIds: researchPaint,
+        missingEasternJinVisible: true,
+        culturalPointsClickableOverPolity: true,
         disputedAdministrationVisible: true,
         claimsOffByDefault: true,
         mobileNoOverflow: true,
         tang742EasternPartial: true,
-        tang742AdjacentYearCleared: true,
+        tang742CuratedAdjacentYearCleared: true,
         tang742MobileNoOverlap: true,
         suiPartialSource: true,
         suiMobileNoOverlap: true,
@@ -255,7 +301,7 @@ try {
   );
   if (errors.length) throw Error(JSON.stringify(errors));
   console.log(
-    "Production: 262, 572, 610, 661 and 742 polities actually painted, event, desktop/mobile, no errors.",
+    "Production: curated and research territories, event clicks and missing Eastern Jin, desktop/mobile, no errors.",
   );
 } finally {
   await browser.close();

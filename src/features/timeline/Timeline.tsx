@@ -24,6 +24,7 @@ export interface TimelineProps {
   onPlaying: (v: boolean) => void;
   eventYears?: number[];
   territoryYears?: number[];
+  territoryMarkerYears?: number[];
   onEntity?: (id: string) => void;
 }
 export const periods = [
@@ -236,6 +237,24 @@ export function Timeline(p: TimelineProps) {
               </option>
             ))}
           </select>
+          {!!p.territoryYears?.length && (
+            <select
+              aria-label="疆域资料年份"
+              value=""
+              onChange={(e) => go(Number(e.target.value))}
+            >
+              <option value="" disabled>
+                选择疆域资料起止节点
+              </option>
+              {[...new Set(p.territoryYears)]
+                .sort((a, b) => a - b)
+                .map((n) => (
+                  <option key={n} value={n}>
+                    {formatYear(n)}
+                  </option>
+                ))}
+            </select>
+          )}
           <button onClick={() => jump(-1)} title="上一事件或疆域资料年份">
             上一节点
           </button>
@@ -311,7 +330,7 @@ export function Timeline(p: TimelineProps) {
             ))}
         </div>
         <div className="territory-ticks" aria-label="疆域资料节点">
-          {[...new Set(p.territoryYears ?? [])]
+          {[...new Set(p.territoryMarkerYears ?? p.territoryYears ?? [])]
             .filter((n) => n >= start && n <= end)
             .map((n) => (
               <button

@@ -3591,5 +3591,1104 @@
       "central-asia"
     ],
     "capitals": []
+  },
+  {
+    "id": "later-zhao",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后赵",
+        "validity": {
+          "start": {
+            "earliest": "0319-01-01",
+            "latest": "0319-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0351-01-01",
+            "latest": "0351-01-01"
+          },
+          "precision": "year",
+          "label": "319—350年（教育部纪年表口径；年精度，确日与异说待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五胡十六国 / 后赵",
+            "note": "只采用纪年表所列年范围；前凉起年、后赵末年和北凉起年等口径有异说，未推定确日或合并延续政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0319-01-01",
+        "latest": "0319-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0351-01-01",
+        "latest": "0351-01-01"
+      },
+      "precision": "year",
+      "label": "319—350年（教育部纪年表口径；年精度，确日与异说待核）"
+    },
+    "color": "#9f7f76",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "former-liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "前凉",
+        "validity": {
+          "start": {
+            "earliest": "0324-01-01",
+            "latest": "0324-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0377-01-01",
+            "latest": "0377-01-01"
+          },
+          "precision": "year",
+          "label": "324—376年（教育部纪年表口径；年精度，确日与异说待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五胡十六国 / 前凉",
+            "note": "只采用纪年表所列年范围；前凉起年、后赵末年和北凉起年等口径有异说，未推定确日或合并延续政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0324-01-01",
+        "latest": "0324-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0377-01-01",
+        "latest": "0377-01-01"
+      },
+      "precision": "year",
+      "label": "324—376年（教育部纪年表口径；年精度，确日与异说待核）"
+    },
+    "color": "#829584",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-yan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后燕",
+        "validity": {
+          "start": {
+            "earliest": "0384-01-01",
+            "latest": "0384-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0410-01-01",
+            "latest": "0410-01-01"
+          },
+          "precision": "year",
+          "label": "384—409年（教育部纪年表口径；年精度，确日与异说待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五胡十六国 / 后燕",
+            "note": "只采用纪年表所列年范围；前凉起年、后赵末年和北凉起年等口径有异说，未推定确日或合并延续政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0384-01-01",
+        "latest": "0384-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0410-01-01",
+        "latest": "0410-01-01"
+      },
+      "precision": "year",
+      "label": "384—409年（教育部纪年表口径；年精度，确日与异说待核）"
+    },
+    "color": "#957b9a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-qin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西秦",
+        "validity": {
+          "start": {
+            "earliest": "0385-01-01",
+            "latest": "0385-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0432-01-01",
+            "latest": "0432-01-01"
+          },
+          "precision": "year",
+          "label": "385—431年（教育部纪年表口径；年精度，确日与异说待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五胡十六国 / 西秦",
+            "note": "只采用纪年表所列年范围；前凉起年、后赵末年和北凉起年等口径有异说，未推定确日或合并延续政权。"
+          },
+          {
+            "sourceId": "jinshu-annals-andi",
+            "locator": "隆安四年、义熙五年",
+            "note": "安帝纪记乞伏乾归在隆安四年降姚兴、义熙五年复称西秦王；对应400与409年，仅用于存续分段，不证明其疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0385-01-01",
+        "latest": "0385-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0432-01-01",
+        "latest": "0432-01-01"
+      },
+      "precision": "year",
+      "label": "385—400、409—431年（含复立；年精度）"
+    },
+    "color": "#967c62",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": [],
+    "activePeriods": [
+      {
+        "start": {
+          "earliest": "0385-01-01",
+          "latest": "0385-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0401-01-01",
+          "latest": "0401-01-01"
+        },
+        "precision": "year",
+        "label": "385—400年；400年降后秦，年内变化待确日核对"
+      },
+      {
+        "start": {
+          "earliest": "0409-01-01",
+          "latest": "0409-12-31"
+        },
+        "endExclusive": {
+          "earliest": "0432-01-01",
+          "latest": "0432-01-01"
+        },
+        "precision": "year",
+        "label": "409—431年；409年复立，年精度"
+      }
+    ]
+  },
+  {
+    "id": "northern-liang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北凉",
+        "validity": {
+          "start": {
+            "earliest": "0401-01-01",
+            "latest": "0401-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0440-01-01",
+            "latest": "0440-01-01"
+          },
+          "precision": "year",
+          "label": "401—439年（教育部纪年表口径；年精度，确日与异说待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五胡十六国 / 北凉",
+            "note": "只采用纪年表所列年范围；前凉起年、后赵末年和北凉起年等口径有异说，未推定确日或合并延续政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0401-01-01",
+        "latest": "0401-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0440-01-01",
+        "latest": "0440-01-01"
+      },
+      "precision": "year",
+      "label": "401—439年（教育部纪年表口径；年精度，确日与异说待核）"
+    },
+    "color": "#758c9c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qin-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "秦国",
+        "validity": {
+          "start": {
+            "earliest": "-0750-01-01",
+            "latest": "-0750-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0221-01-01",
+            "latest": "-0221-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前750—222年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Qin; first mapped source coverage -750",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "前221年改称皇帝，前222年为秦国阶段展示终点"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0750-01-01",
+        "latest": "-0750-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0221-01-01",
+        "latest": "-0221-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前750—222年（起点非建国年）"
+    },
+    "color": "#8b7967",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qi-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "齐国",
+        "validity": {
+          "start": {
+            "earliest": "-0750-01-01",
+            "latest": "-0750-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0220-01-01",
+            "latest": "-0220-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前750—221年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Qi; first mapped source coverage -750",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并齐国纪年"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0750-01-01",
+        "latest": "-0750-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0220-01-01",
+        "latest": "-0220-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前750—221年（起点非建国年）"
+    },
+    "color": "#7c987c",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "chu-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "楚国",
+        "validity": {
+          "start": {
+            "earliest": "-0750-01-01",
+            "latest": "-0750-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0222-01-01",
+            "latest": "-0222-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前750—223年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Chu; first mapped source coverage -750",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并楚国纪年"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0750-01-01",
+        "latest": "-0750-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0222-01-01",
+        "latest": "-0222-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前750—223年（起点非建国年）"
+    },
+    "color": "#ba8875",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "yan-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "燕国",
+        "validity": {
+          "start": {
+            "earliest": "-0750-01-01",
+            "latest": "-0750-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0221-01-01",
+            "latest": "-0221-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前750—222年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Yan; first mapped source coverage -750",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并燕国纪年"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0750-01-01",
+        "latest": "-0750-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0221-01-01",
+        "latest": "-0221-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前750—222年（起点非建国年）"
+    },
+    "color": "#849aaf",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "han-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "韩国",
+        "validity": {
+          "start": {
+            "earliest": "-0404-01-01",
+            "latest": "-0404-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0229-01-01",
+            "latest": "-0229-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前404—230年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Han; first mapped source coverage -404",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并韩国纪年"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0404-01-01",
+        "latest": "-0404-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0229-01-01",
+        "latest": "-0229-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前404—230年（起点非建国年）"
+    },
+    "color": "#b19a5e",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "zhao-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "赵国",
+        "validity": {
+          "start": {
+            "earliest": "-0404-01-01",
+            "latest": "-0404-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0227-01-01",
+            "latest": "-0227-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前404—228年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Zhao; first mapped source coverage -404",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并赵国纪年；赵只录至邯郸陷落，前222年代王政权另待接入"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0404-01-01",
+        "latest": "-0404-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0227-01-01",
+        "latest": "-0227-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前404—228年（起点非建国年）"
+    },
+    "color": "#9484a1",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "wei-state",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "魏国",
+        "validity": {
+          "start": {
+            "earliest": "-0404-01-01",
+            "latest": "-0404-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-0224-01-01",
+            "latest": "-0224-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示公元前404—225年（起点非建国年）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Name=Wei; first mapped source coverage -404",
+            "note": "展示起点来自源图覆盖，非始封或建国年；齐含姜齐/田齐异姓阶段，未以本记录确定易姓日。"
+          },
+          {
+            "sourceId": "shiji-qinshihuang",
+            "locator": "秦王政十七、十九、二十二至二十六年",
+            "note": "秦并魏国纪年"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0404-01-01",
+        "latest": "-0404-01-01"
+      },
+      "endExclusive": {
+        "earliest": "-0224-01-01",
+        "latest": "-0224-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示公元前404—225年（起点非建国年）"
+    },
+    "color": "#7b998f",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "tuyuhun",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "吐谷浑",
+        "validity": {
+          "start": {
+            "earliest": "0329-01-01",
+            "latest": "0329-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0664-01-01",
+            "latest": "0664-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示329—663年；早期部族阶段待核"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Tuyuhun",
+            "note": "本目录从329年展示；早期部族阶段不作为已经统一的政权范围。"
+          },
+          {
+            "sourceId": "neac-tuyuhun",
+            "locator": "历史沿革/663年",
+            "note": "663年并入吐蕃；隋战争至复国的范围区间另行排除。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0329-01-01",
+        "latest": "0329-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0664-01-01",
+        "latest": "0664-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示329—663年；早期部族阶段待核"
+    },
+    "color": "#c29c69",
+    "regionIds": [
+      "tibet",
+      "steppe"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "rouran",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "柔然",
+        "validity": {
+          "start": {
+            "earliest": "0402-01-01",
+            "latest": "0402-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0556-01-01",
+            "latest": "0556-01-01"
+          },
+          "precision": "year",
+          "label": "402—555年（552年以后余部阶段未补绘）"
+        },
+        "evidence": [
+          {
+            "sourceId": "rouran-buddhism-2002",
+            "locator": "第85页（PDF第5页）/402—555年",
+            "note": "采用402—555年政权口径；552年汗国崩溃至余部覆亡需另分阶段。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0402-01-01",
+        "latest": "0402-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0556-01-01",
+        "latest": "0556-01-01"
+      },
+      "precision": "year",
+      "label": "402—555年（552年以后余部阶段未补绘）"
+    },
+    "color": "#a18dab",
+    "regionIds": [
+      "steppe",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "tibetan-empire",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "吐蕃",
+        "validity": {
+          "start": {
+            "earliest": "0633-01-01",
+            "latest": "0633-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0843-01-01",
+            "latest": "0843-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示633—842年（起点非建国确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Tibetan Empire / 633年及后续范围",
+            "note": "本目录从633年有据图幅开始展示，非建国确日；更早时期待核。"
+          },
+          {
+            "sourceId": "zhuoni-tibetan-history",
+            "locator": "842年赞普死后",
+            "note": "842年以后地方分裂，不延用帝国整体轮廓。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0633-01-01",
+        "latest": "0633-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0843-01-01",
+        "latest": "0843-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示633—842年（起点非建国确日）"
+    },
+    "color": "#ad8767",
+    "regionIds": [
+      "tibet",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "nanzhao",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南诏",
+        "validity": {
+          "start": {
+            "earliest": "0738-01-01",
+            "latest": "0738-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0903-01-01",
+            "latest": "0903-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示738—902年（蒙舍诏前期另待接入）"
+        },
+        "evidence": [
+          {
+            "sourceId": "yn-piluoge",
+            "locator": "738年",
+            "note": "展示统一六诏及唐册封后的阶段；更早蒙舍诏不冒称同一整体范围。"
+          },
+          {
+            "sourceId": "zgbk-yunnan-five",
+            "locator": "天复二年/902年",
+            "note": "902年南诏政权结束，后续大长和等不沿用其名。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0738-01-01",
+        "latest": "0738-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0903-01-01",
+        "latest": "0903-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示738—902年（蒙舍诏前期另待接入）"
+    },
+    "color": "#a4a16d",
+    "regionIds": [
+      "china-core",
+      "southeast-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "first-turkic",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "突厥汗国",
+        "validity": {
+          "start": {
+            "earliest": "0555-01-01",
+            "latest": "0555-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0584-01-01",
+            "latest": "0584-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示555—583年（始建纪年另待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Göktürk Khaganate",
+            "note": "从555年来源覆盖起展示，不表示552年之前没有相关政权。"
+          },
+          {
+            "sourceId": "neac-turkic-split",
+            "locator": "开皇三年/583年",
+            "note": "583年分裂为东西两部，不延用未分裂汗国范围。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0555-01-01",
+        "latest": "0555-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0584-01-01",
+        "latest": "0584-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示555—583年（始建纪年另待核）"
+    },
+    "color": "#839a85",
+    "regionIds": [
+      "steppe",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "eastern-turkic",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "东突厥",
+        "validity": {
+          "start": {
+            "earliest": "0587-01-01",
+            "latest": "0587-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0631-01-01",
+            "latest": "0631-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示587—630年（非建国起讫确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Eastern Göktürks",
+            "note": "展示587—630年的来源阶段；583年分裂后的早期范围待核。"
+          },
+          {
+            "sourceId": "neac-turkic-split",
+            "locator": "便桥会盟图卷/东突厥",
+            "note": "独立于西突厥登记，不合并为单一疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0587-01-01",
+        "latest": "0587-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0631-01-01",
+        "latest": "0631-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示587—630年（非建国起讫确日）"
+    },
+    "color": "#84949e",
+    "regionIds": [
+      "steppe"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-turkic",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西突厥",
+        "validity": {
+          "start": {
+            "earliest": "0587-01-01",
+            "latest": "0587-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0658-01-01",
+            "latest": "0658-01-01"
+          },
+          "precision": "year",
+          "label": "目录展示587—657年（后续藩属关系另待接入）"
+        },
+        "evidence": [
+          {
+            "sourceId": "cliopatria-v021",
+            "locator": "Western Göktürks",
+            "note": "目录取587—657年来源阶段；657年以后与唐属下可汗关系复杂，暂停整体独立轮廓。"
+          },
+          {
+            "sourceId": "neac-turkic-split",
+            "locator": "583年东西分裂",
+            "note": "单独登记西部汗国。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0587-01-01",
+        "latest": "0587-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0658-01-01",
+        "latest": "0658-01-01"
+      },
+      "precision": "year",
+      "label": "目录展示587—657年（后续藩属关系另待接入）"
+    },
+    "color": "#a2987b",
+    "regionIds": [
+      "steppe",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "uyghur-khaganate",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "回纥／回鹘汗国",
+        "validity": {
+          "start": {
+            "earliest": "0744-01-01",
+            "latest": "0744-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0841-01-01",
+            "latest": "0841-01-01"
+          },
+          "precision": "year",
+          "label": "744—840年（漠北汗国阶段）"
+        },
+        "evidence": [
+          {
+            "sourceId": "sunan-uyghur-history",
+            "locator": "744年建立、840年为黠戛斯所破",
+            "note": "840年以后各西迁政权不沿用漠北汗国整体轮廓。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0744-01-01",
+        "latest": "0744-01-01"
+      },
+      "endExclusive": {
+        "earliest": "0841-01-01",
+        "latest": "0841-01-01"
+      },
+      "precision": "year",
+      "label": "744—840年（漠北汗国阶段）"
+    },
+    "color": "#9aa270",
+    "regionIds": [
+      "steppe",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-yuan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北元（国号口径）",
+        "validity": {
+          "start": {
+            "earliest": "1368-01-01",
+            "latest": "1368-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1403-01-01",
+            "latest": "1403-01-01"
+          },
+          "precision": "year",
+          "label": "1368—1402年（故宫国号口径；1388等终点有异说）"
+        },
+        "evidence": [
+          {
+            "sourceId": "dpm-northern-yuan",
+            "locator": "北元朝/1368、1402年",
+            "note": "此目录采用故宫国号延续至1402年的口径，不表示1402年蒙古诸部全部消失。"
+          },
+          {
+            "sourceId": "nstc-northern-yuan",
+            "locator": "北元势力/1388年",
+            "note": "另有1388年失去帝号、年号的终点口径；保留异说，不把本来源图当作无争议实控。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1368-01-01",
+        "latest": "1368-01-01"
+      },
+      "endExclusive": {
+        "earliest": "1403-01-01",
+        "latest": "1403-01-01"
+      },
+      "precision": "year",
+      "label": "1368—1402年（故宫国号口径；1388等终点有异说）"
+    },
+    "color": "#968971",
+    "regionIds": [
+      "steppe",
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-ming",
+    "kind": "local-power",
+    "names": [
+      {
+        "text": "南明诸政权",
+        "validity": {
+          "start": {
+            "earliest": "1644-01-01",
+            "latest": "1644-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1663-01-01",
+            "latest": "1663-01-01"
+          },
+          "precision": "year",
+          "label": "1644—1662年（诸政权合称，非单一连续朝廷）"
+        },
+        "evidence": [
+          {
+            "sourceId": "dpm-southern-ming",
+            "locator": "瞿式耜/弘光1644—1645、永历1646—1662",
+            "note": "南明为多个继承政权的合称；本图只保留来源整体复原，不能区分各朝廷同年控制，郑氏与三藩不能冒称同一南明政权。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1644-01-01",
+        "latest": "1644-01-01"
+      },
+      "endExclusive": {
+        "earliest": "1663-01-01",
+        "latest": "1663-01-01"
+      },
+      "precision": "year",
+      "label": "1644—1662年（诸政权合称，非单一连续朝廷）"
+    },
+    "color": "#b29977",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
   }
 ]

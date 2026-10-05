@@ -1,0 +1,2842 @@
+{
+  "checkedAt": "2026-10-05",
+  "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
+  "packages": 9,
+  "entities": 86,
+  "uniqueTerritories": 527,
+  "territoryReferences": 579,
+  "uniqueEvents": 57,
+  "eventReferences": 60,
+  "records": [
+    {
+      "entityId": "cao-wei",
+      "name": "曹魏",
+      "registeredYears": [
+        [
+          220,
+          266
+        ]
+      ],
+      "availableYears": [
+        [
+          224,
+          264
+        ]
+      ],
+      "missingYears": [
+        [
+          220,
+          223
+        ],
+        [
+          265,
+          266
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "shu-han",
+      "name": "蜀汉",
+      "registeredYears": [
+        [
+          221,
+          263
+        ]
+      ],
+      "availableYears": [
+        [
+          224,
+          262
+        ]
+      ],
+      "missingYears": [
+        [
+          221,
+          223
+        ],
+        [
+          263,
+          263
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "sun-wu",
+      "name": "孙吴",
+      "registeredYears": [
+        [
+          222,
+          280
+        ]
+      ],
+      "availableYears": [
+        [
+          238,
+          269
+        ]
+      ],
+      "missingYears": [
+        [
+          222,
+          237
+        ],
+        [
+          270,
+          280
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "jin",
+      "name": "西晋",
+      "registeredYears": [
+        [
+          265,
+          316
+        ]
+      ],
+      "availableYears": [
+        [
+          283,
+          312
+        ]
+      ],
+      "missingYears": [
+        [
+          265,
+          282
+        ],
+        [
+          313,
+          316
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "jin",
+      "name": "东晋",
+      "registeredYears": [
+        [
+          317,
+          420
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          317,
+          420
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "han-zhao",
+      "name": "汉赵（前赵）",
+      "registeredYears": [
+        [
+          304,
+          329
+        ]
+      ],
+      "availableYears": [
+        [
+          306,
+          323
+        ]
+      ],
+      "missingYears": [
+        [
+          304,
+          305
+        ],
+        [
+          324,
+          329
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "cheng-han",
+      "name": "成汉",
+      "registeredYears": [
+        [
+          304,
+          347
+        ]
+      ],
+      "availableYears": [
+        [
+          306,
+          346
+        ]
+      ],
+      "missingYears": [
+        [
+          304,
+          305
+        ],
+        [
+          347,
+          347
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "former-yan",
+      "name": "前燕",
+      "registeredYears": [
+        [
+          337,
+          370
+        ]
+      ],
+      "availableYears": [
+        [
+          337,
+          370
+        ]
+      ],
+      "missingYears": [],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "later-qin",
+      "name": "后秦",
+      "registeredYears": [
+        [
+          384,
+          417
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          416
+        ]
+      ],
+      "missingYears": [
+        [
+          384,
+          386
+        ],
+        [
+          417,
+          417
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "later-liang",
+      "name": "后凉",
+      "registeredYears": [
+        [
+          386,
+          403
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          401
+        ]
+      ],
+      "missingYears": [
+        [
+          386,
+          386
+        ],
+        [
+          402,
+          403
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "southern-liang",
+      "name": "南凉",
+      "registeredYears": [
+        [
+          397,
+          414
+        ]
+      ],
+      "availableYears": [
+        [
+          397,
+          413
+        ]
+      ],
+      "missingYears": [
+        [
+          414,
+          414
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "southern-yan",
+      "name": "南燕",
+      "registeredYears": [
+        [
+          398,
+          410
+        ]
+      ],
+      "availableYears": [
+        [
+          402,
+          409
+        ]
+      ],
+      "missingYears": [
+        [
+          398,
+          401
+        ],
+        [
+          410,
+          410
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "western-liang",
+      "name": "西凉",
+      "registeredYears": [
+        [
+          400,
+          420
+        ]
+      ],
+      "availableYears": [
+        [
+          407,
+          409
+        ]
+      ],
+      "missingYears": [
+        [
+          400,
+          406
+        ],
+        [
+          410,
+          420
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "xia",
+      "name": "夏（赫连氏）",
+      "registeredYears": [
+        [
+          407,
+          431
+        ]
+      ],
+      "availableYears": [
+        [
+          410,
+          425
+        ]
+      ],
+      "missingYears": [
+        [
+          407,
+          409
+        ],
+        [
+          426,
+          431
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "northern-yan",
+      "name": "北燕",
+      "registeredYears": [
+        [
+          409,
+          436
+        ]
+      ],
+      "availableYears": [
+        [
+          410,
+          425
+        ]
+      ],
+      "missingYears": [
+        [
+          409,
+          409
+        ],
+        [
+          426,
+          436
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "liu-song",
+      "name": "刘宋",
+      "registeredYears": [
+        [
+          420,
+          479
+        ]
+      ],
+      "availableYears": [
+        [
+          426,
+          479
+        ]
+      ],
+      "missingYears": [
+        [
+          420,
+          425
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "southern-qi",
+      "name": "南齐",
+      "registeredYears": [
+        [
+          479,
+          502
+        ]
+      ],
+      "availableYears": [
+        [
+          480,
+          499
+        ]
+      ],
+      "missingYears": [
+        [
+          479,
+          479
+        ],
+        [
+          500,
+          502
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "liang",
+      "name": "梁",
+      "registeredYears": [
+        [
+          502,
+          557
+        ]
+      ],
+      "availableYears": [
+        [
+          510,
+          554
+        ]
+      ],
+      "missingYears": [
+        [
+          502,
+          509
+        ],
+        [
+          555,
+          557
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "chen",
+      "name": "陈",
+      "registeredYears": [
+        [
+          557,
+          589
+        ]
+      ],
+      "availableYears": [
+        [
+          561,
+          586
+        ]
+      ],
+      "missingYears": [
+        [
+          557,
+          560
+        ],
+        [
+          587,
+          589
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "northern-wei",
+      "name": "北魏",
+      "registeredYears": [
+        [
+          386,
+          534
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          533
+        ]
+      ],
+      "missingYears": [
+        [
+          386,
+          386
+        ],
+        [
+          534,
+          534
+        ]
+      ],
+      "geometryRecords": 14
+    },
+    {
+      "entityId": "eastern-wei",
+      "name": "东魏",
+      "registeredYears": [
+        [
+          534,
+          550
+        ]
+      ],
+      "availableYears": [
+        [
+          534,
+          545
+        ]
+      ],
+      "missingYears": [
+        [
+          546,
+          550
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "western-wei",
+      "name": "西魏",
+      "registeredYears": [
+        [
+          535,
+          557
+        ]
+      ],
+      "availableYears": [
+        [
+          536,
+          554
+        ]
+      ],
+      "missingYears": [
+        [
+          535,
+          535
+        ],
+        [
+          555,
+          557
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "northern-zhou",
+      "name": "北周",
+      "registeredYears": [
+        [
+          557,
+          581
+        ]
+      ],
+      "availableYears": [
+        [
+          561,
+          576
+        ]
+      ],
+      "missingYears": [
+        [
+          557,
+          560
+        ],
+        [
+          577,
+          581
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "northern-qi",
+      "name": "北齐",
+      "registeredYears": [
+        [
+          550,
+          577
+        ]
+      ],
+      "availableYears": [
+        [
+          555,
+          576
+        ]
+      ],
+      "missingYears": [
+        [
+          550,
+          554
+        ],
+        [
+          577,
+          577
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "sui",
+      "name": "隋",
+      "registeredYears": [
+        [
+          581,
+          618
+        ]
+      ],
+      "availableYears": [
+        [
+          587,
+          616
+        ]
+      ],
+      "missingYears": [
+        [
+          581,
+          586
+        ],
+        [
+          617,
+          618
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "former-qin",
+      "name": "前秦",
+      "registeredYears": [
+        [
+          351,
+          395
+        ]
+      ],
+      "availableYears": [
+        [
+          353,
+          393
+        ]
+      ],
+      "missingYears": [
+        [
+          351,
+          352
+        ],
+        [
+          394,
+          395
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "tang",
+      "name": "唐",
+      "registeredYears": [
+        [
+          618,
+          690
+        ],
+        [
+          705,
+          907
+        ]
+      ],
+      "availableYears": [
+        [
+          623,
+          681
+        ],
+        [
+          705,
+          899
+        ]
+      ],
+      "missingYears": [
+        [
+          618,
+          622
+        ],
+        [
+          682,
+          690
+        ],
+        [
+          900,
+          907
+        ]
+      ],
+      "geometryRecords": 32
+    },
+    {
+      "entityId": "wu-zhou",
+      "name": "武周",
+      "registeredYears": [
+        [
+          690,
+          705
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          690,
+          705
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "goguryeo",
+      "name": "高句丽",
+      "registeredYears": [
+        [
+          220,
+          668
+        ]
+      ],
+      "availableYears": [
+        [
+          220,
+          633
+        ]
+      ],
+      "missingYears": [
+        [
+          634,
+          668
+        ]
+      ],
+      "geometryRecords": 20
+    },
+    {
+      "entityId": "baekje",
+      "name": "百济",
+      "registeredYears": [
+        [
+          220,
+          660
+        ]
+      ],
+      "availableYears": [
+        [
+          347,
+          660
+        ]
+      ],
+      "missingYears": [
+        [
+          220,
+          346
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "silla",
+      "name": "新罗",
+      "registeredYears": [
+        [
+          220,
+          935
+        ]
+      ],
+      "availableYears": [
+        [
+          378,
+          935
+        ]
+      ],
+      "missingYears": [
+        [
+          220,
+          377
+        ]
+      ],
+      "geometryRecords": 11
+    },
+    {
+      "entityId": "balhae",
+      "name": "渤海",
+      "registeredYears": [
+        [
+          698,
+          926
+        ]
+      ],
+      "availableYears": [
+        [
+          705,
+          925
+        ]
+      ],
+      "missingYears": [
+        [
+          698,
+          704
+        ],
+        [
+          926,
+          926
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "japan-court",
+      "name": "日本列岛朝廷",
+      "registeredYears": [
+        [
+          538,
+          907
+        ]
+      ],
+      "availableYears": [
+        [
+          540,
+          813
+        ]
+      ],
+      "missingYears": [
+        [
+          538,
+          539
+        ],
+        [
+          814,
+          907
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "western-liang-nanbei",
+      "name": "西梁（江陵）",
+      "registeredYears": [
+        [
+          555,
+          587
+        ]
+      ],
+      "availableYears": [
+        [
+          561,
+          586
+        ]
+      ],
+      "missingYears": [
+        [
+          555,
+          560
+        ],
+        [
+          587,
+          587
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "western-liang-nanbei",
+      "name": "后梁（南北朝）",
+      "registeredYears": [
+        [
+          555,
+          587
+        ]
+      ],
+      "availableYears": [
+        [
+          561,
+          586
+        ]
+      ],
+      "missingYears": [
+        [
+          555,
+          560
+        ],
+        [
+          587,
+          587
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "xia-ancient",
+      "name": "夏（传统记载，未确证）",
+      "registeredYears": [
+        [
+          -2100,
+          -1600
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -2100,
+          -1600
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "xia-ancient",
+      "name": "夏朝",
+      "registeredYears": [
+        [
+          -2100,
+          -1600
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -2100,
+          -1600
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "shang",
+      "name": "商",
+      "registeredYears": [
+        [
+          -1600,
+          -1046
+        ]
+      ],
+      "availableYears": [
+        [
+          -1600,
+          -1101
+        ]
+      ],
+      "missingYears": [
+        [
+          -1100,
+          -1046
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "shang",
+      "name": "商朝",
+      "registeredYears": [
+        [
+          -1600,
+          -1046
+        ]
+      ],
+      "availableYears": [
+        [
+          -1600,
+          -1101
+        ]
+      ],
+      "missingYears": [
+        [
+          -1100,
+          -1046
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "shang",
+      "name": "殷商",
+      "registeredYears": [
+        [
+          -1600,
+          -1046
+        ]
+      ],
+      "availableYears": [
+        [
+          -1600,
+          -1101
+        ]
+      ],
+      "missingYears": [
+        [
+          -1100,
+          -1046
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "western-zhou",
+      "name": "西周",
+      "registeredYears": [
+        [
+          -1046,
+          -771
+        ]
+      ],
+      "availableYears": [
+        [
+          -1000,
+          -801
+        ]
+      ],
+      "missingYears": [
+        [
+          -1046,
+          -1001
+        ],
+        [
+          -800,
+          -771
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "eastern-zhou",
+      "name": "东周王室",
+      "registeredYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "eastern-zhou",
+      "name": "东周",
+      "registeredYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "eastern-zhou",
+      "name": "春秋",
+      "registeredYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "eastern-zhou",
+      "name": "战国",
+      "registeredYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          -770,
+          -256
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "qin",
+      "name": "秦",
+      "registeredYears": [
+        [
+          -221,
+          -206
+        ]
+      ],
+      "availableYears": [
+        [
+          -218,
+          -209
+        ]
+      ],
+      "missingYears": [
+        [
+          -221,
+          -219
+        ],
+        [
+          -208,
+          -206
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "qin",
+      "name": "秦朝",
+      "registeredYears": [
+        [
+          -221,
+          -206
+        ]
+      ],
+      "availableYears": [
+        [
+          -218,
+          -209
+        ]
+      ],
+      "missingYears": [
+        [
+          -221,
+          -219
+        ],
+        [
+          -208,
+          -206
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "qin",
+      "name": "秦帝国",
+      "registeredYears": [
+        [
+          -221,
+          -206
+        ]
+      ],
+      "availableYears": [
+        [
+          -218,
+          -209
+        ]
+      ],
+      "missingYears": [
+        [
+          -221,
+          -219
+        ],
+        [
+          -208,
+          -206
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "western-han",
+      "name": "西汉",
+      "registeredYears": [
+        [
+          -206,
+          9
+        ]
+      ],
+      "availableYears": [
+        [
+          -202,
+          5
+        ]
+      ],
+      "missingYears": [
+        [
+          -206,
+          -203
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "western-han",
+      "name": "汉朝",
+      "registeredYears": [
+        [
+          -206,
+          9
+        ]
+      ],
+      "availableYears": [
+        [
+          -202,
+          5
+        ]
+      ],
+      "missingYears": [
+        [
+          -206,
+          -203
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "western-han",
+      "name": "前汉",
+      "registeredYears": [
+        [
+          -206,
+          9
+        ]
+      ],
+      "availableYears": [
+        [
+          -202,
+          5
+        ]
+      ],
+      "missingYears": [
+        [
+          -206,
+          -203
+        ],
+        [
+          6,
+          9
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "xin",
+      "name": "新",
+      "registeredYears": [
+        [
+          9,
+          23
+        ]
+      ],
+      "availableYears": [
+        [
+          14,
+          22
+        ]
+      ],
+      "missingYears": [
+        [
+          9,
+          13
+        ],
+        [
+          23,
+          23
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "xin",
+      "name": "新朝",
+      "registeredYears": [
+        [
+          9,
+          23
+        ]
+      ],
+      "availableYears": [
+        [
+          14,
+          22
+        ]
+      ],
+      "missingYears": [
+        [
+          9,
+          13
+        ],
+        [
+          23,
+          23
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "xin",
+      "name": "王莽",
+      "registeredYears": [
+        [
+          9,
+          23
+        ]
+      ],
+      "availableYears": [
+        [
+          14,
+          22
+        ]
+      ],
+      "missingYears": [
+        [
+          9,
+          13
+        ],
+        [
+          23,
+          23
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "eastern-han",
+      "name": "东汉",
+      "registeredYears": [
+        [
+          25,
+          220
+        ]
+      ],
+      "availableYears": [
+        [
+          30,
+          214
+        ]
+      ],
+      "missingYears": [
+        [
+          25,
+          29
+        ],
+        [
+          215,
+          220
+        ]
+      ],
+      "geometryRecords": 16
+    },
+    {
+      "entityId": "eastern-han",
+      "name": "后汉",
+      "registeredYears": [
+        [
+          25,
+          220
+        ]
+      ],
+      "availableYears": [
+        [
+          30,
+          214
+        ]
+      ],
+      "missingYears": [
+        [
+          25,
+          29
+        ],
+        [
+          215,
+          220
+        ]
+      ],
+      "geometryRecords": 16
+    },
+    {
+      "entityId": "eastern-han",
+      "name": "汉朝",
+      "registeredYears": [
+        [
+          25,
+          220
+        ]
+      ],
+      "availableYears": [
+        [
+          30,
+          214
+        ]
+      ],
+      "missingYears": [
+        [
+          25,
+          29
+        ],
+        [
+          215,
+          220
+        ]
+      ],
+      "geometryRecords": 16
+    },
+    {
+      "entityId": "later-liang-five",
+      "name": "后梁（五代）",
+      "registeredYears": [
+        [
+          907,
+          923
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          921
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ],
+        [
+          922,
+          923
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "later-tang-five",
+      "name": "后唐",
+      "registeredYears": [
+        [
+          923,
+          936
+        ]
+      ],
+      "availableYears": [
+        [
+          926,
+          935
+        ]
+      ],
+      "missingYears": [
+        [
+          923,
+          925
+        ],
+        [
+          936,
+          936
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "later-jin-five",
+      "name": "后晋",
+      "registeredYears": [
+        [
+          936,
+          946
+        ]
+      ],
+      "availableYears": [
+        [
+          936,
+          946
+        ]
+      ],
+      "missingYears": [],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "later-han-five",
+      "name": "后汉（五代）",
+      "registeredYears": [
+        [
+          947,
+          950
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          947,
+          950
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "later-zhou-five",
+      "name": "后周",
+      "registeredYears": [
+        [
+          951,
+          960
+        ]
+      ],
+      "availableYears": [
+        [
+          960,
+          960
+        ]
+      ],
+      "missingYears": [
+        [
+          951,
+          959
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "wu-ten",
+      "name": "吴（十国）",
+      "registeredYears": [
+        [
+          902,
+          937
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          902,
+          937
+        ]
+      ],
+      "geometryRecords": 0
+    },
+    {
+      "entityId": "former-shu-ten",
+      "name": "前蜀",
+      "registeredYears": [
+        [
+          907,
+          925
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          925
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "wuyue",
+      "name": "吴越",
+      "registeredYears": [
+        [
+          907,
+          978
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          969
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ],
+        [
+          970,
+          978
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "chu-ten",
+      "name": "楚（十国）",
+      "registeredYears": [
+        [
+          907,
+          951
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          946
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ],
+        [
+          947,
+          951
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "southern-han",
+      "name": "南汉",
+      "registeredYears": [
+        [
+          907,
+          971
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          969
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ],
+        [
+          970,
+          971
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "min-ten",
+      "name": "闽",
+      "registeredYears": [
+        [
+          909,
+          945
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          935
+        ]
+      ],
+      "missingYears": [
+        [
+          909,
+          910
+        ],
+        [
+          936,
+          945
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "jingnan",
+      "name": "荆南",
+      "registeredYears": [
+        [
+          924,
+          960
+        ]
+      ],
+      "availableYears": [
+        [
+          926,
+          935
+        ]
+      ],
+      "missingYears": [
+        [
+          924,
+          925
+        ],
+        [
+          936,
+          960
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "later-shu-ten",
+      "name": "后蜀",
+      "registeredYears": [
+        [
+          934,
+          965
+        ]
+      ],
+      "availableYears": [
+        [
+          936,
+          961
+        ]
+      ],
+      "missingYears": [
+        [
+          934,
+          935
+        ],
+        [
+          962,
+          965
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "southern-tang",
+      "name": "南唐",
+      "registeredYears": [
+        [
+          937,
+          975
+        ]
+      ],
+      "availableYears": [
+        [
+          960,
+          969
+        ]
+      ],
+      "missingYears": [
+        [
+          937,
+          959
+        ],
+        [
+          970,
+          975
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "northern-han",
+      "name": "北汉",
+      "registeredYears": [
+        [
+          951,
+          979
+        ]
+      ],
+      "availableYears": [
+        [
+          960,
+          979
+        ]
+      ],
+      "missingYears": [
+        [
+          951,
+          959
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "northern-song",
+      "name": "北宋",
+      "registeredYears": [
+        [
+          960,
+          1127
+        ]
+      ],
+      "availableYears": [
+        [
+          961,
+          1125
+        ]
+      ],
+      "missingYears": [
+        [
+          960,
+          960
+        ],
+        [
+          1126,
+          1127
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "northern-song",
+      "name": "宋朝",
+      "registeredYears": [
+        [
+          960,
+          1127
+        ]
+      ],
+      "availableYears": [
+        [
+          961,
+          1125
+        ]
+      ],
+      "missingYears": [
+        [
+          960,
+          960
+        ],
+        [
+          1126,
+          1127
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "southern-song",
+      "name": "南宋",
+      "registeredYears": [
+        [
+          1127,
+          1279
+        ]
+      ],
+      "availableYears": [
+        [
+          1139,
+          1278
+        ]
+      ],
+      "missingYears": [
+        [
+          1127,
+          1138
+        ],
+        [
+          1279,
+          1279
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "southern-song",
+      "name": "宋朝",
+      "registeredYears": [
+        [
+          1127,
+          1279
+        ]
+      ],
+      "availableYears": [
+        [
+          1139,
+          1278
+        ]
+      ],
+      "missingYears": [
+        [
+          1127,
+          1138
+        ],
+        [
+          1279,
+          1279
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "liao",
+      "name": "辽",
+      "registeredYears": [
+        [
+          907,
+          1125
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          1125
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ]
+      ],
+      "geometryRecords": 9
+    },
+    {
+      "entityId": "liao",
+      "name": "契丹",
+      "registeredYears": [
+        [
+          907,
+          1125
+        ]
+      ],
+      "availableYears": [
+        [
+          911,
+          1125
+        ]
+      ],
+      "missingYears": [
+        [
+          907,
+          910
+        ]
+      ],
+      "geometryRecords": 9
+    },
+    {
+      "entityId": "western-xia",
+      "name": "西夏",
+      "registeredYears": [
+        [
+          1032,
+          1227
+        ]
+      ],
+      "availableYears": [
+        [
+          1034,
+          1226
+        ]
+      ],
+      "missingYears": [
+        [
+          1032,
+          1033
+        ],
+        [
+          1227,
+          1227
+        ]
+      ],
+      "geometryRecords": 7
+    },
+    {
+      "entityId": "western-xia",
+      "name": "党项",
+      "registeredYears": [
+        [
+          1032,
+          1227
+        ]
+      ],
+      "availableYears": [
+        [
+          1034,
+          1226
+        ]
+      ],
+      "missingYears": [
+        [
+          1032,
+          1033
+        ],
+        [
+          1227,
+          1227
+        ]
+      ],
+      "geometryRecords": 7
+    },
+    {
+      "entityId": "jurchen-jin",
+      "name": "金",
+      "registeredYears": [
+        [
+          1115,
+          1234
+        ]
+      ],
+      "availableYears": [
+        [
+          1126,
+          1226
+        ]
+      ],
+      "missingYears": [
+        [
+          1115,
+          1125
+        ],
+        [
+          1227,
+          1234
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "jurchen-jin",
+      "name": "女真金",
+      "registeredYears": [
+        [
+          1115,
+          1234
+        ]
+      ],
+      "availableYears": [
+        [
+          1126,
+          1226
+        ]
+      ],
+      "missingYears": [
+        [
+          1115,
+          1125
+        ],
+        [
+          1227,
+          1234
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "mongol-yuan",
+      "name": "蒙古政权",
+      "registeredYears": [
+        [
+          1206,
+          1270
+        ]
+      ],
+      "availableYears": [
+        [
+          1206,
+          1270
+        ]
+      ],
+      "missingYears": [],
+      "geometryRecords": 14
+    },
+    {
+      "entityId": "mongol-yuan",
+      "name": "元",
+      "registeredYears": [
+        [
+          1271,
+          1368
+        ]
+      ],
+      "availableYears": [
+        [
+          1271,
+          1362
+        ]
+      ],
+      "missingYears": [
+        [
+          1363,
+          1368
+        ]
+      ],
+      "geometryRecords": 14
+    },
+    {
+      "entityId": "mongol-yuan",
+      "name": "蒙古帝国",
+      "registeredYears": [
+        [
+          1206,
+          1368
+        ]
+      ],
+      "availableYears": [
+        [
+          1206,
+          1362
+        ]
+      ],
+      "missingYears": [
+        [
+          1363,
+          1368
+        ]
+      ],
+      "geometryRecords": 14
+    },
+    {
+      "entityId": "mongol-yuan",
+      "name": "元朝",
+      "registeredYears": [
+        [
+          1271,
+          1368
+        ]
+      ],
+      "availableYears": [
+        [
+          1271,
+          1362
+        ]
+      ],
+      "missingYears": [
+        [
+          1363,
+          1368
+        ]
+      ],
+      "geometryRecords": 14
+    },
+    {
+      "entityId": "ming",
+      "name": "明",
+      "registeredYears": [
+        [
+          1368,
+          1644
+        ]
+      ],
+      "availableYears": [
+        [
+          1375,
+          1644
+        ]
+      ],
+      "missingYears": [
+        [
+          1368,
+          1374
+        ]
+      ],
+      "geometryRecords": 27
+    },
+    {
+      "entityId": "ming",
+      "name": "明朝",
+      "registeredYears": [
+        [
+          1368,
+          1644
+        ]
+      ],
+      "availableYears": [
+        [
+          1375,
+          1644
+        ]
+      ],
+      "missingYears": [
+        [
+          1368,
+          1374
+        ]
+      ],
+      "geometryRecords": 27
+    },
+    {
+      "entityId": "qing",
+      "name": "后金",
+      "registeredYears": [
+        [
+          1616,
+          1635
+        ]
+      ],
+      "availableYears": [
+        [
+          1619,
+          1635
+        ]
+      ],
+      "missingYears": [
+        [
+          1616,
+          1618
+        ]
+      ],
+      "geometryRecords": 69
+    },
+    {
+      "entityId": "qing",
+      "name": "清",
+      "registeredYears": [
+        [
+          1636,
+          1912
+        ]
+      ],
+      "availableYears": [
+        [
+          1636,
+          1911
+        ]
+      ],
+      "missingYears": [
+        [
+          1912,
+          1912
+        ]
+      ],
+      "geometryRecords": 69
+    },
+    {
+      "entityId": "qing",
+      "name": "清朝",
+      "registeredYears": [
+        [
+          1636,
+          1912
+        ]
+      ],
+      "availableYears": [
+        [
+          1636,
+          1911
+        ]
+      ],
+      "missingYears": [
+        [
+          1912,
+          1912
+        ]
+      ],
+      "geometryRecords": 69
+    },
+    {
+      "entityId": "later-zhao",
+      "name": "后赵",
+      "registeredYears": [
+        [
+          319,
+          350
+        ]
+      ],
+      "availableYears": [
+        [
+          337,
+          346
+        ]
+      ],
+      "missingYears": [
+        [
+          319,
+          336
+        ],
+        [
+          347,
+          350
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "former-liang",
+      "name": "前凉",
+      "registeredYears": [
+        [
+          324,
+          376
+        ]
+      ],
+      "availableYears": [
+        [
+          324,
+          372
+        ]
+      ],
+      "missingYears": [
+        [
+          373,
+          376
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "later-yan",
+      "name": "后燕",
+      "registeredYears": [
+        [
+          384,
+          409
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          409
+        ]
+      ],
+      "missingYears": [
+        [
+          384,
+          386
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "western-qin",
+      "name": "西秦",
+      "registeredYears": [
+        [
+          385,
+          400
+        ],
+        [
+          409,
+          431
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          396
+        ],
+        [
+          410,
+          425
+        ]
+      ],
+      "missingYears": [
+        [
+          385,
+          386
+        ],
+        [
+          397,
+          400
+        ],
+        [
+          409,
+          409
+        ],
+        [
+          426,
+          431
+        ]
+      ],
+      "geometryRecords": 5
+    },
+    {
+      "entityId": "northern-liang",
+      "name": "北凉",
+      "registeredYears": [
+        [
+          401,
+          439
+        ]
+      ],
+      "availableYears": [
+        [
+          402,
+          438
+        ]
+      ],
+      "missingYears": [
+        [
+          401,
+          401
+        ],
+        [
+          439,
+          439
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "qin-state",
+      "name": "秦国",
+      "registeredYears": [
+        [
+          -750,
+          -222
+        ]
+      ],
+      "availableYears": [
+        [
+          -750,
+          -223
+        ]
+      ],
+      "missingYears": [
+        [
+          -222,
+          -222
+        ]
+      ],
+      "geometryRecords": 11
+    },
+    {
+      "entityId": "qi-state",
+      "name": "齐国",
+      "registeredYears": [
+        [
+          -750,
+          -221
+        ]
+      ],
+      "availableYears": [
+        [
+          -750,
+          -223
+        ]
+      ],
+      "missingYears": [
+        [
+          -222,
+          -221
+        ]
+      ],
+      "geometryRecords": 9
+    },
+    {
+      "entityId": "chu-state",
+      "name": "楚国",
+      "registeredYears": [
+        [
+          -750,
+          -223
+        ]
+      ],
+      "availableYears": [
+        [
+          -750,
+          -224
+        ]
+      ],
+      "missingYears": [
+        [
+          -223,
+          -223
+        ]
+      ],
+      "geometryRecords": 16
+    },
+    {
+      "entityId": "yan-state",
+      "name": "燕国",
+      "registeredYears": [
+        [
+          -750,
+          -222
+        ]
+      ],
+      "availableYears": [
+        [
+          -750,
+          -223
+        ]
+      ],
+      "missingYears": [
+        [
+          -222,
+          -222
+        ]
+      ],
+      "geometryRecords": 3
+    },
+    {
+      "entityId": "han-state",
+      "name": "韩国",
+      "registeredYears": [
+        [
+          -404,
+          -230
+        ]
+      ],
+      "availableYears": [
+        [
+          -404,
+          -231
+        ]
+      ],
+      "missingYears": [
+        [
+          -230,
+          -230
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "zhao-state",
+      "name": "赵国",
+      "registeredYears": [
+        [
+          -404,
+          -228
+        ]
+      ],
+      "availableYears": [
+        [
+          -404,
+          -231
+        ]
+      ],
+      "missingYears": [
+        [
+          -230,
+          -228
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "wei-state",
+      "name": "魏国",
+      "registeredYears": [
+        [
+          -404,
+          -225
+        ]
+      ],
+      "availableYears": [
+        [
+          -404,
+          -226
+        ]
+      ],
+      "missingYears": [
+        [
+          -225,
+          -225
+        ]
+      ],
+      "geometryRecords": 6
+    },
+    {
+      "entityId": "tuyuhun",
+      "name": "吐谷浑",
+      "registeredYears": [
+        [
+          329,
+          663
+        ]
+      ],
+      "availableYears": [
+        [
+          387,
+          601
+        ],
+        [
+          628,
+          660
+        ]
+      ],
+      "missingYears": [
+        [
+          329,
+          386
+        ],
+        [
+          602,
+          627
+        ],
+        [
+          661,
+          663
+        ]
+      ],
+      "geometryRecords": 16
+    },
+    {
+      "entityId": "rouran",
+      "name": "柔然",
+      "registeredYears": [
+        [
+          402,
+          555
+        ]
+      ],
+      "availableYears": [
+        [
+          402,
+          545
+        ]
+      ],
+      "missingYears": [
+        [
+          546,
+          555
+        ]
+      ],
+      "geometryRecords": 11
+    },
+    {
+      "entityId": "tibetan-empire",
+      "name": "吐蕃",
+      "registeredYears": [
+        [
+          633,
+          842
+        ]
+      ],
+      "availableYears": [
+        [
+          634,
+          839
+        ]
+      ],
+      "missingYears": [
+        [
+          633,
+          633
+        ],
+        [
+          840,
+          842
+        ]
+      ],
+      "geometryRecords": 21
+    },
+    {
+      "entityId": "nanzhao",
+      "name": "南诏",
+      "registeredYears": [
+        [
+          738,
+          902
+        ]
+      ],
+      "availableYears": [
+        [
+          741,
+          899
+        ]
+      ],
+      "missingYears": [
+        [
+          738,
+          740
+        ],
+        [
+          900,
+          902
+        ]
+      ],
+      "geometryRecords": 8
+    },
+    {
+      "entityId": "first-turkic",
+      "name": "突厥汗国",
+      "registeredYears": [
+        [
+          555,
+          583
+        ]
+      ],
+      "availableYears": [
+        [
+          555,
+          576
+        ]
+      ],
+      "missingYears": [
+        [
+          577,
+          583
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "eastern-turkic",
+      "name": "东突厥",
+      "registeredYears": [
+        [
+          587,
+          630
+        ]
+      ],
+      "availableYears": [
+        [
+          587,
+          629
+        ]
+      ],
+      "missingYears": [
+        [
+          630,
+          630
+        ]
+      ],
+      "geometryRecords": 7
+    },
+    {
+      "entityId": "western-turkic",
+      "name": "西突厥",
+      "registeredYears": [
+        [
+          587,
+          657
+        ]
+      ],
+      "availableYears": [
+        [
+          587,
+          655
+        ]
+      ],
+      "missingYears": [
+        [
+          656,
+          657
+        ]
+      ],
+      "geometryRecords": 12
+    },
+    {
+      "entityId": "uyghur-khaganate",
+      "name": "回纥／回鹘汗国",
+      "registeredYears": [
+        [
+          744,
+          840
+        ]
+      ],
+      "availableYears": [
+        [
+          750,
+          839
+        ]
+      ],
+      "missingYears": [
+        [
+          744,
+          749
+        ],
+        [
+          840,
+          840
+        ]
+      ],
+      "geometryRecords": 7
+    },
+    {
+      "entityId": "northern-yuan",
+      "name": "北元（国号口径）",
+      "registeredYears": [
+        [
+          1368,
+          1402
+        ]
+      ],
+      "availableYears": [
+        [
+          1375,
+          1401
+        ]
+      ],
+      "missingYears": [
+        [
+          1368,
+          1374
+        ],
+        [
+          1402,
+          1402
+        ]
+      ],
+      "geometryRecords": 1
+    },
+    {
+      "entityId": "southern-ming",
+      "name": "南明诸政权",
+      "registeredYears": [
+        [
+          1644,
+          1662
+        ]
+      ],
+      "availableYears": [
+        [
+          1645,
+          1658
+        ]
+      ],
+      "missingYears": [
+        [
+          1644,
+          1644
+        ],
+        [
+          1659,
+          1662
+        ]
+      ],
+      "geometryRecords": 3
+    }
+  ]
+}

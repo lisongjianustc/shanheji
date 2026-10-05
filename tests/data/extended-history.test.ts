@@ -18,7 +18,11 @@ it("publishes the new chronology with complete references and retains old territ
   expect(validateDataset(catalog, packs)).toEqual([]);
   expect(catalogSchema.safeParse(catalog).success).toBe(true);
   expect(packs.every((p) => packageSchema.safeParse(p).success)).toBe(true);
-  expect(packs.flatMap((p) => p.territories)).toHaveLength(12);
+  expect(
+    packs
+      .flatMap((p) => p.territories)
+      .filter((t) => !t.properties.id.startsWith("clio-")),
+  ).toHaveLength(12);
 });
 it.each([
   -2100, -1600, -1046, -770, -221, -206, -1, 1, 9, 25, 960, 1127, 1271, 1368,
@@ -28,7 +32,9 @@ it.each([
   (year) => {
     const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
     expect(scene.query.year).toBe(year);
-    expect(scene.territories).toHaveLength(0);
+    expect(
+      scene.territories.filter((t) => !t.properties.id.startsWith("clio-")),
+    ).toHaveLength(0);
     expect(scene.coverage.length).toBeGreaterThan(0);
   },
 );
@@ -45,6 +51,21 @@ it("uses BCE location validity for a real Shang event point", () => {
       (e) => e.id === "yin-capital",
     ),
   ).toBe(false);
+});
+it.each([
+  [494, "luoyang-494"],
+  [634, "daming-founded"],
+  [652, "wild-goose-founded"],
+  [896, "daming-destroyed"],
+])("cultural points retain evidence and can be located at %i", (year, id) => {
+  const scene = queryScene(
+    catalog,
+    packs,
+    defaultQuery(Number(year)),
+    defaults,
+  );
+  const points = buildEventLocations(scene).features.features;
+  expect(points.some((f) => f.properties.eventId === id)).toBe(true);
 });
 it("includes simultaneous Song Liao and Jin rather than replacing them with one dynasty", () => {
   const active = catalog.entities

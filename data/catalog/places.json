@@ -125,7 +125,37 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.621389,
+            34.731111
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0494-01-01",
+            "latest": "0494-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0535-01-01",
+            "latest": "0535-01-01"
+          },
+          "precision": "year",
+          "label": "494—534年（相关事件位置参考）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-silk-maps",
+            "locator": "1442-002 Site of Luoyang City from the Eastern Han to Northern Wei Dynasty",
+            "note": "采用遗址／遗产点位作为附近位置，不作为仪式确址、古城范围或战场坐标。当前遗址可能包含后世重建部分。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fei-battle-region",
@@ -341,7 +371,37 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            135.796942,
+            34.691942
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0710-01-01",
+            "latest": "0710-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0785-01-01",
+            "latest": "0785-01-01"
+          },
+          "precision": "year",
+          "label": "710—784年（相关事件位置参考）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-nara-maps",
+            "locator": "870-007 Nara Palace Site",
+            "note": "采用遗址／遗产点位作为附近位置，不作为仪式确址、古城范围或战场坐标。当前遗址可能包含后世重建部分。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "heian",
@@ -419,7 +479,37 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            135.734219,
+            34.614469
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0607-01-01",
+            "latest": "0607-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "607—907年（相关事件位置参考）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-horyuji-maps",
+            "locator": "660-001 Horyu-ji Area",
+            "note": "采用遗址／遗产点位作为附近位置，不作为仪式确址、古城范围或战场坐标。当前遗址可能包含后世重建部分。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "forbidden-city",
@@ -532,6 +622,122 @@
             "sourceId": "unesco-yinxu-nomination",
             "locator": "1.d Geographical coordinates: 36°7′N, 114°18′E",
             "note": "申报档案精确到角分的遗产地代表点；不是整个商都或特定宫殿坐标。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "daming-palace",
+    "names": [
+      {
+        "text": "大明宫（长安，遗址参考）",
+        "validity": {
+          "start": {
+            "earliest": "0634-01-01",
+            "latest": "0634-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "634—907年（历史样板展示）"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-silk-maps",
+            "locator": "1442-003 Site of Daming Palace",
+            "note": "现存遗址／建筑的地理参考点，不复原初建时范围或确切施工位置。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            108.958333,
+            34.295833
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0634-01-01",
+            "latest": "0634-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "634—907年（历史样板展示）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-silk-maps",
+            "locator": "1442-003 Site of Daming Palace",
+            "note": "现存遗址／建筑的地理参考点，不复原初建时范围或确切施工位置。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "great-wild-goose",
+    "names": [
+      {
+        "text": "大雁塔（遗产点位参考）",
+        "validity": {
+          "start": {
+            "earliest": "0652-01-01",
+            "latest": "0652-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "652—907年（历史样板展示）"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-silk-maps",
+            "locator": "1442-030 Great Wild Goose Pagoda",
+            "note": "现存遗址／建筑的地理参考点，不复原初建时范围或确切施工位置。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            108.959444,
+            34.219722
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0652-01-01",
+            "latest": "0652-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "652—907年（历史样板展示）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-silk-maps",
+            "locator": "1442-030 Great Wild Goose Pagoda",
+            "note": "现存遗址／建筑的地理参考点，不复原初建时范围或确切施工位置。"
           }
         ]
       }

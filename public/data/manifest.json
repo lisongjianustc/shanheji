@@ -1,13 +1,13 @@
 {
-  "version": "9e1146c743cb34c1",
+  "version": "2cda0f1b03a3e52f",
   "catalog": {
-    "path": "catalog-e0fd9a28ca599f0e.json",
-    "sha256": "e0fd9a28ca599f0ed3572037554c3627651ebd5ca9e0b3d04833b34256d65291"
+    "path": "catalog-4d80f0938a587285.json",
+    "sha256": "4d80f0938a5872852b311d85fee89fab9ef8f9d7c2a58b711ac007e9564399a4"
   },
   "packages": [
     {
-      "path": "package-d99ad46744f289a2.json",
-      "sha256": "d99ad46744f289a21b955e1c50a7c724dd21d42897dad5b10857d61745224105",
+      "path": "package-5a9bf41ac990ea44.json",
+      "sha256": "5a9bf41ac990ea44b7321650b484daff887a2f8db261edbb6284cfb89e315eed",
       "id": "eastern-jin-sixteen-kingdoms",
       "version": "0.1.0-partial",
       "startYear": 304,
@@ -23,8 +23,8 @@
       ]
     },
     {
-      "path": "package-f3e6f0159ad2da59.json",
-      "sha256": "f3e6f0159ad2da599f71453dd6656c380875e3201ef8864fc62eb08ae234f210",
+      "path": "package-303204ff030d4561.json",
+      "sha256": "303204ff030d4561748f640aa9d9b7e8427222a67b1fc9d36ce88b36a9ccd68b",
       "id": "five-dynasties-song-yuan",
       "version": "0.1.0-partial",
       "startYear": 902,
@@ -40,8 +40,8 @@
       ]
     },
     {
-      "path": "package-2c10d01ac6d4d952.json",
-      "sha256": "2c10d01ac6d4d952476ae1c51b211d41d199b5a4e6d76ca980b92f2c0f3033a8",
+      "path": "package-8f4b4e118ce3f39f.json",
+      "sha256": "8f4b4e118ce3f39f739ed34d2fa6172ba920dec0ad87e5da8f913ab193dee0d0",
       "id": "middle-late-tang",
       "version": "0.1.0-partial",
       "startYear": 755,
@@ -57,8 +57,8 @@
       ]
     },
     {
-      "path": "package-a3e2127395ee031e.json",
-      "sha256": "a3e2127395ee031e6c29d7677615809ef5ec784bc025ed916a595902f7896b7d",
+      "path": "package-c90555c752878101.json",
+      "sha256": "c90555c75287810122614e14b1ecbc0df1cdd126b2957ec4751d29916c790d5f",
       "id": "ming-qing",
       "version": "0.1.0-partial",
       "startYear": 1368,
@@ -74,8 +74,8 @@
       ]
     },
     {
-      "path": "package-194181569d205c4f.json",
-      "sha256": "194181569d205c4f8d60e9852f594e3796c1ffe2814986bc5e2b5532164e986f",
+      "path": "package-47cffe45c82314c4.json",
+      "sha256": "47cffe45c82314c4b6612ba27d39d86a3a7da602765b805f7b7066c63b3c5da1",
       "id": "qin-han",
       "version": "0.1.0-partial",
       "startYear": -221,
@@ -91,8 +91,8 @@
       ]
     },
     {
-      "path": "package-51efd210c5a25407.json",
-      "sha256": "51efd210c5a25407b4b794dfe9f5e21e3b329c60e34e8e865b249d04cef67f39",
+      "path": "package-566e14177a02c36f.json",
+      "sha256": "566e14177a02c36fb4d346cb4af14e829931790c536a0cd48c3d4e5568a97333",
       "id": "southern-northern-dynasties",
       "version": "0.2.0-partial",
       "startYear": 420,
@@ -108,8 +108,8 @@
       ]
     },
     {
-      "path": "package-cfb6091707cae71a.json",
-      "sha256": "cfb6091707cae71abc053d2df4603a7f85c9448c9da3c3158b195f539540d222",
+      "path": "package-026bab7c81c2f55c.json",
+      "sha256": "026bab7c81c2f55c6e181f787605084dbee4171643e95a99bdd55442ec63fe71",
       "id": "sui-early-tang",
       "version": "3",
       "startYear": 581,
@@ -125,8 +125,8 @@
       ]
     },
     {
-      "path": "package-ab980df7e2ed715a.json",
-      "sha256": "ab980df7e2ed715ac1da9e5f971d066dd983dd3290f276495ebe57c162797388",
+      "path": "package-328ec5c6a8b4854e.json",
+      "sha256": "328ec5c6a8b4854e7b2d3a4b401e7d7f82b7c6ff71eb83ed2e526576a38a8f22",
       "id": "three-kingdoms-western-jin",
       "version": "0.2.0-partial",
       "startYear": 220,
@@ -142,8 +142,8 @@
       ]
     },
     {
-      "path": "package-6508194512e985c1.json",
-      "sha256": "6508194512e985c1aa1c22e87b406ff62ca8d12f9d00a7769b910cd3db88de90",
+      "path": "package-e9dc23dd18dbe117.json",
+      "sha256": "e9dc23dd18dbe117f6aa94d231f8a737f0c0e872ea2c42d13cdb2aac371484cb",
       "id": "xia-shang-zhou",
       "version": "0.1.0-partial",
       "startYear": -2100,
@@ -164,12 +164,13 @@
     "zhoudadudu-262-administration",
     "sy-572-administration",
     "yug-610-partial-administration",
-    "yug-742-eastern-administration"
+    "yug-742-eastern-administration",
+    "cliopatria-v021-reviewed"
   ],
   "scopeVersion": "3",
   "searchIndex": {
-    "path": "search-b94d0b426f56176b.json",
-    "sha256": "b94d0b426f56176b0ae4a6ae24f59b22e0420a879dc4edb5f73163bef70925a2"
+    "path": "search-a070e1c6a900e4f5.json",
+    "sha256": "a070e1c6a900e4f5dfd82dbc02234323cf1609a7f4c0c6d1f84f07f02908a5c4"
   },
   "interpretations": [
     {
@@ -241,9 +242,1365 @@
           "note": "逐湖重读本SVG重心；现代湖泊只作配准，不生成历史边界。"
         }
       ]
+    },
+    {
+      "id": "cliopatria-v021-reviewed",
+      "label": "Cliopatria v0.2.1（逐条筛查的年份区间复原）",
+      "reason": "保留来源年代区间与轮廓。跨政权存续/名称阶段、无效几何及已知错误排除；西晋317年以后未自动改名为东晋。属于研究复原，不等于确日实控或完整周边；默认有单年图时优先该版本，可单独选择本版。",
+      "evidence": [
+        {
+          "sourceId": "cliopatria-v021",
+          "locator": "README Data description; v0.2.1 LICENSE; data/audits/cliopatria-v021-intake.json",
+          "note": "年份区间两端包含；现代底图上的手绘复原，不等于实际边界测量；源记录编号保留。"
+        }
+      ]
     }
   ],
   "territorySlices": [
+    {
+      "year": -1600,
+      "endYear": -1241,
+      "entityId": "shang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -1240,
+      "endYear": -1101,
+      "entityId": "shang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -1000,
+      "endYear": -801,
+      "entityId": "western-zhou",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -750,
+      "endYear": -701,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -750,
+      "endYear": -551,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -750,
+      "endYear": -451,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -750,
+      "endYear": -405,
+      "entityId": "yan-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -700,
+      "endYear": -481,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -550,
+      "endYear": -481,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -480,
+      "endYear": -451,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -480,
+      "endYear": -405,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -450,
+      "endYear": -405,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -450,
+      "endYear": -405,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -384,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -367,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -351,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -351,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -367,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -292,
+      "entityId": "yan-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -404,
+      "endYear": -367,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -383,
+      "endYear": -367,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -366,
+      "endYear": -351,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -366,
+      "endYear": -351,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -366,
+      "endYear": -351,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -366,
+      "endYear": -351,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -338,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -338,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -292,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -338,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -338,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -350,
+      "endYear": -338,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -337,
+      "endYear": -334,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -337,
+      "endYear": -257,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -337,
+      "endYear": -327,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -337,
+      "endYear": -327,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -337,
+      "endYear": -257,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -333,
+      "endYear": -316,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -326,
+      "endYear": -316,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -326,
+      "endYear": -292,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -315,
+      "endYear": -285,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -315,
+      "endYear": -278,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -291,
+      "endYear": -285,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -291,
+      "endYear": -226,
+      "entityId": "wei-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -291,
+      "endYear": -223,
+      "entityId": "yan-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -284,
+      "endYear": -278,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -284,
+      "endYear": -248,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -277,
+      "endYear": -248,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -277,
+      "endYear": -231,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -256,
+      "endYear": -248,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -256,
+      "endYear": -248,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -247,
+      "endYear": -231,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -247,
+      "endYear": -231,
+      "entityId": "han-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -247,
+      "endYear": -224,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -247,
+      "endYear": -231,
+      "entityId": "zhao-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -230,
+      "endYear": -226,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -230,
+      "endYear": -226,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -225,
+      "endYear": -224,
+      "entityId": "chu-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -225,
+      "endYear": -224,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -223,
+      "endYear": -223,
+      "entityId": "qi-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -223,
+      "endYear": -223,
+      "entityId": "qin-state",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -218,
+      "endYear": -213,
+      "entityId": "qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -212,
+      "endYear": -211,
+      "entityId": "qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -210,
+      "endYear": -209,
+      "entityId": "qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -202,
+      "endYear": -198,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -197,
+      "endYear": -127,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -126,
+      "endYear": -111,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -110,
+      "endYear": -92,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -91,
+      "endYear": -78,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -77,
+      "endYear": -51,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -50,
+      "endYear": -37,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": -36,
+      "endYear": 5,
+      "entityId": "western-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 14,
+      "endYear": 22,
+      "entityId": "xin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 30,
+      "endYear": 42,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 43,
+      "endYear": 50,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 51,
+      "endYear": 59,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 60,
+      "endYear": 67,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 68,
+      "endYear": 77,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 78,
+      "endYear": 83,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 84,
+      "endYear": 90,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 91,
+      "endYear": 105,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 106,
+      "endYear": 116,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 117,
+      "endYear": 153,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 154,
+      "endYear": 160,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 161,
+      "endYear": 164,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 165,
+      "endYear": 183,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 184,
+      "endYear": 196,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 197,
+      "endYear": 206,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 207,
+      "endYear": 214,
+      "entityId": "eastern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 220,
+      "endYear": 237,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 224,
+      "endYear": 237,
+      "entityId": "cao-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 224,
+      "endYear": 237,
+      "entityId": "shu-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 238,
+      "endYear": 262,
+      "entityId": "cao-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 238,
+      "endYear": 305,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 238,
+      "endYear": 260,
+      "entityId": "shu-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 238,
+      "endYear": 262,
+      "entityId": "sun-wu",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 261,
+      "endYear": 262,
+      "entityId": "shu-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
     {
       "year": 262,
       "entityId": "cao-wei",
@@ -281,6 +1638,1933 @@
       ],
       "relations": [
         "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 263,
+      "endYear": 264,
+      "entityId": "cao-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 263,
+      "endYear": 269,
+      "entityId": "sun-wu",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 283,
+      "endYear": 286,
+      "entityId": "jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 287,
+      "endYear": 305,
+      "entityId": "jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 306,
+      "endYear": 310,
+      "entityId": "cheng-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 306,
+      "endYear": 312,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 306,
+      "endYear": 310,
+      "entityId": "han-zhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 306,
+      "endYear": 307,
+      "entityId": "jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 308,
+      "endYear": 310,
+      "entityId": "jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 311,
+      "endYear": 337,
+      "entityId": "cheng-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 311,
+      "endYear": 323,
+      "entityId": "han-zhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 311,
+      "endYear": 312,
+      "entityId": "jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 313,
+      "endYear": 382,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 324,
+      "endYear": 372,
+      "entityId": "former-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 337,
+      "endYear": 352,
+      "entityId": "former-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 337,
+      "endYear": 346,
+      "entityId": "later-zhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 338,
+      "endYear": 346,
+      "entityId": "cheng-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 347,
+      "endYear": 391,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 353,
+      "endYear": 370,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 353,
+      "endYear": 366,
+      "entityId": "former-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 367,
+      "endYear": 370,
+      "entityId": "former-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 371,
+      "endYear": 372,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 373,
+      "endYear": 377,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 378,
+      "endYear": 382,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 378,
+      "endYear": 533,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 383,
+      "endYear": 386,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 383,
+      "endYear": 386,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 389,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 391,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 396,
+      "entityId": "later-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 393,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 389,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 393,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 396,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 387,
+      "endYear": 393,
+      "entityId": "western-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 390,
+      "endYear": 391,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 390,
+      "endYear": 393,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 392,
+      "endYear": 394,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 392,
+      "endYear": 393,
+      "entityId": "former-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 392,
+      "endYear": 394,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 394,
+      "endYear": 394,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 394,
+      "endYear": 394,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 394,
+      "endYear": 394,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 394,
+      "endYear": 396,
+      "entityId": "western-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 395,
+      "endYear": 475,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 395,
+      "endYear": 401,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 395,
+      "endYear": 396,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 395,
+      "endYear": 401,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 395,
+      "endYear": 396,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 397,
+      "endYear": 401,
+      "entityId": "later-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 397,
+      "endYear": 401,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 397,
+      "endYear": 401,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 397,
+      "endYear": 409,
+      "entityId": "southern-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 397,
+      "endYear": 401,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 406,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 406,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 406,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 425,
+      "entityId": "northern-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 413,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 406,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 406,
+      "entityId": "southern-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 402,
+      "endYear": 413,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "southern-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 407,
+      "endYear": 409,
+      "entityId": "western-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 425,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 413,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 425,
+      "entityId": "northern-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 413,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 413,
+      "entityId": "southern-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 413,
+      "entityId": "western-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 410,
+      "endYear": 413,
+      "entityId": "xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 416,
+      "entityId": "later-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 416,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 416,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 425,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 416,
+      "entityId": "western-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 414,
+      "endYear": 416,
+      "entityId": "xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 417,
+      "endYear": 425,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 417,
+      "endYear": 425,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 417,
+      "endYear": 425,
+      "entityId": "western-qin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 417,
+      "endYear": 425,
+      "entityId": "xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 475,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 438,
+      "entityId": "liu-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 438,
+      "entityId": "northern-liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 438,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 438,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 426,
+      "endYear": 438,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 439,
+      "endYear": 450,
+      "entityId": "liu-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 439,
+      "endYear": 440,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 439,
+      "endYear": 440,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 439,
+      "endYear": 440,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 441,
+      "endYear": 450,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 441,
+      "endYear": 475,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 441,
+      "endYear": 468,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 451,
+      "endYear": 475,
+      "entityId": "liu-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 451,
+      "endYear": 475,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 469,
+      "endYear": 475,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 566,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 479,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 479,
+      "entityId": "liu-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 509,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 479,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 476,
+      "endYear": 535,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 480,
+      "endYear": 489,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 480,
+      "endYear": 533,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 480,
+      "endYear": 499,
+      "entityId": "southern-qi",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 490,
+      "endYear": 522,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 510,
+      "endYear": 533,
+      "entityId": "liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 510,
+      "endYear": 522,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 523,
+      "endYear": 554,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 523,
+      "endYear": 533,
+      "entityId": "northern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 534,
+      "endYear": 545,
+      "entityId": "eastern-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 534,
+      "endYear": 535,
+      "entityId": "liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 534,
+      "endYear": 545,
+      "entityId": "rouran",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 534,
+      "endYear": 554,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 536,
+      "endYear": 545,
+      "entityId": "liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 536,
+      "endYear": 586,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 536,
+      "endYear": 554,
+      "entityId": "western-wei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 540,
+      "endYear": 704,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 546,
+      "endYear": 554,
+      "entityId": "liang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 555,
+      "endYear": 560,
+      "entityId": "first-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 555,
+      "endYear": 611,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 555,
+      "endYear": 560,
+      "entityId": "northern-qi",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 555,
+      "endYear": 566,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 561,
+      "endYear": 586,
+      "entityId": "chen",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 561,
+      "endYear": 576,
+      "entityId": "first-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 561,
+      "endYear": 568,
+      "entityId": "northern-qi",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 561,
+      "endYear": 576,
+      "entityId": "northern-zhou",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 561,
+      "endYear": 576,
+      "entityId": "western-liang-nanbei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 567,
+      "endYear": 655,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 567,
+      "endYear": 660,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 569,
+      "endYear": 576,
+      "entityId": "northern-qi",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
       ],
       "featureCount": 1,
       "disputed": true
@@ -338,6 +3622,136 @@
       "disputed": true
     },
     {
+      "year": 577,
+      "endYear": 586,
+      "entityId": "western-liang-nanbei",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 587,
+      "endYear": 611,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 587,
+      "endYear": 591,
+      "entityId": "sui",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 587,
+      "endYear": 601,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 587,
+      "endYear": 591,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 592,
+      "endYear": 601,
+      "entityId": "sui",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 592,
+      "endYear": 601,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 602,
+      "endYear": 611,
+      "entityId": "sui",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 602,
+      "endYear": 625,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
       "year": 610,
       "entityId": "sui",
       "interpretationId": "yug-610-partial-administration",
@@ -347,6 +3761,598 @@
       ],
       "relations": [
         "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 612,
+      "endYear": 616,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 612,
+      "endYear": 616,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 612,
+      "endYear": 616,
+      "entityId": "sui",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 617,
+      "endYear": 622,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 617,
+      "endYear": 632,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 623,
+      "endYear": 625,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 623,
+      "endYear": 625,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 626,
+      "endYear": 626,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 626,
+      "endYear": 626,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 626,
+      "endYear": 626,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 627,
+      "endYear": 627,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 627,
+      "endYear": 627,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 627,
+      "endYear": 627,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 628,
+      "endYear": 629,
+      "entityId": "eastern-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 628,
+      "endYear": 629,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 628,
+      "endYear": 632,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 628,
+      "endYear": 628,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 629,
+      "endYear": 629,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 630,
+      "endYear": 632,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 630,
+      "endYear": 632,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 633,
+      "endYear": 633,
+      "entityId": "goguryeo",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 633,
+      "endYear": 637,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 633,
+      "endYear": 633,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 633,
+      "endYear": 640,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 634,
+      "endYear": 637,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 634,
+      "endYear": 637,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 638,
+      "endYear": 640,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 638,
+      "endYear": 640,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 638,
+      "endYear": 640,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 641,
+      "endYear": 646,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 641,
+      "endYear": 655,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 641,
+      "endYear": 660,
+      "entityId": "tuyuhun",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 641,
+      "endYear": 643,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 644,
+      "endYear": 646,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 647,
+      "endYear": 655,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 647,
+      "endYear": 655,
+      "entityId": "western-turkic",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 656,
+      "endYear": 660,
+      "entityId": "baekje",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 656,
+      "endYear": 660,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 656,
+      "endYear": 660,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 661,
+      "endYear": 665,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 661,
+      "endYear": 665,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
       ],
       "featureCount": 1,
       "disputed": true
@@ -368,6 +4374,281 @@
       "disputed": true
     },
     {
+      "year": 661,
+      "endYear": 665,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 666,
+      "endYear": 673,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 666,
+      "endYear": 673,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 666,
+      "endYear": 673,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 674,
+      "endYear": 681,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 674,
+      "endYear": 681,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 674,
+      "endYear": 681,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 682,
+      "endYear": 891,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 682,
+      "endYear": 691,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 692,
+      "endYear": 704,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 705,
+      "endYear": 740,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 705,
+      "endYear": 709,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 705,
+      "endYear": 749,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 705,
+      "endYear": 717,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 710,
+      "endYear": 787,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 718,
+      "endYear": 731,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 732,
+      "endYear": 749,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 741,
+      "endYear": 824,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 741,
+      "endYear": 749,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
       "year": 742,
       "entityId": "tang",
       "interpretationId": "yug-742-eastern-administration",
@@ -377,6 +4658,3270 @@
       ],
       "relations": [
         "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 750,
+      "endYear": 754,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 750,
+      "endYear": 750,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 750,
+      "endYear": 750,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 750,
+      "endYear": 754,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 751,
+      "endYear": 754,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 751,
+      "endYear": 756,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 755,
+      "endYear": 799,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 755,
+      "endYear": 756,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 755,
+      "endYear": 756,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 757,
+      "endYear": 762,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 757,
+      "endYear": 762,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 757,
+      "endYear": 762,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 763,
+      "endYear": 767,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 763,
+      "endYear": 767,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 763,
+      "endYear": 777,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 768,
+      "endYear": 829,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 768,
+      "endYear": 771,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 772,
+      "endYear": 782,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 778,
+      "endYear": 782,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 783,
+      "endYear": 792,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 783,
+      "endYear": 792,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 788,
+      "endYear": 792,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 793,
+      "endYear": 799,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 793,
+      "endYear": 829,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 793,
+      "endYear": 839,
+      "entityId": "uyghur-khaganate",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 800,
+      "endYear": 813,
+      "entityId": "japan-court",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 800,
+      "endYear": 829,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 825,
+      "endYear": 849,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 830,
+      "endYear": 849,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 830,
+      "endYear": 849,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 830,
+      "endYear": 839,
+      "entityId": "tibetan-empire",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 850,
+      "endYear": 910,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 850,
+      "endYear": 859,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 850,
+      "endYear": 859,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 860,
+      "endYear": 865,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 860,
+      "endYear": 865,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 866,
+      "endYear": 899,
+      "entityId": "nanzhao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 866,
+      "endYear": 874,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 875,
+      "endYear": 877,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 878,
+      "endYear": 879,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 880,
+      "endYear": 881,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 882,
+      "endYear": 883,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 884,
+      "endYear": 899,
+      "entityId": "tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 892,
+      "endYear": 910,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 921,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 925,
+      "entityId": "chu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 921,
+      "entityId": "former-shu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 921,
+      "entityId": "later-liang-five",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 921,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 935,
+      "entityId": "min-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 925,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 946,
+      "entityId": "southern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
+      "endYear": 946,
+      "entityId": "wuyue",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 922,
+      "endYear": 925,
+      "entityId": "balhae",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 922,
+      "endYear": 925,
+      "entityId": "former-shu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 922,
+      "endYear": 925,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 926,
+      "endYear": 946,
+      "entityId": "chu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 926,
+      "endYear": 935,
+      "entityId": "jingnan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 926,
+      "endYear": 935,
+      "entityId": "later-tang-five",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 926,
+      "endYear": 935,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 926,
+      "endYear": 935,
+      "entityId": "silla",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 936,
+      "endYear": 946,
+      "entityId": "later-jin-five",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 936,
+      "endYear": 946,
+      "entityId": "later-shu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 936,
+      "endYear": 959,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 947,
+      "endYear": 961,
+      "entityId": "later-shu-ten",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 947,
+      "endYear": 959,
+      "entityId": "southern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 947,
+      "endYear": 959,
+      "entityId": "wuyue",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 960,
+      "entityId": "later-zhou-five",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 979,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 969,
+      "entityId": "northern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 969,
+      "entityId": "southern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 969,
+      "entityId": "southern-tang",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 960,
+      "endYear": 969,
+      "entityId": "wuyue",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 961,
+      "endYear": 969,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 970,
+      "endYear": 979,
+      "entityId": "northern-han",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 970,
+      "endYear": 979,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 980,
+      "endYear": 989,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 980,
+      "endYear": 989,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 990,
+      "endYear": 1039,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 990,
+      "endYear": 1039,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1034,
+      "endYear": 1039,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1040,
+      "endYear": 1110,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1040,
+      "endYear": 1055,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1040,
+      "endYear": 1125,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1056,
+      "endYear": 1125,
+      "entityId": "northern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1111,
+      "endYear": 1125,
+      "entityId": "liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1126,
+      "endYear": 1138,
+      "entityId": "jurchen-jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1126,
+      "endYear": 1138,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1139,
+      "endYear": 1205,
+      "entityId": "jurchen-jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1139,
+      "endYear": 1240,
+      "entityId": "southern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1139,
+      "endYear": 1205,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1206,
+      "endYear": 1215,
+      "entityId": "jurchen-jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1206,
+      "endYear": 1209,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1206,
+      "endYear": 1215,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1210,
+      "endYear": 1215,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1216,
+      "endYear": 1226,
+      "entityId": "jurchen-jin",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1216,
+      "endYear": 1219,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1216,
+      "endYear": 1219,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1220,
+      "endYear": 1226,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1220,
+      "endYear": 1226,
+      "entityId": "western-xia",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1227,
+      "endYear": 1235,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1236,
+      "endYear": 1240,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1241,
+      "endYear": 1249,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1241,
+      "endYear": 1249,
+      "entityId": "southern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1250,
+      "endYear": 1259,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1250,
+      "endYear": 1259,
+      "entityId": "southern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1260,
+      "endYear": 1271,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1260,
+      "endYear": 1271,
+      "entityId": "southern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1272,
+      "endYear": 1278,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1272,
+      "endYear": 1278,
+      "entityId": "southern-song",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1279,
+      "endYear": 1284,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1285,
+      "endYear": 1293,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1294,
+      "endYear": 1351,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1352,
+      "endYear": 1362,
+      "entityId": "mongol-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1375,
+      "endYear": 1384,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1375,
+      "endYear": 1401,
+      "entityId": "northern-yuan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core",
+        "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1385,
+      "endYear": 1401,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1402,
+      "endYear": 1406,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1407,
+      "endYear": 1414,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1415,
+      "endYear": 1421,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1422,
+      "endYear": 1428,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1429,
+      "endYear": 1439,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1440,
+      "endYear": 1449,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1450,
+      "endYear": 1467,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1468,
+      "endYear": 1515,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1516,
+      "endYear": 1546,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1547,
+      "endYear": 1551,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1552,
+      "endYear": 1563,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1564,
+      "endYear": 1578,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1579,
+      "endYear": 1581,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1582,
+      "endYear": 1587,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1588,
+      "endYear": 1594,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1595,
+      "endYear": 1599,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1600,
+      "endYear": 1618,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1619,
+      "endYear": 1621,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1619,
+      "endYear": 1621,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1622,
+      "endYear": 1625,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1622,
+      "endYear": 1625,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1626,
+      "endYear": 1628,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1626,
+      "endYear": 1628,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1629,
+      "endYear": 1631,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1629,
+      "endYear": 1631,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1632,
+      "endYear": 1635,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1632,
+      "endYear": 1635,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1636,
+      "endYear": 1639,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1636,
+      "endYear": 1639,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1640,
+      "endYear": 1641,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1640,
+      "endYear": 1641,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1642,
+      "endYear": 1644,
+      "entityId": "ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1642,
+      "endYear": 1644,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1645,
+      "endYear": 1647,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1645,
+      "endYear": 1647,
+      "entityId": "southern-ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1648,
+      "endYear": 1652,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1648,
+      "endYear": 1652,
+      "entityId": "southern-ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1653,
+      "endYear": 1658,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1653,
+      "endYear": 1658,
+      "entityId": "southern-ming",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1659,
+      "endYear": 1669,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1670,
+      "endYear": 1672,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1673,
+      "endYear": 1676,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1677,
+      "endYear": 1682,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1683,
+      "endYear": 1686,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1687,
+      "endYear": 1690,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1691,
+      "endYear": 1695,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1696,
+      "endYear": 1699,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1700,
+      "endYear": 1701,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1702,
+      "endYear": 1705,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1706,
+      "endYear": 1717,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1718,
+      "endYear": 1720,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1721,
+      "endYear": 1726,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1727,
+      "endYear": 1733,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1734,
+      "endYear": 1737,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1738,
+      "endYear": 1756,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1757,
+      "endYear": 1761,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1762,
+      "endYear": 1762,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1763,
+      "endYear": 1768,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1769,
+      "endYear": 1782,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1783,
+      "endYear": 1787,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1788,
+      "endYear": 1790,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1791,
+      "endYear": 1793,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1794,
+      "endYear": 1795,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1796,
+      "endYear": 1796,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1797,
+      "endYear": 1804,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1805,
+      "endYear": 1808,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1809,
+      "endYear": 1811,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1812,
+      "endYear": 1813,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1814,
+      "endYear": 1814,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1815,
+      "endYear": 1819,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1820,
+      "endYear": 1821,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1822,
+      "endYear": 1824,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1825,
+      "endYear": 1827,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1828,
+      "endYear": 1839,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1840,
+      "endYear": 1841,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1842,
+      "endYear": 1847,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1848,
+      "endYear": 1852,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1853,
+      "endYear": 1855,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1856,
+      "endYear": 1856,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1857,
+      "endYear": 1858,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1859,
+      "endYear": 1859,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1860,
+      "endYear": 1860,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1861,
+      "endYear": 1861,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1862,
+      "endYear": 1863,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1864,
+      "endYear": 1864,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1865,
+      "endYear": 1865,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1866,
+      "endYear": 1867,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1868,
+      "endYear": 1872,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1873,
+      "endYear": 1876,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1877,
+      "endYear": 1884,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1885,
+      "endYear": 1889,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1890,
+      "endYear": 1894,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1895,
+      "endYear": 1897,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1898,
+      "endYear": 1899,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1900,
+      "endYear": 1904,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1905,
+      "endYear": 1910,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1911,
+      "endYear": 1911,
+      "entityId": "qing",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core",
+        "steppe",
+        "tibet"
+      ],
+      "relations": [
+        "reconstruction"
       ],
       "featureCount": 1,
       "disputed": true

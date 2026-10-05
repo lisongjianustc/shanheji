@@ -40,7 +40,9 @@ export function FilterPanel({
     <details className="filter-panel">
       <summary>
         筛选与图层{" "}
-        <span>{count ? "已启用 " + count + " 项" : "默认：实控／行政"}</span>
+        <span>
+          {count ? "已启用 " + count + " 项" : "默认：实控／行政／复原"}
+        </span>
       </summary>
       <label>
         地区

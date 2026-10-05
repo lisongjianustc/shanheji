@@ -1,18 +1,23 @@
 {
-  "checkedAt": "2026-10-05T09:16:53.084Z",
+  "checkedAt": "2026-10-05T11:59:46.791Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "9e1146c743cb34c1",
+  "dataVersion": "2cda0f1b03a3e52f",
   "years": [
     -1300,
+    -300,
     -221,
     262,
+    383,
     572,
     610,
     460,
+    634,
+    652,
     661,
     742,
     743,
     1420,
+    1820,
     1912
   ],
   "workerVerified": true,
@@ -21,7 +26,7 @@
   "sourceShortcutPreservesYear": true,
   "newEventPointVerified": true,
   "timelineDirectInitial": true,
-  "paintedTerritoryIds": {
+  "curatedPaintedTerritoryIds": {
     "262": [
       "cao-wei-262-administration",
       "shu-han-262-administration",
@@ -44,11 +49,30 @@
       "tang-742-eastern-administration"
     ]
   },
+  "researchPaintedTerritoryIds": {
+    "1420": [
+      "clio-v021-6943"
+    ],
+    "1820": [
+      "clio-v021-11022"
+    ],
+    "-300": [
+      "clio-v021-375",
+      "clio-v021-434",
+      "clio-v021-447",
+      "clio-v021-448",
+      "clio-v021-483",
+      "clio-v021-513",
+      "clio-v021-514"
+    ]
+  },
+  "missingEasternJinVisible": true,
+  "culturalPointsClickableOverPolity": true,
   "disputedAdministrationVisible": true,
   "claimsOffByDefault": true,
   "mobileNoOverflow": true,
   "tang742EasternPartial": true,
-  "tang742AdjacentYearCleared": true,
+  "tang742CuratedAdjacentYearCleared": true,
   "tang742MobileNoOverlap": true,
   "suiPartialSource": true,
   "suiMobileNoOverlap": true,

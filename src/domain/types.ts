@@ -19,7 +19,12 @@ export interface Validity {
   label: string; // 面向读者的真实日期表述
 }
 export type Relation =
-  "control" | "administration" | "vassal" | "influence" | "claim";
+  | "control"
+  | "administration"
+  | "reconstruction"
+  | "vassal"
+  | "influence"
+  | "claim";
 export interface Evidence {
   sourceId: Id;
   locator: string;

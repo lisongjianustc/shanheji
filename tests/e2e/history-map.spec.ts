@@ -1,8 +1,19 @@
-import { test, expect, type Page } from "@playwright/test";
+import { test, expect, type Page, type Locator } from "@playwright/test";
 import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { makeCatalog, makePackage, time } from "../fixtures/make";
 import { buildSearchIndex } from "../../src/features/search/index";
+async function expectCuratedPaint(target: Locator, ids: string) {
+  await expect
+    .poll(async () =>
+      ((await target.getAttribute("data-rendered-territory-ids")) ?? "")
+        .split(" ")
+        .filter((id) => id && !id.startsWith("clio-"))
+        .sort()
+        .join(" "),
+    )
+    .toBe(ids.split(" ").filter(Boolean).sort().join(" "));
+}
 async function year(page: Page, value: number) {
   const entry = page.getByRole("spinbutton", { name: "年份", exact: true });
   await entry.fill(String(value));
@@ -283,7 +294,11 @@ test("661年争议图幅可查看，主张单独开启，邻年不外推", async
   await expect(page.getByTestId("scene-status")).toHaveText("已更新");
   await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
   await expect(page.locator(".territory-panel")).toContainText("存在边界争议");
-  await page.getByRole("button", { name: "查看661年图幅" }).click();
+  await page
+    .locator(".territory-slice")
+    .filter({ hasText: "Kanguole 661年图幅" })
+    .getByRole("button", { name: "查看661年图幅", exact: true })
+    .click();
   await expect(page.getByTestId("committed-year")).toHaveText("661");
   await expect(page.locator(".coverage-banner")).toContainText("民政范围");
   await expect(page.locator(".coverage-banner")).toContainText("边界争议");
@@ -305,8 +320,9 @@ test("661年争议图幅可查看，主张单独开启，邻年不外推", async
   await page.getByRole("button", { name: "关闭详情" }).click();
   await year(page, 662);
   await expect(page.locator(".coverage-banner")).toContainText(
-    "缺少可用疆域资料",
+    "当前筛选条件下没有疆域记录",
   );
+  await expect(page.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", "");
 });
 
 test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ page }) => {
@@ -350,7 +366,7 @@ test("时间轴直接驱动主图疆域：初始、输入、拖动、播放及�
   await expect(page.getByTestId("committed-year")).toHaveText("661");
   const painted = page.locator(".map-canvas");
   const ids = "tang-661-civil tang-661-military";
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(painted, ids);
   await expect(
     page.getByRole("region", { name: "当前地图疆域" }),
   ).toContainText("唐 · 行政设置");
@@ -362,12 +378,12 @@ test("时间轴直接驱动主图疆域：初始、输入、拖动、播放及�
     path: "docs/qa/screenshots/timeline-direct-661.png",
   });
   await year(page, 662);
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
-  await expect(page.getByRole("region", { name: "当前地图疆域" })).toHaveCount(
-    0,
-  );
+  await expectCuratedPaint(painted, "");
+  await expect(
+    page.getByRole("region", { name: "当前地图疆域" }),
+  ).toContainText("疆域复原");
   await year(page, 661);
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(painted, ids);
   await year(page, 660);
   await page.getByRole("slider", { name: "拖动年份" }).evaluate((el) => {
     Object.getOwnPropertyDescriptor(
@@ -378,17 +394,17 @@ test("时间轴直接驱动主图疆域：初始、输入、拖动、播放及�
   });
   // No pointer release: the drag itself must request and paint the selected year.
   await expect(page.getByTestId("committed-year")).toHaveText("661");
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(painted, ids);
   await year(page, 660);
   await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
   await expect(page.getByTestId("committed-year")).toHaveText("661");
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(painted, ids);
   await expect(
     page.getByRole("button", { name: "播放时间轴", exact: true }),
   ).toBeVisible();
   await year(page, 662);
   await page.getByRole("button", { name: "跳至661年疆域" }).click();
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(painted, ids);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.screenshot({
     path: "docs/qa/screenshots/timeline-mobile-661.png",
@@ -413,7 +429,7 @@ test("新增262与572年分布实际绘制全部政权，详情可点，节点�
   const ids572 =
     "chen-572-administration northern-qi-572-administration northern-zhou-572-administration western-liang-nanbei-572-administration";
   await year(page, 262);
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids262);
+  await expectCuratedPaint(painted, ids262);
   const key = page.getByRole("region", { name: "当前地图疆域" });
   await expect(key).toContainText("曹魏");
   await expect(key).toContainText("蜀汉");
@@ -434,9 +450,9 @@ test("新增262与572年分布实际绘制全部政权，详情可点，节点�
   await expect(detail).toContainText("Zhoudadudu");
   await page.getByRole("button", { name: "关闭详情" }).click();
   await year(page, 263);
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
+  await expectCuratedPaint(painted, "");
   await page.getByRole("button", { name: "跳至572年疆域" }).click();
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expectCuratedPaint(painted, ids572);
   await expect(key).toContainText("西梁（江陵）");
   await page.screenshot({ path: "docs/qa/screenshots/distribution-572.png" });
   await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
@@ -444,22 +460,19 @@ test("新增262与572年分布实际绘制全部政权，详情可点，节点�
     .getByRole("button", { name: "查看262年图幅", exact: true })
     .first()
     .click();
-  await expect(painted).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "cao-wei-262-administration",
-  );
+  await expectCuratedPaint(painted, "cao-wei-262-administration");
   await page.getByRole("button", { name: "查看572年全部已录入政权" }).click();
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expectCuratedPaint(painted, ids572);
   await year(page, 573);
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
+  await expectCuratedPaint(painted, "");
   await year(page, 571);
   await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expectCuratedPaint(painted, ids572);
   await expect(
     page.getByRole("button", { name: "播放时间轴", exact: true }),
   ).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
-  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expectCuratedPaint(painted, ids572);
   await page.screenshot({
     path: "docs/qa/screenshots/distribution-mobile-572.png",
   });
@@ -478,15 +491,14 @@ test("约610年部分隋朝范围随节点更新，西部缺口标明且下一�
   });
   await page.getByRole("button", { name: "跳至610年疆域" }).click();
   const canvas = page.locator(".map-canvas");
-  await expect(canvas).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "sui-610-partial-administration",
-  );
+  await expectCuratedPaint(canvas, "sui-610-partial-administration");
   const key = page.getByRole("region", { name: "当前地图疆域" });
   await expect(key).toContainText("隋");
   await expect(key).toContainText("部分范围");
   await expect(page.locator(".coverage-banner")).toContainText("西部未录入");
-  await key.getByRole("button").click();
+  await key
+    .getByRole("button", { name: /查看(?:隋|唐) · 行政设置来源/ })
+    .click();
   const detail = page.getByRole("complementary", { name: "条目详情" });
   await expect(detail).toContainText("裁切边缘不绘制国界");
   await expect(detail).toContainText("47.2公里");
@@ -502,21 +514,15 @@ test("约610年部分隋朝范围随节点更新，西部缺口标明且下一�
   expect(caption!.y + caption!.height).toBeLessThanOrEqual(polityKey!.y);
   await page.setViewportSize({ width: 1440, height: 960 });
   await year(page, 611);
-  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await expectCuratedPaint(canvas, "");
   await year(page, 609);
   await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
-  await expect(canvas).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "sui-610-partial-administration",
-  );
+  await expectCuratedPaint(canvas, "sui-610-partial-administration");
   await expect(
     page.getByRole("button", { name: "播放时间轴", exact: true }),
   ).toBeVisible();
   await page.setViewportSize({ width: 390, height: 844 });
-  await expect(canvas).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "sui-610-partial-administration",
-  );
+  await expectCuratedPaint(canvas, "sui-610-partial-administration");
   const banner = await page.locator(".coverage-banner").boundingBox();
   const timeline = await page
     .getByRole("region", { name: "历史时间轴" })
@@ -542,10 +548,7 @@ test("约610年部分隋朝范围随节点更新，西部缺口标明且下一�
   });
   await referenceToggle.click();
   await expect(referenceToggle).toBeChecked();
-  await expect(canvas).toHaveAttribute(
-    "data-rendered-territory-ids",
-    "sui-610-partial-administration",
-  );
+  await expectCuratedPaint(canvas, "sui-610-partial-administration");
   await expect(page.locator(".coverage-banner")).toContainText("约610年");
   await expect(page.locator(".coverage-banner")).not.toContainText("约609年");
 });
@@ -677,12 +680,14 @@ test("742年东部唐疆域实际绘制，105度裁切限度清楚，播放与�
   const canvas = page.locator(".map-canvas");
   const ids = "tang-742-eastern-administration";
   await page.getByRole("button", { name: "跳至742年疆域" }).click();
-  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(canvas, ids);
   await expect(page.locator(".coverage-banner")).toContainText("742年");
   await expect(page.locator(".coverage-banner")).not.toContainText("约742年");
   await expect(page.locator(".coverage-banner")).toContainText("仅105°E以东");
   const key = page.getByRole("region", { name: "当前地图疆域" });
-  await key.getByRole("button").click();
+  await key
+    .getByRole("button", { name: /查看(?:隋|唐) · 行政设置来源/ })
+    .click();
   const detail = page.getByRole("complementary", { name: "条目详情" });
   await expect(detail).toContainText("105°E");
   await expect(detail).toContainText("47.2公里");
@@ -690,17 +695,17 @@ test("742年东部唐疆域实际绘制，105度裁切限度清楚，播放与�
   await page.getByRole("button", { name: "关闭详情" }).click();
   await page.screenshot({ path: "docs/qa/screenshots/distribution-742.png" });
   await year(page, 743);
-  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await expectCuratedPaint(canvas, "");
   await year(page, 741);
-  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await expectCuratedPaint(canvas, "");
   await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
-  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expectCuratedPaint(canvas, ids);
   await expect(
     page.getByRole("button", { name: "播放时间轴", exact: true }),
   ).toBeVisible();
   for (const width of [767, 390]) {
     await page.setViewportSize({ width, height: width === 767 ? 715 : 844 });
-    await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+    await expectCuratedPaint(canvas, ids);
     await expect(page.locator(".browse-panel")).toBeHidden();
     const banner = await page.locator(".coverage-banner").boundingBox();
     const timeline = await page
@@ -717,4 +722,101 @@ test("742年东部唐疆域实际绘制，105度裁切限度清楚，播放与�
   await page.screenshot({
     path: "docs/qa/screenshots/distribution-mobile-742.png",
   });
+});
+
+test("来源年份区间随时间轴切换：七雄、明、清，边界不延用过期范围", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const canvas = page.locator(".map-canvas");
+  await year(page, -300);
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-375 clio-v021-434 clio-v021-447 clio-v021-448 clio-v021-483 clio-v021-513 clio-v021-514",
+  );
+  await expect(
+    page.getByRole("region", { name: "当前地图疆域" }),
+  ).toContainText("秦国");
+  await year(page, 1420);
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-6943",
+  );
+  await page.getByRole("button", { name: "查看明 · 疆域复原来源" }).click();
+  const detail = page.getByRole("complementary", { name: "条目详情" });
+  await expect(detail).toContainText("1415—1421年");
+  await expect(detail).toContainText("CC BY 4.0");
+  await expect(detail).toContainText("非确日实控");
+  await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  await year(page, 1421);
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-6943",
+  );
+  await year(page, 1422);
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-6943/,
+  );
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-/,
+  );
+  await year(page, 1820);
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-11022",
+  );
+  await expect(page.locator(".coverage-banner")).toContainText("非确日格局");
+  await page.locator(".filter-panel summary").click();
+  await page.getByRole("checkbox", { name: "疆域复原", exact: true }).click();
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await page.getByRole("checkbox", { name: "疆域复原", exact: true }).click();
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-11022",
+  );
+});
+
+test("742年同时保留周边政权，显式来源选择可查完整研究轮廓", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await year(page, 742);
+  const canvas = page.locator(".map-canvas");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-2590 clio-v021-2659 clio-v021-2720 clio-v021-2729 clio-v021-2753 tang-742-eastern-administration",
+  );
+  await page.locator(".filter-panel summary").click();
+  await page
+    .getByRole("combobox", { name: "史料解释版本" })
+    .selectOption("cliopatria-v021-reviewed");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-2590 clio-v021-2642 clio-v021-2659 clio-v021-2720 clio-v021-2729 clio-v021-2753",
+  );
+  await page.getByRole("combobox", { name: "史料解释版本" }).selectOption("");
+  await expectCuratedPaint(canvas, "tang-742-eastern-administration");
+  await year(page, 743);
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "clio-v021-2590 clio-v021-2642 clio-v021-2659 clio-v021-2720 clio-v021-2729 clio-v021-2753",
+  );
+});
+
+test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍显示东晋缺口", async ({ page }) => {
+  await page.goto("/");
+  for (const [n, title] of [[634, "大明宫"], [652, "大雁塔"]] as const) {
+    await year(page, n);
+    await page.locator(".event-glow").click();
+    const detail = page.getByRole("complementary", { name: "条目详情" });
+    await expect(detail).toContainText(title);
+    await expect(detail).toContainText("遗址附近");
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  }
+  await year(page, 383);
+  await expect(page.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", /clio-v021-/);
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await expect(page.getByTestId("missing-polities")).toContainText("东晋");
 });

@@ -21,7 +21,7 @@ export const DEFAULT_FILTERS = {
   regionIds: [],
   entityIds: [],
   eventKinds: [],
-  relations: ["control", "administration"],
+  relations: ["control", "administration", "reconstruction"],
   interpretationIds: [],
   nearbyReference: false,
 } satisfies Query["filters"];
@@ -78,7 +78,8 @@ export function queryScene(
         (!q.at ||
           (p.validity.precision !== "year" &&
             classifyAt(p.validity, at) !== "outside"))
-      : classifyAt(p.validity, at) !== "outside";
+      : (!q.at || p.validity.precision !== "year") &&
+        classifyAt(p.validity, at) !== "outside";
   let territories = allowed.filter(matchesTime);
   const referenceYears: number[] = [];
   if (f.nearbyReference && !q.at) {
@@ -155,6 +156,24 @@ export function queryScene(
       territories = territories.filter((t) => !excluded.has(t.properties.id));
     }
   }
+  // A dated source takes precedence over a coarse reconstruction of the same
+  // entity by default. Explicit source selection keeps the requested version.
+  if (!f.interpretationIds.length) {
+    const datedEntities = new Set(
+      territories
+        .filter(
+          (t) =>
+            t.properties.temporalSupport === "snapshot" &&
+            t.properties.relation !== "reconstruction",
+        )
+        .map((t) => t.properties.entityId),
+    );
+    territories = territories.filter(
+      (t) =>
+        t.properties.relation !== "reconstruction" ||
+        !datedEntities.has(t.properties.entityId),
+    );
+  }
   const events = unique(
     packs.flatMap((p) => p.events),
     (e) => e.id,
@@ -189,7 +208,13 @@ export function queryScene(
   );
   const warnings: string[] = [];
   if (territories.some((t) => t.properties.spatialPrecision === "disputed"))
-    warnings.push("本来源版本存在边界争议；行政与主张范围不等于已证实实控疆域");
+    warnings.push(
+      "本来源版本存在边界争议；行政、复原与主张范围不等于已证实实控疆域",
+    );
+  if (territories.some((t) => t.properties.relation === "reconstruction"))
+    warnings.push(
+      "部分疆域采用研究来源的年份区间复原，转折与细节可能缺漏；不表示确日格局",
+    );
   if (multiplePhases)
     warnings.push("本年存在多个疆域阶段；每个政权默认显示较晚切片，可切换阶段");
   if (

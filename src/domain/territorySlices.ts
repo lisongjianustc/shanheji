@@ -1,6 +1,9 @@
+import { yearOf, lastYear } from "./time";
 import type { Territory, Relation } from "./types";
+import { isSupportedYear, nextYear } from "./chronology";
 export interface TerritorySlice {
   year: number;
+  endYear?: number;
   entityId: string;
   interpretationId: string;
   regionIds: string[];
@@ -8,21 +11,26 @@ export interface TerritorySlice {
   featureCount: number;
   disputed: boolean;
 }
+export function territoryAvailabilityYears(slices: TerritorySlice[]): number[] {
+  return [
+    ...new Set(slices.flatMap((s) => [s.year, nextYear(s.endYear ?? s.year)])),
+  ]
+    .filter(isSupportedYear)
+    .sort((a, b) => a - b);
+}
 export function buildTerritorySlices(features: Territory[]): TerritorySlice[] {
   const groups = new Map<string, TerritorySlice>();
   const seen = new Set<string>();
   for (const { properties: p } of features) {
-    if (
-      p.review.status !== "verified" ||
-      p.temporalSupport !== "snapshot" ||
-      p.snapshotYear === null ||
-      seen.has(p.id)
-    )
-      continue;
+    if (p.review.status !== "verified" || seen.has(p.id)) continue;
     seen.add(p.id);
-    const key = `${p.snapshotYear}/${p.entityId}/${p.interpretationId}`;
+    const year = p.snapshotYear ?? yearOf(p.validity.start.earliest);
+    const endYear =
+      p.temporalSupport === "interval" ? lastYear(p.validity) : undefined;
+    const key = `${year}/${endYear ?? year}/${p.entityId}/${p.interpretationId}`;
     const row = groups.get(key) ?? {
-      year: p.snapshotYear,
+      year,
+      ...(endYear !== undefined ? { endYear } : {}),
       entityId: p.entityId,
       interpretationId: p.interpretationId,
       regionIds: [],

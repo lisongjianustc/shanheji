@@ -20,7 +20,9 @@ export function buildTerritoryLayers(
         fillOpacity:
           t.properties.relation === "control"
             ? 0.3
-            : t.properties.relation === "administration"
+            : ["administration", "reconstruction"].includes(
+                  t.properties.relation,
+                )
               ? 0.22
               : 0,
         approximate:

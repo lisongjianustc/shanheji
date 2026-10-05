@@ -361,5 +361,203 @@
     "license": "原网页及申报档案；仅采用事实并独立编写摘要",
     "redistribution": "unknown",
     "permissionEvidence": "只发布独立事实条目和链接，不复制图像或档案全文。"
+  },
+  {
+    "id": "cliopatria-v021",
+    "title": "Cliopatria v0.2.1 历史政权疆域数据",
+    "creator": "James S. Bennett、Andrew Tollefson等；Seshat Global History Databank",
+    "edition": "v0.2.1，2026-10-03发布；2026-10-05取得固定版本",
+    "url": "https://github.com/Seshat-Global-History-Databank/cliopatria/releases/tag/v0.2.1",
+    "accessedAt": "2026-10-05",
+    "license": "CC BY 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "固定版本LICENSE.md明确CC BY 4.0，允许复制、修改和再分发，须署名、许可链接及修改说明。https://creativecommons.org/licenses/by/4.0/ 原ZIP/成员SHA256及逐条筛选见data/sources/cliopatria/intake-config.json；本项目保留原始名称、年代、编号，不暗示作者认可。"
+  },
+  {
+    "id": "jinshu-annals-andi",
+    "title": "《晋书》卷十·安帝纪（维基文库转录）",
+    "creator": "房玄龄等；维基文库转录者",
+    "edition": "古籍转录，2026-10-05核对",
+    "url": "https://zh.wikisource.org/zh-hans/晉書/卷010",
+    "accessedAt": "2026-10-05",
+    "license": "古籍正文公共领域；转录页面许可见原页，仅整理事实",
+    "redistribution": "allowed",
+    "permissionEvidence": "这里只发布独立事实与定位链接，不复制古籍转录全文；不作为地理几何许可依据。"
+  },
+  {
+    "id": "shiji-qinshihuang",
+    "title": "史记·秦始皇本纪",
+    "creator": "司马迁（古籍；维基文库转录）",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://zh.wikisource.org/zh-hans/史記/卷006",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "neac-tuyuhun",
+    "title": "土族历史沿革",
+    "creator": "国家民族事务委员会",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://www.neac.gov.cn/seac/ztzl/tz/lsyg.shtml",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "rouran-buddhism-2002",
+    "title": "柔然时期的新疆佛教",
+    "creator": "才吾加甫，《西北民族研究》2002年第4期81—86页",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://ygx.sxu.edu.cn/db/%E6%9C%9F%E5%88%8A/xbmzyj/xbmz2002/0204pdf/020411.pdf",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "zhuoni-tibetan-history",
+    "title": "卓尼土司历史文化·土司先祖（一）",
+    "creator": "卓尼县人民政府",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://www.zhuoni.gov.cn/info/1155/10599.htm",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "yn-piluoge",
+    "title": "皮逻阁",
+    "creator": "云南省民族宗教事务委员会",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://mzzj.yn.gov.cn/html/2002/yunnanlishiminzurenwu_0101/8179.html",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "zgbk-yunnan-five",
+    "title": "五代时期的云南",
+    "creator": "中国大百科全书出版社",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://www.zgbk.com/ecph/words?ID=639863&SiteID=1&SubID=698&Type=bkztb",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "neac-turkic-split",
+    "title": "道中华·便桥会盟图卷",
+    "creator": "国家民族事务委员会",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://www.neac.gov.cn/seac/c103391/202211/1159786.shtml",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "sunan-uyghur-history",
+    "title": "肃南裕固族自治县志（回纥汗国纪年）",
+    "creator": "甘肃省地方史志办公室",
+    "edition": "2026-10-05核对的公开版本",
+    "url": "https://www.gsdfszw.org.cn/gsxz/zys_272/snygzzzx/202005/P020200522574978446211.pdf",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅引用事实、链接并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "不复制原文或原图；疆域几何独立采用CC BY 4.0的Cliopatria。"
+  },
+  {
+    "id": "dpm-northern-yuan",
+    "title": "北元朝",
+    "creator": "故宫博物院",
+    "edition": "2026-10-05核对",
+    "url": "https://www.dpm.org.cn/lemmas/243963.html",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目与链接；未复制全文、原图或受限几何。"
+  },
+  {
+    "id": "nstc-northern-yuan",
+    "title": "人文沙龙·北元势力",
+    "creator": "台湾科技部门人文沙龙",
+    "edition": "2026-10-05核对",
+    "url": "https://web.nstc.gov.tw/Humanitiessalon/2021/2021-4.htm",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目与链接；未复制全文、原图或受限几何。"
+  },
+  {
+    "id": "dpm-southern-ming",
+    "title": "倪元璐仿米芾山水图扇页（瞿式耜与南明纪年）",
+    "creator": "故宫博物院",
+    "edition": "2026-10-05核对",
+    "url": "https://www.dpm.org.cn/collection/paint/234271.html",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目与链接；未复制全文、原图或受限几何。"
+  },
+  {
+    "id": "unesco-silk-maps",
+    "title": "丝绸之路长安—天山廊道·地理坐标",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页／公开PDF，2026-10-05核对",
+    "url": "https://whc.unesco.org/en/list/1442/maps/",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
+  },
+  {
+    "id": "unesco-nara-maps",
+    "title": "古奈良历史遗迹·地理坐标",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页／公开PDF，2026-10-05核对",
+    "url": "https://whc.unesco.org/en/list/870/maps/",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
+  },
+  {
+    "id": "unesco-horyuji-maps",
+    "title": "法隆寺地区佛教古迹·地理坐标",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页／公开PDF，2026-10-05核对",
+    "url": "https://whc.unesco.org/en/list/660/maps/",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
+  },
+  {
+    "id": "dpm-daming-archaeology",
+    "title": "关于故宫学学科建设的初步构想·唐长安宫殿遗址考古",
+    "creator": "故宫学刊·2010",
+    "edition": "网页／公开PDF，2026-10-05核对",
+    "url": "https://www.dpm.org.cn/Uploads/File/2019/12/15/u5df5f44ddc1bc.pdf",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
+  },
+  {
+    "id": "aam-wild-goose",
+    "title": "Great Wild Goose Pagoda, 652",
+    "creator": "Asian Art Museum",
+    "edition": "网页／公开PDF，2026-10-05核对",
+    "url": "https://education.asianart.org/resources/great-wild-goose-pagoda/",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用事实、点位并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制原文原图或多边形；仅使用事实数值及来源链接。"
   }
 ]

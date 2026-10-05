@@ -1325,6 +1325,8 @@ p {
   top: 26px;
   right: 76px;
   max-width: 300px;
+  max-height: 180px;
+  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1360,6 +1362,7 @@ p {
 @media (max-width: 900px) {
   .map-territory-key {
     top: 170px;
+    max-height: 110px;
     right: 12px;
     max-width: calc(100% - 24px);
   }

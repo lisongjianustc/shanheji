@@ -125,6 +125,7 @@ const properties = z
     relation: z.enum([
       "control",
       "administration",
+      "reconstruction",
       "vassal",
       "influence",
       "claim",
