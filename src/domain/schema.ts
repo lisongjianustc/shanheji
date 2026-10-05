@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { parseDay } from "./time";
+import { parseDay, compareDays } from "./time";
 import type { Catalog, DataPackage } from "./types";
 const text = z.string().min(1);
 const day = z.string().refine((x) => {
@@ -10,9 +10,17 @@ const day = z.string().refine((x) => {
     return false;
   }
 }, "无效日期");
+const ordered = (a: string, b: string, strict = false) => {
+  try {
+    const n = compareDays(a, b);
+    return strict ? n < 0 : n <= 0;
+  } catch {
+    return false;
+  }
+};
 const bound = z
   .strictObject({ earliest: day, latest: day })
-  .refine((x) => x.earliest <= x.latest, "时间范围倒置");
+  .refine((x) => ordered(x.earliest, x.latest), "时间范围倒置");
 export const validitySchema = z
   .strictObject({
     start: bound,
@@ -22,8 +30,8 @@ export const validitySchema = z
   })
   .refine(
     (x) =>
-      x.start.earliest < x.endExclusive.latest &&
-      x.start.latest < x.endExclusive.latest,
+      ordered(x.start.earliest, x.endExclusive.latest, true) &&
+      ordered(x.start.latest, x.endExclusive.latest, true),
     "起止时间倒置",
   );
 const evidence = z.strictObject({

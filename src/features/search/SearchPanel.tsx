@@ -1,3 +1,8 @@
+import {
+  clampYear,
+  formatYear,
+  formatYearRange,
+} from "../../domain/chronology";
 import { useState } from "react";
 import type { SearchEntry } from "../../domain/types";
 import { searchEntries } from "./index";
@@ -28,11 +33,11 @@ export function SearchPanel(p: {
               <strong>{e.label}</strong>
               <span>
                 {{ entity: "政权", place: "地点", event: "事件" }[e.kind]} ·{" "}
-                {e.startYear}—{e.endYear}年
+                {formatYearRange(e.startYear, e.endYear)}
                 {e.regionIds.length ? ` · ${e.regionIds.join(" / ")}` : ""}
               </span>
               {(p.year < e.startYear || p.year > e.endYear) && (
-                <em>跳至{Math.max(220, Math.min(907, e.startYear))}年 ↗</em>
+                <em>跳至{formatYear(clampYear(e.startYear))} ↗</em>
               )}
             </button>
           ))}

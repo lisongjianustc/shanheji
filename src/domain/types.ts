@@ -155,6 +155,7 @@ export interface Scene {
   warnings: string[];
 }
 export interface SearchEntry {
+  namePeriods?: { text: string; startYear: number; endYear: number }[];
   id: Id;
   kind: "entity" | "event" | "place";
   label: string;

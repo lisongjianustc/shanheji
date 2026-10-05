@@ -1,3 +1,4 @@
+import { clampYear } from "../../domain/chronology";
 import { useEffect, useRef } from "react";
 import type {
   Scene,
@@ -81,7 +82,7 @@ export function DetailPanel(p: DetailProps) {
   const jump = (year: number) =>
     p.onRequest({
       ...scene.query,
-      year: Math.max(220, Math.min(907, year)),
+      year: clampYear(year),
       at: null,
     });
   const territoryLabels = [

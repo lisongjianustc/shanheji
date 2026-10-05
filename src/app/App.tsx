@@ -1,3 +1,4 @@
+import { clampYear, formatYear, formatYearRange } from "../domain/chronology";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { HistoryMap } from "../features/map/HistoryMap";
 import { Timeline } from "../features/timeline/Timeline";
@@ -136,7 +137,7 @@ export default function App() {
     select({ id: e.id, kind: e.kind });
     const year =
       query.year < e.startYear || query.year > e.endYear
-        ? Math.max(220, Math.min(907, e.startYear))
+        ? clampYear(e.startYear)
         : query.year;
     request({
       ...query,
@@ -188,10 +189,14 @@ export default function App() {
           <h1>山河纪</h1>
         </div>
         <span className="masthead-subtitle">
-          三国至唐末的时间与疆域 <small>220—907</small>
+          夏商周至明清的时间与疆域 <small>约前2100—1912</small>
         </span>
         <span className="header-year">
-          公元 <b data-testid="committed-year">{scene?.query.year ?? "—"}</b> 年
+          {(scene?.query.year ?? 1) < 0 ? "公元前" : "公元"}{" "}
+          <b data-testid="committed-year">
+            {scene ? Math.abs(scene.query.year) : "—"}
+          </b>{" "}
+          年
         </span>
         <span className="status-tag" data-testid="scene-status">
           {state.status === "ready"
@@ -258,6 +263,32 @@ export default function App() {
           {scene && (
             <div className="coverage-banner">
               {scene.warnings.join("；") || "显示已核验资料"}
+              {!scene.territories.length &&
+                manifest?.mapPlates
+                  ?.filter((p) =>
+                    p.entityIds?.some((id) =>
+                      scene.catalog.entities.some(
+                        (e) => e.id === id && entityActiveInYear(e, query.year),
+                      ),
+                    ),
+                  )
+                  .map((p) => (
+                    <button
+                      key={p.id}
+                      className="source-plate-shortcut"
+                      onClick={() => {
+                        controller.setPlaying(false);
+                        controller.select(null);
+                        setPlate(p);
+                      }}
+                    >
+                      查阅{formatYearRange(p.year, p.endYear ?? p.year)}来源原图
+                      {p.year !== query.year && !p.endYear
+                        ? "（其他年份）"
+                        : ""}{" "}
+                      ↗
+                    </button>
+                  ))}
               {!!scene.territories.length && (
                 <span
                   title={Object.values(scene.territoryTimeLabels).join("；")}
@@ -306,7 +337,7 @@ export default function App() {
               )}
               <span>
                 {scene.referenceYears.length
-                  ? `参考切片年份：${scene.referenceYears.join("、")} · `
+                  ? `参考切片年份：${scene.referenceYears.map(formatYear).join("、")} · `
                   : ""}
                 底图为现代自然地理参考
               </span>
@@ -369,7 +400,7 @@ export default function App() {
             {tab === "events" && (
               <>
                 <div className="section-heading">
-                  <h2>{query.year} 年纪事</h2>
+                  <h2>{formatYear(query.year)}纪事</h2>
                   <span>{scene?.events.length ?? 0} 件</span>
                 </div>
                 <p className="empty-copy">

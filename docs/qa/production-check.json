@@ -1,15 +1,23 @@
 {
-  "checkedAt": "2026-10-05T01:42:33.844Z",
+  "checkedAt": "2026-10-05T06:02:55.813Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "5303d72268522b90",
+  "dataVersion": "0cd880b8961b4a24",
   "years": [
+    -1300,
+    -221,
     262,
     572,
     610,
     460,
-    661
+    661,
+    1420,
+    1912
   ],
   "workerVerified": true,
+  "expandedChronology": true,
+  "bceMobileNoOverflow": true,
+  "sourceShortcutPreservesYear": true,
+  "newEventPointVerified": true,
   "timelineDirectInitial": true,
   "paintedTerritoryIds": {
     "262": [

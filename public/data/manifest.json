@@ -1,8 +1,8 @@
 {
-  "version": "5303d72268522b90",
+  "version": "0cd880b8961b4a24",
   "catalog": {
-    "path": "catalog-a09d108752b8bc37.json",
-    "sha256": "a09d108752b8bc373acdf66c6c7ee1e07e58edb0ae0f1ddc8f9bd4c1e7b1cda4"
+    "path": "catalog-4ea654a19fb317cb.json",
+    "sha256": "4ea654a19fb317cb7036301b16cde2c59066586af62fc0eee80f0fb37c5612fa"
   },
   "packages": [
     {
@@ -23,12 +23,63 @@
       ]
     },
     {
+      "path": "package-f3e6f0159ad2da59.json",
+      "sha256": "f3e6f0159ad2da599f71453dd6656c380875e3201ef8864fc62eb08ae234f210",
+      "id": "five-dynasties-song-yuan",
+      "version": "0.1.0-partial",
+      "startYear": 902,
+      "endYear": 1368,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
       "path": "package-2c10d01ac6d4d952.json",
       "sha256": "2c10d01ac6d4d952476ae1c51b211d41d199b5a4e6d76ca980b92f2c0f3033a8",
       "id": "middle-late-tang",
       "version": "0.1.0-partial",
       "startYear": 755,
       "endYear": 907,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-a3e2127395ee031e.json",
+      "sha256": "a3e2127395ee031e6c29d7677615809ef5ec784bc025ed916a595902f7896b7d",
+      "id": "ming-qing",
+      "version": "0.1.0-partial",
+      "startYear": 1368,
+      "endYear": 1912,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
+    },
+    {
+      "path": "package-194181569d205c4f.json",
+      "sha256": "194181569d205c4f8d60e9852f594e3796c1ffe2814986bc5e2b5532164e986f",
+      "id": "qin-han",
+      "version": "0.1.0-partial",
+      "startYear": -221,
+      "endYear": 220,
       "regionIds": [
         "china-core",
         "steppe",
@@ -89,6 +140,23 @@
         "central-asia",
         "southeast-asia"
       ]
+    },
+    {
+      "path": "package-6508194512e985c1.json",
+      "sha256": "6508194512e985c1aa1c22e87b406ff62ca8d12f9d00a7769b910cd3db88de90",
+      "id": "xia-shang-zhou",
+      "version": "0.1.0-partial",
+      "startYear": -2100,
+      "endYear": -222,
+      "regionIds": [
+        "china-core",
+        "steppe",
+        "korea",
+        "japan",
+        "tibet",
+        "central-asia",
+        "southeast-asia"
+      ]
     }
   ],
   "defaultInterpretationIds": [
@@ -97,10 +165,10 @@
     "sy-572-administration",
     "yug-610-partial-administration"
   ],
-  "scopeVersion": "1",
+  "scopeVersion": "3",
   "searchIndex": {
-    "path": "search-44b8a1296a271ab6.json",
-    "sha256": "44b8a1296a271ab664e8e937e291f910dd677f81c80b6b960b4f23feae50353b"
+    "path": "search-b94d0b426f56176b.json",
+    "sha256": "b94d0b426f56176b0ae4a6ae24f59b22e0420a879dc4edb5f73163bef70925a2"
   },
   "interpretations": [
     {
@@ -349,6 +417,67 @@
       "image": {
         "path": "plate-d3dc48a4630d27b0.svg",
         "sha256": "d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08"
+      }
+    },
+    {
+      "id": "qin-dynasty",
+      "year": -221,
+      "endYear": -206,
+      "entityIds": [
+        "qin"
+      ],
+      "title": "秦代郡县参考图",
+      "sourceId": "commons-qin-plate",
+      "creator": "Ian Remsen",
+      "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+      "license": "CC0 1.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg",
+      "limitations": "未配准。来源描绘整个秦代（前221—前206），没有标明单一年份；不能作为前221年快照。不得把秦代汇总范围外推到每个年份。",
+      "width": 1050,
+      "height": 1260,
+      "image": {
+        "path": "plate-c37befe576d20479.svg",
+        "sha256": "c37befe576d20479eb9dfde09179b562a17e918734812e256274642bde6f75d5"
+      }
+    },
+    {
+      "id": "ming-1580",
+      "year": 1580,
+      "entityIds": [
+        "ming"
+      ],
+      "title": "明代约1580年参考图",
+      "sourceId": "commons-ming-1580",
+      "creator": "Michal Klajban；Jann；Manlleus等译者",
+      "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+      "license": "CC BY-SA 3.0 CZ",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg",
+      "limitations": "来源据《剑桥中国史》第7卷图1及Timothy Brook图6；尚未配准或独立核对原书，年份为约数，不能替代明代全年实控。",
+      "width": 2304,
+      "height": 2344,
+      "image": {
+        "path": "plate-103d0758f0230404.svg",
+        "sha256": "103d0758f0230404b43e0f1f7fc30595b76bc0aa8f9452d88b99e5f87f74074e"
+      }
+    },
+    {
+      "id": "qing-1820",
+      "year": 1820,
+      "entityIds": [
+        "qing"
+      ],
+      "title": "清代1820年行政参考图",
+      "sourceId": "commons-qing-1820",
+      "creator": "瑞丽江的河水",
+      "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_blank_map_1820.svg",
+      "limitations": "来源作者声明据CHGIS V6 1820及Natural Earth绘制；尚未配准、未独立核验原始数据，行政范围不能直接证明实控，不外推到其他清代年份。",
+      "width": 850,
+      "height": 709,
+      "image": {
+        "path": "plate-1bf6bdb1ad31dbeb.svg",
+        "sha256": "1bf6bdb1ad31dbeb989ac35e017cd3a5f5e5bab88a3ab97676fab74624971a92"
       }
     }
   ]

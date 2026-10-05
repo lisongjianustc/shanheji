@@ -1,3 +1,5 @@
+import { MIN_YEAR, MAX_YEAR } from "../../src/domain/chronology";
+import { compareDays } from "../../src/domain/time";
 import { createHash, randomUUID } from "node:crypto";
 import { readFile, writeFile, mkdir, rename } from "node:fs/promises";
 import { resolve, join } from "node:path";
@@ -56,8 +58,8 @@ export async function publishDataset(
       ...(await store("package", p)),
       id: p.id,
       version: p.version,
-      startYear: years.length ? Math.min(...years) : 220,
-      endYear: years.length ? Math.max(...years) : 907,
+      startYear: years.length ? Math.min(...years) : MIN_YEAR,
+      endYear: years.length ? Math.max(...years) : MAX_YEAR,
       regionIds: [...new Set(p.coverage.map((c) => c.regionId))],
     });
   }
@@ -103,10 +105,14 @@ export async function publishDataset(
           a.properties.entityId === b.properties.entityId &&
           a.properties.relation === b.properties.relation &&
           a.properties.interpretationId !== b.properties.interpretationId &&
-          a.properties.validity.start.earliest <
-            b.properties.validity.endExclusive.latest &&
-          b.properties.validity.start.earliest <
+          compareDays(
+            a.properties.validity.start.earliest,
+            b.properties.validity.endExclusive.latest,
+          ) < 0 &&
+          compareDays(
+            b.properties.validity.start.earliest,
             a.properties.validity.endExclusive.latest,
+          ) < 0,
       )
     )
       throw new Error("默认编制版本存在同政权同时段的不同解释，请选定一种");
@@ -119,7 +125,7 @@ export async function publishDataset(
     catalog: catalogResource,
     packages,
     defaultInterpretationIds,
-    scopeVersion: "1",
+    scopeVersion: "3",
     searchIndex: await store("search", [
       ...new Map(entries.map((e) => [`${e.kind}:${e.id}`, e])).values(),
     ]),
@@ -158,6 +164,10 @@ export async function publishDataset(
       source.license !== plate.license
     )
       throw new Error(`参考图幅来源或许可未核对：${plate.id}`);
+    if (
+      plate.entityIds?.some((id) => !catalog.entities.some((e) => e.id === id))
+    )
+      throw new Error(`参考图幅关联政权缺失：${plate.id}`);
     if (mapPlates.some((p) => p.id === plate.id))
       throw new Error("参考图幅编号重复");
     await writeFile(join(outputRoot, path), bytes);

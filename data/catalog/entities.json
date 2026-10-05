@@ -1635,5 +1635,1961 @@
       "china-core"
     ],
     "capitals": []
+  },
+  {
+    "id": "xia-ancient",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "夏（传统记载，未确证）",
+        "validity": {
+          "start": {
+            "earliest": "-2100-01-01",
+            "latest": "-2100-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-1600-01-01",
+            "latest": "-1599-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前2100—1600年；传统记载，存在争议"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 夏（传统记载，未确证）",
+            "note": "来源将夏标为unconfirmed、年代约数；二里头与夏的对应关系未确定。不得据此绘制确定国界。"
+          }
+        ]
+      },
+      {
+        "text": "夏朝",
+        "validity": {
+          "start": {
+            "earliest": "-2100-01-01",
+            "latest": "-2100-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-1600-01-01",
+            "latest": "-1599-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前2100—1600年；传统记载，存在争议"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 夏（传统记载，未确证）",
+            "note": "来源将夏标为unconfirmed、年代约数；二里头与夏的对应关系未确定。不得据此绘制确定国界。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-2100-01-01",
+        "latest": "-2100-12-31"
+      },
+      "endExclusive": {
+        "earliest": "-1600-01-01",
+        "latest": "-1599-01-01"
+      },
+      "precision": "range",
+      "label": "约公元前2100—1600年；传统记载，存在争议"
+    },
+    "color": "#907445",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "shang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "商",
+        "validity": {
+          "start": {
+            "earliest": "-1600-01-01",
+            "latest": "-1600-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-1046-01-01",
+            "latest": "-1045-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前1600—1046年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 商",
+            "note": "采用Met约1600—1046前的口径；未将朝代年代当作全年有效疆域。"
+          }
+        ]
+      },
+      {
+        "text": "商朝",
+        "validity": {
+          "start": {
+            "earliest": "-1600-01-01",
+            "latest": "-1600-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-1046-01-01",
+            "latest": "-1045-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前1600—1046年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 商",
+            "note": "采用Met约1600—1046前的口径；未将朝代年代当作全年有效疆域。"
+          }
+        ]
+      },
+      {
+        "text": "殷商",
+        "validity": {
+          "start": {
+            "earliest": "-1600-01-01",
+            "latest": "-1600-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-1046-01-01",
+            "latest": "-1045-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前1600—1046年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 商",
+            "note": "采用Met约1600—1046前的口径；未将朝代年代当作全年有效疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-1600-01-01",
+        "latest": "-1600-12-31"
+      },
+      "endExclusive": {
+        "earliest": "-1046-01-01",
+        "latest": "-1045-01-01"
+      },
+      "precision": "range",
+      "label": "约公元前1600—1046年"
+    },
+    "color": "#75876a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-zhou",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西周",
+        "validity": {
+          "start": {
+            "earliest": "-1046-01-01",
+            "latest": "-1046-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0771-01-01",
+            "latest": "-0770-01-01"
+          },
+          "precision": "range",
+          "label": "公元前1046—771年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-bronze",
+            "locator": "Timeline / 西周",
+            "note": "王朝纪年；不表示周王室直接控制所有诸侯地区。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-1046-01-01",
+        "latest": "-1046-12-31"
+      },
+      "endExclusive": {
+        "earliest": "-0771-01-01",
+        "latest": "-0770-01-01"
+      },
+      "precision": "range",
+      "label": "公元前1046—771年"
+    },
+    "color": "#917267",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "eastern-zhou",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "东周王室",
+        "validity": {
+          "start": {
+            "earliest": "-0770-01-01",
+            "latest": "-0770-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0256-01-01",
+            "latest": "-0255-01-01"
+          },
+          "precision": "range",
+          "label": "公元前770—256年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 东周王室",
+            "note": "春秋770—476前、战国475—221前是时期，不是一个统一国家；王室终年采用256前。"
+          }
+        ]
+      },
+      {
+        "text": "东周",
+        "validity": {
+          "start": {
+            "earliest": "-0770-01-01",
+            "latest": "-0770-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0256-01-01",
+            "latest": "-0255-01-01"
+          },
+          "precision": "range",
+          "label": "公元前770—256年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 东周王室",
+            "note": "春秋770—476前、战国475—221前是时期，不是一个统一国家；王室终年采用256前。"
+          }
+        ]
+      },
+      {
+        "text": "春秋",
+        "validity": {
+          "start": {
+            "earliest": "-0770-01-01",
+            "latest": "-0770-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0256-01-01",
+            "latest": "-0255-01-01"
+          },
+          "precision": "range",
+          "label": "公元前770—256年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 东周王室",
+            "note": "春秋770—476前、战国475—221前是时期，不是一个统一国家；王室终年采用256前。"
+          }
+        ]
+      },
+      {
+        "text": "战国",
+        "validity": {
+          "start": {
+            "earliest": "-0770-01-01",
+            "latest": "-0770-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0256-01-01",
+            "latest": "-0255-01-01"
+          },
+          "precision": "range",
+          "label": "公元前770—256年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 东周王室",
+            "note": "春秋770—476前、战国475—221前是时期，不是一个统一国家；王室终年采用256前。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0770-01-01",
+        "latest": "-0770-12-31"
+      },
+      "endExclusive": {
+        "earliest": "-0256-01-01",
+        "latest": "-0255-01-01"
+      },
+      "precision": "range",
+      "label": "公元前770—256年"
+    },
+    "color": "#668693",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "秦",
+        "validity": {
+          "start": {
+            "earliest": "-0221-01-01",
+            "latest": "-0221-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0206-01-01",
+            "latest": "-0205-01-01"
+          },
+          "precision": "range",
+          "label": "公元前221—206年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-qin-han",
+            "locator": "Timeline / 秦",
+            "note": "采用秦帝国221—206前；Met旧时间线Key Events中206前建秦与Timeline冲突，未沿用该笔误。"
+          }
+        ]
+      },
+      {
+        "text": "秦朝",
+        "validity": {
+          "start": {
+            "earliest": "-0221-01-01",
+            "latest": "-0221-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0206-01-01",
+            "latest": "-0205-01-01"
+          },
+          "precision": "range",
+          "label": "公元前221—206年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-qin-han",
+            "locator": "Timeline / 秦",
+            "note": "采用秦帝国221—206前；Met旧时间线Key Events中206前建秦与Timeline冲突，未沿用该笔误。"
+          }
+        ]
+      },
+      {
+        "text": "秦帝国",
+        "validity": {
+          "start": {
+            "earliest": "-0221-01-01",
+            "latest": "-0221-12-31"
+          },
+          "endExclusive": {
+            "earliest": "-0206-01-01",
+            "latest": "-0205-01-01"
+          },
+          "precision": "range",
+          "label": "公元前221—206年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-qin-han",
+            "locator": "Timeline / 秦",
+            "note": "采用秦帝国221—206前；Met旧时间线Key Events中206前建秦与Timeline冲突，未沿用该笔误。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0221-01-01",
+        "latest": "-0221-12-31"
+      },
+      "endExclusive": {
+        "earliest": "-0206-01-01",
+        "latest": "-0205-01-01"
+      },
+      "precision": "range",
+      "label": "公元前221—206年"
+    },
+    "color": "#8b7593",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西汉",
+        "validity": {
+          "start": {
+            "earliest": "-0206-01-01",
+            "latest": "-0206-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0009-01-01",
+            "latest": "0010-01-01"
+          },
+          "precision": "range",
+          "label": "公元前206年—公元9年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 西汉",
+            "note": "采用Met206前至9年的交替年口径；改朝年与新朝重叠不意味着同时实控。"
+          }
+        ]
+      },
+      {
+        "text": "汉朝",
+        "validity": {
+          "start": {
+            "earliest": "-0206-01-01",
+            "latest": "-0206-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0009-01-01",
+            "latest": "0010-01-01"
+          },
+          "precision": "range",
+          "label": "公元前206年—公元9年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 西汉",
+            "note": "采用Met206前至9年的交替年口径；改朝年与新朝重叠不意味着同时实控。"
+          }
+        ]
+      },
+      {
+        "text": "前汉",
+        "validity": {
+          "start": {
+            "earliest": "-0206-01-01",
+            "latest": "-0206-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0009-01-01",
+            "latest": "0010-01-01"
+          },
+          "precision": "range",
+          "label": "公元前206年—公元9年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Timeline / 西汉",
+            "note": "采用Met206前至9年的交替年口径；改朝年与新朝重叠不意味着同时实控。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "-0206-01-01",
+        "latest": "-0206-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0009-01-01",
+        "latest": "0010-01-01"
+      },
+      "precision": "range",
+      "label": "公元前206年—公元9年"
+    },
+    "color": "#798857",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "xin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "新",
+        "validity": {
+          "start": {
+            "earliest": "0009-01-01",
+            "latest": "0009-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0023-01-01",
+            "latest": "0024-01-01"
+          },
+          "precision": "range",
+          "label": "9—23年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 新",
+            "note": "改朝确日未核验，边界年保留不确定性。"
+          }
+        ]
+      },
+      {
+        "text": "新朝",
+        "validity": {
+          "start": {
+            "earliest": "0009-01-01",
+            "latest": "0009-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0023-01-01",
+            "latest": "0024-01-01"
+          },
+          "precision": "range",
+          "label": "9—23年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 新",
+            "note": "改朝确日未核验，边界年保留不确定性。"
+          }
+        ]
+      },
+      {
+        "text": "王莽",
+        "validity": {
+          "start": {
+            "earliest": "0009-01-01",
+            "latest": "0009-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0023-01-01",
+            "latest": "0024-01-01"
+          },
+          "precision": "range",
+          "label": "9—23年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 新",
+            "note": "改朝确日未核验，边界年保留不确定性。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0009-01-01",
+        "latest": "0009-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0023-01-01",
+        "latest": "0024-01-01"
+      },
+      "precision": "range",
+      "label": "9—23年"
+    },
+    "color": "#ad8655",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "eastern-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "东汉",
+        "validity": {
+          "start": {
+            "earliest": "0025-01-01",
+            "latest": "0025-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0220-01-01",
+            "latest": "0221-01-01"
+          },
+          "precision": "range",
+          "label": "25—220年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 东汉",
+            "note": "25年建立、220年终结；23—25更始政权未接入。"
+          }
+        ]
+      },
+      {
+        "text": "后汉",
+        "validity": {
+          "start": {
+            "earliest": "0025-01-01",
+            "latest": "0025-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0220-01-01",
+            "latest": "0221-01-01"
+          },
+          "precision": "range",
+          "label": "25—220年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 东汉",
+            "note": "25年建立、220年终结；23—25更始政权未接入。"
+          }
+        ]
+      },
+      {
+        "text": "汉朝",
+        "validity": {
+          "start": {
+            "earliest": "0025-01-01",
+            "latest": "0025-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0220-01-01",
+            "latest": "0221-01-01"
+          },
+          "precision": "range",
+          "label": "25—220年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 东汉",
+            "note": "25年建立、220年终结；23—25更始政权未接入。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0025-01-01",
+        "latest": "0025-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0220-01-01",
+        "latest": "0221-01-01"
+      },
+      "precision": "range",
+      "label": "25—220年"
+    },
+    "color": "#907445",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-liang-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后梁（五代）",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0923-01-01",
+            "latest": "0924-01-01"
+          },
+          "precision": "range",
+          "label": "907—923年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后梁（五代）",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0923-01-01",
+        "latest": "0924-01-01"
+      },
+      "precision": "range",
+      "label": "907—923年"
+    },
+    "color": "#75876a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-tang-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后唐",
+        "validity": {
+          "start": {
+            "earliest": "0923-01-01",
+            "latest": "0923-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0936-01-01",
+            "latest": "0937-01-01"
+          },
+          "precision": "range",
+          "label": "923—936年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后唐",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0923-01-01",
+        "latest": "0923-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0936-01-01",
+        "latest": "0937-01-01"
+      },
+      "precision": "range",
+      "label": "923—936年"
+    },
+    "color": "#917267",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-jin-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后晋",
+        "validity": {
+          "start": {
+            "earliest": "0936-01-01",
+            "latest": "0936-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0946-01-01",
+            "latest": "0947-01-01"
+          },
+          "precision": "range",
+          "label": "936—946年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后晋",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0936-01-01",
+        "latest": "0936-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0946-01-01",
+        "latest": "0947-01-01"
+      },
+      "precision": "range",
+      "label": "936—946年"
+    },
+    "color": "#668693",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-han-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后汉（五代）",
+        "validity": {
+          "start": {
+            "earliest": "0947-01-01",
+            "latest": "0947-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0950-01-01",
+            "latest": "0951-01-01"
+          },
+          "precision": "range",
+          "label": "947—950年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后汉（五代）",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0947-01-01",
+        "latest": "0947-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0950-01-01",
+        "latest": "0951-01-01"
+      },
+      "precision": "range",
+      "label": "947—950年"
+    },
+    "color": "#8b7593",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-zhou-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后周",
+        "validity": {
+          "start": {
+            "earliest": "0951-01-01",
+            "latest": "0951-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0960-01-01",
+            "latest": "0961-01-01"
+          },
+          "precision": "range",
+          "label": "951—960年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后周",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0951-01-01",
+        "latest": "0951-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0960-01-01",
+        "latest": "0961-01-01"
+      },
+      "precision": "range",
+      "label": "951—960年"
+    },
+    "color": "#798857",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "wu-ten",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "吴（十国）",
+        "validity": {
+          "start": {
+            "earliest": "0902-01-01",
+            "latest": "0902-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0937-01-01",
+            "latest": "0938-01-01"
+          },
+          "precision": "range",
+          "label": "902—937年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 吴（十国）",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0902-01-01",
+        "latest": "0902-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0937-01-01",
+        "latest": "0938-01-01"
+      },
+      "precision": "range",
+      "label": "902—937年"
+    },
+    "color": "#ad8655",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "former-shu-ten",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "前蜀",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0925-01-01",
+            "latest": "0926-01-01"
+          },
+          "precision": "range",
+          "label": "907—925年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 前蜀",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0925-01-01",
+        "latest": "0926-01-01"
+      },
+      "precision": "range",
+      "label": "907—925年"
+    },
+    "color": "#907445",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "wuyue",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "吴越",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0978-01-01",
+            "latest": "0979-01-01"
+          },
+          "precision": "range",
+          "label": "907—978年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 吴越",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0978-01-01",
+        "latest": "0979-01-01"
+      },
+      "precision": "range",
+      "label": "907—978年"
+    },
+    "color": "#75876a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "chu-ten",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "楚（十国）",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0951-01-01",
+            "latest": "0952-01-01"
+          },
+          "precision": "range",
+          "label": "907—951年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 楚（十国）",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0951-01-01",
+        "latest": "0952-01-01"
+      },
+      "precision": "range",
+      "label": "907—951年"
+    },
+    "color": "#917267",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南汉",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0971-01-01",
+            "latest": "0972-01-01"
+          },
+          "precision": "range",
+          "label": "907—971年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 南汉",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0971-01-01",
+        "latest": "0972-01-01"
+      },
+      "precision": "range",
+      "label": "907—971年"
+    },
+    "color": "#668693",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "min-ten",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "闽",
+        "validity": {
+          "start": {
+            "earliest": "0909-01-01",
+            "latest": "0909-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0945-01-01",
+            "latest": "0946-01-01"
+          },
+          "precision": "range",
+          "label": "909—945年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 闽",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0909-01-01",
+        "latest": "0909-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0945-01-01",
+        "latest": "0946-01-01"
+      },
+      "precision": "range",
+      "label": "909—945年"
+    },
+    "color": "#8b7593",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "jingnan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "荆南",
+        "validity": {
+          "start": {
+            "earliest": "0924-01-01",
+            "latest": "0924-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0960-01-01",
+            "latest": "0961-01-01"
+          },
+          "precision": "range",
+          "label": "924—960年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 荆南",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0924-01-01",
+        "latest": "0924-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0960-01-01",
+        "latest": "0961-01-01"
+      },
+      "precision": "range",
+      "label": "924—960年"
+    },
+    "color": "#798857",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "later-shu-ten",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后蜀",
+        "validity": {
+          "start": {
+            "earliest": "0934-01-01",
+            "latest": "0934-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0965-01-01",
+            "latest": "0966-01-01"
+          },
+          "precision": "range",
+          "label": "934—965年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 后蜀",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0934-01-01",
+        "latest": "0934-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0965-01-01",
+        "latest": "0966-01-01"
+      },
+      "precision": "range",
+      "label": "934—965年"
+    },
+    "color": "#ad8655",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-tang",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南唐",
+        "validity": {
+          "start": {
+            "earliest": "0937-01-01",
+            "latest": "0937-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0975-01-01",
+            "latest": "0976-01-01"
+          },
+          "precision": "range",
+          "label": "937—975年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 南唐",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0937-01-01",
+        "latest": "0937-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0975-01-01",
+        "latest": "0976-01-01"
+      },
+      "precision": "range",
+      "label": "937—975年"
+    },
+    "color": "#907445",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-han",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北汉",
+        "validity": {
+          "start": {
+            "earliest": "0951-01-01",
+            "latest": "0951-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0979-01-01",
+            "latest": "0980-01-01"
+          },
+          "precision": "range",
+          "label": "951—979年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "Timeline / 北汉",
+            "note": "按纪年表建国口径收录，交替确日未核验。十国的起始年存在称王、建国等口径差异；目录不是疆域证据。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0951-01-01",
+        "latest": "0951-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0979-01-01",
+        "latest": "0980-01-01"
+      },
+      "precision": "range",
+      "label": "951—979年"
+    },
+    "color": "#75876a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "northern-song",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "北宋",
+        "validity": {
+          "start": {
+            "earliest": "0960-01-01",
+            "latest": "0960-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1127-01-01",
+            "latest": "1128-01-01"
+          },
+          "precision": "range",
+          "label": "960—1127年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 北宋",
+            "note": "与辽、西夏等并立；朝代时间不表示统一疆域。"
+          }
+        ]
+      },
+      {
+        "text": "宋朝",
+        "validity": {
+          "start": {
+            "earliest": "0960-01-01",
+            "latest": "0960-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1127-01-01",
+            "latest": "1128-01-01"
+          },
+          "precision": "range",
+          "label": "960—1127年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 北宋",
+            "note": "与辽、西夏等并立；朝代时间不表示统一疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0960-01-01",
+        "latest": "0960-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1127-01-01",
+        "latest": "1128-01-01"
+      },
+      "precision": "range",
+      "label": "960—1127年"
+    },
+    "color": "#917267",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "southern-song",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "南宋",
+        "validity": {
+          "start": {
+            "earliest": "1127-01-01",
+            "latest": "1127-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1279-01-01",
+            "latest": "1280-01-01"
+          },
+          "precision": "range",
+          "label": "1127—1279年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 南宋",
+            "note": "1127年是宋廷南迁的划分节点；同年不同阶段不能视为同一疆域。"
+          }
+        ]
+      },
+      {
+        "text": "宋朝",
+        "validity": {
+          "start": {
+            "earliest": "1127-01-01",
+            "latest": "1127-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1279-01-01",
+            "latest": "1280-01-01"
+          },
+          "precision": "range",
+          "label": "1127—1279年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 南宋",
+            "note": "1127年是宋廷南迁的划分节点；同年不同阶段不能视为同一疆域。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1127-01-01",
+        "latest": "1127-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1279-01-01",
+        "latest": "1280-01-01"
+      },
+      "precision": "range",
+      "label": "1127—1279年"
+    },
+    "color": "#668693",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "liao",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "辽",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1125-01-01",
+            "latest": "1126-01-01"
+          },
+          "precision": "range",
+          "label": "907—1125年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 辽",
+            "note": "采用907年契丹政权起算；916年称帝、辽国号变化另据纪年表，不将其当作疆域变化。"
+          }
+        ]
+      },
+      {
+        "text": "契丹",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1125-01-01",
+            "latest": "1126-01-01"
+          },
+          "precision": "range",
+          "label": "907—1125年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 辽",
+            "note": "采用907年契丹政权起算；916年称帝、辽国号变化另据纪年表，不将其当作疆域变化。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1125-01-01",
+        "latest": "1126-01-01"
+      },
+      "precision": "range",
+      "label": "907—1125年"
+    },
+    "color": "#8b7593",
+    "regionIds": [
+      "china-core",
+      "steppe"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-xia",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西夏",
+        "validity": {
+          "start": {
+            "earliest": "1032-01-01",
+            "latest": "1032-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1227-01-01",
+            "latest": "1228-01-01"
+          },
+          "precision": "range",
+          "label": "1032—1227年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 西夏",
+            "note": "采用来源的1032年控制范围时期；1038年称帝口径不同，起年待专题细化。"
+          }
+        ]
+      },
+      {
+        "text": "党项",
+        "validity": {
+          "start": {
+            "earliest": "1032-01-01",
+            "latest": "1032-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1227-01-01",
+            "latest": "1228-01-01"
+          },
+          "precision": "range",
+          "label": "1032—1227年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 西夏",
+            "note": "采用来源的1032年控制范围时期；1038年称帝口径不同，起年待专题细化。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1032-01-01",
+        "latest": "1032-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1227-01-01",
+        "latest": "1228-01-01"
+      },
+      "precision": "range",
+      "label": "1032—1227年"
+    },
+    "color": "#798857",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "jurchen-jin",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "金",
+        "validity": {
+          "start": {
+            "earliest": "1115-01-01",
+            "latest": "1115-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1234-01-01",
+            "latest": "1235-01-01"
+          },
+          "precision": "range",
+          "label": "1115—1234年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 金",
+            "note": "女真金，与晋朝及后晋分别建档。"
+          }
+        ]
+      },
+      {
+        "text": "女真金",
+        "validity": {
+          "start": {
+            "earliest": "1115-01-01",
+            "latest": "1115-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1234-01-01",
+            "latest": "1235-01-01"
+          },
+          "precision": "range",
+          "label": "1115—1234年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline / 金",
+            "note": "女真金，与晋朝及后晋分别建档。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1115-01-01",
+        "latest": "1115-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1234-01-01",
+        "latest": "1235-01-01"
+      },
+      "precision": "range",
+      "label": "1115—1234年"
+    },
+    "color": "#ad8655",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "mongol-yuan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "蒙古政权",
+        "validity": {
+          "start": {
+            "earliest": "1206-01-01",
+            "latest": "1206-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1270-01-01",
+            "latest": "1271-01-01"
+          },
+          "precision": "range",
+          "label": "1206—1270年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events: 1206; 1260",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "text": "元",
+        "validity": {
+          "start": {
+            "earliest": "1271-01-01",
+            "latest": "1271-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1368-01-01",
+            "latest": "1369-01-01"
+          },
+          "precision": "range",
+          "label": "1271—1368年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline; Key Events: 1260",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "text": "蒙古帝国",
+        "validity": {
+          "start": {
+            "earliest": "1206-01-01",
+            "latest": "1206-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1368-01-01",
+            "latest": "1369-01-01"
+          },
+          "precision": "range",
+          "label": "1206—1368年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events: 1206",
+            "note": "检索别名，实际疆域需分区分年核验。"
+          }
+        ]
+      },
+      {
+        "text": "元朝",
+        "validity": {
+          "start": {
+            "earliest": "1271-01-01",
+            "latest": "1271-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1368-01-01",
+            "latest": "1369-01-01"
+          },
+          "precision": "range",
+          "label": "1271—1368年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1206-01-01",
+        "latest": "1206-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1368-01-01",
+        "latest": "1369-01-01"
+      },
+      "precision": "range",
+      "label": "1206—1368年"
+    },
+    "color": "#907445",
+    "regionIds": [
+      "china-core",
+      "steppe",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "ming",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "明",
+        "validity": {
+          "start": {
+            "earliest": "1368-01-01",
+            "latest": "1368-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1644-01-01",
+            "latest": "1645-01-01"
+          },
+          "precision": "range",
+          "label": "1368—1644年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-ming",
+            "locator": "Timeline / 明",
+            "note": "此记录截止北京朝廷1644年，南明诸政权尚未接入。未把明代最大范围外推到所有年份。"
+          }
+        ]
+      },
+      {
+        "text": "明朝",
+        "validity": {
+          "start": {
+            "earliest": "1368-01-01",
+            "latest": "1368-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1644-01-01",
+            "latest": "1645-01-01"
+          },
+          "precision": "range",
+          "label": "1368—1644年"
+        },
+        "evidence": [
+          {
+            "sourceId": "met-ming",
+            "locator": "Timeline / 明",
+            "note": "此记录截止北京朝廷1644年，南明诸政权尚未接入。未把明代最大范围外推到所有年份。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1368-01-01",
+        "latest": "1368-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1644-01-01",
+        "latest": "1645-01-01"
+      },
+      "precision": "range",
+      "label": "1368—1644年"
+    },
+    "color": "#75876a",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qing",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "后金",
+        "validity": {
+          "start": {
+            "earliest": "1616-01-01",
+            "latest": "1616-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1635-01-01",
+            "latest": "1636-01-01"
+          },
+          "precision": "range",
+          "label": "1616—1635年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "清：初称后金",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "text": "清",
+        "validity": {
+          "start": {
+            "earliest": "1636-01-01",
+            "latest": "1636-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1912-02-12",
+            "latest": "1912-02-13"
+          },
+          "precision": "range",
+          "label": "1636—1912年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "清：1636年改国号",
+            "note": ""
+          },
+          {
+            "sourceId": "dpm-yangxin",
+            "locator": "February 12, 1912: abdication",
+            "note": ""
+          }
+        ]
+      },
+      {
+        "text": "清朝",
+        "validity": {
+          "start": {
+            "earliest": "1636-01-01",
+            "latest": "1636-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1912-02-12",
+            "latest": "1912-02-13"
+          },
+          "precision": "range",
+          "label": "1636—1912年"
+        },
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "清",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1616-01-01",
+        "latest": "1616-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1912-02-12",
+        "latest": "1912-02-13"
+      },
+      "precision": "range",
+      "label": "1616年后金—1636年清；至1912年2月退位"
+    },
+    "color": "#917267",
+    "regionIds": [
+      "china-core",
+      "steppe",
+      "tibet",
+      "central-asia"
+    ],
+    "capitals": []
   }
 ]

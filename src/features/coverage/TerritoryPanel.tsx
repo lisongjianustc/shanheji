@@ -1,3 +1,4 @@
+import { formatYear, formatYearRange } from "../../domain/chronology";
 import type { Scene, Query } from "../../domain/types";
 import type { TerritorySlice } from "../../domain/territorySlices";
 import type { Manifest, MapPlate } from "../../data/manifest";
@@ -38,7 +39,7 @@ export function TerritoryPanel({
             })
           }
         >
-          查看{year}年全部已录入政权
+          查看{formatYear(year)}全部已录入政权
         </button>
       ))}
       {slices.map((s) => {
@@ -52,7 +53,8 @@ export function TerritoryPanel({
             key={`${s.year}-${s.entityId}-${s.interpretationId}`}
           >
             <strong>
-              {s.year} 年 · {entity ? nameAt(entity.names, s.year) : s.entityId}
+              {formatYear(s.year)} ·{" "}
+              {entity ? nameAt(entity.names, s.year) : s.entityId}
             </strong>
             <p>{version?.label ?? s.interpretationId}</p>
             <small>
@@ -82,7 +84,7 @@ export function TerritoryPanel({
                 })
               }
             >
-              查看{s.year}年图幅
+              查看{formatYear(s.year)}图幅
             </button>
             <p className="empty-copy">
               主张、影响及臣属范围需在“筛选与图层”中另行开启。
@@ -98,18 +100,20 @@ export function TerritoryPanel({
             可放大查阅原图。已接入
             {plates
               .filter((p) => slices.some((s) => s.year === p.year))
-              .map((p) => p.year)
+              .map((p) => formatYear(p.year))
               .join("、")}
-            年参考切片；其余图幅待配准与年代核对。各图均不能直接证明实控疆界。
+            参考切片；其余图幅待配准与年代核对。各图均不能直接证明实控疆界。
           </p>
           {plates.map((plate) => (
             <article className="territory-slice" key={plate.id}>
               <strong>
-                {plate.year} 年 · {plate.title}
+                {formatYearRange(plate.year, plate.endYear ?? plate.year)} ·{" "}
+                {plate.title}
               </strong>
               <p className="empty-copy">{plate.limitations}</p>
               <button onClick={() => onOpenPlate?.(plate)}>
-                查阅{plate.year}年参考图
+                查阅{formatYearRange(plate.year, plate.endYear ?? plate.year)}
+                参考图
               </button>
               <small>
                 {plate.creator} · {plate.license}

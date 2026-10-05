@@ -1,0 +1,401 @@
+{
+  "id": "five-dynasties-song-yuan",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "five-dynasties-start",
+      "title": "后梁建立，五代开始",
+      "validity": {
+        "start": {
+          "earliest": "0907-01-01",
+          "latest": "0907-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0908-01-01",
+          "latest": "0908-01-01"
+        },
+        "precision": "year",
+        "label": "907年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "later-liang-five"
+      ],
+      "placeIds": [],
+      "summary": "后梁建立，进入五代时期。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "moe-chronology",
+          "locator": "五代：后梁907—923",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "五代：后梁907—923",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "northern-song-founded",
+      "title": "北宋建立",
+      "validity": {
+        "start": {
+          "earliest": "0960-01-01",
+          "latest": "0960-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0961-01-01",
+          "latest": "0961-01-01"
+        },
+        "precision": "year",
+        "label": "960年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "northern-song",
+        "later-zhou-five"
+      ],
+      "placeIds": [],
+      "summary": "北宋建立。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Timeline: Northern Song960–1127",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline: Northern Song960–1127",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "jin-founded",
+      "title": "金朝建立",
+      "validity": {
+        "start": {
+          "earliest": "1115-01-01",
+          "latest": "1115-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1116-01-01",
+          "latest": "1116-01-01"
+        },
+        "precision": "year",
+        "label": "1115年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "jurchen-jin"
+      ],
+      "placeIds": [],
+      "summary": "女真金政权建立。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Timeline: Jin1115–1234",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline: Jin1115–1234",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "southern-song-start",
+      "title": "宋廷南迁，南宋时期开始",
+      "validity": {
+        "start": {
+          "earliest": "1127-01-01",
+          "latest": "1127-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1128-01-01",
+          "latest": "1128-01-01"
+        },
+        "precision": "year",
+        "label": "1127年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "northern-song",
+        "southern-song",
+        "jurchen-jin"
+      ],
+      "placeIds": [],
+      "summary": "宋廷南迁，南北政权继续并立。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Timeline; Key Events:1125–1234;1127–1279",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Timeline; Key Events:1125–1234;1127–1279",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "mongol-founded",
+      "title": "成吉思汗即位",
+      "validity": {
+        "start": {
+          "earliest": "1206-01-01",
+          "latest": "1206-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1207-01-01",
+          "latest": "1207-01-01"
+        },
+        "precision": "year",
+        "label": "1206年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "mongol-yuan"
+      ],
+      "placeIds": [],
+      "summary": "铁木真被拥立为成吉思汗。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Key Events:1206",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events:1206",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "yuan-name",
+      "title": "定国号大元",
+      "validity": {
+        "start": {
+          "earliest": "1271-01-01",
+          "latest": "1271-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1272-01-01",
+          "latest": "1272-01-01"
+        },
+        "precision": "year",
+        "label": "1271年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "mongol-yuan"
+      ],
+      "placeIds": [],
+      "summary": "忽必烈将国号定为大元。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Key Events:1260",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events:1260",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "song-end",
+      "title": "南宋终结",
+      "validity": {
+        "start": {
+          "earliest": "1279-01-01",
+          "latest": "1279-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1280-01-01",
+          "latest": "1280-01-01"
+        },
+        "precision": "year",
+        "label": "1279年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "southern-song",
+        "mongol-yuan"
+      ],
+      "placeIds": [],
+      "summary": "南宋结束。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Key Events:1260; Timeline",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events:1260; Timeline",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "five-dynasties-song-yuan-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-korea-territory",
+      "regionId": "korea",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-japan-territory",
+      "regionId": "japan",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "five-dynasties-song-yuan-events",
+      "regionId": "china-core",
+      "startYear": 902,
+      "endYear": 1368,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "已收录部分有来源的纪事；尚未完成逐年重大事件覆盖。"
+    }
+  ]
+}

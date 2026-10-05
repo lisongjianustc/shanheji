@@ -1,3 +1,4 @@
+import { isSupportedYear } from "../domain/chronology";
 import { z } from "zod";
 import type { TerritorySlice } from "../domain/territorySlices";
 import type { Evidence } from "../domain/types";
@@ -8,11 +9,13 @@ export interface Resource {
 export interface MapPlate {
   id: string;
   year: number;
+  endYear?: number;
+  entityIds?: string[];
   title: string;
   sourceId: string;
   creator: string;
   edition: string;
-  license: "CC BY-SA 3.0" | "CC BY-SA 4.0";
+  license: "CC BY-SA 3.0" | "CC BY-SA 3.0 CZ" | "CC BY-SA 4.0" | "CC0 1.0";
   sourceUrl: string;
   limitations: string;
   width: number;
@@ -48,22 +51,34 @@ const resource = z.object({
     .refine((p) => !p.includes("..") && !p.startsWith("/")),
   sha256: z.string().regex(/^[a-f0-9]{64}$/),
 });
-export const mapPlateSchema = z.object({
-  id: z.string().min(1),
-  year: z.number().int().min(220).max(907),
-  title: z.string().min(1),
-  sourceId: z.string().min(1),
-  creator: z.string().min(1),
-  edition: z.string().min(1),
-  license: z.enum(["CC BY-SA 3.0", "CC BY-SA 4.0"]),
-  sourceUrl: z
-    .url()
-    .refine((s) => new URL(s).hostname === "commons.wikimedia.org"),
-  limitations: z.string().min(1),
-  width: z.number().int().positive(),
-  height: z.number().int().positive(),
-  image: resource,
-});
+export const mapPlateSchema = z
+  .object({
+    id: z.string().min(1),
+    year: z.number().int().refine(isSupportedYear),
+    endYear: z.number().int().refine(isSupportedYear).optional(),
+    entityIds: z.array(z.string().min(1)).optional(),
+    title: z.string().min(1),
+    sourceId: z.string().min(1),
+    creator: z.string().min(1),
+    edition: z.string().min(1),
+    license: z.enum([
+      "CC BY-SA 3.0",
+      "CC BY-SA 3.0 CZ",
+      "CC BY-SA 4.0",
+      "CC0 1.0",
+    ]),
+    sourceUrl: z
+      .url()
+      .refine((s) => new URL(s).hostname === "commons.wikimedia.org"),
+    limitations: z.string().min(1),
+    width: z.number().int().positive(),
+    height: z.number().int().positive(),
+    image: resource,
+  })
+  .refine(
+    (p) => p.endYear === undefined || p.endYear >= p.year,
+    "图幅年代范围倒置",
+  );
 export const manifestSchema = z.object({
   version: z.string(),
   catalog: resource,
@@ -79,7 +94,7 @@ export const manifestSchema = z.object({
   territorySlices: z
     .array(
       z.object({
-        year: z.number().int().min(220).max(907),
+        year: z.number().int().refine(isSupportedYear),
         entityId: z.string(),
         interpretationId: z.string(),
         regionIds: z.array(z.string()),

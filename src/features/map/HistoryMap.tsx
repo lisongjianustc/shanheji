@@ -1,3 +1,4 @@
+import { formatYear } from "../../domain/chronology";
 import { useEffect, useRef, useState } from "react";
 import type { Map as MapInstance, Marker, GeoJSONSource } from "maplibre-gl";
 import type { Scene } from "../../domain/types";
@@ -419,7 +420,7 @@ export function HistoryMap(props: MapProps) {
       )}
       {props.pending && !error && (
         <div className="map-loading">
-          正在切换到 {props.pending.scene.query.year} 年…
+          正在切换到 {formatYear(props.pending.scene.query.year)}…
         </div>
       )}
       {basemapError && !error && (

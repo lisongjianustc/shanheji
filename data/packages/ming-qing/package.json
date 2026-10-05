@@ -1,0 +1,452 @@
+{
+  "id": "ming-qing",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "ming-founded",
+      "title": "明朝建立",
+      "validity": {
+        "start": {
+          "earliest": "1368-01-01",
+          "latest": "1368-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1369-01-01",
+          "latest": "1369-01-01"
+        },
+        "precision": "year",
+        "label": "1368年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "ming"
+      ],
+      "placeIds": [],
+      "summary": "朱元璋建立明朝。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-song-yuan",
+          "locator": "Key Events:1368",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-song-yuan",
+            "locator": "Key Events:1368",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "zheng-he",
+      "title": "郑和远航时期",
+      "validity": {
+        "start": {
+          "earliest": "1405-01-01",
+          "latest": "1405-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1434-01-01",
+          "latest": "1434-01-01"
+        },
+        "precision": "range",
+        "label": "1405—1433年"
+      },
+      "kind": "diplomatic",
+      "entityIds": [
+        "ming"
+      ],
+      "placeIds": [],
+      "summary": "郑和率领船队多次远航。",
+      "account": "",
+      "interpretation": "跨多地的持续条目；没有用单点代替全部航线。",
+      "evidence": [
+        {
+          "sourceId": "met-ming",
+          "locator": "Key Events:1405–1433",
+          "note": "跨多地的持续条目；没有用单点代替全部航线。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-ming",
+            "locator": "Key Events:1405–1433",
+            "note": "跨多地的持续条目；没有用单点代替全部航线。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "palace-completed",
+      "title": "北京紫禁城建成",
+      "validity": {
+        "start": {
+          "earliest": "1420-01-01",
+          "latest": "1420-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1421-01-01",
+          "latest": "1421-01-01"
+        },
+        "precision": "year",
+        "label": "1420年"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "ming"
+      ],
+      "placeIds": [
+        "forbidden-city"
+      ],
+      "summary": "北京紫禁城建筑工程于1420年完成。",
+      "account": "",
+      "interpretation": "遗产地代表点为近似位置。",
+      "evidence": [
+        {
+          "sourceId": "unesco-palaces",
+          "locator": "Outstanding Universal Value:1406–1420",
+          "note": "遗产地代表点为近似位置。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "unesco-palaces",
+            "locator": "Outstanding Universal Value:1406–1420",
+            "note": "遗产地代表点为近似位置。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qing-name",
+      "title": "后金改国号清",
+      "validity": {
+        "start": {
+          "earliest": "1636-01-01",
+          "latest": "1636-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1637-01-01",
+          "latest": "1637-01-01"
+        },
+        "precision": "year",
+        "label": "1636年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qing"
+      ],
+      "placeIds": [],
+      "summary": "后金改国号为清。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "moe-chronology",
+          "locator": "清：1636年始改国号",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "清：1636年始改国号",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "qing-beijing",
+      "title": "清朝进入北京",
+      "validity": {
+        "start": {
+          "earliest": "1644-01-01",
+          "latest": "1644-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1645-01-01",
+          "latest": "1645-01-01"
+        },
+        "precision": "year",
+        "label": "1644年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qing",
+        "ming"
+      ],
+      "placeIds": [
+        "forbidden-city"
+      ],
+      "summary": "清朝于1644年进入北京。",
+      "account": "",
+      "interpretation": "地图点只标紫禁城代表位置，不是战场边界。",
+      "evidence": [
+        {
+          "sourceId": "unesco-palaces",
+          "locator": "Outstanding Universal Value: established itself in Beijing in1644",
+          "note": "地图点只标紫禁城代表位置，不是战场边界。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "unesco-palaces",
+            "locator": "Outstanding Universal Value: established itself in Beijing in1644",
+            "note": "地图点只标紫禁城代表位置，不是战场边界。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qianlong-death",
+      "title": "乾隆帝在养心殿去世",
+      "validity": {
+        "start": {
+          "earliest": "1799-01-01",
+          "latest": "1799-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1800-01-01",
+          "latest": "1800-01-01"
+        },
+        "precision": "year",
+        "label": "1799年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qing"
+      ],
+      "placeIds": [
+        "forbidden-city"
+      ],
+      "summary": "乾隆帝在养心殿去世。",
+      "account": "",
+      "interpretation": "使用故宫遗产地近似点，不是殿内精确坐标。",
+      "evidence": [
+        {
+          "sourceId": "dpm-yangxin",
+          "locator": "1799: Qianlong passed away",
+          "note": "使用故宫遗产地近似点，不是殿内精确坐标。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "dpm-yangxin",
+            "locator": "1799: Qianlong passed away",
+            "note": "使用故宫遗产地近似点，不是殿内精确坐标。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "regency-1861",
+      "title": "两宫太后开始垂帘听政",
+      "validity": {
+        "start": {
+          "earliest": "1861-01-01",
+          "latest": "1861-01-01"
+        },
+        "endExclusive": {
+          "earliest": "1862-01-01",
+          "latest": "1862-01-01"
+        },
+        "precision": "year",
+        "label": "1861年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qing"
+      ],
+      "placeIds": [
+        "forbidden-city"
+      ],
+      "summary": "同治帝即位，两宫太后垂帘听政。",
+      "account": "",
+      "interpretation": "采用故宫代表点。",
+      "evidence": [
+        {
+          "sourceId": "dpm-yangxin",
+          "locator": "1861: Cixi and Cian",
+          "note": "采用故宫代表点。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "dpm-yangxin",
+            "locator": "1861: Cixi and Cian",
+            "note": "采用故宫代表点。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "qing-abdication",
+      "title": "清帝退位",
+      "validity": {
+        "start": {
+          "earliest": "1912-02-12",
+          "latest": "1912-02-12"
+        },
+        "endExclusive": {
+          "earliest": "1912-02-13",
+          "latest": "1912-02-13"
+        },
+        "precision": "day",
+        "label": "1912年2月12日"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qing"
+      ],
+      "placeIds": [
+        "forbidden-city"
+      ],
+      "summary": "1912年2月12日，清帝宣布退位。",
+      "account": "",
+      "interpretation": "使用故宫代表点；清朝终点截至1912年2月。",
+      "evidence": [
+        {
+          "sourceId": "dpm-yangxin",
+          "locator": "February12,1912: abdication",
+          "note": "使用故宫代表点；清朝终点截至1912年2月。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "dpm-yangxin",
+            "locator": "February12,1912: abdication",
+            "note": "使用故宫代表点；清朝终点截至1912年2月。"
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "ming-qing-china-core-territory",
+      "regionId": "china-core",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-steppe-territory",
+      "regionId": "steppe",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-korea-territory",
+      "regionId": "korea",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-japan-territory",
+      "regionId": "japan",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-tibet-territory",
+      "regionId": "tibet",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "ming-qing-events",
+      "regionId": "china-core",
+      "startYear": 1368,
+      "endYear": 1912,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "已收录部分有来源的纪事；尚未完成逐年重大事件覆盖。"
+    }
+  ]
+}

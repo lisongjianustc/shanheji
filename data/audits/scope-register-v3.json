@@ -1,0 +1,53 @@
+{
+  "version": "3",
+  "approvedBy": "用户本轮要求扩充夏商周至明清",
+  "recordedAt": "2026-10-05",
+  "startYear": -2100,
+  "endYear": 1912,
+  "yearConvention": "历史年号；-1为公元前1年，1为公元1年，无0年",
+  "chronologyNote": "夏为约数且未确证，早期采用Met年代；清终点依故宫1912年2月12日退位记载。原v1/v2审计保留。",
+  "packages": [
+    "xia-shang-zhou",
+    "qin-han",
+    "five-dynasties-song-yuan",
+    "ming-qing"
+  ],
+  "newEntityIds": [
+    "xia-ancient",
+    "shang",
+    "western-zhou",
+    "eastern-zhou",
+    "qin",
+    "western-han",
+    "xin",
+    "eastern-han",
+    "later-liang-five",
+    "later-tang-five",
+    "later-jin-five",
+    "later-han-five",
+    "later-zhou-five",
+    "wu-ten",
+    "former-shu-ten",
+    "wuyue",
+    "chu-ten",
+    "southern-han",
+    "min-ten",
+    "jingnan",
+    "later-shu-ten",
+    "southern-tang",
+    "northern-han",
+    "northern-song",
+    "southern-song",
+    "liao",
+    "western-xia",
+    "jurchen-jin",
+    "mongol-yuan",
+    "ming",
+    "qing"
+  ],
+  "limitations": [
+    "春秋战国诸侯、南明、北元及全时期周边政权尚未完整接入。",
+    "新增朝代目录不是全年疆域证据。",
+    "缺乏可靠地图的年份显示空缺，不在切片间插值。"
+  ]
+}

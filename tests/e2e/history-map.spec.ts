@@ -7,7 +7,9 @@ async function year(page: Page, value: number) {
   const entry = page.getByRole("spinbutton", { name: "年份", exact: true });
   await entry.fill(String(value));
   await entry.press("Enter");
-  await expect(page.getByTestId("committed-year")).toHaveText(String(value));
+  await expect(page.getByTestId("committed-year")).toHaveText(
+    String(Math.abs(value)),
+  );
   await expect(page.getByTestId("scene-status")).toHaveText("已更新");
 }
 async function fixture(page: Page, corrupt = false, temporal = false) {
@@ -314,7 +316,7 @@ test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ pa
   for (const n of [262, 572, 610, 742]) {
     await page.getByRole("button", { name: `查阅${n}年参考图` }).click();
     const viewer = page.getByRole("dialog");
-    await expect(viewer).toContainText(`${n} 年`);
+    await expect(viewer).toContainText(`${n}年`);
     const img = viewer.getByRole("img");
     await expect
       .poll(() => img.evaluate((e) => (e as HTMLImageElement).naturalWidth))
@@ -548,4 +550,123 @@ test("约610年部分隋朝范围随节点更新，西部缺口标明且下一�
   );
   await expect(page.locator(".coverage-banner")).toContainText("约610年");
   await expect(page.locator(".coverage-banner")).not.toContainText("约609年");
+});
+
+test("夏商周至明清：公元前年份、跨纪元播放、并行政权与新增事件点", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新");
+  await page.getByRole("button", { name: "夏（约）", exact: true }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("2100");
+  await expect(page.locator(".header-year")).toContainText("公元前");
+  await page.getByRole("button", { name: "并行政权", exact: true }).click();
+  await expect(page.locator(".entity-card")).toContainText("未确证");
+  await year(page, -1300);
+  await expect(page.locator(".event-glow")).toHaveCount(1);
+  await page.locator(".event-glow").click();
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("殷成为商代晚期都城");
+  await expect(
+    page
+      .getByRole("complementary", { name: "条目详情" })
+      .getByRole("link", { name: "Yin Xu ↗" }),
+  ).toHaveAttribute("href", "https://whc.unesco.org/en/list/1114/");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await page.screenshot({ path: "docs/qa/screenshots/desktop-bce-1300.png" });
+  await year(page, -1);
+  await page.getByRole("button", { name: "后一年", exact: true }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("1");
+  await expect(page.locator(".header-year")).not.toContainText("公元前");
+  await page.getByRole("button", { name: "前一年", exact: true }).click();
+  await expect(page.locator(".header-year")).toContainText("公元前");
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(page.locator(".header-year")).not.toContainText("公元前");
+  await page.getByRole("button", { name: "暂停播放", exact: true }).click();
+  await year(page, 1120);
+  for (const name of ["北宋", "辽", "西夏", "金"])
+    await expect(
+      page.locator(".entity-card").filter({ hasText: name }).first(),
+    ).toBeVisible();
+  await page
+    .getByRole("combobox", { name: "时间轴显示时段" })
+    .selectOption("all");
+  await expect(page.getByRole("slider")).toHaveAttribute("min", "-2099");
+  await page.getByRole("button", { name: "明", exact: true }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("1368");
+  await expect(page.getByRole("slider")).toHaveAttribute("min", "1368");
+  await year(page, 1420);
+  await page.locator(".source-plate-shortcut").click();
+  await expect(page.getByRole("dialog")).toContainText("1580年");
+  await expect(page.getByTestId("committed-year")).toHaveText("1420");
+  await page.getByRole("button", { name: "关闭参考图幅", exact: true }).click();
+  await expect(page.locator(".event-glow")).toHaveCount(1);
+  await page.locator(".event-glow").click();
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("紫禁城建成");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await year(page, 1912);
+  await page.getByRole("button", { name: "本年事件", exact: true }).click();
+  await expect(page.locator(".event-card")).toContainText("清帝退位");
+  await expect(
+    page.getByRole("button", { name: "后一年", exact: true }),
+  ).toBeDisabled();
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  await page.screenshot({ path: "docs/qa/screenshots/desktop-qing-1912.png" });
+  expect(errors).toEqual([]);
+});
+
+test("新增秦明清参考原图：年代范围、许可、缩放与手机布局", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新");
+  await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
+  for (const name of [
+    "查阅公元前221—206年参考图",
+    "查阅1580年参考图",
+    "查阅1820年参考图",
+  ]) {
+    await page.getByRole("button", { name, exact: true }).click();
+    const dialog = page.getByRole("dialog");
+    await expect(dialog.getByRole("img")).toBeVisible();
+    await expect
+      .poll(() =>
+        dialog
+          .getByRole("img")
+          .evaluate((e: HTMLImageElement) => e.complete && e.naturalWidth > 0),
+      )
+      .toBe(true);
+    const license = name.includes("221")
+      ? ["CC0 1.0", "https://creativecommons.org/publicdomain/zero/1.0/"]
+      : name.includes("1580")
+        ? [
+            "CC BY-SA 3.0 CZ",
+            "https://creativecommons.org/licenses/by-sa/3.0/cz/",
+          ]
+        : ["CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0/"];
+    await expect(
+      dialog.getByRole("link", { name: license[0], exact: true }),
+    ).toHaveAttribute("href", license[1]);
+    await page.getByRole("button", { name: "放大图幅", exact: true }).click();
+    await expect(page.getByRole("status", { name: "图幅比例" })).toHaveText(
+      "150%",
+    );
+    await page
+      .getByRole("button", { name: "关闭参考图幅", exact: true })
+      .click();
+  }
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(page.locator(".browse-panel")).toBeHidden();
+  await year(page, -221);
+  await expect(page.locator(".header-year")).toContainText("公元前");
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth),
+  ).toBeLessThanOrEqual(390);
+  await page.screenshot({ path: "docs/qa/screenshots/mobile-qin.png" });
 });

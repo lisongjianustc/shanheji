@@ -1,0 +1,156 @@
+{
+  "status": "rejected-for-overlay",
+  "sourceId": "commons-qing-1820",
+  "sourceSha256": "1bf6bdb1ad31dbeb989ac35e017cd3a5f5e5bab88a3ab97676fab74624971a92",
+  "checkedAt": "2026-10-05",
+  "proposedGateKm": 25,
+  "crs": "+proj=aeqd +lat_0=40 +lon_0=105 +datum=WGS84",
+  "controls": [
+    {
+      "label": "Lake Balkhash",
+      "coordinates": [
+        75.59527508710823,
+        46.293487216541294
+      ],
+      "pixel": [
+        344.6707973782926,
+        752.1587504888109
+      ],
+      "role": "fit",
+      "sourceLayer": "Map 1: 湖泊",
+      "sourcePathIndex": 0
+    },
+    {
+      "label": "Lake Baikal",
+      "coordinates": [
+        107.63091918320309,
+        53.39937679841147
+      ],
+      "pixel": [
+        1466.374357979842,
+        491.38137884135864
+      ],
+      "role": "fit",
+      "sourceLayer": "Map 1: 湖泊",
+      "sourcePathIndex": 1
+    },
+    {
+      "label": "Issyk-Kul",
+      "coordinates": [
+        77.27128381239586,
+        42.44366277397915
+      ],
+      "pixel": [
+        349.4289123480431,
+        972.2861912278544
+      ],
+      "role": "fit",
+      "sourceLayer": "Map 1: 湖泊",
+      "sourcePathIndex": 2
+    },
+    {
+      "label": "Qinghai Hu",
+      "coordinates": [
+        100.20437717408734,
+        36.881105804616396
+      ],
+      "pixel": [
+        1246.0883414810362,
+        1374.7786898371057
+      ],
+      "role": "fit",
+      "sourceLayer": "Map 1: 湖泊",
+      "sourcePathIndex": 3
+    },
+    {
+      "label": "Taiwan island",
+      "coordinates": [
+        120.95792946582422,
+        23.747849287331142
+      ],
+      "pixel": [
+        2271.3574810780615,
+        1976.7571670848715
+      ],
+      "role": "check",
+      "sourceLayer": "Map 1: 大清1820",
+      "sourcePathIndex": 76
+    },
+    {
+      "label": "Hainan island",
+      "coordinates": [
+        109.73983092086826,
+        19.200024776092167
+      ],
+      "pixel": [
+        1731.780300342196,
+        2284.4356305466654
+      ],
+      "role": "check",
+      "sourceLayer": "Map 1: 大清1820",
+      "sourcePathIndex": 42
+    }
+  ],
+  "registration": {
+    "affine": [
+      [
+        0.00047405085982154464,
+        -3.001843538366178e-05
+      ],
+      [
+        -3.587889580325036e-05,
+        -0.00047388290879483004
+      ],
+      [
+        1436.4512929784207,
+        1203.5992800737356
+      ]
+    ],
+    "residuals": [
+      {
+        "label": "Lake Balkhash",
+        "role": "fit",
+        "errorPixels": 1.7410571325913606,
+        "errorKm": 3.601968893551685
+      },
+      {
+        "label": "Lake Baikal",
+        "role": "fit",
+        "errorPixels": 0.37898195620627856,
+        "errorKm": 0.8001205705671834
+      },
+      {
+        "label": "Issyk-Kul",
+        "role": "fit",
+        "errorPixels": 1.848076375141164,
+        "errorKm": 3.8440494561858323
+      },
+      {
+        "label": "Qinghai Hu",
+        "role": "fit",
+        "errorPixels": 0.48600119872804326,
+        "errorKm": 1.0291638808300456
+      },
+      {
+        "label": "Taiwan island",
+        "role": "check",
+        "errorPixels": 30.861585035710014,
+        "errorKm": 64.1003298639971
+      },
+      {
+        "label": "Hainan island",
+        "role": "check",
+        "errorPixels": 29.836765731753676,
+        "errorKm": 61.57340541303939
+      }
+    ],
+    "maxCheckErrorKm": 64.1003298639971,
+    "accuracyMeaning": "湖泊及岛屿重心匹配的残差含底图概化与投影误差，不是历史疆界精度，也不是全图误差上限"
+  },
+  "reason": "试配准最大独立检查残差超出25公里门槛；后续五点及可变投影试验同样未通过。未放宽门槛、未发布疆域。原始投影与底图版本待作者及原数据核验。",
+  "sourceDataReferences": [
+    "Natural Earth ne_50m_lakes",
+    "Natural Earth ne_50m_admin_0_countries"
+  ],
+  "limitation": "未通过的试验，不是可用配准参数；来源原图可独立查阅。"
+}

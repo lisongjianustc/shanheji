@@ -1,0 +1,310 @@
+{
+  "id": "qin-han",
+  "version": "0.1.0-partial",
+  "territories": [],
+  "events": [
+    {
+      "id": "qin-unification",
+      "title": "秦统一六国",
+      "validity": {
+        "start": {
+          "earliest": "-0221-01-01",
+          "latest": "-0221-01-01"
+        },
+        "endExclusive": {
+          "earliest": "-0220-01-01",
+          "latest": "-0220-01-01"
+        },
+        "precision": "year",
+        "label": "公元前221年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "qin"
+      ],
+      "placeIds": [],
+      "summary": "秦建立统一帝国。",
+      "account": "",
+      "interpretation": "按年收录；没有将整个秦代疆域视为221前同一时点。",
+      "evidence": [
+        {
+          "sourceId": "met-qin-han",
+          "locator": "Exhibition introduction: Qin (221–206 B.C.)",
+          "note": "按年收录；没有将整个秦代疆域视为221前同一时点。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-qin-han",
+            "locator": "Exhibition introduction: Qin (221–206 B.C.)",
+            "note": "按年收录；没有将整个秦代疆域视为221前同一时点。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "han-founded",
+      "title": "西汉建立",
+      "validity": {
+        "start": {
+          "earliest": "-0206-01-01",
+          "latest": "-0206-01-01"
+        },
+        "endExclusive": {
+          "earliest": "-0205-01-01",
+          "latest": "-0205-01-01"
+        },
+        "precision": "year",
+        "label": "公元前206年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "western-han"
+      ],
+      "placeIds": [],
+      "summary": "战乱之后建立西汉。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "met-preimperial",
+          "locator": "Key Events: 206 B.C.–9 A.D.",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Key Events: 206 B.C.–9 A.D.",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "wudi-reign",
+      "title": "汉武帝时期",
+      "validity": {
+        "start": {
+          "earliest": "-0141-01-01",
+          "latest": "-0141-01-01"
+        },
+        "endExclusive": {
+          "earliest": "-0086-01-01",
+          "latest": "-0086-01-01"
+        },
+        "precision": "range",
+        "label": "公元前141—87年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "western-han"
+      ],
+      "placeIds": [],
+      "summary": "汉武帝时期开展扩张，文化与史学发展。",
+      "account": "",
+      "interpretation": "这是持续时期条目，不能替代每次战事的确日和发生地。",
+      "evidence": [
+        {
+          "sourceId": "met-preimperial",
+          "locator": "Key Events: 141–87 B.C.",
+          "note": "这是持续时期条目，不能替代每次战事的确日和发生地。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "met-preimperial",
+            "locator": "Key Events: 141–87 B.C.",
+            "note": "这是持续时期条目，不能替代每次战事的确日和发生地。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "xin-founded",
+      "title": "新朝建立",
+      "validity": {
+        "start": {
+          "earliest": "0009-01-01",
+          "latest": "0009-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0010-01-01",
+          "latest": "0010-01-01"
+        },
+        "precision": "year",
+        "label": "9年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "xin",
+        "western-han"
+      ],
+      "placeIds": [],
+      "summary": "新朝进入来源记载的建国年。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "moe-chronology",
+          "locator": "汉（新莽）9—23",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "汉（新莽）9—23",
+            "note": ""
+          }
+        ]
+      }
+    },
+    {
+      "id": "eastern-han-founded",
+      "title": "东汉建立",
+      "validity": {
+        "start": {
+          "earliest": "0025-01-01",
+          "latest": "0025-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0026-01-01",
+          "latest": "0026-01-01"
+        },
+        "precision": "year",
+        "label": "25年"
+      },
+      "kind": "political",
+      "entityIds": [
+        "eastern-han"
+      ],
+      "placeIds": [],
+      "summary": "光武帝建立东汉。",
+      "account": "",
+      "interpretation": "",
+      "evidence": [
+        {
+          "sourceId": "moe-chronology",
+          "locator": "汉（东汉）25—220",
+          "note": ""
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex · 对照所列公开来源；未经专家审定",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "moe-chronology",
+            "locator": "汉（东汉）25—220",
+            "note": ""
+          }
+        ]
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "id": "qin-han-china-core-territory",
+      "regionId": "china-core",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-steppe-territory",
+      "regionId": "steppe",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-korea-territory",
+      "regionId": "korea",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-japan-territory",
+      "regionId": "japan",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-tibet-territory",
+      "regionId": "tibet",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-central-asia-territory",
+      "regionId": "central-asia",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-southeast-asia-territory",
+      "regionId": "southeast-asia",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "territory",
+      "status": "missing",
+      "evidence": [],
+      "reason": "新扩展时段尚无配准疆域切片。朝代目录与参考原图不等于已核实实控范围；周边政权未完整接入。"
+    },
+    {
+      "id": "qin-han-events",
+      "regionId": "china-core",
+      "startYear": -221,
+      "endYear": 220,
+      "topic": "event",
+      "status": "pending",
+      "evidence": [],
+      "reason": "已收录部分有来源的纪事；尚未完成逐年重大事件覆盖。"
+    }
+  ]
+}

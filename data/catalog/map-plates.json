@@ -58,5 +58,60 @@
     "height": 850,
     "file": "sources/commons/china-742.svg",
     "sha256": "d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08"
+  },
+  {
+    "id": "qin-dynasty",
+    "year": -221,
+    "title": "秦代郡县参考图",
+    "sourceId": "commons-qin-plate",
+    "creator": "Ian Remsen",
+    "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+    "license": "CC0 1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg",
+    "limitations": "未配准。来源描绘整个秦代（前221—前206），没有标明单一年份；不能作为前221年快照。不得把秦代汇总范围外推到每个年份。",
+    "width": 1050,
+    "height": 1260,
+    "file": "sources/commons/qin-dynasty.svg",
+    "sha256": "c37befe576d20479eb9dfde09179b562a17e918734812e256274642bde6f75d5",
+    "endYear": -206,
+    "entityIds": [
+      "qin"
+    ]
+  },
+  {
+    "id": "ming-1580",
+    "year": 1580,
+    "title": "明代约1580年参考图",
+    "sourceId": "commons-ming-1580",
+    "creator": "Michal Klajban；Jann；Manlleus等译者",
+    "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+    "license": "CC BY-SA 3.0 CZ",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg",
+    "limitations": "来源据《剑桥中国史》第7卷图1及Timothy Brook图6；尚未配准或独立核对原书，年份为约数，不能替代明代全年实控。",
+    "width": 2304,
+    "height": 2344,
+    "file": "sources/commons/ming-1580.svg",
+    "sha256": "103d0758f0230404b43e0f1f7fc30595b76bc0aa8f9452d88b99e5f87f74074e",
+    "entityIds": [
+      "ming"
+    ]
+  },
+  {
+    "id": "qing-1820",
+    "year": 1820,
+    "title": "清代1820年行政参考图",
+    "sourceId": "commons-qing-1820",
+    "creator": "瑞丽江的河水",
+    "edition": "Commons原始SVG；2026-10-05下载，保留原图",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_blank_map_1820.svg",
+    "limitations": "来源作者声明据CHGIS V6 1820及Natural Earth绘制；尚未配准、未独立核验原始数据，行政范围不能直接证明实控，不外推到其他清代年份。",
+    "width": 850,
+    "height": 709,
+    "file": "sources/commons/qing-1820.svg",
+    "sha256": "1bf6bdb1ad31dbeb989ac35e017cd3a5f5e5bab88a3ab97676fab74624971a92",
+    "entityIds": [
+      "qing"
+    ]
   }
 ]

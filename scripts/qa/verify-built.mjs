@@ -130,6 +130,65 @@ try {
   });
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
+  // Check the expanded chronology against the final production build.
+  await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
+  await entry.fill("-221");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("221");
+  await expect(page.locator(".header-year")).toContainText("公元前");
+  if ((await page.evaluate(() => document.documentElement.scrollWidth)) > 390)
+    throw Error("BCE mobile overflow");
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-mobile-qin.png",
+  });
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await entry.fill("-1300");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("1300");
+  await expect(page.locator(".event-glow")).toHaveCount(1);
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "",
+  );
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-bce-1300.png",
+  });
+  await entry.fill("1420");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("1420");
+  await expect(page.locator(".source-plate-shortcut")).toContainText("1580年");
+  await page.locator(".source-plate-shortcut").click();
+  await expect(page.getByRole("dialog")).toContainText("1580年");
+  await expect
+    .poll(() =>
+      page
+        .getByRole("dialog")
+        .getByRole("img")
+        .evaluate((e) => e.complete && e.naturalWidth > 0),
+    )
+    .toBe(true);
+  await expect(page.getByTestId("committed-year")).toHaveText("1420");
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-ming-reference.png",
+  });
+  await page.keyboard.press("Escape");
+  await page.locator(".event-glow").click();
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("紫禁城建成");
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-ming-1420.png",
+  });
+  await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  await entry.fill("1912");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("1912");
+  await expect(
+    page.getByRole("button", { name: "后一年", exact: true }),
+  ).toBeDisabled();
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-qing-1912.png",
+  });
   await writeFile(
     "docs/qa/production-check.json",
     JSON.stringify(
@@ -137,8 +196,12 @@ try {
         checkedAt: new Date().toISOString(),
         url: "http://127.0.0.1:4174",
         dataVersion: manifest.version,
-        years: [262, 572, 610, 460, 661],
+        years: [-1300, -221, 262, 572, 610, 460, 661, 1420, 1912],
         workerVerified: true,
+        expandedChronology: true,
+        bceMobileNoOverflow: true,
+        sourceShortcutPreservesYear: true,
+        newEventPointVerified: true,
         timelineDirectInitial: true,
         paintedTerritoryIds: {
           ...Object.fromEntries(

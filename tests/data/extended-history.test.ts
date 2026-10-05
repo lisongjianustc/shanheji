@@ -1,0 +1,99 @@
+import { readDataset, validateDataset } from "../../scripts/data/validate";
+import { queryScene, defaultQuery } from "../../src/domain/query";
+import { buildEventLocations } from "../../src/features/details/eventModel";
+import { entityActiveInYear, nameAt } from "../../src/domain/time";
+import {
+  buildSearchIndex,
+  searchEntries,
+} from "../../src/features/search/index";
+import { catalogSchema, packageSchema } from "../../src/domain/schema";
+import defaults from "../../data/catalog/default-interpretations.json";
+import { resolve } from "node:path";
+import type { Catalog, DataPackage } from "../../src/domain/types";
+let catalog: Catalog, packs: DataPackage[];
+beforeAll(
+  async () => ({ catalog, packs } = await readDataset(resolve("data"))),
+);
+it("publishes the new chronology with complete references and retains old territories", () => {
+  expect(validateDataset(catalog, packs)).toEqual([]);
+  expect(catalogSchema.safeParse(catalog).success).toBe(true);
+  expect(packs.every((p) => packageSchema.safeParse(p).success)).toBe(true);
+  expect(packs.flatMap((p) => p.territories)).toHaveLength(11);
+});
+it.each([
+  -2100, -1600, -1046, -770, -221, -206, -1, 1, 9, 25, 960, 1127, 1271, 1368,
+  1644, 1912,
+])(
+  "queries supported year %i without borrowing a neighboring boundary",
+  (year) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    expect(scene.query.year).toBe(year);
+    expect(scene.territories).toHaveLength(0);
+    expect(scene.coverage.length).toBeGreaterThan(0);
+  },
+);
+it("uses BCE location validity for a real Shang event point", () => {
+  const scene = queryScene(catalog, packs, defaultQuery(-1300), defaults);
+  expect(scene.events.some((e) => e.id === "yin-capital")).toBe(true);
+  expect(
+    buildEventLocations(scene).features.features.some(
+      (f) => f.properties.eventId === "yin-capital",
+    ),
+  ).toBe(true);
+  expect(
+    queryScene(catalog, packs, defaultQuery(-1045), defaults).events.some(
+      (e) => e.id === "yin-capital",
+    ),
+  ).toBe(false);
+});
+it("includes simultaneous Song Liao and Jin rather than replacing them with one dynasty", () => {
+  const active = catalog.entities
+    .filter((e) => entityActiveInYear(e, 1120))
+    .map((e) => e.id);
+  expect(active).toEqual(
+    expect.arrayContaining([
+      "northern-song",
+      "liao",
+      "western-xia",
+      "jurchen-jin",
+    ]),
+  );
+});
+it("keeps names and Qing abdication aligned to their dates", () => {
+  expect(
+    nameAt(catalog.entities.find((e) => e.id === "mongol-yuan")!.names, 1206),
+  ).toBe("蒙古政权");
+  expect(
+    nameAt(catalog.entities.find((e) => e.id === "mongol-yuan")!.names, 1271),
+  ).toBe("元");
+  expect(
+    nameAt(catalog.entities.find((e) => e.id === "qing")!.names, 1620),
+  ).toBe("后金");
+  expect(
+    nameAt(catalog.entities.find((e) => e.id === "qing")!.names, 1644),
+  ).toBe("清");
+  expect(
+    queryScene(
+      catalog,
+      packs,
+      { ...defaultQuery(1912), at: "1912-02-12" },
+      defaults,
+    ).events.some((e) => e.id === "qing-abdication"),
+  ).toBe(true);
+});
+it("searches new dynasties over the full period and refuses year zero", () => {
+  const index = buildSearchIndex(
+    catalog,
+    packs.flatMap((p) => p.events),
+  );
+  expect(
+    searchEntries(index, "秦朝", 661).some(
+      (e) => e.id === "qin" && e.startYear === -221,
+    ),
+  ).toBe(true);
+  expect(searchEntries(index, "清", 661).some((e) => e.id === "qing")).toBe(
+    true,
+  );
+  expect(() => queryScene(catalog, packs, defaultQuery(0))).toThrow();
+  expect(() => queryScene(catalog, packs, defaultQuery(-2101))).toThrow();
+});

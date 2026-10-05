@@ -1,3 +1,4 @@
+import { isSupportedYear, formatYear } from "./chronology";
 import type {
   Catalog,
   DataPackage,
@@ -6,7 +7,14 @@ import type {
   HistoricalEvent,
   Territory,
 } from "./types";
-import { classifyAt, overlapsYear, parseDay, yearDay, yearOf } from "./time";
+import {
+  classifyAt,
+  compareDays,
+  overlapsYear,
+  parseDay,
+  yearDay,
+  yearOf,
+} from "./time";
 export const eventMatchesYear = (e: HistoricalEvent, y: number) =>
   overlapsYear(e.validity, y);
 export const DEFAULT_FILTERS = {
@@ -38,8 +46,8 @@ export function queryScene(
   q: Query,
   defaultInterpretationIds: string[] = [],
 ): Scene {
-  if (!Number.isInteger(q.year) || q.year < 220 || q.year > 907)
-    throw new Error("年份必须在220—907之间");
+  if (!isSupportedYear(q.year))
+    throw new Error("年份须为公元前2100年至1912年，不含0年");
   if (q.at && yearOf(parseDay(q.at)) !== q.year)
     throw new Error("具体日期与年份不一致");
   const at = q.at ?? yearDay(q.year, "12-31"),
@@ -134,7 +142,8 @@ export function queryScene(
       const chosen =
         list.find((t) => t.properties.id === q.snapshotId) ??
         phases.sort((a, b) =>
-          b.properties.validity.start.earliest.localeCompare(
+          compareDays(
+            b.properties.validity.start.earliest,
             a.properties.validity.start.earliest,
           ),
         )[0];
@@ -166,7 +175,7 @@ export function queryScene(
     )
     .sort(
       (a, b) =>
-        a.validity.start.earliest.localeCompare(b.validity.start.earliest) ||
+        compareDays(a.validity.start.earliest, b.validity.start.earliest) ||
         a.title.localeCompare(b.title),
     );
   const coverage = unique(
@@ -214,7 +223,10 @@ export function queryScene(
     warnings.push("部分地区或主题资料尚未完成核验");
   if (referenceYears.length)
     warnings.push(
-      `邻近年份参考：${[...new Set(referenceYears)].sort((a, b) => a - b).join("、")}年，不代表所选年份疆域`,
+      `邻近年份参考：${[...new Set(referenceYears)]
+        .sort((a, b) => a - b)
+        .map(formatYear)
+        .join("、")}，不代表所选年份疆域`,
     );
   const territoryTimeLabels = Object.fromEntries(
     territories.map((t) => [t.properties.id, t.properties.validity.label]),

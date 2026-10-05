@@ -420,5 +420,121 @@
       }
     ],
     "locations": []
+  },
+  {
+    "id": "forbidden-city",
+    "names": [
+      {
+        "text": "紫禁城（北京故宫）",
+        "validity": {
+          "start": {
+            "earliest": "1406-01-01",
+            "latest": "1406-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1913-01-01",
+            "latest": "1913-01-01"
+          },
+          "precision": "range",
+          "label": "1406—1912年"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-palaces",
+            "locator": "Outstanding Universal Value: 1406–1420; Forbidden City",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            116.390833,
+            39.916389
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "1406-01-01",
+            "latest": "1406-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1913-01-01",
+            "latest": "1913-01-01"
+          },
+          "precision": "range",
+          "label": "1406—1912年"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-palaces-report",
+            "locator": "Coordinates: Beijing 39°54′59″N, 116°23′27″E",
+            "note": "遗产地代表点；不是养心殿单体坐标。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yin-xu",
+    "names": [
+      {
+        "text": "殷墟",
+        "validity": {
+          "start": {
+            "earliest": "-1300-01-01",
+            "latest": "-1300-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-1045-01-01",
+            "latest": "-1045-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前1300—1046年（来源年代）"
+        },
+        "evidence": [
+          {
+            "sourceId": "unesco-yinxu",
+            "locator": "Outstanding Universal Value: Pan Geng moved to Yin around 1300 BC",
+            "note": "约年与持续时期；不是已核验的迁都确日。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            114.3,
+            36.116667
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "-1300-01-01",
+            "latest": "-1300-01-01"
+          },
+          "endExclusive": {
+            "earliest": "-1045-01-01",
+            "latest": "-1045-01-01"
+          },
+          "precision": "range",
+          "label": "约公元前1300—1046年（来源年代）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "unesco-yinxu-nomination",
+            "locator": "1.d Geographical coordinates: 36°7′N, 114°18′E",
+            "note": "申报档案精确到角分的遗产地代表点；不是整个商都或特定宫殿坐标。"
+          }
+        ]
+      }
+    ]
   }
 ]

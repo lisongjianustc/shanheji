@@ -1,3 +1,4 @@
+import { formatYearRange } from "../../domain/chronology";
 import type { Scene, Relation } from "../../domain/types";
 export const regionLabels: Record<string, string> = {
   "china-core": "中国主要地区",
@@ -35,9 +36,7 @@ export function CoveragePanel({ scene }: { scene: Scene }) {
             {regionLabels[c.regionId] ?? c.regionId} ·{" "}
             {{ territory: "疆域", event: "事件", place: "地点" }[c.topic]}
           </strong>
-          <small>
-            {c.startYear}—{c.endYear}年
-          </small>
+          <small>{formatYearRange(c.startYear, c.endYear)}</small>
           <p>{c.reason}</p>
         </div>
       ))}

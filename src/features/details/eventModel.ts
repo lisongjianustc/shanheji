@@ -1,6 +1,7 @@
+import { nextYear } from "../../domain/chronology";
 import type { FeatureCollection, Point, Polygon, MultiPolygon } from "geojson";
 import type { Scene, EventKind } from "../../domain/types";
-import { yearDay } from "../../domain/time";
+import { yearDay, compareDays } from "../../domain/time";
 export const eventLabels: Record<EventKind, string> = {
   military: "战争",
   political: "政权",
@@ -30,19 +31,19 @@ export function buildEventLocations(scene: Scene) {
   for (const event of new Map(scene.events.map((e) => [e.id, e])).values()) {
     let located = false;
     const start = [event.validity.start.earliest, yearDay(scene.query.year)]
-      .sort()
+      .sort(compareDays)
       .at(-1)!;
     const end = [
       event.validity.endExclusive.latest,
-      yearDay(scene.query.year + 1),
-    ].sort()[0];
+      yearDay(nextYear(scene.query.year)),
+    ].sort(compareDays)[0];
     for (const id of new Set(event.placeIds)) {
       const place = scene.catalog.places.find((p) => p.id === id);
       for (const location of place?.locations ?? []) {
         if (
-          start >= end ||
-          location.validity.start.earliest >= end ||
-          location.validity.endExclusive.latest <= start
+          compareDays(start, end) >= 0 ||
+          compareDays(location.validity.start.earliest, end) >= 0 ||
+          compareDays(location.validity.endExclusive.latest, start) <= 0
         )
           continue;
         located = true;

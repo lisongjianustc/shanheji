@@ -30,3 +30,15 @@ it("事件导航遵守政权和类型筛选", () => {
     eventKind: "political",
   });
 });
+it("historical aliases retain their own period when jumping to a renamed dynasty", () => {
+  const c = makeCatalog();
+  c.entities[0].existence = time(1206, 1368);
+  c.entities[0].names = [
+    { text: "蒙古政权", validity: time(1206, 1270), evidence: [] },
+    { text: "元朝", validity: time(1271, 1368), evidence: [] },
+  ];
+  expect(searchEntries(buildSearchIndex(c, []), "元朝", 661)[0]).toMatchObject({
+    label: "元朝",
+    startYear: 1271,
+  });
+});

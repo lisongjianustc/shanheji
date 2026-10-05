@@ -1,3 +1,4 @@
+import { formatYearRange } from "../../domain/chronology";
 import { useEffect, useRef, useState } from "react";
 import type { MapPlate } from "../../data/manifest";
 
@@ -44,7 +45,8 @@ export function MapPlateViewer({
         <div>
           <span className="eyebrow">来源参考图幅</span>
           <h2 id="plate-title">
-            {plate.year} 年 · {plate.title}
+            {formatYearRange(plate.year, plate.endYear ?? plate.year)} ·{" "}
+            {plate.title}
           </h2>
         </div>
         <button aria-label="关闭参考图幅" onClick={onClose}>
@@ -79,7 +81,7 @@ export function MapPlateViewer({
         ) : (
           <img
             src={`/data/${plate.image.path}`}
-            alt={`${plate.year}年${plate.title}`}
+            alt={`${formatYearRange(plate.year, plate.endYear ?? plate.year)}${plate.title}`}
             style={{
               width: fitWidth ? `${fitWidth * zoom}px` : "100%",
               marginInline: "auto",
@@ -98,7 +100,13 @@ export function MapPlateViewer({
           </a>{" "}
           ·{" "}
           <a
-            href={`https://creativecommons.org/licenses/by-sa/${plate.license.endsWith("4.0") ? "4.0" : "3.0"}/`}
+            href={
+              plate.license === "CC0 1.0"
+                ? "https://creativecommons.org/publicdomain/zero/1.0/"
+                : plate.license === "CC BY-SA 3.0 CZ"
+                  ? "https://creativecommons.org/licenses/by-sa/3.0/cz/"
+                  : `https://creativecommons.org/licenses/by-sa/${plate.license.endsWith("4.0") ? "4.0" : "3.0"}/`
+            }
             target="_blank"
             rel="noreferrer"
           >

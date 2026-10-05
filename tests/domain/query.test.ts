@@ -88,7 +88,7 @@ it("deduplicates repeated event identity across packages", () =>
       .events,
   ).toHaveLength(1));
 it("rejects out-of-scope years and mismatched day", () => {
-  expect(() => queryScene(makeCatalog(), [], makeQuery(908))).toThrow();
+  expect(() => queryScene(makeCatalog(), [], makeQuery(1913))).toThrow();
   expect(() =>
     queryScene(makeCatalog(), [], { ...makeQuery(), at: "0301-01-01" }),
   ).toThrow();

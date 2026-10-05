@@ -82,3 +82,39 @@ The independent check points are not used in fitting. Modern city reference coor
 修改：显式解析M/L/C/Z路径，采样贝塞尔曲线；用原图陆地与湖泊裁切并保拓扑简化；只保留填充和描边渐隐梯度都完全不透明、且在画布内的部分；湖泊重心近似配准；裁切前源轮廓边线独立保存，人工闭合线不绘制国界。西部渐隐未重建，现代国界、省界、文字标签和邻国疆域未导入。
 
 配准参照使用单独的Natural Earth公共领域子集，见[配准子集说明](../natural-earth/README.md)。约610年是原图的近似年代，非确日或全年持续实控证明。原书图幅未独立核查，历史准确性保留争议。
+
+## 2026-10-05 · 秦、明、清来源原图
+
+以下SVG原样保存；浏览器缩放未修改文件。没有发布对应的地理疆域衍生数据，不暗示作者认可本项目。
+
+### 秦代郡县参考图
+
+- 作者：Ian Remsen。
+- 来源：https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg
+- 版本：Commons原始SVG；2026-10-05下载，保留原图。
+- 许可：CC0 1.0，https://creativecommons.org/publicdomain/zero/1.0/
+- 原文件：`sources/commons/qin-dynasty.svg`。
+- SHA-256：`c37befe576d20479eb9dfde09179b562a17e918734812e256274642bde6f75d5`。
+- 限度：未配准。来源描绘整个秦代（前221—前206），没有标明单一年份；不能作为前221年快照。不得把秦代汇总范围外推到每个年份。
+
+### 明代约1580年参考图
+
+- 作者：Michal Klajban；Jann；Manlleus等译者。
+- 来源：https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg
+- 版本：Commons原始SVG；2026-10-05下载，保留原图。
+- 许可：CC BY-SA 3.0 CZ，https://creativecommons.org/licenses/by-sa/3.0/cz/
+- 原文件：`sources/commons/ming-1580.svg`。
+- SHA-256：`103d0758f0230404b43e0f1f7fc30595b76bc0aa8f9452d88b99e5f87f74074e`。
+- 限度：来源据《剑桥中国史》第7卷图1及Timothy Brook图6；尚未配准或独立核对原书，年份为约数，不能替代明代全年实控。
+
+### 清代1820年行政参考图
+
+- 作者：瑞丽江的河水。
+- 来源：https://commons.wikimedia.org/wiki/File:Qing_Dynasty_blank_map_1820.svg
+- 版本：Commons原始SVG；2026-10-05下载，保留原图。
+- 许可：CC BY-SA 4.0，https://creativecommons.org/licenses/by-sa/4.0/
+- 原文件：`sources/commons/qing-1820.svg`。
+- SHA-256：`1bf6bdb1ad31dbeb989ac35e017cd3a5f5e5bab88a3ab97676fab74624971a92`。
+- 限度：来源作者声明据CHGIS V6 1820及Natural Earth绘制；尚未配准、未独立核验原始数据，行政范围不能直接证明实控，不外推到其他清代年份。
+
+清1820年试配准未通过检查。失败记录见`data/audits/qing-1820-registration-attempt.json`；未采用该变换，未发布其地理边界。

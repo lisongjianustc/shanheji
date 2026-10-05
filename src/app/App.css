@@ -48,6 +48,7 @@ p {
   height: 100dvh;
   display: grid;
   grid-template-rows: 70px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
 }
 .masthead {
   background: var(--paper);
@@ -1361,5 +1362,63 @@ p {
     top: 170px;
     right: 12px;
     max-width: calc(100% - 24px);
+  }
+}
+
+/* Full chronology remains usable by selecting a shorter interval. */
+.period-nav {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scrollbar-width: thin;
+}
+.period-nav button {
+  flex-shrink: 0;
+}
+.year-entry small {
+  font-size: 10px;
+  color: var(--text-muted, #71756c);
+}
+.time-ticks span:first-child {
+  transform: none;
+}
+.time-ticks span:last-child {
+  transform: translateX(-100%);
+}
+@media (max-width: 600px) {
+  .year-entry small {
+    max-width: 40px;
+    line-height: 1.2;
+  }
+  .timeline-controls {
+    gap: 6px;
+  }
+}
+.source-plate-shortcut {
+  pointer-events: auto;
+  display: block;
+  margin-top: 4px;
+  color: #456a57;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+/* Keep long period labels inside the grid and wrap optional mobile controls. */
+.app > *,
+.timeline {
+  min-width: 0;
+}
+@media (max-width: 900px) {
+  .timeline-options {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .timeline-options select {
+    max-width: 150px;
+  }
+  .year-entry small {
+    display: inline-block;
+    max-width: 42px;
+    white-space: normal;
+    vertical-align: middle;
   }
 }

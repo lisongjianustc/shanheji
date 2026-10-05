@@ -1,3 +1,16 @@
+import {
+  MIN_YEAR,
+  MAX_YEAR,
+  isSupportedYear,
+  nextYear,
+  previousYear,
+  yearOrdinal,
+  yearFromOrdinal,
+  formatYear,
+  formatYearRange,
+  TIME_WINDOWS,
+  windowForYear,
+} from "../../domain/chronology";
 import { useEffect, useRef, useState } from "react";
 import type { Catalog, Query } from "../../domain/types";
 import type { HistoryState } from "../../state/controller";
@@ -14,6 +27,15 @@ export interface TimelineProps {
   onEntity?: (id: string) => void;
 }
 export const periods = [
+  ["夏（约）", -2100],
+  ["商（约）", -1600],
+  ["西周", -1046],
+  ["春秋", -770],
+  ["战国", -475],
+  ["秦", -221],
+  ["西汉", -206],
+  ["新", 9],
+  ["东汉", 25],
   ["三国", 220],
   ["西晋", 280],
   ["东晋 · 十六国", 383],
@@ -21,7 +43,13 @@ export const periods = [
   ["隋", 589],
   ["唐初", 618],
   ["盛唐", 713],
-  ["唐末", 907],
+  ["五代十国", 907],
+  ["北宋 · 辽", 960],
+  ["南宋 · 金", 1127],
+  ["元", 1271],
+  ["明", 1368],
+  ["清", 1644],
+  ["清末", 1912],
 ] as const;
 export function Timeline(p: TimelineProps) {
   const { state, catalog } = p;
@@ -29,8 +57,12 @@ export function Timeline(p: TimelineProps) {
     [error, setError] = useState(""),
     [speed, setSpeed] = useState(1),
     [autoPause, setAutoPause] = useState(true),
-    [expanded, setExpanded] = useState(false);
+    [expanded, setExpanded] = useState(false),
+    [windowId, setWindowId] = useState<string>(
+      windowForYear(state.previewYear).id,
+    );
   const current = useRef(p);
+  const selectedPeriodButton = useRef<HTMLButtonElement>(null);
   const dragTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const dragYear = useRef<number | null>(null);
   current.current = p;
@@ -42,11 +74,36 @@ export function Timeline(p: TimelineProps) {
   useEffect(() => cancelDrag, []);
   const query = state.committed?.query ?? defaultQuery(),
     year = state.committed?.query.year ?? state.previewYear;
+  const activePeriod = periods.filter(([, n]) => n <= year).at(-1)?.[1];
+  useEffect(() => {
+    selectedPeriodButton.current?.scrollIntoView?.({
+      block: "nearest",
+      inline: "center",
+    });
+  }, [activePeriod]);
+  const selectedWindow =
+    TIME_WINDOWS.find((w) => w.id === windowId) ?? TIME_WINDOWS[0];
+  const visibleWindow =
+    state.previewYear >= selectedWindow.start &&
+    state.previewYear <= selectedWindow.end
+      ? selectedWindow
+      : windowForYear(state.previewYear);
+  useEffect(() => {
+    if (visibleWindow.id !== windowId) setWindowId(visibleWindow.id);
+  }, [visibleWindow.id, windowId]);
+  const start = visibleWindow.start,
+    end = visibleWindow.end;
+  const extent = yearOrdinal(end) - yearOrdinal(start);
+  const position = (n: number) =>
+    ((yearOrdinal(n) - yearOrdinal(start)) / extent) * 100;
+  const ticks = Array.from({ length: 6 }, (_, i) =>
+    yearFromOrdinal(Math.round(yearOrdinal(start) + (extent * i) / 5)),
+  );
   useEffect(() => setEntry(String(state.previewYear)), [state.previewYear]);
   const go = (n: number) => {
     cancelDrag();
-    if (!Number.isInteger(n) || n < 220 || n > 907) {
-      setError("请输入220至907之间的年份");
+    if (!isSupportedYear(n)) {
+      setError("请输入-2100至1912的年份；负数代表公元前，无0年");
       return;
     }
     setError("");
@@ -73,12 +130,12 @@ export function Timeline(p: TimelineProps) {
   };
   useEffect(() => {
     if (!state.playing || state.status !== "ready") return;
-    if (year >= 907) {
+    if (year >= MAX_YEAR) {
       p.onPlaying(false);
       return;
     }
     const timer = setTimeout(() => {
-      const next = year + 1;
+      const next = nextYear(year);
       const c = current.current;
       c.onRequest({ ...c.state.committed!.query, year: next, at: null });
       if (
@@ -120,18 +177,18 @@ export function Timeline(p: TimelineProps) {
           </button>
           <button
             aria-label="前一年"
-            onClick={() => go(year - 1)}
-            disabled={year === 220}
+            onClick={() => go(previousYear(year))}
+            disabled={year === MIN_YEAR}
           >
             ‹
           </button>
           <label className="year-entry">
-            公元{" "}
+            年份{" "}
             <input
               type="number"
               aria-label="年份"
-              min="220"
-              max="907"
+              min={MIN_YEAR}
+              max={MAX_YEAR}
               value={entry}
               onChange={(e) => setEntry(e.target.value)}
               onKeyDown={(e) => {
@@ -142,12 +199,14 @@ export function Timeline(p: TimelineProps) {
                   go(entry.trim() ? Number(entry) : NaN);
               }}
             />{" "}
-            年
+            <small title="例如：-221表示公元前221年；没有0年">
+              负数为公元前
+            </small>
           </label>
           <button
             aria-label="后一年"
-            onClick={() => go(year + 1)}
-            disabled={year === 907}
+            onClick={() => go(nextYear(year))}
+            disabled={year === MAX_YEAR}
           >
             ›
           </button>
@@ -162,6 +221,21 @@ export function Timeline(p: TimelineProps) {
           </select>
         </div>
         <div className="timeline-options">
+          <select
+            aria-label="时间轴显示时段"
+            value={visibleWindow.id}
+            onChange={(e) => {
+              const w = TIME_WINDOWS.find((w) => w.id === e.target.value)!;
+              setWindowId(w.id);
+              if (year < w.start || year > w.end) go(w.start);
+            }}
+          >
+            {TIME_WINDOWS.map((w) => (
+              <option key={w.id} value={w.id}>
+                {w.label}
+              </option>
+            ))}
+          </select>
           <button onClick={() => jump(-1)} title="上一事件或疆域资料年份">
             上一节点
           </button>
@@ -191,9 +265,9 @@ export function Timeline(p: TimelineProps) {
       )}
       <div className="time-track">
         <div className="time-ticks">
-          {[220, 300, 400, 500, 600, 700, 800, 907].map((n) => (
-            <span key={n} style={{ left: `${((n - 220) / 687) * 100}%` }}>
-              {n}
+          {ticks.map((n) => (
+            <span key={n} style={{ left: `${position(n)}%` }}>
+              {n < 0 ? `前${Math.abs(n)}` : n}
             </span>
           ))}
         </div>
@@ -201,11 +275,14 @@ export function Timeline(p: TimelineProps) {
           className="time-slider"
           aria-label="拖动年份"
           type="range"
-          min="220"
-          max="907"
-          value={state.previewYear}
-          onChange={(e) => drag(Number(e.target.value))}
-          onPointerUp={(e) => go(Number(e.currentTarget.value))}
+          min={yearOrdinal(start)}
+          max={yearOrdinal(end)}
+          value={yearOrdinal(state.previewYear)}
+          aria-valuetext={formatYear(state.previewYear)}
+          onChange={(e) => drag(yearFromOrdinal(Number(e.target.value)))}
+          onPointerUp={(e) =>
+            go(yearFromOrdinal(Number(e.currentTarget.value)))
+          }
           onKeyUp={(e) => {
             if (
               [
@@ -217,34 +294,35 @@ export function Timeline(p: TimelineProps) {
                 "PageDown",
               ].includes(e.key)
             )
-              go(Number(e.currentTarget.value));
+              go(yearFromOrdinal(Number(e.currentTarget.value)));
           }}
         />
         <div className="event-ticks">
           {[...new Set(p.eventYears ?? [])]
-            .filter((n) => n >= 220 && n <= 907)
+            .filter((n) => n >= start && n <= end)
             .map((n) => (
               <button
                 key={n}
-                style={{ left: `${((n - 220) / 687) * 100}%` }}
-                title={`${n}年有收录事件`}
-                aria-label={`跳至${n}年事件`}
+                style={{ left: `${position(n)}%` }}
+                title={`${formatYear(n)}有收录事件`}
+                aria-label={`跳至${formatYear(n)}事件`}
                 onClick={() => go(n)}
               />
             ))}
         </div>
         <div className="territory-ticks" aria-label="疆域资料节点">
           {[...new Set(p.territoryYears ?? [])]
-            .filter((n) => n >= 220 && n <= 907)
+            .filter((n) => n >= start && n <= end)
             .map((n) => (
               <button
                 key={n}
-                style={{ left: `${((n - 220) / 687) * 100}%` }}
-                title={`${n}年有可叠加疆域资料`}
-                aria-label={`跳至${n}年疆域`}
+                style={{ left: `${position(n)}%` }}
+                title={`${formatYear(n)}有可叠加疆域资料`}
+                aria-label={`跳至${formatYear(n)}疆域`}
                 onClick={() => go(n)}
               >
-                <i aria-hidden="true" /> <span>{n}</span>
+                <i aria-hidden="true" />{" "}
+                <span>{n < 0 ? `前${Math.abs(n)}` : n}</span>
               </button>
             ))}
         </div>
@@ -253,8 +331,13 @@ export function Timeline(p: TimelineProps) {
         {periods.map(([label, n]) => (
           <button
             key={n}
-            className={year === n ? "active" : ""}
-            onClick={() => go(n)}
+            ref={n === activePeriod ? selectedPeriodButton : undefined}
+            aria-current={n === activePeriod ? "date" : undefined}
+            className={n === activePeriod ? "active" : ""}
+            onClick={() => {
+              setWindowId(windowForYear(n).id);
+              go(n);
+            }}
           >
             {label}
           </button>
@@ -262,35 +345,37 @@ export function Timeline(p: TimelineProps) {
       </nav>
       {expanded && (
         <div className="parallel-bands">
-          {bands.map((b) => (
-            <div className="band-row" key={`${b.entityId}-${b.startYear}`}>
-              <button
-                className="band-name"
-                onClick={() => p.onEntity?.(b.entityId)}
-              >
-                {b.label}
-              </button>
-              <div className="band-track">
+          {bands
+            .filter((b) => b.startYear <= end && b.endYear >= start)
+            .map((b) => (
+              <div className="band-row" key={`${b.entityId}-${b.startYear}`}>
                 <button
-                  aria-label={`${b.label} ${b.startYear}至${b.endYear}年`}
-                  className="band"
-                  style={{
-                    left: `${((b.startYear - 220) / 688) * 100}%`,
-                    width: `${((b.endYear - b.startYear + 1) / 688) * 100}%`,
-                    background: catalog.entities.find(
-                      (e) => e.id === b.entityId,
-                    )?.color,
-                  }}
-                  title={`${b.startYear}—${b.endYear}年${b.uncertain ? "，确日不详" : ""}`}
-                  onClick={() => go(b.startYear)}
-                />
-                <i
-                  className="band-cursor"
-                  style={{ left: `${((year - 220) / 688) * 100}%` }}
-                />
+                  className="band-name"
+                  onClick={() => p.onEntity?.(b.entityId)}
+                >
+                  {b.label}
+                </button>
+                <div className="band-track">
+                  <button
+                    aria-label={`${b.label} ${formatYearRange(b.startYear, b.endYear)}`}
+                    className="band"
+                    style={{
+                      left: `${position(Math.max(start, b.startYear))}%`,
+                      width: `${((yearOrdinal(Math.min(end, b.endYear)) - yearOrdinal(Math.max(start, b.startYear)) + 1) / (extent + 1)) * 100}%`,
+                      background: catalog.entities.find(
+                        (e) => e.id === b.entityId,
+                      )?.color,
+                    }}
+                    title={`${formatYearRange(b.startYear, b.endYear)}${b.uncertain ? "，确日不详" : ""}`}
+                    onClick={() => go(b.startYear)}
+                  />
+                  <i
+                    className="band-cursor"
+                    style={{ left: `${position(year)}%` }}
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       )}
     </section>

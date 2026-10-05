@@ -1,3 +1,4 @@
+import { isSupportedYear } from "../domain/chronology";
 import type { Scene, Query } from "../domain/types";
 import type { HistoryRepository } from "../data/repository";
 import { defaultQuery } from "../domain/query";
@@ -55,8 +56,7 @@ export function createHistoryController(
       return () => listeners.delete(fn);
     },
     preview(year) {
-      if (Number.isInteger(year) && year >= 220 && year <= 907)
-        update({ previewYear: year });
+      if (isSupportedYear(year)) update({ previewYear: year });
     },
     async request(query, options) {
       const requestId = ++serial;

@@ -218,5 +218,148 @@
     "license": "Public Domain",
     "redistribution": "allowed",
     "permissionEvidence": "https://www.naturalearthdata.com/about/terms-of-use/ 明示所有版本为公共领域，允许修改、电子传播；原始与子集SHA256见data/sources/natural-earth/。仅用于现代自然地理配准，不是古代边界来源。"
+  },
+  {
+    "id": "met-bronze",
+    "title": "China, 2000–1000 B.C.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://www.metmuseum.org/toah/ht/03/eac.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "met-preimperial",
+    "title": "China, 1000 B.C.–1 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://www.metmuseum.org/toah/ht/04/eac.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "met-qin-han",
+    "title": "Age of Empires: Chinese Art of the Qin and Han Dynasties",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://www.metmuseum.org/exhibitions/listings/2017/age-of-empires",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "met-song-yuan",
+    "title": "China, 1000–1400 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://www.metmuseum.org/toah/ht/07/eac.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "met-ming",
+    "title": "China, 1400–1600 A.D.",
+    "creator": "The Metropolitan Museum of Art",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://www.metmuseum.org/toah/ht/08/eac.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "unesco-palaces",
+    "title": "Imperial Palaces of the Ming and Qing Dynasties in Beijing and Shenyang",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://whc.unesco.org/en/list/439/",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "unesco-palaces-report",
+    "title": "Imperial Palaces: Periodic Report, Second Cycle",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://whc.unesco.org/document/164552",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "dpm-yangxin",
+    "title": "Discovering the Hall of Mental Cultivation",
+    "creator": "故宫博物院",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://intl.dpm.org.cn/galleries/details/313.html?_wap=1",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目及来源链接；不复制原文或受限图像。"
+  },
+  {
+    "id": "commons-ming-1580",
+    "title": "Ming Empire cca 1580 (en).svg",
+    "creator": "Michal Klajban；Jann；Manlleus等译者",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg",
+    "accessedAt": "2026-10-05",
+    "license": "CC BY-SA 3.0 CZ",
+    "redistribution": "allowed",
+    "permissionEvidence": "文件页面许可声明；保留署名、原图与许可链接。"
+  },
+  {
+    "id": "commons-qing-1820",
+    "title": "Qing Dynasty blank map 1820.svg",
+    "creator": "瑞丽江的河水",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_blank_map_1820.svg",
+    "accessedAt": "2026-10-05",
+    "license": "CC BY-SA 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "文件页面许可声明；保留署名、原图与许可链接。"
+  },
+  {
+    "id": "commons-qin-plate",
+    "title": "Qin dynasty territory.svg",
+    "creator": "Ian Remsen",
+    "edition": "网页及文件版本，2026-10-05核对",
+    "url": "https://commons.wikimedia.org/wiki/File:Qin_dynasty_territory.svg",
+    "accessedAt": "2026-10-05",
+    "license": "CC0 1.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "文件页面许可声明；保留署名、原图与许可链接。"
+  },
+  {
+    "id": "unesco-yinxu",
+    "title": "Yin Xu",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "2026-10-05核对",
+    "url": "https://whc.unesco.org/en/list/1114/",
+    "accessedAt": "2026-10-05",
+    "license": "原网页及申报档案；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目和链接，不复制图像或档案全文。"
+  },
+  {
+    "id": "unesco-yinxu-nomination",
+    "title": "Yin Xu: Nomination dossier",
+    "creator": "UNESCO World Heritage Centre",
+    "edition": "2026-10-05核对",
+    "url": "https://whc.unesco.org/uploads/nominations/1114.pdf",
+    "accessedAt": "2026-10-05",
+    "license": "原网页及申报档案；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目和链接，不复制图像或档案全文。"
   }
 ]

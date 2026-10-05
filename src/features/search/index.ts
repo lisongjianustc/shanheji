@@ -1,13 +1,7 @@
-import type {
-  Catalog,
-  HistoricalEvent,
-  SearchEntry,
-  Validity,
-} from "../../domain/types";
-import { yearOf } from "../../domain/time";
-export const lastYear = (v: Validity) =>
-  yearOf(v.endExclusive.latest) -
-  (v.endExclusive.latest.endsWith("-01-01") ? 1 : 0);
+import { yearOrdinal } from "../../domain/chronology";
+import type { Catalog, HistoricalEvent, SearchEntry } from "../../domain/types";
+import { yearOf, lastYear } from "../../domain/time";
+export { lastYear } from "../../domain/time";
 export function buildSearchIndex(
   catalog: Catalog,
   events: HistoricalEvent[],
@@ -17,6 +11,16 @@ export function buildSearchIndex(
     kind: "entity",
     label: e.names[0].text,
     aliases: e.names.map((n) => n.text),
+    namePeriods: e.names
+      .map((n) => ({
+        text: n.text,
+        startYear: Math.max(
+          yearOf(e.existence.start.earliest),
+          yearOf(n.validity.start.earliest),
+        ),
+        endYear: Math.min(lastYear(e.existence), lastYear(n.validity)),
+      }))
+      .filter((n) => n.startYear <= n.endYear),
     startYear: yearOf(e.existence.start.earliest),
     endYear: lastYear(e.existence),
     regionIds: e.regionIds,
@@ -60,11 +64,11 @@ export function searchEntries(
 ): SearchEntry[] {
   const value = text.trim().normalize("NFKC").toLocaleLowerCase();
   if (!value) return [];
-  const distance = (e: SearchEntry) =>
+  const distance = (e: { startYear: number; endYear: number }) =>
     year < e.startYear
-      ? e.startYear - year
+      ? yearOrdinal(e.startYear) - yearOrdinal(year)
       : year > e.endYear
-        ? year - e.endYear
+        ? yearOrdinal(year) - yearOrdinal(e.endYear)
         : 0;
   return entries
     .filter((e) =>
@@ -72,6 +76,21 @@ export function searchEntries(
         n.normalize("NFKC").toLocaleLowerCase().includes(value),
       ),
     )
+    .map((e) => {
+      const matched = e.namePeriods
+        ?.filter((n) =>
+          n.text.normalize("NFKC").toLocaleLowerCase().includes(value),
+        )
+        .sort((a, b) => distance(a) - distance(b))[0];
+      return matched
+        ? {
+            ...e,
+            label: matched.text,
+            startYear: matched.startYear,
+            endYear: matched.endYear,
+          }
+        : e;
+    })
     .sort(
       (a, b) =>
         distance(a) - distance(b) || a.label.localeCompare(b.label, "zh"),
