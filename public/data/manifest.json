@@ -1,8 +1,8 @@
 {
-  "version": "e9a3e8bb919c4f06",
+  "version": "5303d72268522b90",
   "catalog": {
-    "path": "catalog-bce51d3e50dbd4d5.json",
-    "sha256": "bce51d3e50dbd4d5a6ee6662051289313604c809fdbbcba58eb94b64472f3104"
+    "path": "catalog-a09d108752b8bc37.json",
+    "sha256": "a09d108752b8bc373acdf66c6c7ee1e07e58edb0ae0f1ddc8f9bd4c1e7b1cda4"
   },
   "packages": [
     {
@@ -57,10 +57,10 @@
       ]
     },
     {
-      "path": "package-08cbe4c9b70758db.json",
-      "sha256": "08cbe4c9b70758dbce181a0d029aa524811cd8f302787f6b45d1692864aa48b7",
+      "path": "package-c323177b5e3a739f.json",
+      "sha256": "c323177b5e3a739fb956ebc60cf140a2237ee9a5f9e4c8b889351480b1d77e88",
       "id": "sui-early-tang",
-      "version": "2",
+      "version": "3",
       "startYear": 581,
       "endYear": 755,
       "regionIds": [
@@ -94,7 +94,8 @@
   "defaultInterpretationIds": [
     "kanguole-661-disputed",
     "zhoudadudu-262-administration",
-    "sy-572-administration"
+    "sy-572-administration",
+    "yug-610-partial-administration"
   ],
   "scopeVersion": "1",
   "searchIndex": {
@@ -135,6 +136,23 @@
           "sourceId": "commons-china-572",
           "locator": "572年图标题、图例与轮廓；data/registration/及data/audits/编制记录",
           "note": "仅复核来源一致性，未经历史专家审定。"
+        }
+      ]
+    },
+    {
+      "id": "yug-610-partial-administration",
+      "label": "Yug约610年隋朝图（部分行政参考）",
+      "reason": "只编制原SVG填色与描边都完全不透明、且在画布内的部分。西部渐隐和画布外未录入，裁切边线不绘制国界；六湖拟合、四湖独立检查，最大残差约47公里。未核原书图幅，未完成周边政权，不表示全年实控。",
+      "evidence": [
+        {
+          "sourceId": "commons-china-610",
+          "locator": "SVG Sui ~610；linearGradient7461、linearGradient8438；Commons Summary西部blur说明",
+          "note": "仅编制两条渐隐梯度均完全不透明的部分，并限制在原画布；不补齐模糊西部，不把资料裁切线作为历史国界。"
+        },
+        {
+          "sourceId": "natural-earth-registration-lakes",
+          "locator": "六个拟合湖泊、四个独立检验湖泊；data/registration/sui-610.json",
+          "note": "只用于近似配准现代自然地理，不提供隋朝历史疆界。"
         }
       ]
     }
@@ -234,6 +252,20 @@
       "disputed": true
     },
     {
+      "year": 610,
+      "entityId": "sui",
+      "interpretationId": "yug-610-partial-administration",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
       "year": 661,
       "entityId": "tang",
       "interpretationId": "kanguole-661-disputed",
@@ -294,7 +326,7 @@
       "edition": "2026-09-21 08:15 UTC文件版",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_610.svg",
-      "limitations": "原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。未配准，未独立核对书籍图幅。",
+      "limitations": "已配准约610年部分行政参考：仅原图填色与描边均不透明的画布内范围；西部模糊区域和画布外不补界。四个独立湖泊检查最大残差约47公里，不是历史精度；未独立核对《剑桥中国史》原图。",
       "width": 1000,
       "height": 850,
       "image": {

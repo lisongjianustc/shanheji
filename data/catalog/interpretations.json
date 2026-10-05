@@ -34,5 +34,22 @@
         "note": "仅复核来源一致性，未经历史专家审定。"
       }
     ]
+  },
+  {
+    "id": "yug-610-partial-administration",
+    "label": "Yug约610年隋朝图（部分行政参考）",
+    "reason": "只编制原SVG填色与描边都完全不透明、且在画布内的部分。西部渐隐和画布外未录入，裁切边线不绘制国界；六湖拟合、四湖独立检查，最大残差约47公里。未核原书图幅，未完成周边政权，不表示全年实控。",
+    "evidence": [
+      {
+        "sourceId": "commons-china-610",
+        "locator": "SVG Sui ~610；linearGradient7461、linearGradient8438；Commons Summary西部blur说明",
+        "note": "仅编制两条渐隐梯度均完全不透明的部分，并限制在原画布；不补齐模糊西部，不把资料裁切线作为历史国界。"
+      },
+      {
+        "sourceId": "natural-earth-registration-lakes",
+        "locator": "六个拟合湖泊、四个独立检验湖泊；data/registration/sui-610.json",
+        "note": "只用于近似配准现代自然地理，不提供隋朝历史疆界。"
+      }
+    ]
   }
 ]

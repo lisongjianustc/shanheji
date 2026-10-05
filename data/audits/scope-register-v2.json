@@ -79,7 +79,9 @@
         "met-early",
         "met-late",
         "columbia",
-        "whg"
+        "whg",
+        "commons-china-610",
+        "natural-earth-registration-lakes"
       ],
       "coverageIds": [
         "sui-early-tang-china-core",
@@ -541,11 +543,24 @@
         "geonames-registration-cities"
       ],
       "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "sui-610-partial-administration",
+      "packageId": "sui-early-tang",
+      "kind": "territory",
+      "title": "约610年图幅 · 隋朝行政参考（部分范围；西部未录入，不代表全年实控）",
+      "status": "committed",
+      "sourceIds": [
+        "commons-china-610",
+        "natural-earth-registration-lakes"
+      ],
+      "reason": "部分来源范围已发布，西部空缺不补齐；非专家实控审定，资料包仍不完整。"
     }
   ],
   "decisions": [
     "保留version1全部疆域候选与完整范围，未将缺口改为完成。",
     "后赵、前凉、后燕、西秦、北凉及周边部分名录仍需处理口径冲突／中断期，暂不发布未经统一的年代。",
-    "2026-10-05新增262与572年行政参考，不减少原始范围和逐年、周边缺口。"
+    "2026-10-05新增262与572年行政参考，不减少原始范围和逐年、周边缺口。",
+    "2026-10-05加入约610年部分行政参考；不绘制人工裁切线为国界，不减少西部、逐年与周边缺口。"
   ]
 }

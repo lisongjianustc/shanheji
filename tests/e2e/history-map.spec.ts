@@ -321,7 +321,7 @@ test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ pa
       .toBeGreaterThan(0);
     await expect(page.getByTestId("committed-year")).toHaveText(String(n));
     await expect(page.locator(".coverage-banner")).toContainText(
-      n === 262 || n === 572 ? "疆域参考" : "缺少可用疆域资料",
+      n === 262 || n === 572 || n === 610 ? "疆域参考" : "缺少可用疆域资料",
     );
     await viewer.getByRole("button", { name: "放大图幅" }).click();
     await expect(viewer.getByLabel("图幅比例")).toHaveText("150%");
@@ -467,4 +467,85 @@ test("新增262与572年分布实际绘制全部政权，详情可点，节点�
     390,
   );
   expect(errors).toEqual([]);
+});
+
+test("约610年部分隋朝范围随节点更新，西部缺口标明且下一年清空", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新", {
+    timeout: 20000,
+  });
+  await page.getByRole("button", { name: "跳至610年疆域" }).click();
+  const canvas = page.locator(".map-canvas");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "sui-610-partial-administration",
+  );
+  const key = page.getByRole("region", { name: "当前地图疆域" });
+  await expect(key).toContainText("隋");
+  await expect(key).toContainText("部分范围");
+  await expect(page.locator(".coverage-banner")).toContainText("西部未录入");
+  await key.getByRole("button").click();
+  const detail = page.getByRole("complementary", { name: "条目详情" });
+  await expect(detail).toContainText("裁切边缘不绘制国界");
+  await expect(detail).toContainText("47.2公里");
+  await expect(detail).toContainText("Yug");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await page.setViewportSize({ width: 767, height: 715 });
+  await expect(page.locator(".browse-panel")).toBeHidden();
+  await expect(
+    page.getByRole("button", { name: "条目 · 搜索 · 图层" }),
+  ).toBeVisible();
+  const caption = await page.locator(".map-caption").boundingBox();
+  const polityKey = await key.boundingBox();
+  expect(caption!.y + caption!.height).toBeLessThanOrEqual(polityKey!.y);
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await year(page, 611);
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await year(page, 609);
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "sui-610-partial-administration",
+  );
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "sui-610-partial-administration",
+  );
+  const banner = await page.locator(".coverage-banner").boundingBox();
+  const timeline = await page
+    .getByRole("region", { name: "历史时间轴" })
+    .boundingBox();
+  expect(banner!.y + banner!.height).toBeLessThanOrEqual(timeline!.y);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    390,
+  );
+  await page.screenshot({
+    path: "docs/qa/screenshots/distribution-mobile-610.png",
+  });
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await year(page, 609);
+  await page.locator("summary").filter({ hasText: "筛选与图层" }).click();
+  await page
+    .getByRole("combobox", { name: "政权筛选", exact: true })
+    .selectOption("sui");
+  await expect(
+    page.getByRole("combobox", { name: "政权筛选", exact: true }),
+  ).toHaveValue("sui");
+  const referenceToggle = page.getByRole("checkbox", {
+    name: "允许显示近年参考切片",
+  });
+  await referenceToggle.click();
+  await expect(referenceToggle).toBeChecked();
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "sui-610-partial-administration",
+  );
+  await expect(page.locator(".coverage-banner")).toContainText("约610年");
+  await expect(page.locator(".coverage-banner")).not.toContainText("约609年");
 });

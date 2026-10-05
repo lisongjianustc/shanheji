@@ -3,7 +3,7 @@
   "status": "incomplete",
   "reviewerKind": "agent",
   "reviewer": "Codex",
-  "checkedAt": "2026-10-01",
+  "checkedAt": "2026-10-05",
   "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
   "records": [
     {
@@ -137,6 +137,23 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "sui-610-partial-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-china-610",
+          "locator": "SVG Sui ~610；linearGradient7461、linearGradient8438；Commons Summary西部blur说明",
+          "note": "仅编制两条渐隐梯度均完全不透明的部分，并限制在原画布；不补齐模糊西部，不把资料裁切线作为历史国界。"
+        },
+        {
+          "sourceId": "natural-earth-registration-lakes",
+          "locator": "六个拟合湖泊、四个独立检验湖泊；data/registration/sui-610.json",
+          "note": "只用于近似配准现代自然地理，不提供隋朝历史疆界。"
+        }
+      ],
+      "limitations": "部分来源范围：西部渐隐区域与画布外范围未录入，资料裁切边缘不绘制国界。四个独立检验点最大配准残差约47.2公里（其中斋桑湖偏差较大）；不是全图误差上限或历史边界精度。约610年行政参考，不代表全年实控；所据原书图幅及周边政权未完成专家核对。"
     }
   ],
   "remaining": [

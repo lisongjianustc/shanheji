@@ -28,3 +28,23 @@ it("rejects malformed package arrays", () =>
       coverage: [],
     }).success,
   ).toBe(false));
+
+it("requires an independent source outline for a partial extent", async () => {
+  const { makePackage } = await import("../fixtures/make");
+  const { territorySchema } = await import("../../src/domain/schema");
+  const t = makePackage().territories[0];
+  t.properties.compilation.extent = "partial-source";
+  expect(territorySchema.safeParse(t).success).toBe(false);
+  t.properties.compilation.boundaryGeometry = {
+    type: "MultiLineString",
+    coordinates: [
+      [
+        [105, 30],
+        [106, 31],
+      ],
+    ],
+  };
+  expect(territorySchema.safeParse(t).success).toBe(true);
+  delete t.properties.compilation.extent;
+  expect(territorySchema.safeParse(t).success).toBe(false);
+});

@@ -125,12 +125,24 @@ const properties = z
     interpretationId: text,
     evidence: evidenceList,
     review,
-    compilation: z.strictObject({
-      method: text,
-      sourceScale: z.string().nullable(),
-      controlPoints: z.array(point),
-      errorNote: text,
-    }),
+    compilation: z
+      .strictObject({
+        method: text,
+        sourceScale: z.string().nullable(),
+        controlPoints: z.array(point),
+        errorNote: text,
+        extent: z.literal("partial-source").optional(),
+        boundaryGeometry: z
+          .strictObject({
+            type: z.literal("MultiLineString"),
+            coordinates: z.array(z.array(point).min(2)).min(1),
+          })
+          .optional(),
+      })
+      .refine(
+        (c) => (c.extent === "partial-source") === !!c.boundaryGeometry,
+        "部分来源范围必须独立提供源图边线，避免将裁切线当作国界",
+      ),
   })
   .refine(
     (p) =>

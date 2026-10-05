@@ -6,6 +6,7 @@ it("shows every dated polity under default filters and clears unsupported adjace
   for (const [year, entities] of [
     [262, ["cao-wei", "shu-han", "sun-wu"]],
     [572, ["northern-zhou", "northern-qi", "chen", "western-liang-nanbei"]],
+    [610, ["sui"]],
     [661, ["tang", "tang"]],
   ] as const) {
     const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
@@ -30,6 +31,21 @@ it("shows every dated polity under default filters and clears unsupported adjace
       defaults,
     ).territories,
   ).toHaveLength(0);
+  expect(
+    queryScene(
+      catalog,
+      packs,
+      { ...defaultQuery(610), at: "0610-06-01" },
+      defaults,
+    ).territories,
+  ).toHaveLength(0);
+  expect(
+    queryScene(catalog, packs, defaultQuery(609), defaults).territories,
+  ).toHaveLength(0);
+  expect(
+    queryScene(catalog, packs, defaultQuery(610), defaults).territories[0]
+      .properties.compilation.extent,
+  ).toBe("partial-source");
   const q = defaultQuery(262);
   q.filters.regionIds = ["korea"];
   expect(

@@ -81,6 +81,21 @@ export default function App() {
   const polityCount = new Set(
     scene?.territories.map((t) => t.properties.entityId),
   ).size;
+  const partialSource = scene?.territories.some(
+    (t) => t.properties.compilation.extent === "partial-source",
+  );
+  const partialOnly =
+    partialSource &&
+    scene?.territories.every(
+      (t) => t.properties.compilation.extent === "partial-source",
+    );
+  const partialYears = [
+    ...new Set(
+      scene?.territories
+        .filter((t) => t.properties.compilation.extent === "partial-source")
+        .map((t) => t.properties.snapshotYear),
+    ),
+  ].join("、");
   const annualDistribution =
     polityCount > 1 &&
     new Set(scene?.territories.map((t) => t.properties.snapshotYear)).size ===
@@ -229,6 +244,9 @@ export default function App() {
                       aria-hidden="true"
                     />
                     {label}
+                    {t.properties.compilation.extent === "partial-source" && (
+                      <small>部分范围</small>
+                    )}
                     {t.properties.spatialPrecision === "disputed" && (
                       <small>有争议</small>
                     )}
@@ -245,12 +263,17 @@ export default function App() {
                   title={Object.values(scene.territoryTimeLabels).join("；")}
                 >
                   疆域参考：
-                  {annualDistribution
-                    ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
-                    : [
-                        ...new Set(Object.values(scene.territoryTimeLabels)),
-                      ].join("；")}
+                  {partialOnly
+                    ? `约${partialYears}年 · 部分行政参考（西部未录入，不代表实控）`
+                    : annualDistribution
+                      ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
+                      : [
+                          ...new Set(Object.values(scene.territoryTimeLabels)),
+                        ].join("；")}
                 </span>
+              )}
+              {partialSource && (
+                <span>填色截断处为资料空缺，未绘制为国界。</span>
               )}
               {!!scene.snapshotChoices?.length && (
                 <label>

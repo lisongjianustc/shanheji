@@ -95,7 +95,12 @@ export function TerritoryPanel({
         <>
           <h2>来源参考图幅</h2>
           <p className="empty-copy">
-            可放大查阅原图。262年、572年已编制行政参考切片；610年、742年待配准与年代核对。各图均不能直接证明实控疆界。
+            可放大查阅原图。已接入
+            {plates
+              .filter((p) => slices.some((s) => s.year === p.year))
+              .map((p) => p.year)
+              .join("、")}
+            年参考切片；其余图幅待配准与年代核对。各图均不能直接证明实控疆界。
           </p>
           {plates.map((plate) => (
             <article className="territory-slice" key={plate.id}>

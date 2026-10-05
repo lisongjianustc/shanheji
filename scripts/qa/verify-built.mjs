@@ -46,6 +46,7 @@ try {
   );
   await page.screenshot({ path: "docs/qa/screenshots/production-661.png" });
   const dated = [
+    [610, "sui-610-partial-administration"],
     [
       262,
       "cao-wei-262-administration shu-han-262-administration sun-wu-262-administration",
@@ -79,6 +80,38 @@ try {
     .boundingBox();
   if (banner.y + banner.height > timeline.y)
     throw Error("Banner overlaps timeline");
+  const entry = page.getByRole("spinbutton", { name: "年份", exact: true });
+  await entry.fill("610");
+  await entry.press("Enter");
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "sui-610-partial-administration",
+  );
+  await expect(page.locator(".coverage-banner")).toContainText("西部未录入");
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-mobile-610.png",
+  });
+  const suiBanner = await page.locator(".coverage-banner").boundingBox();
+  const suiTimeline = await page
+    .getByRole("region", { name: "历史时间轴" })
+    .boundingBox();
+  if (suiBanner.y + suiBanner.height > suiTimeline.y)
+    throw Error("Sui banner overlaps timeline");
+  if ((await page.evaluate(() => document.documentElement.scrollWidth)) > 390)
+    throw Error("Sui mobile overflow");
+  await page.setViewportSize({ width: 767, height: 715 });
+  await expect(page.locator(".browse-panel")).toBeHidden();
+  await expect(
+    page.getByRole("button", { name: "条目 · 搜索 · 图层" }),
+  ).toBeVisible();
+  const caption = await page.locator(".map-caption").boundingBox();
+  const polityKey = await page.locator(".map-territory-key").boundingBox();
+  if (caption.y + caption.height > polityKey.y)
+    throw Error("Narrow caption overlaps polity key");
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-narrow-610.png",
+  });
+  await page.setViewportSize({ width: 390, height: 844 });
   await page.getByRole("button", { name: "条目 · 搜索 · 图层" }).click();
   await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
   await page.getByRole("button", { name: "查阅742年参考图" }).click();
@@ -104,17 +137,22 @@ try {
         checkedAt: new Date().toISOString(),
         url: "http://127.0.0.1:4174",
         dataVersion: manifest.version,
-        years: [262, 572, 460, 661],
+        years: [262, 572, 610, 460, 661],
         workerVerified: true,
         timelineDirectInitial: true,
         paintedTerritoryIds: {
-          262: dated[0][1].split(" "),
-          572: dated[1][1].split(" "),
+          ...Object.fromEntries(
+            dated.map(([year, ids]) => [year, ids.split(" ")]),
+          ),
           661: ["tang-661-civil", "tang-661-military"],
         },
         disputedAdministrationVisible: true,
         claimsOffByDefault: true,
         mobileNoOverflow: true,
+        suiPartialSource: true,
+        suiMobileNoOverlap: true,
+        narrow767Drawer: true,
+        narrow767NoCaptionOverlap: true,
         referencePlateYear: 742,
         referencePlateLoaded: true,
         errors,
@@ -125,7 +163,7 @@ try {
   );
   if (errors.length) throw Error(JSON.stringify(errors));
   console.log(
-    "Production: 262, 572 and 661 polities actually painted, event, desktop/mobile, no errors.",
+    "Production: 262, 572, 610 and 661 polities actually painted, event, desktop/mobile, no errors.",
   );
 } finally {
   await browser.close();

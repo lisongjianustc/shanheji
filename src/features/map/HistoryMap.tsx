@@ -3,7 +3,7 @@ import type { Map as MapInstance, Marker, GeoJSONSource } from "maplibre-gl";
 import type { Scene } from "../../domain/types";
 import type { Selection } from "../../state/controller";
 import { mapStyle } from "./style";
-import { buildTerritoryLayers } from "./layers";
+import { buildTerritoryLayers, buildTerritoryBorders } from "./layers";
 import { nameAt, classifyAt, entityActiveAt } from "../../domain/time";
 import "maplibre-gl/dist/maplibre-gl.css";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
@@ -138,9 +138,13 @@ export function HistoryMap(props: MapProps) {
                 "fill-opacity": ["get", "fillOpacity"],
               },
             });
+            map.addSource("territory-outlines", {
+              type: "geojson",
+              data: empty,
+            });
             map.addLayer({
               id: "territory-border",
-              source: "territories",
+              source: "territory-outlines",
               type: "line",
               filter: [
                 "all",
@@ -158,7 +162,7 @@ export function HistoryMap(props: MapProps) {
             });
             map.addLayer({
               id: "territory-uncertain",
-              source: "territories",
+              source: "territory-outlines",
               type: "line",
               filter: [
                 "all",
@@ -182,7 +186,7 @@ export function HistoryMap(props: MapProps) {
             ] as const) {
               map.addLayer({
                 id: `territory-${relation}`,
-                source: "territories",
+                source: "territory-outlines",
                 type: "line",
                 filter: ["==", ["get", "relation"], relation],
                 paint: {
@@ -236,6 +240,9 @@ export function HistoryMap(props: MapProps) {
     let popup: import("maplibre-gl").Popup | undefined;
     (map.getSource("territories") as GeoJSONSource).setData(
       buildTerritoryLayers(scene),
+    );
+    (map.getSource("territory-outlines") as GeoJSONSource).setData(
+      buildTerritoryBorders(scene),
     );
     const frameKey = scene.territories
       .map((t) => t.properties.id)

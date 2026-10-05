@@ -207,5 +207,16 @@
     "license": "古籍原作公有领域；仅采用事实并独立编写摘要，未复制网页注释",
     "redistribution": "unknown",
     "permissionEvidence": "只发布独立事实及定位链接；不用于几何许可依据。古籍所记年号仅换算至年，不推定公历确日。"
+  },
+  {
+    "id": "natural-earth-registration-lakes",
+    "title": "Natural Earth 1:50m湖泊配准子集（10处）",
+    "creator": "Natural Earth；Tom Patterson、Nathaniel Vaughn Kelso及贡献者",
+    "edition": "ne_50m_lakes.geojson本地固定SHA256版本；仅取10处原始湖泊几何",
+    "url": "https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-lakes-reservoirs/",
+    "accessedAt": "2026-10-05",
+    "license": "Public Domain",
+    "redistribution": "allowed",
+    "permissionEvidence": "https://www.naturalearthdata.com/about/terms-of-use/ 明示所有版本为公共领域，允许修改、电子传播；原始与子集SHA256见data/sources/natural-earth/。仅用于现代自然地理配准，不是古代边界来源。"
   }
 ]

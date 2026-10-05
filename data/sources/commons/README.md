@@ -74,3 +74,11 @@ Original plates remain independently viewable. Since 2026-10-05, the 262 and 572
 262 changes: group the sixteen province fills by source legend; exclude the legend and outer decorative frame, repair text strokes, preserve blue water; remove isolated components below 16 pixels (tiny islands are incomplete); build shared edges and simplify by 0.8px; fit an affine transform in EPSG:3857 and convert to WGS84. 572 changes: trace bold dashed borders and the Jiangling LIANG outline; share frontier paths; clip to source mainland colour, excluding unassigned islands, Jiaozhi and neighboring polities; fit LCC23/45 plus affine. Original projection is not established by fitting.
 
 The independent check points are not used in fitting. Modern city reference coordinates are GeoNames CC BY 4.0, separately attributed in `../geonames/README.md`. No unshown-year interpolation. Original images and their SHA-256 remain unchanged. Source checks are not historical expert validation. Reproduce with the two `scripts/data/import_*.py` commands recorded in `docs/data/boundary-intake-2026-10-05.md`.
+
+## 2026-10-05 · 610年部分来源编制
+
+原 `china-610.svg` 保留不变。`data/derived/sui-610.geojson`、正式包内对应范围和独立边线为本项目修改版本，沿用 **CC BY-SA 3.0**，署名 Yug、Manlleus等译者；不暗示作者认可。
+
+修改：显式解析M/L/C/Z路径，采样贝塞尔曲线；用原图陆地与湖泊裁切并保拓扑简化；只保留填充和描边渐隐梯度都完全不透明、且在画布内的部分；湖泊重心近似配准；裁切前源轮廓边线独立保存，人工闭合线不绘制国界。西部渐隐未重建，现代国界、省界、文字标签和邻国疆域未导入。
+
+配准参照使用单独的Natural Earth公共领域子集，见[配准子集说明](../natural-earth/README.md)。约610年是原图的近似年代，非确日或全年持续实控证明。原书图幅未独立核查，历史准确性保留争议。

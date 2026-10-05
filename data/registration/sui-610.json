@@ -1,0 +1,153 @@
+{
+  "sourceId": "commons-china-610",
+  "input": "sources/commons/china-610.svg",
+  "sha256": "099c7e9e314f95136fe460e63e779d3a2fa3a598a25dd0cbdea6352abe0d7dd1",
+  "coordinateReferenceSource": "natural-earth-registration-lakes",
+  "referenceSha256": "52b472502787d38736fd000f93857510b8c774024cd9280ce1560c72e7037e8d",
+  "crs": "+proj=lcc +lat_1=23 +lat_2=45 +lat_0=0 +lon_0=105 +datum=WGS84",
+  "model": "LCC23/45 + six parameter affine; physical lake centroid registration; original SVG projection not stated",
+  "maxCheckErrorKm": 50,
+  "controls": [
+    {
+      "label": "Lake Balkhash",
+      "coordinates": [
+        75.60486474487841,
+        46.293999281742934
+      ],
+      "pixel": [
+        90.45804444095708,
+        160.47730972630725
+      ],
+      "role": "fit",
+      "sourcePathId": "path3331",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Issyk-Kul",
+      "coordinates": [
+        77.2717694322597,
+        42.443675125013336
+      ],
+      "pixel": [
+        94.19365029992076,
+        250.77321693020588
+      ],
+      "role": "fit",
+      "sourcePathId": "path3333",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Qinghai Hu",
+      "coordinates": [
+        100.20433043045253,
+        36.881116037183446
+      ],
+      "pixel": [
+        464.12503529658204,
+        424.43888546216294
+      ],
+      "role": "fit",
+      "sourcePathId": "path3337",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Lake Khanka",
+      "coordinates": [
+        132.3903323708941,
+        44.985999477910234
+      ],
+      "pixel": [
+        971.2776357917646,
+        174.33882377008638
+      ],
+      "role": "fit",
+      "sourcePathId": "path3335",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Khövsgöl Nuur",
+      "coordinates": [
+        100.47905089635447,
+        51.083946174389915
+      ],
+      "pixel": [
+        475.3317873009463,
+        105.62939158250063
+      ],
+      "role": "fit",
+      "sourcePathId": "path5390",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Hulun Nuur",
+      "coordinates": [
+        117.42480223631392,
+        48.95548762046886
+      ],
+      "pixel": [
+        727.5414329122556,
+        138.57996031885122
+      ],
+      "role": "fit",
+      "sourcePathId": "path5392",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Uvs Nuur",
+      "coordinates": [
+        92.74393090014922,
+        50.316290400458634
+      ],
+      "pixel": [
+        361.6886021580576,
+        118.09946216966529
+      ],
+      "role": "check",
+      "sourcePathId": "path5386",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Lake Zaysan",
+      "coordinates": [
+        83.80802402893985,
+        48.45953970008784
+      ],
+      "pixel": [
+        221.64953172915128,
+        149.98814410356937
+      ],
+      "role": "check",
+      "sourcePathId": "path5388",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Tai Hu",
+      "coordinates": [
+        120.20547507747725,
+        31.205970888677992
+      ],
+      "pixel": [
+        837.5128861407296,
+        519.4938772994519
+      ],
+      "role": "check",
+      "sourcePathId": "path5394",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    },
+    {
+      "label": "Hongze Hu",
+      "coordinates": [
+        118.47658632867574,
+        33.238106046167935
+      ],
+      "pixel": [
+        800.7873830073187,
+        480.8325159414505
+      ],
+      "role": "check",
+      "sourcePathId": "path5396",
+      "coordinateMeaning": "现代湖泊轮廓在LCC中的面积重心，与原SVG对应湖泊面积重心匹配；非古代地名定位"
+    }
+  ],
+  "limitations": "六个湖泊重心拟合、四个湖泊只检验。所据CIA底图年代与现代Natural Earth岸线不同；湖泊变化与制图概化影响残差。西部未据此补界，配准不验证历史。"
+}

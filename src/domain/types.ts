@@ -1,4 +1,10 @@
-import type { Feature, Polygon, MultiPolygon, Point } from "geojson";
+import type {
+  Feature,
+  Polygon,
+  MultiPolygon,
+  MultiLineString,
+  Point,
+} from "geojson";
 export type Id = string;
 export type Day = string;
 export type Precision = "day" | "month" | "year" | "range";
@@ -74,6 +80,8 @@ export interface TerritoryProperties {
     sourceScale: string | null;
     controlPoints: [number, number][];
     errorNote: string;
+    extent?: "partial-source";
+    boundaryGeometry?: MultiLineString; // 排除数据裁切产生的人工闭合边线
   };
 }
 export type Territory = Feature<Polygon | MultiPolygon, TerritoryProperties>;

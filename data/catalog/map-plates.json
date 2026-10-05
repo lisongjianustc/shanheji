@@ -38,7 +38,7 @@
     "edition": "2026-09-21 08:15 UTC文件版",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_610.svg",
-    "limitations": "原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。未配准，未独立核对书籍图幅。",
+    "limitations": "已配准约610年部分行政参考：仅原图填色与描边均不透明的画布内范围；西部模糊区域和画布外不补界。四个独立湖泊检查最大残差约47公里，不是历史精度；未独立核对《剑桥中国史》原图。",
     "width": 1000,
     "height": 850,
     "file": "sources/commons/china-610.svg",
