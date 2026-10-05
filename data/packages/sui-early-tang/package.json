@@ -107910,6 +107910,176 @@
           }
         ]
       }
+    },
+    {
+      "id": "wu-zhou-founded",
+      "title": "武则天改国号周",
+      "validity": {
+        "start": {
+          "earliest": "0690-01-01",
+          "latest": "0690-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0691-01-01",
+          "latest": "0691-01-01"
+        },
+        "precision": "year",
+        "label": "690年（来源纪年，非确日）"
+      },
+      "kind": "political",
+      "entityIds": [
+        "wu-zhou",
+        "tang"
+      ],
+      "placeIds": [
+        "luoyang"
+      ],
+      "summary": "武则天称帝，改国号周，以洛阳为都。",
+      "account": "",
+      "interpretation": "仅年精度，不将传统历日换算为公历确日；亮点为现代洛阳城区附近的地区参考，非神都宫城或政变、即位仪式确点；不据地点补出武周疆域。",
+      "evidence": [
+        {
+          "sourceId": "ihns-era",
+          "locator": "（周）天授690—692",
+          "note": "支持天授起年，不把此前摄政年直接当作改国号年。"
+        },
+        {
+          "sourceId": "henan-wu-gold-context",
+          "locator": "文化解读：公元690年以周代唐、定都洛阳",
+          "note": "只采用此段；相关链接中的691年说法与年号表不符，不采用。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex（来源纪年与地区关联核对；未经历史专家审定）",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "ihns-era",
+            "locator": "（周）天授690—692",
+            "note": "支持天授起年，不把此前摄政年直接当作改国号年。"
+          },
+          {
+            "sourceId": "henan-wu-gold-context",
+            "locator": "文化解读：公元690年以周代唐、定都洛阳",
+            "note": "只采用此段；相关链接中的691年说法与年号表不符，不采用。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "wu-gold-slip",
+      "title": "武则天金简纪年",
+      "validity": {
+        "start": {
+          "earliest": "0700-01-01",
+          "latest": "0700-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0701-01-01",
+          "latest": "0701-01-01"
+        },
+        "precision": "year",
+        "label": "700年（来源纪年，非确日）"
+      },
+      "kind": "culture",
+      "entityIds": [
+        "wu-zhou"
+      ],
+      "placeIds": [
+        "songshan-region"
+      ],
+      "summary": "河南博物院藏武则天金简记载700年在嵩山投简祈愿，由胡超代为投递。",
+      "account": "",
+      "interpretation": "仅取来源700年纪年，七月七日保留为传统历日描述，未转换公历确日；亮点为现代登封城区附近的地区参考，非峻极峰、发现石缝、投简山门或仪式确点。现藏河南博物院的位置不作为古事件发生地；未复制文物图片。",
+      "evidence": [
+        {
+          "sourceId": "henan-wu-gold-slip",
+          "locator": "简介：大周国主、胡超、嵩山山门、700年落款；出土地点",
+          "note": "独立摘要，不把1982年发现作为古事件日期，不采唯一存世文物等绝对断言。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex（来源纪年与地区关联核对；未经历史专家审定）",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "henan-wu-gold-slip",
+            "locator": "简介：大周国主、胡超、嵩山山门、700年落款；出土地点",
+            "note": "独立摘要，不把1982年发现作为古事件日期，不采唯一存世文物等绝对断言。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tang-restored",
+      "title": "唐中宗复位，恢复唐国号",
+      "validity": {
+        "start": {
+          "earliest": "0705-01-01",
+          "latest": "0705-01-01"
+        },
+        "endExclusive": {
+          "earliest": "0706-01-01",
+          "latest": "0706-01-01"
+        },
+        "precision": "year",
+        "label": "705年（来源纪年，非确日）"
+      },
+      "kind": "political",
+      "entityIds": [
+        "wu-zhou",
+        "tang"
+      ],
+      "placeIds": [
+        "luoyang"
+      ],
+      "summary": "神龙政变后唐中宗李显复位，武周结束，恢复唐国号。",
+      "account": "",
+      "interpretation": "仅年精度，不将传统历日换算为公历确日；亮点为现代洛阳城区附近的地区参考，非神都宫城或政变、即位仪式确点；不据地点补出武周疆域。",
+      "evidence": [
+        {
+          "sourceId": "ihns-era",
+          "locator": "（周）长安701—705；神龙705—707",
+          "note": "仅核阶段转换年，不推定政变或恢复国号确日。"
+        },
+        {
+          "sourceId": "henan-wu-gold-context",
+          "locator": "相关链接：神龙元年705年正月、李显复位与李唐恢复；洛阳上阳宫同年记载",
+          "note": "只取705年转换和洛阳地区关联，未把政变、复位、复国号视为同一确日。"
+        },
+        {
+          "sourceId": "henan-luoyang-names",
+          "locator": "神都与东都：684年改神都，705年中宗复位恢复东都",
+          "note": "支持705年洛阳都城地区关联；不据别号推定古城界线、宫殿或事件发生确点。"
+        }
+      ],
+      "review": {
+        "status": "verified",
+        "reviewerKind": "agent",
+        "reviewer": "Codex（来源纪年与地区关联核对；未经历史专家审定）",
+        "checkedAt": "2026-10-05",
+        "evidence": [
+          {
+            "sourceId": "ihns-era",
+            "locator": "（周）长安701—705；神龙705—707",
+            "note": "仅核阶段转换年，不推定政变或恢复国号确日。"
+          },
+          {
+            "sourceId": "henan-wu-gold-context",
+            "locator": "相关链接：神龙元年705年正月、李显复位与李唐恢复；洛阳上阳宫同年记载",
+            "note": "只取705年转换和洛阳地区关联，未把政变、复位、复国号视为同一确日。"
+          },
+          {
+            "sourceId": "henan-luoyang-names",
+            "locator": "神都与东都：684年改神都，705年中宗复位恢复东都",
+            "note": "支持705年洛阳都城地区关联；不据别号推定古城界线、宫殿或事件发生确点。"
+          }
+        ]
+      }
     }
   ],
   "coverage": [

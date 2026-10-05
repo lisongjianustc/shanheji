@@ -268,6 +268,9 @@ try {
     [229, "孙权在武昌称帝"],
     [317, "东晋政权建立"],
     [794, "迁都平安京"],
+    [690, "武则天改国号周"],
+    [700, "武则天金简纪年"],
+    [705, "唐中宗复位，恢复唐国号"],
   ]) {
     await entry.fill(String(n));
     await entry.press("Enter");
@@ -377,7 +380,7 @@ try {
         dataVersion: manifest.version,
         years: [
           -1300, -300, -221, 229, 262, 317, 383, 572, 610, 460, 634, 652, 661,
-          742, 743, 794, 1000, 1095, 1420, 1820, 1912,
+          690, 700, 705, 742, 743, 794, 1000, 1095, 1420, 1820, 1912,
         ],
         workerVerified: true,
         expandedChronology: true,
@@ -397,7 +400,7 @@ try {
         feiRegionalPointClickable: true,
         tokugawaPartialScopeVisible: true,
         researchMobileNoOverlap: true,
-        regionalPointsClickable: [229, 317, 794],
+        regionalPointsClickable: [229, 317, 690, 700, 705, 794],
         regionalPointsStayInViewWithDetails: true,
         mapGapShortcutVerified: true,
         daliSupportedIntervalAndDazhongGapVerified: true,

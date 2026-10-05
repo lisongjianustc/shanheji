@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-05T13:07:25.010Z",
+  "checkedAt": "2026-10-05T13:25:54.057Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "810acd86debd5774",
+  "dataVersion": "24a38b9d1531e501",
   "years": [
     -1300,
     -300,
@@ -16,6 +16,9 @@
     634,
     652,
     661,
+    690,
+    700,
+    705,
     742,
     743,
     794,
@@ -83,6 +86,9 @@
   "regionalPointsClickable": [
     229,
     317,
+    690,
+    700,
+    705,
     794
   ],
   "regionalPointsStayInViewWithDetails": true,

@@ -661,13 +661,46 @@
   },
   {
     "id": "geonames-regional-reference",
-    "title": "GeoNames官方CN／JP地名数据：鄂州、南京、京都地区参考",
+    "title": "GeoNames官方CN／JP地名数据：鄂州、南京、京都、洛阳、登封地区参考",
     "creator": "GeoNames contributors",
-    "edition": "官方country dumps；2026-10-05下载；只取3条地名记录",
+    "edition": "官方country dumps；2026-10-05下载；只取5条地名记录",
     "url": "https://download.geonames.org/export/dump/",
     "accessedAt": "2026-10-05",
     "license": "Creative Commons Attribution 4.0 International（CC BY 4.0）",
     "redistribution": "allowed",
     "permissionEvidence": "官方readme.txt说明CC BY 4.0、WGS84；按geonameId记录归属与原始字段。现代地名点非古代城址或仪式确点。 许可链接：https://creativecommons.org/licenses/by/4.0/。"
+  },
+  {
+    "id": "henan-wu-gold-slip",
+    "title": "武则天金简（河南博物院藏品页）",
+    "creator": "河南博物院",
+    "edition": "藏品网页；2026-10-05核对",
+    "url": "https://www.chnmus.net/ch/collection/treasure/details.html?id=508161850642982087",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目与链接，不复制文物图片、原文或受限数据。"
+  },
+  {
+    "id": "henan-wu-gold-context",
+    "title": "武则天金简：文化解读与相关链接",
+    "creator": "河南博物院网站；王宁等",
+    "edition": "每周一品2013-06-10；2026-10-05核对",
+    "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/article5ec7e9a94e534b55bfada4743a9dd1bd.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只采用文化解读690年和相关链接705年事实。相关链接误写691改周、深度品鉴误写1985发现等不采用；不复制图片或原文。"
+  },
+  {
+    "id": "henan-luoyang-names",
+    "title": "洛阳别号知多少",
+    "creator": "河南省人民政府台湾事务办公室网站；陈旭照（洛阳晚报）",
+    "edition": "2018-03-05发布；2026-10-05核对",
+    "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hnly/xsgq/articlea17c732ec5d847aaa37127623b37630e.html",
+    "accessedAt": "2026-10-05",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只采用684年神都、705年中宗复位后恢复东都的地方史事实与链接；不复制全文、图片或受限数据。"
   }
 ]

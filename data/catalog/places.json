@@ -224,6 +224,69 @@
             "note": "采用遗址／遗产点位作为附近位置，不作为仪式确址、古城范围或战场坐标。当前遗址可能包含后世重建部分。"
           }
         ]
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.43684,
+            34.67345
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0690-01-01",
+            "latest": "0690-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0691-01-01",
+            "latest": "0691-01-01"
+          },
+          "precision": "year",
+          "label": "690年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1801792; Luoyang; WGS84 34.67345 112.43684",
+            "note": "现代洛阳市区附近地区参考，非神都宫城或即位、政变仪式确点；不沿用北魏汉魏洛阳城遗址坐标。"
+          }
+        ]
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            112.43684,
+            34.67345
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0705-01-01",
+            "latest": "0705-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0706-01-01",
+            "latest": "0706-01-01"
+          },
+          "precision": "year",
+          "label": "705年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1801792; Luoyang; WGS84 34.67345 112.43684",
+            "note": "现代洛阳市区附近地区参考，非神都宫城或即位、政变仪式确点；不沿用北魏汉魏洛阳城遗址坐标。"
+          },
+          {
+            "sourceId": "henan-luoyang-names",
+            "locator": "神都与东都：684年改神都，705年中宗复位恢复东都",
+            "note": "支持705年洛阳都城地区关联；不据别号推定古城界线、宫殿或事件发生确点。"
+          }
+        ]
       }
     ]
   },
@@ -878,6 +941,69 @@
             "sourceId": "unesco-silk-maps",
             "locator": "1442-030 Great Wild Goose Pagoda",
             "note": "现存遗址／建筑的地理参考点，不复原初建时范围或确切施工位置。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "songshan-region",
+    "names": [
+      {
+        "text": "嵩山／登封附近",
+        "validity": {
+          "start": {
+            "earliest": "0700-01-01",
+            "latest": "0700-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0701-01-01",
+            "latest": "0701-01-01"
+          },
+          "precision": "year",
+          "label": "700年（来源纪年，非确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "henan-wu-gold-slip",
+            "locator": "出土地点与简介",
+            "note": "仅关联嵩山地区，不以现代登封城区代替峻极峰投简确址。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            113.03194,
+            34.45549
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0700-01-01",
+            "latest": "0700-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0701-01-01",
+            "latest": "0701-01-01"
+          },
+          "precision": "year",
+          "label": "700年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1813016; Songyang / Dengfeng; WGS84 34.45549 113.03194",
+            "note": "现代登封城区附近的地区参考，非峻极峰、石缝、古投简山门或仪式确点。"
+          },
+          {
+            "sourceId": "henan-wu-gold-slip",
+            "locator": "出土地点：河南省登封嵩山峻极峰北侧；简介700年落款",
+            "note": "支持地区关联与700年记录，不据1982出土信息推出投简确点。"
           }
         ]
       }

@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-05",
+  "candidate": {
+    "sourceId": "cliopatria-v021",
+    "rowIndex": 2626,
+    "properties": {
+      "Name": "Tang Dynasty",
+      "FromYear": 692,
+      "ToYear": 704,
+      "Area": 4245573.64815161,
+      "Type": "POLITY",
+      "Wikipedia": "Tang dynasty",
+      "Wikidata": "Q9683",
+      "SeshatID": "cn_tang_dyn_1",
+      "Components": "",
+      "MemberOf": ""
+    },
+    "geometrySha256": "538ccacfad50709814710bf1a20052af11e5011434fbb89525bd0423d69eb4ba"
+  },
+  "decision": "excluded-pending-identity-and-boundary-review",
+  "reason": "源政权名称及Wikidata为唐，而692—704年处于已核武周阶段。年代落在阶段内不独立证明此源轮廓的历史归属；仍排除，不自动改名。",
+  "additionalCandidate": {
+    "url": "https://commons.wikimedia.org/wiki/File:Tang_Dynasty_circa_700_CE.png",
+    "creator": "Ian Kiu",
+    "license": "CC BY-SA 3.0",
+    "observations": [
+      "标题约700年，说明依据1935图集约750年图；西域地区另有异时归属标注。",
+      "东北范围另有处理，文件历史存在覆盖与标注争议；不将约750年依据直接编成700年快照。"
+    ],
+    "decision": "not-admitted"
+  },
+  "chronologyEvidence": [
+    {
+      "sourceId": "ihns-era",
+      "locator": "天授690—692；长安701—705；神龙705—707"
+    },
+    {
+      "sourceId": "henan-wu-gold-context",
+      "locator": "文化解读690年定都洛阳；相关链接705年李唐恢复",
+      "excludedClaims": [
+        "相关链接误写691年改周",
+        "相关链接把698年太子李显误写李旦",
+        "深度品鉴与主藏品页出土年不一致，1985年未采用"
+      ]
+    },
+    {
+      "sourceId": "henan-wu-gold-slip",
+      "locator": "简介与出土地点；700年传统历日落款，大周国主、胡超与嵩山投简"
+    },
+    {
+      "sourceId": "henan-luoyang-names",
+      "locator": "神都与东都：684年改神都，705年中宗复位恢复东都",
+      "note": "支持705年洛阳都城地区关联；不据别号推定古城界线、宫殿或事件发生确点。"
+    }
+  ],
+  "locationDecisions": {
+    "494-luoyang": "保留汉魏洛阳城遗产位置112.621389,34.731111",
+    "690-705-luoyang": "仅用现代洛阳市区GeoNames1801792作地区参考，不声称宫城或政变确点",
+    "700-songshan": "仅用现代登封城区GeoNames1813016作地区参考，不以发现处或今博物院位置代替古投简确点"
+  },
+  "limitations": "未核验完整武周疆界；没有新增任何疆域几何。传统历日不转换为公历日期。"
+}

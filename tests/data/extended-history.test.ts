@@ -64,6 +64,46 @@ it("locates Fei River's regional reference without claiming a precise battlefiel
   ).toContain("非古战场确点");
 });
 it.each([
+  [690, "wu-zhou-founded", [112.43684, 34.67345]],
+  [700, "wu-gold-slip", [113.03194, 34.45549]],
+  [705, "tang-restored", [112.43684, 34.67345]],
+] as const)(
+  "locates Wu Zhou's annual records without assigning invented borders at %i",
+  (year, id, coordinates) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    const event = scene.events.find((e) => e.id === id)!;
+    expect(event).toBeDefined();
+    expect(event.validity.precision).toBe("year");
+    const point = buildEventLocations(scene).features.features.find(
+      (f) => f.properties.eventId === id,
+    )!;
+    expect(point.geometry.coordinates).toEqual([...coordinates]);
+    expect(point.properties.approximate).toBe(true);
+    expect(event.interpretation).toContain("地区参考");
+    expect(event.interpretation).toContain("非");
+    expect(
+      scene.territories.some((t) => t.properties.entityId === "wu-zhou"),
+    ).toBe(false);
+    expect(
+      queryScene(catalog, packs, defaultQuery(year + 1), defaults).events.some(
+        (e) => e.id === id,
+      ),
+    ).toBe(false);
+  },
+);
+it("keeps Northern Wei Luoyang separate from the modern city reference used for Wu Zhou", () => {
+  const scene = queryScene(catalog, packs, defaultQuery(494), defaults);
+  const point = buildEventLocations(scene).features.features.find(
+    (f) => f.properties.eventId === "luoyang-494",
+  )!;
+  expect(point.geometry.coordinates).toEqual([112.621389, 34.731111]);
+  expect(
+    queryScene(catalog, packs, defaultQuery(701), defaults).events.some(
+      (e) => e.id === "wu-gold-slip",
+    ),
+  ).toBe(false);
+});
+it.each([
   [229, "wu-emperor-229", [114.83333, 30.4]],
   [317, "eastern-jin-317", [118.77778, 32.06167]],
   [794, "heian-794", [135.75385, 35.02107]],
