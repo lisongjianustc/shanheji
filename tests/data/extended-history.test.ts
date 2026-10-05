@@ -18,7 +18,7 @@ it("publishes the new chronology with complete references and retains old territ
   expect(validateDataset(catalog, packs)).toEqual([]);
   expect(catalogSchema.safeParse(catalog).success).toBe(true);
   expect(packs.every((p) => packageSchema.safeParse(p).success)).toBe(true);
-  expect(packs.flatMap((p) => p.territories)).toHaveLength(11);
+  expect(packs.flatMap((p) => p.territories)).toHaveLength(12);
 });
 it.each([
   -2100, -1600, -1046, -770, -221, -206, -1, 1, 9, 25, 960, 1127, 1271, 1368,

@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-05T06:02:55.813Z",
+  "checkedAt": "2026-10-05T09:16:53.084Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "0cd880b8961b4a24",
+  "dataVersion": "9e1146c743cb34c1",
   "years": [
     -1300,
     -221,
@@ -10,6 +10,8 @@
     610,
     460,
     661,
+    742,
+    743,
     1420,
     1912
   ],
@@ -37,11 +39,17 @@
     "661": [
       "tang-661-civil",
       "tang-661-military"
+    ],
+    "742": [
+      "tang-742-eastern-administration"
     ]
   },
   "disputedAdministrationVisible": true,
   "claimsOffByDefault": true,
   "mobileNoOverflow": true,
+  "tang742EasternPartial": true,
+  "tang742AdjacentYearCleared": true,
+  "tang742MobileNoOverlap": true,
   "suiPartialSource": true,
   "suiMobileNoOverlap": true,
   "narrow767Drawer": true,

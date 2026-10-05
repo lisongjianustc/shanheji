@@ -94,7 +94,10 @@ export default function App() {
     ...new Set(
       scene?.territories
         .filter((t) => t.properties.compilation.extent === "partial-source")
-        .map((t) => t.properties.snapshotYear),
+        .map(
+          (t) =>
+            `${t.properties.validity.label.startsWith("约") ? "约" : ""}${t.properties.snapshotYear}`,
+        ),
     ),
   ].join("、");
   const annualDistribution =
@@ -295,7 +298,7 @@ export default function App() {
                 >
                   疆域参考：
                   {partialOnly
-                    ? `约${partialYears}年 · 部分行政参考（西部未录入，不代表实控）`
+                    ? `${partialYears}年 · 部分行政参考（西部未录入，不代表实控）`
                     : annualDistribution
                       ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
                       : [
@@ -304,7 +307,13 @@ export default function App() {
                 </span>
               )}
               {partialSource && (
-                <span>填色截断处为资料空缺，未绘制为国界。</span>
+                <span>
+                  {scene.territories.some(
+                    (t) =>
+                      t.properties.id === "tang-742-eastern-administration",
+                  ) && "仅105°E以东；"}
+                  填色截断处为资料空缺，未绘制为国界。
+                </span>
               )}
               {!!scene.snapshotChoices?.length && (
                 <label>

@@ -327,7 +327,7 @@
     "accessedAt": "2026-10-05",
     "license": "CC BY-SA 4.0",
     "redistribution": "allowed",
-    "permissionEvidence": "文件页面许可声明；保留署名、原图与许可链接。"
+    "permissionEvidence": "Commons作者对该SVG声明CC BY-SA 4.0；保留署名、原图及许可链接。2026-10-05发现其所据CHGIS V6的CC0元数据与包内EULA/官方项目页限制不一致；后续几何转换暂停，未下载CHGIS矢量、未接受协议，详见data/audits/chgis-v6-1820-license-review.json。"
   },
   {
     "id": "commons-qin-plate",

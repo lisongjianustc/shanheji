@@ -51,5 +51,22 @@
         "note": "只用于近似配准现代自然地理，不提供隋朝历史疆界。"
       }
     ]
+  },
+  {
+    "id": "yug-742-eastern-administration",
+    "label": "Yug 742年图（东部行政参考）",
+    "reason": "仅编制105°E以东及原画布内范围，西部高宗时期及约750年来源不拼接。裁切线不绘制国界；六湖拟合四湖检查，最大残差约47公里，不表示历史精度。未核原书，未经历史专家审定。",
+    "evidence": [
+      {
+        "sourceId": "commons-china-742",
+        "locator": "Commons Summary: main part, Cambridge History Vol.3 map11 p.403; SVG Tang742/path6536",
+        "note": "仅105°E以东来源行政参考；西部采用图8和约750年地图，全部排除。105°E是编制裁切限度，不是历史边界。未独立核对原书。"
+      },
+      {
+        "sourceId": "natural-earth-registration-lakes",
+        "locator": "data/registration/tang-742.json；六湖拟合、四湖独立检查",
+        "note": "逐湖重读本SVG重心；现代湖泊只作配准，不生成历史边界。"
+      }
+    ]
   }
 ]

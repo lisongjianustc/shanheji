@@ -41,3 +41,51 @@ def svg_polygon(d):
     result=GeometryCollection()
     for ring in rings: result=result.symmetric_difference(make_valid(Polygon(ring)))
     return result
+
+
+def svg_polygon_relative(d):
+    """Normalise only explicit M/L/C/Z commands, including relative forms.
+
+    Keep the strict absolute parser unchanged for existing importers. Unsupported
+    commands, open rings and malformed number groups fail rather than guessing.
+    """
+    tokens = re.findall(r'[A-Za-z]|[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?', d)
+    i = 0
+    cmd = None
+    cursor = np.zeros(2)
+    start = None
+    output = []
+    while i < len(tokens):
+        if tokens[i].isalpha():
+            cmd = tokens[i]
+            i += 1
+            if cmd not in ('M', 'm', 'L', 'l', 'C', 'c', 'z', 'Z'):
+                raise ValueError(f'Unsupported SVG command {cmd}')
+            if cmd.upper() == 'Z':
+                if start is None:
+                    raise ValueError('Empty closed ring')
+                output.append('Z')
+                cursor = start.copy()
+                start = None
+                cmd = None
+                continue
+        count = {'M': 2, 'L': 2, 'C': 6}.get((cmd or '').upper())
+        if count is None or i + count > len(tokens):
+            raise ValueError('Malformed SVG path')
+        try:
+            points = np.array(list(map(float, tokens[i:i+count]))).reshape(-1, 2)
+        except ValueError:
+            raise ValueError('Malformed SVG coordinate')
+        i += count
+        if cmd.islower():
+            points += cursor
+        upper = cmd.upper()
+        if upper == 'M':
+            if start is not None:
+                raise ValueError('Open subpath is not a polygon')
+            start = points[0].copy()
+        output.append(upper + ' ' + ' '.join(str(n) for n in points.ravel()))
+        cursor = points[-1].copy()
+        if upper == 'M':
+            cmd = 'l' if cmd == 'm' else 'L'
+    return svg_polygon(' '.join(output))

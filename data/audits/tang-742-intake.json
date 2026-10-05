@@ -1,0 +1,92 @@
+{
+  "sourceId": "commons-china-742",
+  "sha256": "d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08",
+  "interpretationId": "yug-742-eastern-administration",
+  "features": 1,
+  "year": 742,
+  "scope": "partial-source",
+  "westLongitudeLimit": 105,
+  "excluded": "105°E以西、原图外、所有现代政治及省界、道内界；人工裁切线不输出国界",
+  "registration": {
+    "affine": [
+      [
+        0.00020104554704561395,
+        -5.22704187095375e-06
+      ],
+      [
+        -4.897806702630701e-06,
+        -0.00020205043611212388
+      ],
+      [
+        569.1182371681831,
+        1278.340530222967
+      ]
+    ],
+    "residuals": [
+      {
+        "label": "Lake Balkhash",
+        "role": "fit",
+        "errorPixels": 0.09780453265520206,
+        "errorKm": 0.4816766065485507
+      },
+      {
+        "label": "Issyk-Kul",
+        "role": "fit",
+        "errorPixels": 0.31726950855679814,
+        "errorKm": 1.5902681906249168
+      },
+      {
+        "label": "Qinghai Hu",
+        "role": "fit",
+        "errorPixels": 0.21442268923984217,
+        "errorKm": 1.0847629007025879
+      },
+      {
+        "label": "Lake Khanka",
+        "role": "fit",
+        "errorPixels": 0.5487551367993194,
+        "errorKm": 2.724709020558485
+      },
+      {
+        "label": "Khövsgöl Nuur",
+        "role": "fit",
+        "errorPixels": 0.20642430709405257,
+        "errorKm": 0.9972456698750264
+      },
+      {
+        "label": "Hulun Nuur",
+        "role": "fit",
+        "errorPixels": 0.5702921318774234,
+        "errorKm": 2.7807487653668286
+      },
+      {
+        "label": "Uvs Nuur",
+        "role": "check",
+        "errorPixels": 1.200140855542965,
+        "errorKm": 5.798663179536621
+      },
+      {
+        "label": "Lake Zaysan",
+        "role": "check",
+        "errorPixels": 9.669235769131488,
+        "errorKm": 47.194052306974726
+      },
+      {
+        "label": "Tai Hu",
+        "role": "check",
+        "errorPixels": 1.4559752541391962,
+        "errorKm": 7.351416149537569
+      },
+      {
+        "label": "Hongze Hu",
+        "role": "check",
+        "errorPixels": 3.675135611078464,
+        "errorKm": 18.605673667851043
+      }
+    ],
+    "maxCheckErrorKm": 47.194052306974726,
+    "accuracyMeaning": "现代湖泊及原底图概化导致配准残差；不表示历史疆界精度或全图误差上限"
+  },
+  "historicalAccuracy": "disputed; source consistency only; no historical expert validation",
+  "output": "data/derived/tang-742.geojson"
+}

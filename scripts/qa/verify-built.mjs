@@ -46,6 +46,7 @@ try {
   );
   await page.screenshot({ path: "docs/qa/screenshots/production-661.png" });
   const dated = [
+    [742, "tang-742-eastern-administration"],
     [610, "sui-610-partial-administration"],
     [
       262,
@@ -130,6 +131,31 @@ try {
   });
   await page.keyboard.press("Escape");
   await expect(page.getByRole("dialog")).toHaveCount(0);
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "tang-742-eastern-administration",
+  );
+  await expect(page.locator(".coverage-banner")).toContainText("仅105°E以东");
+  const tangBanner = await page.locator(".coverage-banner").boundingBox();
+  const tangTimeline = await page
+    .getByRole("region", { name: "历史时间轴" })
+    .boundingBox();
+  if (tangBanner.y + tangBanner.height > tangTimeline.y)
+    throw Error("Tang banner overlaps timeline");
+  if ((await page.evaluate(() => document.documentElement.scrollWidth)) > 390)
+    throw Error("Tang mobile overflow");
+  await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
+  await page.screenshot({
+    path: "docs/qa/screenshots/production-mobile-742.png",
+  });
+  await entry.fill("743");
+  await entry.press("Enter");
+  await expect(page.getByTestId("committed-year")).toHaveText("743");
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "",
+  );
+  await page.getByRole("button", { name: "条目 · 搜索 · 图层" }).click();
   // Check the expanded chronology against the final production build.
   await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
   await entry.fill("-221");
@@ -196,7 +222,7 @@ try {
         checkedAt: new Date().toISOString(),
         url: "http://127.0.0.1:4174",
         dataVersion: manifest.version,
-        years: [-1300, -221, 262, 572, 610, 460, 661, 1420, 1912],
+        years: [-1300, -221, 262, 572, 610, 460, 661, 742, 743, 1420, 1912],
         workerVerified: true,
         expandedChronology: true,
         bceMobileNoOverflow: true,
@@ -212,6 +238,9 @@ try {
         disputedAdministrationVisible: true,
         claimsOffByDefault: true,
         mobileNoOverflow: true,
+        tang742EasternPartial: true,
+        tang742AdjacentYearCleared: true,
+        tang742MobileNoOverlap: true,
         suiPartialSource: true,
         suiMobileNoOverlap: true,
         narrow767Drawer: true,
@@ -226,7 +255,7 @@ try {
   );
   if (errors.length) throw Error(JSON.stringify(errors));
   console.log(
-    "Production: 262, 572, 610 and 661 polities actually painted, event, desktop/mobile, no errors.",
+    "Production: 262, 572, 610, 661 and 742 polities actually painted, event, desktop/mobile, no errors.",
   );
 } finally {
   await browser.close();

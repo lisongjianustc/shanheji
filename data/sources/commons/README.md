@@ -21,7 +21,7 @@ The source cites Twitchett (2000), pp.118–119; Blunden and Elvin (1983), pp.26
 
 ## Other reference plates · accessed 2026-10-04
 
-Original plates remain independently viewable. Since 2026-10-05, the 262 and 572 plates also have dated, disputed administrative derivatives; the 610 and 742 plates remain unregistered. Their creators do not endorse this project. Each license applies to its respective file.
+Original plates remain independently viewable. Since 2026-10-05, the 262 and 572 plates also have dated, disputed administrative derivatives; the 610 and 742 plates have partial administrative derivatives. Their creators do not endorse this project. Each license applies to its respective file.
 
 ### 262: 三国州郡参考图
 
@@ -54,7 +54,7 @@ Original plates remain independently viewable. Since 2026-10-05, the 262 and 572
 - Stored file: `sources/commons/china-610.svg`.
 - SHA-256: `099c7e9e314f95136fe460e63e779d3a2fa3a598a25dd0cbdea6352abe0d7dd1`.
 - Changes: 262 uses the Commons-generated 3840px reduced image; other files are unchanged. Browser sizing and zoom do not alter the stored files.
-- Qualifications: 原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。未配准，未独立核对书籍图幅。
+- Qualifications: 原图称据《剑桥中国史》第3卷，西部范围因资料缺失以模糊区域表示；淡色现代国界仅供比较。已编制约610年部分范围，西部渐隐及画布外排除；未独立核对书籍图幅。
 
 ### 742: 唐朝疆域与道参考图
 
@@ -65,7 +65,7 @@ Original plates remain independently viewable. Since 2026-10-05, the 262 and 572
 - Stored file: `sources/commons/china-742.svg`.
 - SHA-256: `d3dc48a4630d27b0631f995710976faf924840583791cc190cb8627540887d08`.
 - Changes: 262 uses the Commons-generated 3840px reduced image; other files are unchanged. Browser sizing and zoom do not alter the stored files.
-- Qualifications: 主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径，未配准、未独立核对原书，不代表742年完整实控边界。
+- Qualifications: 主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径；已编制105°E以东部分行政参考，西部全部排除；未独立核对原书，不代表742年完整实控边界。
 
 ## 2026-10-05 raster derivatives · CC BY-SA 4.0
 
@@ -105,7 +105,7 @@ The independent check points are not used in fitting. Modern city reference coor
 - 许可：CC BY-SA 3.0 CZ，https://creativecommons.org/licenses/by-sa/3.0/cz/
 - 原文件：`sources/commons/ming-1580.svg`。
 - SHA-256：`103d0758f0230404b43e0f1f7fc30595b76bc0aa8f9452d88b99e5f87f74074e`。
-- 限度：来源据《剑桥中国史》第7卷图1及Timothy Brook图6；尚未配准或独立核对原书，年份为约数，不能替代明代全年实控。
+- 限度：来源据《剑桥中国史》第7卷图1及Timothy Brook图6；试配准拟合点最大残差约76公里未采用，尚无叠加边界；未独立核对原书，年份为约数，不能替代明代全年实控。
 
 ### 清代1820年行政参考图
 
@@ -118,3 +118,15 @@ The independent check points are not used in fitting. Modern city reference coor
 - 限度：来源作者声明据CHGIS V6 1820及Natural Earth绘制；尚未配准、未独立核验原始数据，行政范围不能直接证明实控，不外推到其他清代年份。
 
 清1820年试配准未通过检查。失败记录见`data/audits/qing-1820-registration-attempt.json`；未采用该变换，未发布其地理边界。
+
+## 2026-10-05 · 742年东部来源编制 · CC BY-SA 3.0
+
+`data/derived/tang-742.geojson`、包内对应几何、独立边线及`docs/qa/screenshots/742-source-overlay.png`为本项目衍生版本，许可 **CC BY-SA 3.0**（https://creativecommons.org/licenses/by-sa/3.0/），署名Yug、Kanguole；配准与裁切由本项目完成，不暗示作者认可。原SVG保留原样，哈希不变。
+
+修改：将相对M/L/C/Z转为绝对路径、采样曲线；合并原唐填色及海南，按原陆地／湖泊裁切、0.1px简化；六湖拟合四湖检查，LCC23/45仿射转为WGS84。仅105°E以东和画布内，西部高宗及约750年异时部分排除。裁切前边线独立保存，105°E及画布截断处不描为国界；没有导入现代政治边界、道内界或邻国轮廓。
+
+独立检查最大47.2公里不是历史精度。原书未独立核验，行政范围不等于实控。复现及完整残差见`docs/data/boundary-intake-tang742-2026-10-05.md`。
+
+## 2026-10-05 · 清代底层资料许可待澄清
+
+只读核对CHGIS V6官方Dataverse元数据、EULA及README。元数据为CC0，包内和项目页却限制非商业学术使用及电子再分发，详见`data/audits/chgis-v6-1820-license-review.json`。未下载CHGIS矢量、未接受协议。Commons清SVG作者许可声明保留，但不能据此独立确认其底层数据权利；后续几何转换暂停，界面增加此说明。既有原SVG不变。

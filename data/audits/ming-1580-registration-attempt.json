@@ -1,0 +1,249 @@
+{
+  "controls": [
+    {
+      "label": "Beijing",
+      "geonameId": 1816670,
+      "coordinates": [
+        116.39723,
+        39.9075
+      ],
+      "pixel": [
+        1417,
+        448
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Taiyuan",
+      "geonameId": 1793511,
+      "coordinates": [
+        112.56028,
+        37.86944
+      ],
+      "pixel": [
+        1207,
+        598
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Jinan",
+      "geonameId": 1805753,
+      "coordinates": [
+        116.99722,
+        36.66833
+      ],
+      "pixel": [
+        1513,
+        669
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Xi’an",
+      "geonameId": 1790630,
+      "coordinates": [
+        108.92861,
+        34.25833
+      ],
+      "pixel": [
+        951,
+        930
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Kaifeng",
+      "geonameId": 1804879,
+      "coordinates": [
+        114.30742,
+        34.7986
+      ],
+      "pixel": [
+        1340,
+        870
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Nanjing",
+      "geonameId": 1799962,
+      "coordinates": [
+        118.77778,
+        32.06167
+      ],
+      "pixel": [
+        1752,
+        1044
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Wuhan",
+      "geonameId": 1791247,
+      "coordinates": [
+        114.26667,
+        30.58333
+      ],
+      "pixel": [
+        1382,
+        1220
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Chengdu",
+      "geonameId": 1815286,
+      "coordinates": [
+        104.06667,
+        30.66667
+      ],
+      "pixel": [
+        624,
+        1234
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Hangzhou",
+      "geonameId": 1808926,
+      "coordinates": [
+        120.16142,
+        30.29365
+      ],
+      "pixel": [
+        1815,
+        1215
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Nanchang",
+      "geonameId": 1800163,
+      "coordinates": [
+        115.85306,
+        28.68396
+      ],
+      "pixel": [
+        1512,
+        1392
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Fuzhou",
+      "geonameId": 1810821,
+      "coordinates": [
+        119.30611,
+        26.06139
+      ],
+      "pixel": [
+        1779,
+        1561
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Guiyang",
+      "geonameId": 1809461,
+      "coordinates": [
+        106.71667,
+        26.58333
+      ],
+      "pixel": [
+        820,
+        1614
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Guilin",
+      "geonameId": 1809498,
+      "coordinates": [
+        110.29639,
+        25.28022
+      ],
+      "pixel": [
+        1100,
+        1707
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Kunming",
+      "geonameId": 1804651,
+      "coordinates": [
+        102.71833,
+        25.03889
+      ],
+      "pixel": [
+        511,
+        1741
+      ],
+      "role": "check",
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "Guangzhou",
+      "geonameId": 1809858,
+      "coordinates": [
+        113.25,
+        23.11667
+      ],
+      "pixel": [
+        1338,
+        1887
+      ],
+      "role": "fit",
+      "locationPrecision": "approximate"
+    }
+  ],
+  "crs": "+proj=laea +lat_0=35 +lon_0=110 +datum=WGS84",
+  "modelCandidates": [
+    {
+      "crs": "EPSG:4326",
+      "fitSSEPixels": 9972.68010414812
+    },
+    {
+      "crs": "EPSG:3857",
+      "fitSSEPixels": 14321.587970133927
+    },
+    {
+      "crs": "+proj=lcc +lat_1=23 +lat_2=45 +lat_0=0 +lon_0=105 +datum=WGS84",
+      "fitSSEPixels": 7691.879057225256
+    },
+    {
+      "crs": "+proj=aea +lat_1=25 +lat_2=47 +lat_0=0 +lon_0=105 +datum=WGS84",
+      "fitSSEPixels": 8145.132347928658
+    },
+    {
+      "crs": "+proj=aeqd +lat_0=35 +lon_0=110 +datum=WGS84",
+      "fitSSEPixels": 7536.597053371025
+    },
+    {
+      "crs": "+proj=laea +lat_0=35 +lon_0=110 +datum=WGS84",
+      "fitSSEPixels": 7524.27909644661
+    }
+  ],
+  "status": "rejected-for-overlay",
+  "checkedAt": "2026-10-05",
+  "sourceId": "commons-ming-1580",
+  "sourceSha256": "103d0758f0230404b43e0f1f7fc30595b76bc0aa8f9452d88b99e5f87f74074e",
+  "maxFitErrorKm": 76.19012423959943,
+  "maxCheckErrorKm": 23.83876185059227,
+  "proposedGateKm": 25,
+  "reason": "独立检查约24公里，但拟合点（南京、北京）残差约76/56公里；不能只看检查点而忽略拟合异常。原图渐淡范围与标记位置仍待核验，未发布几何。"
+}

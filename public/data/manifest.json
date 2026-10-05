@@ -1,8 +1,8 @@
 {
-  "version": "0cd880b8961b4a24",
+  "version": "9e1146c743cb34c1",
   "catalog": {
-    "path": "catalog-4ea654a19fb317cb.json",
-    "sha256": "4ea654a19fb317cb7036301b16cde2c59066586af62fc0eee80f0fb37c5612fa"
+    "path": "catalog-e0fd9a28ca599f0e.json",
+    "sha256": "e0fd9a28ca599f0ed3572037554c3627651ebd5ca9e0b3d04833b34256d65291"
   },
   "packages": [
     {
@@ -108,8 +108,8 @@
       ]
     },
     {
-      "path": "package-c323177b5e3a739f.json",
-      "sha256": "c323177b5e3a739fb956ebc60cf140a2237ee9a5f9e4c8b889351480b1d77e88",
+      "path": "package-cfb6091707cae71a.json",
+      "sha256": "cfb6091707cae71abc053d2df4603a7f85c9448c9da3c3158b195f539540d222",
       "id": "sui-early-tang",
       "version": "3",
       "startYear": 581,
@@ -163,7 +163,8 @@
     "kanguole-661-disputed",
     "zhoudadudu-262-administration",
     "sy-572-administration",
-    "yug-610-partial-administration"
+    "yug-610-partial-administration",
+    "yug-742-eastern-administration"
   ],
   "scopeVersion": "3",
   "searchIndex": {
@@ -221,6 +222,23 @@
           "sourceId": "natural-earth-registration-lakes",
           "locator": "六个拟合湖泊、四个独立检验湖泊；data/registration/sui-610.json",
           "note": "只用于近似配准现代自然地理，不提供隋朝历史疆界。"
+        }
+      ]
+    },
+    {
+      "id": "yug-742-eastern-administration",
+      "label": "Yug 742年图（东部行政参考）",
+      "reason": "仅编制105°E以东及原画布内范围，西部高宗时期及约750年来源不拼接。裁切线不绘制国界；六湖拟合四湖检查，最大残差约47公里，不表示历史精度。未核原书，未经历史专家审定。",
+      "evidence": [
+        {
+          "sourceId": "commons-china-742",
+          "locator": "Commons Summary: main part, Cambridge History Vol.3 map11 p.403; SVG Tang742/path6536",
+          "note": "仅105°E以东来源行政参考；西部采用图8和约750年地图，全部排除。105°E是编制裁切限度，不是历史边界。未独立核对原书。"
+        },
+        {
+          "sourceId": "natural-earth-registration-lakes",
+          "locator": "data/registration/tang-742.json；六湖拟合、四湖独立检查",
+          "note": "逐湖重读本SVG重心；现代湖泊只作配准，不生成历史边界。"
         }
       ]
     }
@@ -348,6 +366,20 @@
       ],
       "featureCount": 3,
       "disputed": true
+    },
+    {
+      "year": 742,
+      "entityId": "tang",
+      "interpretationId": "yug-742-eastern-administration",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
     }
   ],
   "mapPlates": [
@@ -411,7 +443,7 @@
       "edition": "2020-03-12 01:45 UTC恢复的2012修订版",
       "license": "CC BY-SA 3.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:China,_742.svg",
-      "limitations": "主体据《剑桥中国史》第3卷图11，西部行政范围据图8，西部外缘据Eberhard约750年图。含不同时间口径，未配准、未独立核对原书，不代表742年完整实控边界。",
+      "limitations": "已接入742年105°E以东的部分行政参考；西部混用高宗时期及约750年图幅，全部排除，裁切线不绘制国界。四个独立湖泊检查最大残差约47公里；未独立核对原书，不代表全年实控或全唐疆域。",
       "width": 1000,
       "height": 850,
       "image": {
@@ -452,7 +484,7 @@
       "edition": "Commons原始SVG；2026-10-05下载，保留原图",
       "license": "CC BY-SA 3.0 CZ",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ming_Empire_cca_1580_(en).svg",
-      "limitations": "来源据《剑桥中国史》第7卷图1及Timothy Brook图6；尚未配准或独立核对原书，年份为约数，不能替代明代全年实控。",
+      "limitations": "来源据《剑桥中国史》第7卷图1及Timothy Brook图6；试配准城市点最大残差约76公里，未通过，尚无可叠加边界。年份为约数，未独立核对原书，不能替代明代全年实控。",
       "width": 2304,
       "height": 2344,
       "image": {
@@ -472,7 +504,7 @@
       "edition": "Commons原始SVG；2026-10-05下载，保留原图",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qing_Dynasty_blank_map_1820.svg",
-      "limitations": "来源作者声明据CHGIS V6 1820及Natural Earth绘制；尚未配准、未独立核验原始数据，行政范围不能直接证明实控，不外推到其他清代年份。",
+      "limitations": "作者声明据CHGIS V6 1820及Natural Earth绘制；配准未通过。CHGIS的CC0元数据与包内限制再分发的说明不一致，待澄清，暂停几何转换。未核验原始边界，行政范围不能证明实控，不外推其他年份。",
       "width": 850,
       "height": 709,
       "image": {

@@ -322,9 +322,7 @@ test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ pa
       .poll(() => img.evaluate((e) => (e as HTMLImageElement).naturalWidth))
       .toBeGreaterThan(0);
     await expect(page.getByTestId("committed-year")).toHaveText(String(n));
-    await expect(page.locator(".coverage-banner")).toContainText(
-      n === 262 || n === 572 || n === 610 ? "疆域参考" : "缺少可用疆域资料",
-    );
+    await expect(page.locator(".coverage-banner")).toContainText("疆域参考");
     await viewer.getByRole("button", { name: "放大图幅" }).click();
     await expect(viewer.getByLabel("图幅比例")).toHaveText("150%");
     await viewer.getByRole("button", { name: "适合窗口" }).click();
@@ -669,4 +667,54 @@ test("新增秦明清参考原图：年代范围、许可、缩放与手机布�
     await page.evaluate(() => document.documentElement.scrollWidth),
   ).toBeLessThanOrEqual(390);
   await page.screenshot({ path: "docs/qa/screenshots/mobile-qin.png" });
+});
+
+test("742年东部唐疆域实际绘制，105度裁切限度清楚，播放与相邻年份同步", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新");
+  const canvas = page.locator(".map-canvas");
+  const ids = "tang-742-eastern-administration";
+  await page.getByRole("button", { name: "跳至742年疆域" }).click();
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expect(page.locator(".coverage-banner")).toContainText("742年");
+  await expect(page.locator(".coverage-banner")).not.toContainText("约742年");
+  await expect(page.locator(".coverage-banner")).toContainText("仅105°E以东");
+  const key = page.getByRole("region", { name: "当前地图疆域" });
+  await key.getByRole("button").click();
+  const detail = page.getByRole("complementary", { name: "条目详情" });
+  await expect(detail).toContainText("105°E");
+  await expect(detail).toContainText("47.2公里");
+  await expect(detail).toContainText("Yug");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await page.screenshot({ path: "docs/qa/screenshots/distribution-742.png" });
+  await year(page, 743);
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await year(page, 741);
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  for (const width of [767, 390]) {
+    await page.setViewportSize({ width, height: width === 767 ? 715 : 844 });
+    await expect(canvas).toHaveAttribute("data-rendered-territory-ids", ids);
+    await expect(page.locator(".browse-panel")).toBeHidden();
+    const banner = await page.locator(".coverage-banner").boundingBox();
+    const timeline = await page
+      .getByRole("region", { name: "历史时间轴" })
+      .boundingBox();
+    expect(banner!.y + banner!.height).toBeLessThanOrEqual(timeline!.y);
+    const caption = await page.locator(".map-caption").boundingBox();
+    const polityKey = await key.boundingBox();
+    expect(caption!.y + caption!.height).toBeLessThanOrEqual(polityKey!.y);
+    expect(
+      await page.evaluate(() => document.documentElement.scrollWidth),
+    ).toBe(width);
+  }
+  await page.screenshot({
+    path: "docs/qa/screenshots/distribution-mobile-742.png",
+  });
 });

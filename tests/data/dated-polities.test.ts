@@ -8,6 +8,7 @@ it("shows every dated polity under default filters and clears unsupported adjace
     [572, ["northern-zhou", "northern-qi", "chen", "western-liang-nanbei"]],
     [610, ["sui"]],
     [661, ["tang", "tang"]],
+    [742, ["tang"]],
   ] as const) {
     const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
     expect(scene.territories.map((t) => t.properties.entityId).sort()).toEqual(
@@ -53,4 +54,24 @@ it("shows every dated polity under default filters and clears unsupported adjace
       (t) => t.properties.entityId,
     ),
   ).toEqual(["cao-wei"]);
+});
+
+it("keeps the 742 eastern slice dated and excludes exact days and adjacent years", async () => {
+  const { catalog, packs } = await readDataset("data");
+  for (const q of [
+    defaultQuery(741),
+    defaultQuery(743),
+    { ...defaultQuery(742), at: "0742-06-01" },
+  ]) {
+    expect(queryScene(catalog, packs, q, defaults).territories).toHaveLength(0);
+  }
+  const [t] = queryScene(
+    catalog,
+    packs,
+    defaultQuery(742),
+    defaults,
+  ).territories;
+  expect(t.properties.id).toBe("tang-742-eastern-administration");
+  expect(t.properties.compilation.extent).toBe("partial-source");
+  expect(t.properties.compilation.errorNote).toContain("105°E");
 });

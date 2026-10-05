@@ -1,0 +1,36 @@
+{
+  "sourceId": "chgis-v6-1820-license-review",
+  "checkedAt": "2026-10-05",
+  "datasetDoi": "https://doi.org/10.7910/DVN/ST5KKM",
+  "apiUrl": "https://dataverse.harvard.edu/api/datasets/:persistentId/?persistentId=doi:10.7910/DVN/ST5KKM",
+  "status": "pending-license-clarification",
+  "apiStatus": "OK",
+  "datasetVersion": "1.0",
+  "datasetLicense": {
+    "name": "CC0 1.0",
+    "uri": "http://creativecommons.org/publicdomain/zero/1.0",
+    "iconUri": "https://licensebuttons.net/p/zero/1.0/88x31.png",
+    "rightsIdentifier": "CC0-1.0",
+    "rightsIdentifierScheme": "SPDX",
+    "schemeUri": "https://spdx.org/licenses/",
+    "languageCode": "en"
+  },
+  "conflictingDocuments": [
+    {
+      "fileId": 2966721,
+      "filename": "CHGIS_V6_EULA.txt",
+      "md5": "102d4aca7adeb1888f89ee61144652d3",
+      "locator": "terms of use (3), redistribution (5)",
+      "summary": "限制非商业学术教育使用；禁止无书面协议电子数据再分发。"
+    },
+    {
+      "fileId": 2966722,
+      "filename": "CHGIS_V6_README.txt",
+      "md5": "d1b932c97d268f5254baf4f66d7b02b7",
+      "locator": "License; CONSTRAINTS",
+      "summary": "要求遵守EULA，注明不得商业使用或再分发。"
+    }
+  ],
+  "projectPage": "https://chgis.fas.harvard.edu/data/chgis/v6/",
+  "decision": "元数据CC0与包内EULA/官方项目页限制不一致；未下载或发布矢量，未接受协议。Commons清代原图作者也引用该数据，其后续几何转换暂停，原图仍保留来源说明。"
+}
