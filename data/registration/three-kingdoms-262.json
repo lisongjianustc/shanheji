@@ -1,0 +1,151 @@
+{
+  "sourceId": "commons-three-kingdoms-262",
+  "input": "sources/commons/three-kingdoms-262.png",
+  "sha256": "a2092d3bc8b6b7ef05df4e0f4ad691a04050742eeb70840f025f0110dbf981f5",
+  "coordinateReferenceSource": "geonames-registration-cities",
+  "model": "EPSG:3857 + six parameter affine fitted to pixel coordinates",
+  "maxCheckErrorKm": 25,
+  "controls": [
+    {
+      "label": "敦煌",
+      "pixel": [
+        484,
+        325
+      ],
+      "coordinates": [
+        94.68333,
+        40.16667
+      ],
+      "role": "fit",
+      "geonameId": 1529531,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "姑臧／武威",
+      "pixel": [
+        1189,
+        579
+      ],
+      "coordinates": [
+        102.63202,
+        37.92672
+      ],
+      "role": "fit",
+      "geonameId": 1803936,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "蓟／北京附近",
+      "pixel": [
+        2399,
+        354.5
+      ],
+      "coordinates": [
+        116.39723,
+        39.9075
+      ],
+      "role": "fit",
+      "geonameId": 1816670,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "成都",
+      "pixel": [
+        1317,
+        1352
+      ],
+      "coordinates": [
+        104.06667,
+        30.66667
+      ],
+      "role": "fit",
+      "geonameId": 1815286,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "建业／南京",
+      "pixel": [
+        2609.5,
+        1210.5
+      ],
+      "coordinates": [
+        118.77778,
+        32.06167
+      ],
+      "role": "fit",
+      "geonameId": 1799962,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "番禺／广州",
+      "pixel": [
+        2127,
+        2097.5
+      ],
+      "coordinates": [
+        113.25,
+        23.11667
+      ],
+      "role": "fit",
+      "geonameId": 1809858,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "长安／西安附近",
+      "pixel": [
+        1737,
+        973
+      ],
+      "coordinates": [
+        108.92861,
+        34.25833
+      ],
+      "role": "check",
+      "geonameId": 1790630,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "洛阳",
+      "pixel": [
+        2064,
+        932.5
+      ],
+      "coordinates": [
+        112.43684,
+        34.67345
+      ],
+      "role": "check",
+      "geonameId": 1801792,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "襄平／辽阳",
+      "pixel": [
+        2997.5,
+        197.5
+      ],
+      "coordinates": [
+        123.17306,
+        41.27194
+      ],
+      "role": "check",
+      "geonameId": 2036113,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "禄福／酒泉",
+      "pixel": [
+        828,
+        374.5
+      ],
+      "coordinates": [
+        98.51736,
+        39.74318
+      ],
+      "role": "check",
+      "geonameId": 1279945,
+      "locationPrecision": "approximate"
+    }
+  ],
+  "limitations": "原图未提供投影；通过六个城市近似对应点选择配准模型，另四个点只检验不参与拟合。古今城址移动和人工读点误差计入残差；非测绘级精度，且不证明历史边界真实。"
+}

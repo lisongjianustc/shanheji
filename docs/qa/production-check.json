@@ -1,16 +1,32 @@
 {
-  "checkedAt": "2026-10-04T15:29:54.002Z",
+  "checkedAt": "2026-10-05T00:59:27.794Z",
   "url": "http://127.0.0.1:4174",
+  "dataVersion": "e9a3e8bb919c4f06",
   "years": [
+    262,
+    572,
     460,
     661
   ],
   "workerVerified": true,
   "timelineDirectInitial": true,
-  "paintedTerritoryIds": [
-    "tang-661-civil",
-    "tang-661-military"
-  ],
+  "paintedTerritoryIds": {
+    "262": [
+      "cao-wei-262-administration",
+      "shu-han-262-administration",
+      "sun-wu-262-administration"
+    ],
+    "572": [
+      "chen-572-administration",
+      "northern-qi-572-administration",
+      "northern-zhou-572-administration",
+      "western-liang-nanbei-572-administration"
+    ],
+    "661": [
+      "tang-661-civil",
+      "tang-661-military"
+    ]
+  },
   "disputedAdministrationVisible": true,
   "claimsOffByDefault": true,
   "mobileNoOverflow": true,

@@ -174,5 +174,38 @@
     "license": "CC BY-SA 3.0",
     "redistribution": "allowed",
     "permissionEvidence": "Commons文件页Licensing；遵守署名及相同方式共享，保留版本与修改说明。"
+  },
+  {
+    "id": "geonames-registration-cities",
+    "title": "GeoNames cities15000 配准城市坐标子集",
+    "creator": "GeoNames contributors",
+    "edition": "2026-10-05下载，十个WGS84城市点的可追溯子集",
+    "url": "https://download.geonames.org/export/dump/cities15000.zip",
+    "accessedAt": "2026-10-05",
+    "license": "CC BY 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "GeoNames dump/readme.txt及about.html标明CC BY 4.0；子集、原文件哈希与修改说明保留于data/sources/geonames/。只作配准，不作古城精确坐标。https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "zhou-shu-48",
+    "title": "周书卷48 · 萧詧传",
+    "creator": "令狐德棻等；维基文库转录",
+    "edition": "古籍网页转录，2026-10-05核对",
+    "url": "https://zh.wikisource.org/wiki/周書/卷48",
+    "accessedAt": "2026-10-05",
+    "license": "古籍原作公有领域；仅采用事实并独立编写摘要，未复制网页注释",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实及定位链接；不用于几何许可依据。古籍所记年号仅换算至年，不推定公历确日。"
+  },
+  {
+    "id": "sui-shu-01",
+    "title": "隋书卷1 · 高祖上",
+    "creator": "魏徵等；维基文库转录",
+    "edition": "古籍网页转录，2026-10-05核对",
+    "url": "https://zh.wikisource.org/wiki/隋書/卷01",
+    "accessedAt": "2026-10-05",
+    "license": "古籍原作公有领域；仅采用事实并独立编写摘要，未复制网页注释",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实及定位链接；不用于几何许可依据。古籍所记年号仅换算至年，不推定公历确日。"
   }
 ]

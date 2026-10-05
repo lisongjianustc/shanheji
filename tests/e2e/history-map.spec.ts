@@ -244,6 +244,11 @@ test("WebGL可用时底图请求失败仍可查看历史条目", async ({ page }
     page.getByText("自然地理底图加载失败；历史条目仍可查阅。"),
   ).toBeVisible({ timeout: 20000 });
   expect(requested).toBeGreaterThan(0);
+  // Failed basemap sources can keep initial map load pending until its
+  // fallback timeout. Wait for that first scene before testing a new year.
+  await expect(page.getByTestId("scene-status")).toHaveText("已更新", {
+    timeout: 20000,
+  });
   await year(page, 383);
   await expect(page.locator(".event-card")).toContainText("淝水之战");
 });
@@ -316,7 +321,7 @@ test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ pa
       .toBeGreaterThan(0);
     await expect(page.getByTestId("committed-year")).toHaveText(String(n));
     await expect(page.locator(".coverage-banner")).toContainText(
-      "缺少可用疆域资料",
+      n === 262 || n === 572 ? "疆域参考" : "缺少可用疆域资料",
     );
     await viewer.getByRole("button", { name: "放大图幅" }).click();
     await expect(viewer.getByLabel("图幅比例")).toHaveText("150%");
@@ -393,5 +398,73 @@ test("时间轴直接驱动主图疆域：初始、输入、拖动、播放及�
     .boundingBox();
   const banner = await page.locator(".coverage-banner").boundingBox();
   expect(banner!.y + banner!.height).toBeLessThanOrEqual(timeline!.y);
+  expect(errors).toEqual([]);
+});
+
+test("新增262与572年分布实际绘制全部政权，详情可点，节点与手机可用", async ({
+  page,
+}) => {
+  const errors: string[] = [];
+  page.on("pageerror", (e) => errors.push(e.message));
+  await page.goto("/");
+  const painted = page.locator(".map-canvas");
+  const ids262 =
+    "cao-wei-262-administration shu-han-262-administration sun-wu-262-administration";
+  const ids572 =
+    "chen-572-administration northern-qi-572-administration northern-zhou-572-administration western-liang-nanbei-572-administration";
+  await year(page, 262);
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids262);
+  const key = page.getByRole("region", { name: "当前地图疆域" });
+  await expect(key).toContainText("曹魏");
+  await expect(key).toContainText("蜀汉");
+  await expect(key).toContainText("孙吴");
+  await page.screenshot({ path: "docs/qa/screenshots/distribution-262.png" });
+  const canvas = page.locator(".maplibregl-canvas");
+  const mapBox = await canvas.boundingBox();
+  await canvas.click({
+    position: { x: mapBox!.width * 0.55, y: mapBox!.height * 0.3 },
+  });
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("曹魏");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await key.getByRole("button").filter({ hasText: "蜀汉" }).click();
+  const detail = page.getByRole("complementary", { name: "条目详情" });
+  await expect(detail).toContainText("13.0公里");
+  await expect(detail).toContainText("Zhoudadudu");
+  await page.getByRole("button", { name: "关闭详情" }).click();
+  await year(page, 263);
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
+  await page.getByRole("button", { name: "跳至572年疆域" }).click();
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expect(key).toContainText("西梁（江陵）");
+  await page.screenshot({ path: "docs/qa/screenshots/distribution-572.png" });
+  await page.getByRole("button", { name: "疆域图幅", exact: true }).click();
+  await page
+    .getByRole("button", { name: "查看262年图幅", exact: true })
+    .first()
+    .click();
+  await expect(painted).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "cao-wei-262-administration",
+  );
+  await page.getByRole("button", { name: "查看572年全部已录入政权" }).click();
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await year(page, 573);
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", "");
+  await year(page, 571);
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  await page.setViewportSize({ width: 390, height: 844 });
+  await expect(painted).toHaveAttribute("data-rendered-territory-ids", ids572);
+  await page.screenshot({
+    path: "docs/qa/screenshots/distribution-mobile-572.png",
+  });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBe(
+    390,
+  );
   expect(errors).toEqual([]);
 });

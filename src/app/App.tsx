@@ -78,6 +78,19 @@ export default function App() {
   }, []);
   const scene = state.committed,
     query = scene?.query ?? defaultQuery();
+  const polityCount = new Set(
+    scene?.territories.map((t) => t.properties.entityId),
+  ).size;
+  const annualDistribution =
+    polityCount > 1 &&
+    new Set(scene?.territories.map((t) => t.properties.snapshotYear)).size ===
+      1 &&
+    scene?.territories.every(
+      (t) =>
+        t.properties.temporalSupport === "snapshot" &&
+        t.properties.validity.precision === "year" &&
+        t.properties.relation === "administration",
+    );
   const request = (q: Query, requireTerritory = false) => {
     if (q.year !== scene?.query.year) q = { ...q, snapshotId: null };
     lastRequest.current = { query: q, requireTerritory };
@@ -228,11 +241,15 @@ export default function App() {
             <div className="coverage-banner">
               {scene.warnings.join("；") || "显示已核验资料"}
               {!!scene.territories.length && (
-                <span>
+                <span
+                  title={Object.values(scene.territoryTimeLabels).join("；")}
+                >
                   疆域参考：
-                  {[...new Set(Object.values(scene.territoryTimeLabels))].join(
-                    "；",
-                  )}
+                  {annualDistribution
+                    ? `${scene.territories[0].properties.snapshotYear}年 · ${polityCount}个政权行政参考（不代表全年持续实控）`
+                    : [
+                        ...new Set(Object.values(scene.territoryTimeLabels)),
+                      ].join("；")}
                 </span>
               )}
               {!!scene.snapshotChoices?.length && (

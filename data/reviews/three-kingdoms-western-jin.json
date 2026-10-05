@@ -3,8 +3,8 @@
   "status": "incomplete",
   "reviewerKind": "agent",
   "reviewer": "Codex",
-  "checkedAt": "2026-10-01",
-  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "checkedAt": "2026-10-05",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。 新增图幅只核对来源图例、轮廓、独立配准检查点及合法几何；不是历史实控审定。",
   "records": [
     {
       "id": "wu-emperor-229",
@@ -27,10 +27,58 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "cao-wei-262-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-three-kingdoms-262",
+          "locator": "262年州郡图及右下16项颜色图例",
+          "note": "按州域归并政权，保留魏／吴荆州、扬州的区分；州郡图不是实控边界证明，未独立核对原地图集。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "六个配准点、四个独立检查点；data/registration/three-kingdoms-262.json",
+          "note": "现代城市近似位置仅作图幅配准；未据现代行政疆界编造古代疆域。"
+        }
+      ]
+    },
+    {
+      "id": "shu-han-262-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-three-kingdoms-262",
+          "locator": "262年州郡图及右下16项颜色图例",
+          "note": "按州域归并政权，保留魏／吴荆州、扬州的区分；州郡图不是实控边界证明，未独立核对原地图集。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "六个配准点、四个独立检查点；data/registration/three-kingdoms-262.json",
+          "note": "现代城市近似位置仅作图幅配准；未据现代行政疆界编造古代疆域。"
+        }
+      ]
+    },
+    {
+      "id": "sun-wu-262-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-three-kingdoms-262",
+          "locator": "262年州郡图及右下16项颜色图例",
+          "note": "按州域归并政权，保留魏／吴荆州、扬州的区分；州郡图不是实控边界证明，未独立核对原地图集。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "六个配准点、四个独立检查点；data/registration/three-kingdoms-262.json",
+          "note": "现代城市近似位置仅作图幅配准；未据现代行政疆界编造古代疆域。"
+        }
+      ]
     }
   ],
   "remaining": [
-    "全部政权疆域几何",
+    "其余年份与周边政权疆域，已接入范围的历史专家复核",
     "完整周边政权名录",
     "完整重大事件清单",
     "都城与事件坐标补核",

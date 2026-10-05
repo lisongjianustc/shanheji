@@ -1,0 +1,111 @@
+{
+  "sourceUrl": "https://download.geonames.org/export/dump/cities15000.zip",
+  "accessedAt": "2026-10-05",
+  "archiveSha256": "4d91d34a56966f1b6c7ae192e171bd721b47f7b86848955679ed20bd032d4aba",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": "GeoNames",
+  "note": "仅作小比例尺图幅配准的现代城市近似参照；不作为古城精确坐标或历史政区资料。",
+  "records": [
+    {
+      "geonameId": 1529531,
+      "name": "Dunhuang",
+      "coordinates": [
+        94.68333,
+        40.16667
+      ],
+      "modifiedAt": "2021-12-31",
+      "url": "https://www.geonames.org/1529531"
+    },
+    {
+      "geonameId": 1803936,
+      "name": "Wuwei",
+      "coordinates": [
+        102.63202,
+        37.92672
+      ],
+      "modifiedAt": "2026-09-14",
+      "url": "https://www.geonames.org/1803936"
+    },
+    {
+      "geonameId": 1816670,
+      "name": "Beijing",
+      "coordinates": [
+        116.39723,
+        39.9075
+      ],
+      "modifiedAt": "2025-12-15",
+      "url": "https://www.geonames.org/1816670"
+    },
+    {
+      "geonameId": 1815286,
+      "name": "Chengdu",
+      "coordinates": [
+        104.06667,
+        30.66667
+      ],
+      "modifiedAt": "2026-08-26",
+      "url": "https://www.geonames.org/1815286"
+    },
+    {
+      "geonameId": 1799962,
+      "name": "Nanjing",
+      "coordinates": [
+        118.77778,
+        32.06167
+      ],
+      "modifiedAt": "2026-04-13",
+      "url": "https://www.geonames.org/1799962"
+    },
+    {
+      "geonameId": 1809858,
+      "name": "Guangzhou",
+      "coordinates": [
+        113.25,
+        23.11667
+      ],
+      "modifiedAt": "2026-08-26",
+      "url": "https://www.geonames.org/1809858"
+    },
+    {
+      "geonameId": 1790630,
+      "name": "Xi’an",
+      "coordinates": [
+        108.92861,
+        34.25833
+      ],
+      "modifiedAt": "2026-08-26",
+      "url": "https://www.geonames.org/1790630"
+    },
+    {
+      "geonameId": 1801792,
+      "name": "Luoyang",
+      "coordinates": [
+        112.43684,
+        34.67345
+      ],
+      "modifiedAt": "2025-11-15",
+      "url": "https://www.geonames.org/1801792"
+    },
+    {
+      "geonameId": 2036113,
+      "name": "Liaoyang",
+      "coordinates": [
+        123.17306,
+        41.27194
+      ],
+      "modifiedAt": "2021-09-20",
+      "url": "https://www.geonames.org/2036113"
+    },
+    {
+      "geonameId": 1279945,
+      "name": "Jiuquan",
+      "coordinates": [
+        98.51736,
+        39.74318
+      ],
+      "modifiedAt": "2025-05-08",
+      "url": "https://www.geonames.org/1279945"
+    }
+  ]
+}

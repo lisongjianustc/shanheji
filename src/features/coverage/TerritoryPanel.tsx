@@ -26,6 +26,21 @@ export function TerritoryPanel({
         按图幅标示年份查看。资料节点不等于边界实际变化年，空缺年份不外推。
       </p>
       {!slices.length && <p>尚无可用疆域图幅。</p>}
+      {[...new Set(slices.map((s) => s.year))].map((year) => (
+        <button
+          key={year}
+          onClick={() =>
+            onRequest({
+              year,
+              at: null,
+              snapshotId: null,
+              filters: structuredClone(DEFAULT_FILTERS),
+            })
+          }
+        >
+          查看{year}年全部已录入政权
+        </button>
+      ))}
       {slices.map((s) => {
         const version = interpretations.find(
           (i) => i.id === s.interpretationId,
@@ -78,9 +93,9 @@ export function TerritoryPanel({
       })}
       {!!plates.length && (
         <>
-          <h2>参考图幅 · 待配准</h2>
+          <h2>来源参考图幅</h2>
           <p className="empty-copy">
-            可放大查阅原图。图中各色范围按作者图例理解，尚未作为地理地图上的实控疆界。
+            可放大查阅原图。262年、572年已编制行政参考切片；610年、742年待配准与年代核对。各图均不能直接证明实控疆界。
           </p>
           {plates.map((plate) => (
             <article className="territory-slice" key={plate.id}>

@@ -1558,5 +1558,82 @@
       "japan"
     ],
     "capitals": []
+  },
+  {
+    "id": "western-liang-nanbei",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西梁（江陵）",
+        "validity": {
+          "start": {
+            "earliest": "0555-01-01",
+            "latest": "0555-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0587-01-01",
+            "latest": "0588-01-01"
+          },
+          "precision": "range",
+          "label": "555—587年（年精度，确日待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "zhou-shu-48",
+            "locator": "萧詧传：江陵称帝、大定；保定二年卒、在位八载；萧岿继位",
+            "note": "以保定二年（562）与在位八载核对555年建政；国都江陵。年号换算至年，边界不从传记推定。"
+          },
+          {
+            "sourceId": "sui-shu-01",
+            "locator": "开皇七年九月：废梁国，曲赦江陵",
+            "note": "开皇七年为587年；保留年内终止不确定区间。西梁（南北朝）与十六国西凉分开编号。"
+          }
+        ]
+      },
+      {
+        "text": "后梁（南北朝）",
+        "validity": {
+          "start": {
+            "earliest": "0555-01-01",
+            "latest": "0555-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0587-01-01",
+            "latest": "0588-01-01"
+          },
+          "precision": "range",
+          "label": "555—587年（年精度，确日待核）"
+        },
+        "evidence": [
+          {
+            "sourceId": "zhou-shu-48",
+            "locator": "萧詧传：江陵称帝、大定；保定二年卒、在位八载；萧岿继位",
+            "note": "以保定二年（562）与在位八载核对555年建政；国都江陵。年号换算至年，边界不从传记推定。"
+          },
+          {
+            "sourceId": "sui-shu-01",
+            "locator": "开皇七年九月：废梁国，曲赦江陵",
+            "note": "开皇七年为587年；保留年内终止不确定区间。西梁（南北朝）与十六国西凉分开编号。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0555-01-01",
+        "latest": "0555-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0587-01-01",
+        "latest": "0588-01-01"
+      },
+      "precision": "range",
+      "label": "555—587年（年精度，确日待核）"
+    },
+    "color": "#c28652",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
   }
 ]

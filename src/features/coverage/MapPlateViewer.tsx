@@ -42,7 +42,7 @@ export function MapPlateViewer({
     >
       <header>
         <div>
-          <span className="eyebrow">参考图幅 · 待配准</span>
+          <span className="eyebrow">来源参考图幅</span>
           <h2 id="plate-title">
             {plate.year} 年 · {plate.title}
           </h2>

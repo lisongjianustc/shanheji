@@ -1,0 +1,244 @@
+{
+  "sourceId": "commons-three-kingdoms-262",
+  "input": "sources/commons/three-kingdoms-262.png",
+  "sha256": "a2092d3bc8b6b7ef05df4e0f4ad691a04050742eeb70840f025f0110dbf981f5",
+  "interpretationId": "zhoudadudu-262-administration",
+  "year": 262,
+  "features": 3,
+  "relations": [
+    "administration"
+  ],
+  "registration": {
+    "affine": [
+      [
+        0.0007911109545263283,
+        3.563104888826324e-07
+      ],
+      [
+        -2.69399649118453e-06,
+        -0.0007897989601296899
+      ],
+      [
+        -7839.155929102098,
+        4183.289115523511
+      ]
+    ],
+    "residuals": [
+      {
+        "label": "敦煌",
+        "role": "fit",
+        "errorPixels": 2.0706833909016167,
+        "errorKm": 2.003771722668623
+      },
+      {
+        "label": "姑臧／武威",
+        "role": "fit",
+        "errorPixels": 2.0872877490528583,
+        "errorKm": 2.0826360929784893
+      },
+      {
+        "label": "蓟／北京附近",
+        "role": "fit",
+        "errorPixels": 1.0709785865194006,
+        "errorKm": 1.0399796412972537
+      },
+      {
+        "label": "成都",
+        "role": "fit",
+        "errorPixels": 1.1570879818966224,
+        "errorKm": 1.260221629010221
+      },
+      {
+        "label": "建业／南京",
+        "role": "fit",
+        "errorPixels": 1.8737002442573578,
+        "errorKm": 2.0105784169526837
+      },
+      {
+        "label": "番禺／广州",
+        "role": "fit",
+        "errorPixels": 0.4170288194789312,
+        "errorKm": 0.48276999407544735
+      },
+      {
+        "label": "长安／西安附近",
+        "role": "check",
+        "errorPixels": 7.816971859084428,
+        "errorKm": 8.146655814655352
+      },
+      {
+        "label": "洛阳",
+        "role": "check",
+        "errorPixels": 12.486444879028198,
+        "errorKm": 12.999102851828415
+      },
+      {
+        "label": "襄平／辽阳",
+        "role": "check",
+        "errorPixels": 2.9063182340257896,
+        "errorKm": 2.7657812025621733
+      },
+      {
+        "label": "禄福／酒泉",
+        "role": "check",
+        "errorPixels": 4.246991104251618,
+        "errorKm": 4.129599982583057
+      }
+    ],
+    "maxCheckErrorKm": 12.999102851828415,
+    "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限"
+  },
+  "provinceGrouping": [
+    {
+      "province": "You",
+      "rgb": [
+        233,
+        255,
+        190
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Ji",
+      "rgb": [
+        232,
+        190,
+        255
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Bing",
+      "rgb": [
+        190,
+        255,
+        232
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Yan",
+      "rgb": [
+        190,
+        232,
+        255
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Yu",
+      "rgb": [
+        255,
+        190,
+        232
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Qing",
+      "rgb": [
+        255,
+        255,
+        190
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Xu",
+      "rgb": [
+        204,
+        204,
+        204
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Sili",
+      "rgb": [
+        245,
+        245,
+        122
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Yong",
+      "rgb": [
+        255,
+        190,
+        190
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Liang",
+      "rgb": [
+        255,
+        235,
+        190
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Jing (Wei)",
+      "rgb": [
+        255,
+        170,
+        0
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Jing (Wu)",
+      "rgb": [
+        255,
+        211,
+        127
+      ],
+      "entityId": "sun-wu"
+    },
+    {
+      "province": "Yang (Wei)",
+      "rgb": [
+        152,
+        230,
+        0
+      ],
+      "entityId": "cao-wei"
+    },
+    {
+      "province": "Yang (Wu)",
+      "rgb": [
+        209,
+        255,
+        115
+      ],
+      "entityId": "sun-wu"
+    },
+    {
+      "province": "Yi",
+      "rgb": [
+        158,
+        187,
+        215
+      ],
+      "entityId": "shu-han"
+    },
+    {
+      "province": "Jiao",
+      "rgb": [
+        215,
+        176,
+        158
+      ],
+      "entityId": "sun-wu"
+    }
+  ],
+  "pixelAreas": {
+    "cao-wei": 1405049,
+    "shu-han": 867067,
+    "sun-wu": 1065835
+  },
+  "historicalAccuracy": "原图州域解释参考，非专家审定的实控疆域",
+  "checked": "source legend grouping, geometry and registration only"
+}

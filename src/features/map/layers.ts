@@ -16,7 +16,7 @@ export function buildTerritoryLayers(
           t.properties.relation === "control"
             ? 0.3
             : t.properties.relation === "administration"
-              ? 0.1
+              ? 0.22
               : 0,
         approximate:
           t.properties.spatialPrecision !== "specified" ||

@@ -1,8 +1,8 @@
 {
-  "version": "6068e3c31ddea0c2",
+  "version": "e9a3e8bb919c4f06",
   "catalog": {
-    "path": "catalog-5efcd06d0f79ab1d.json",
-    "sha256": "5efcd06d0f79ab1dafc649cac82379dd1b1f4a19976b7d83e23c9efa5d95f202"
+    "path": "catalog-bce51d3e50dbd4d5.json",
+    "sha256": "bce51d3e50dbd4d5a6ee6662051289313604c809fdbbcba58eb94b64472f3104"
   },
   "packages": [
     {
@@ -40,10 +40,10 @@
       ]
     },
     {
-      "path": "package-5bc36c05e20d4995.json",
-      "sha256": "5bc36c05e20d499552a3c45840562e3e7b04c5fc89708c098f7a977d83bb9419",
+      "path": "package-51efd210c5a25407.json",
+      "sha256": "51efd210c5a25407b4b794dfe9f5e21e3b329c60e34e8e865b249d04cef67f39",
       "id": "southern-northern-dynasties",
-      "version": "0.1.0-partial",
+      "version": "0.2.0-partial",
       "startYear": 420,
       "endYear": 589,
       "regionIds": [
@@ -74,10 +74,10 @@
       ]
     },
     {
-      "path": "package-fecafb9506e85895.json",
-      "sha256": "fecafb9506e85895e078c0a430dacc7cbad345988ea29b0c19157273cc6b165a",
+      "path": "package-ab980df7e2ed715a.json",
+      "sha256": "ab980df7e2ed715ac1da9e5f971d066dd983dd3290f276495ebe57c162797388",
       "id": "three-kingdoms-western-jin",
-      "version": "0.1.0-partial",
+      "version": "0.2.0-partial",
       "startYear": 220,
       "endYear": 316,
       "regionIds": [
@@ -92,12 +92,14 @@
     }
   ],
   "defaultInterpretationIds": [
-    "kanguole-661-disputed"
+    "kanguole-661-disputed",
+    "zhoudadudu-262-administration",
+    "sy-572-administration"
   ],
   "scopeVersion": "1",
   "searchIndex": {
-    "path": "search-435b5020e734920d.json",
-    "sha256": "435b5020e734920dd37fdc2173fcd0ca7ffee42c0c0feedb9b2f4fe2ba8e9c7b"
+    "path": "search-44b8a1296a271ab6.json",
+    "sha256": "44b8a1296a271ab664e8e937e291f910dd677f81c80b6b960b4f23feae50353b"
   },
   "interpretations": [
     {
@@ -111,9 +113,126 @@
           "note": "只复核来源图幅与坐标转换，未独立验证书籍原图。"
         }
       ]
+    },
+    {
+      "id": "zhoudadudu-262-administration",
+      "label": "Zhoudadudu 262年州郡图（行政参考）",
+      "reason": "按原图16项州域颜色归并魏蜀吴；行政区划不表示实控。图例、几何和配准复核，未核原地图集。",
+      "evidence": [
+        {
+          "sourceId": "commons-three-kingdoms-262",
+          "locator": "262年图标题、图例与轮廓；data/registration/及data/audits/编制记录",
+          "note": "仅复核来源一致性，未经历史专家审定。"
+        }
+      ]
+    },
+    {
+      "id": "sy-572-administration",
+      "label": "SY 572年州域图（争议参考）",
+      "reason": "沿粗虚线编制北周、北齐、陈与江陵西梁；海岸用原图陆地色。来源未给所据历史图幅，海南、台湾、交趾及邻国不赋归属。",
+      "evidence": [
+        {
+          "sourceId": "commons-china-572",
+          "locator": "572年图标题、图例与轮廓；data/registration/及data/audits/编制记录",
+          "note": "仅复核来源一致性，未经历史专家审定。"
+        }
+      ]
     }
   ],
   "territorySlices": [
+    {
+      "year": 262,
+      "entityId": "cao-wei",
+      "interpretationId": "zhoudadudu-262-administration",
+      "regionIds": [
+        "china-core",
+        "korea"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 262,
+      "entityId": "shu-han",
+      "interpretationId": "zhoudadudu-262-administration",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 262,
+      "entityId": "sun-wu",
+      "interpretationId": "zhoudadudu-262-administration",
+      "regionIds": [
+        "china-core",
+        "southeast-asia"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 572,
+      "entityId": "chen",
+      "interpretationId": "sy-572-administration",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 572,
+      "entityId": "northern-qi",
+      "interpretationId": "sy-572-administration",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 572,
+      "entityId": "northern-zhou",
+      "interpretationId": "sy-572-administration",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 572,
+      "entityId": "western-liang-nanbei",
+      "interpretationId": "sy-572-administration",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "administration"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
     {
       "year": 661,
       "entityId": "tang",
@@ -141,7 +260,7 @@
       "edition": "2023-11-24原图的Commons 3840px缩略版；只缩小像素，未修改图形",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThreeKingdoms262.png",
-      "limitations": "原作者据《中国历史地图集》及HydroSHEDS绘制州郡与郡治。颜色表示州级区划，不能直接当作魏蜀吴实控边界；未配准，未逐项核对地图集原图。",
+      "limitations": "已按16项州域图例归并魏蜀吴并配准为262年行政参考切片；独立检查最大残差约13公里。不是实控证明，未核原地图集，其他年份不外推。",
       "width": 3840,
       "height": 2715,
       "image": {
@@ -158,7 +277,7 @@
       "edition": "2020-04-29 17:54 UTC修订版",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:China_Divisions_in_572.png",
-      "limitations": "原作者绘制陈、北齐、北周时期州域；2020年修订交趾归属。未标注所据图幅及配准参数，边界与周边范围仍待核对。",
+      "limitations": "已沿粗虚线及江陵LIANG轮廓编制572年四政权大陆行政参考；配准独立检查最大残差约21公里。所据历史图幅未标注，海南、台湾、交趾及邻国未赋归属。",
       "width": 1588,
       "height": 1123,
       "image": {

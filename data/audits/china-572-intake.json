@@ -1,0 +1,95 @@
+{
+  "sourceId": "commons-china-572",
+  "input": "sources/commons/china-572.png",
+  "sha256": "1e02269e7b9d08b820c8859989422315a2067577d377c6a4af445713a42611ea",
+  "year": 572,
+  "interpretationId": "sy-572-administration",
+  "features": 4,
+  "relations": [
+    "administration"
+  ],
+  "registration": {
+    "affine": [
+      [
+        0.00040065107571725654,
+        -5.048641609867757e-05
+      ],
+      [
+        -4.693073221247061e-05,
+        -0.00039181162555937285
+      ],
+      [
+        813.2801620004534,
+        1990.1799598221126
+      ]
+    ],
+    "residuals": [
+      {
+        "label": "敦煌",
+        "role": "fit",
+        "errorPixels": 1.0688207407796926,
+        "errorKm": 2.704155652417062
+      },
+      {
+        "label": "武威",
+        "role": "fit",
+        "errorPixels": 1.7039994306199633,
+        "errorKm": 4.287914248727851
+      },
+      {
+        "label": "燕郡／北京附近",
+        "role": "fit",
+        "errorPixels": 7.257965444355183,
+        "errorKm": 18.2295517904916
+      },
+      {
+        "label": "蜀／成都",
+        "role": "fit",
+        "errorPixels": 0.5021914214409771,
+        "errorKm": 1.284151556417151
+      },
+      {
+        "label": "建康",
+        "role": "fit",
+        "errorPixels": 9.0269886273506,
+        "errorKm": 22.771709775024423
+      },
+      {
+        "label": "南海／广州",
+        "role": "fit",
+        "errorPixels": 4.027174035038,
+        "errorKm": 9.978469493167667
+      },
+      {
+        "label": "长安",
+        "role": "check",
+        "errorPixels": 3.1304087486502716,
+        "errorKm": 8.012674932911327
+      },
+      {
+        "label": "洛阳",
+        "role": "check",
+        "errorPixels": 8.238831876002338,
+        "errorKm": 20.85489762048146
+      },
+      {
+        "label": "酒泉",
+        "role": "check",
+        "errorPixels": 5.149167056079765,
+        "errorKm": 12.923666733880207
+      }
+    ],
+    "maxCheckErrorKm": 20.85489762048146,
+    "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限"
+  },
+  "traceFile": "data/registration/china-572-boundaries.json",
+  "landColourMask": "R>246 G>230 B<243 R-B>8；闭合2px文字间隙并填内部孔；只取连续大陆",
+  "pixelAreas": {
+    "northern-zhou": 310633.5,
+    "northern-qi": 136442.3828926066,
+    "chen": 175959.59523809524,
+    "western-liang-nanbei": 2830.5
+  },
+  "historicalAccuracy": "争议参考版本，来源未给出所据历史图幅；非已证实实控疆域",
+  "excluded": "未赋予海南、台湾、交趾及周边政权归属"
+}

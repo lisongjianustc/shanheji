@@ -1,0 +1,138 @@
+{
+  "sourceId": "commons-china-572",
+  "input": "sources/commons/china-572.png",
+  "sha256": "1e02269e7b9d08b820c8859989422315a2067577d377c6a4af445713a42611ea",
+  "coordinateReferenceSource": "geonames-registration-cities",
+  "crs": "+proj=lcc +lat_1=23 +lat_2=45 +lat_0=0 +lon_0=105 +datum=WGS84",
+  "model": "LCC23/45 + six parameter affine; approximate registration, original projection not supplied",
+  "maxCheckErrorKm": 30,
+  "controls": [
+    {
+      "label": "敦煌",
+      "coordinates": [
+        94.68333,
+        40.16667
+      ],
+      "pixel": [
+        250,
+        220
+      ],
+      "role": "fit",
+      "geonameId": 1529531,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "武威",
+      "coordinates": [
+        102.63202,
+        37.92672
+      ],
+      "pixel": [
+        529,
+        298
+      ],
+      "role": "fit",
+      "geonameId": 1803936,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "燕郡／北京附近",
+      "coordinates": [
+        116.39723,
+        39.9075
+      ],
+      "pixel": [
+        974,
+        135
+      ],
+      "role": "fit",
+      "geonameId": 1816670,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "蜀／成都",
+      "coordinates": [
+        104.06667,
+        30.66667
+      ],
+      "pixel": [
+        611,
+        603
+      ],
+      "role": "fit",
+      "geonameId": 1815286,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "建康",
+      "coordinates": [
+        118.77778,
+        32.06167
+      ],
+      "pixel": [
+        1155,
+        441
+      ],
+      "role": "fit",
+      "geonameId": 1799962,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "南海／广州",
+      "coordinates": [
+        113.25,
+        23.11667
+      ],
+      "pixel": [
+        1018,
+        868
+      ],
+      "role": "fit",
+      "geonameId": 1809858,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "长安",
+      "coordinates": [
+        108.92861,
+        34.25833
+      ],
+      "pixel": [
+        769,
+        428
+      ],
+      "role": "check",
+      "geonameId": 1790630,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "洛阳",
+      "coordinates": [
+        112.43684,
+        34.67345
+      ],
+      "pixel": [
+        901,
+        386
+      ],
+      "role": "check",
+      "geonameId": 1801792,
+      "locationPrecision": "approximate"
+    },
+    {
+      "label": "酒泉",
+      "coordinates": [
+        98.51736,
+        39.74318
+      ],
+      "pixel": [
+        385,
+        231
+      ],
+      "role": "check",
+      "geonameId": 1279945,
+      "locationPrecision": "approximate"
+    }
+  ],
+  "limitations": "六个现代城市近似对应点配准，三个点只检验；原图未给投影，兰伯特模型是拟合方案而非原投影证明。手工沿粗虚线取点，连接虚线间隙；沿原图大陆岸线裁切，未赋予台湾、海南及周边政权归属。"
+}

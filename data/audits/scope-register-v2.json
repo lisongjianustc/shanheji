@@ -12,7 +12,9 @@
         "met-early",
         "met-late",
         "columbia",
-        "whg"
+        "whg",
+        "commons-three-kingdoms-262",
+        "geonames-registration-cities"
       ],
       "coverageIds": [
         "three-kingdoms-western-jin-china-core",
@@ -54,7 +56,9 @@
         "met-early",
         "met-late",
         "columbia",
-        "whg"
+        "whg",
+        "commons-china-572",
+        "geonames-registration-cities"
       ],
       "coverageIds": [
         "southern-northern-dynasties-china-core",
@@ -453,10 +457,95 @@
         "met-late"
       ],
       "reason": "核对通过的简短事实条目，疆域仍缺。"
+    },
+    {
+      "id": "cao-wei-262-administration",
+      "packageId": "three-kingdoms-western-jin",
+      "kind": "territory",
+      "title": "262年州郡图 · 魏行政区划参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-three-kingdoms-262",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "shu-han-262-administration",
+      "packageId": "three-kingdoms-western-jin",
+      "kind": "territory",
+      "title": "262年州郡图 · 蜀汉行政区划参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-three-kingdoms-262",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "sun-wu-262-administration",
+      "packageId": "three-kingdoms-western-jin",
+      "kind": "territory",
+      "title": "262年州郡图 · 吴行政区划参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-three-kingdoms-262",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "northern-zhou-572-administration",
+      "packageId": "southern-northern-dynasties",
+      "kind": "territory",
+      "title": "572年州域图 · 北周大陆行政范围参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-china-572",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "northern-qi-572-administration",
+      "packageId": "southern-northern-dynasties",
+      "kind": "territory",
+      "title": "572年州域图 · 北齐大陆行政范围参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-china-572",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "chen-572-administration",
+      "packageId": "southern-northern-dynasties",
+      "kind": "territory",
+      "title": "572年州域图 · 陈大陆行政范围参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-china-572",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
+    },
+    {
+      "id": "western-liang-nanbei-572-administration",
+      "packageId": "southern-northern-dynasties",
+      "kind": "territory",
+      "title": "572年州域图 · 西梁（江陵）大陆行政范围参考；不代表全年持续实控",
+      "status": "committed",
+      "sourceIds": [
+        "commons-china-572",
+        "geonames-registration-cities"
+      ],
+      "reason": "来源解释几何已发布，保留争议；非专家实控审定，资料包仍不完整。"
     }
   ],
   "decisions": [
     "保留version1全部疆域候选与完整范围，未将缺口改为完成。",
-    "后赵、前凉、后燕、西秦、北凉及周边部分名录仍需处理口径冲突／中断期，暂不发布未经统一的年代。"
+    "后赵、前凉、后燕、西秦、北凉及周边部分名录仍需处理口径冲突／中断期，暂不发布未经统一的年代。",
+    "2026-10-05新增262与572年行政参考，不减少原始范围和逐年、周边缺口。"
   ]
 }

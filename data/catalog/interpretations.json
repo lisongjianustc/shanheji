@@ -10,5 +10,29 @@
         "note": "只复核来源图幅与坐标转换，未独立验证书籍原图。"
       }
     ]
+  },
+  {
+    "id": "zhoudadudu-262-administration",
+    "label": "Zhoudadudu 262年州郡图（行政参考）",
+    "reason": "按原图16项州域颜色归并魏蜀吴；行政区划不表示实控。图例、几何和配准复核，未核原地图集。",
+    "evidence": [
+      {
+        "sourceId": "commons-three-kingdoms-262",
+        "locator": "262年图标题、图例与轮廓；data/registration/及data/audits/编制记录",
+        "note": "仅复核来源一致性，未经历史专家审定。"
+      }
+    ]
+  },
+  {
+    "id": "sy-572-administration",
+    "label": "SY 572年州域图（争议参考）",
+    "reason": "沿粗虚线编制北周、北齐、陈与江陵西梁；海岸用原图陆地色。来源未给所据历史图幅，海南、台湾、交趾及邻国不赋归属。",
+    "evidence": [
+      {
+        "sourceId": "commons-china-572",
+        "locator": "572年图标题、图例与轮廓；data/registration/及data/audits/编制记录",
+        "note": "仅复核来源一致性，未经历史专家审定。"
+      }
+    ]
   }
 ]

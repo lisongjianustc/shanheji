@@ -3,8 +3,8 @@
   "status": "incomplete",
   "reviewerKind": "agent",
   "reviewer": "Codex",
-  "checkedAt": "2026-10-01",
-  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。",
+  "checkedAt": "2026-10-05",
+  "method": "逐条核对上列公开网页的指定段落；地点坐标仅采用机构公开点位并标近似；文字为独立摘要。非专家审定。 新增图幅只核对来源图例、轮廓、独立配准检查点及合法几何；不是历史实控审定。",
   "records": [
     {
       "id": "yungang-460",
@@ -49,10 +49,74 @@
           "note": ""
         }
       ]
+    },
+    {
+      "id": "northern-zhou-572-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-china-572",
+          "locator": "572年图标题；粗虚线国界；N. ZHOU、N. QI、CHEN及江陵LIANG标签；2020年修订说明",
+          "note": "只复核本图大陆范围和政权标签。来源未标注所据历史图幅；虚线之间按近似路径连接，不是历史专家审定的边界。未赋予海南、台湾及图外邻国归属。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "data/registration/china-572.json；六个配准点与三个独立检查点",
+          "note": "现代城市近似坐标只用于配准；投影模型为拟合方案，不能据此断言原图投影。"
+        }
+      ]
+    },
+    {
+      "id": "northern-qi-572-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-china-572",
+          "locator": "572年图标题；粗虚线国界；N. ZHOU、N. QI、CHEN及江陵LIANG标签；2020年修订说明",
+          "note": "只复核本图大陆范围和政权标签。来源未标注所据历史图幅；虚线之间按近似路径连接，不是历史专家审定的边界。未赋予海南、台湾及图外邻国归属。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "data/registration/china-572.json；六个配准点与三个独立检查点",
+          "note": "现代城市近似坐标只用于配准；投影模型为拟合方案，不能据此断言原图投影。"
+        }
+      ]
+    },
+    {
+      "id": "chen-572-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-china-572",
+          "locator": "572年图标题；粗虚线国界；N. ZHOU、N. QI、CHEN及江陵LIANG标签；2020年修订说明",
+          "note": "只复核本图大陆范围和政权标签。来源未标注所据历史图幅；虚线之间按近似路径连接，不是历史专家审定的边界。未赋予海南、台湾及图外邻国归属。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "data/registration/china-572.json；六个配准点与三个独立检查点",
+          "note": "现代城市近似坐标只用于配准；投影模型为拟合方案，不能据此断言原图投影。"
+        }
+      ]
+    },
+    {
+      "id": "western-liang-nanbei-572-administration",
+      "decision": "verified-source-interpretation-only",
+      "evidence": [
+        {
+          "sourceId": "commons-china-572",
+          "locator": "572年图标题；粗虚线国界；N. ZHOU、N. QI、CHEN及江陵LIANG标签；2020年修订说明",
+          "note": "只复核本图大陆范围和政权标签。来源未标注所据历史图幅；虚线之间按近似路径连接，不是历史专家审定的边界。未赋予海南、台湾及图外邻国归属。"
+        },
+        {
+          "sourceId": "geonames-registration-cities",
+          "locator": "data/registration/china-572.json；六个配准点与三个独立检查点",
+          "note": "现代城市近似坐标只用于配准；投影模型为拟合方案，不能据此断言原图投影。"
+        }
+      ]
     }
   ],
   "remaining": [
-    "全部政权疆域几何",
+    "其余年份与周边政权疆域，已接入范围的历史专家复核",
     "完整周边政权名录",
     "完整重大事件清单",
     "都城与事件坐标补核",
