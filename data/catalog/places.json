@@ -47,7 +47,42 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            114.83333,
+            30.4
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0229-01-01",
+            "latest": "0229-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0230-01-01",
+            "latest": "0230-01-01"
+          },
+          "precision": "year",
+          "label": "229—229年（目录内地区位置参考，非城市存废日期）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "ezhou-wu",
+            "locator": "武昌城、宫及229年称帝段；古武昌为今鄂州",
+            "note": "只核对历史地名与现代城市的对应，不核定宫殿、古城城垣或仪式确址。"
+          },
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "官方CN.txt; geonameId=1811619; Ezhou",
+            "note": "采用原始WGS84现代城市地名点作附近地区参考，非古城、宫殿或事件确点。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "jiankang",
@@ -97,7 +132,42 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            118.77778,
+            32.06167
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0317-01-01",
+            "latest": "0317-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0421-01-01",
+            "latest": "0421-01-01"
+          },
+          "precision": "year",
+          "label": "317—420年（目录内地区位置参考，非城市存废日期）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "met-early",
+            "locator": "Key Events: 317–420; capital at Nanjing in Jiangsu Province",
+            "note": "只核对历史地名与现代城市的对应，不核定宫殿、古城城垣或仪式确址。"
+          },
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "官方CN.txt; geonameId=1799962; Nanjing",
+            "note": "采用原始WGS84现代城市地名点作附近地区参考，非古城、宫殿或事件确点。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "luoyang",
@@ -486,7 +556,42 @@
         ]
       }
     ],
-    "locations": []
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            135.75385,
+            35.02107
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0794-01-01",
+            "latest": "0794-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "794—907年（目录内地区位置参考，非城市存废日期）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "met-japan",
+            "locator": "Key Events: 794; Heiankyō (present-day Kyoto)",
+            "note": "只核对历史地名与现代城市的对应，不核定宫殿、古城城垣或仪式确址。"
+          },
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "官方JP.txt; geonameId=1857910; Kyoto",
+            "note": "采用原始WGS84现代城市地名点作附近地区参考，非古城、宫殿或事件确点。"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "horyuji",

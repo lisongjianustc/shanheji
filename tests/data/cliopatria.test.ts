@@ -85,7 +85,26 @@ it("retains source interval endpoints in the navigation index and deduplicates o
     ).toBe(true);
     expect(t.properties.validity.precision).toBe("year");
   }
-  expect(seen.size).toBe(552);
+  expect(seen.size).toBe(554);
+});
+it("keeps Dali's supported early intervals separate from Dazhong and Mongol administration", () => {
+  for (const year of [950, 1000, 1055]) {
+    expect(
+      queryScene(catalog, packs, defaultQuery(year), defaults).territories.some(
+        (t) => t.properties.entityId === "dali",
+      ),
+    ).toBe(true);
+  }
+  for (const year of [1056, 1094, 1095, 1096, 1253, 1254]) {
+    const s = queryScene(catalog, packs, defaultQuery(year), defaults);
+    expect(s.territories.some((t) => t.properties.entityId === "dali")).toBe(
+      false,
+    );
+    if (year === 1095)
+      expect(missingPolities(s).map((e) => e.id)).toContain("dazhong");
+    if (year === 1096)
+      expect(s.events.some((e) => e.id === "dali-restored")).toBe(true);
+  }
 });
 it("reports a missing Eastern Jin outline even when its northern neighbors are drawn", () => {
   const scene = queryScene(catalog, packs, defaultQuery(383), defaults);

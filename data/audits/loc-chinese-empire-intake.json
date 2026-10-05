@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-05",
+  "sourceTitle": "China: A Country Study",
+  "creator": "Robert L. Worden, Andrea Matles Savada, Ronald E. Dolan; Library of Congress Federal Research Division",
+  "edition": "1988; research completed July 1987",
+  "itemUrl": "https://www.loc.gov/item/87600493/",
+  "downloadUrl": "https://tile.loc.gov/storage-services/master/frd/frdcstdy/ch/chinacountrystud00word/chinacountrystud00word.pdf",
+  "sha256": "2e707a106f8c0194d6fee872954402462daf5771478f20907f7c9356b763d80c",
+  "locator": "Figure 2, printed p.12, PDF page 60 (index 59)",
+  "observedYears": [
+    -220,
+    700,
+    1580,
+    1775
+  ],
+  "rights": {
+    "status": "public-domain-graphics",
+    "evidence": "LOC item Rights & Access明确指出另行标明版权的照片除外，其余文字和图形为公有领域。本候选为图2地图，未见独立版权标记。",
+    "url": "https://www.loc.gov/item/87600493/#rights-and-access"
+  },
+  "observations": [
+    "图2注明依据Chiao-min Hsieh, Atlas of China (1973), pp.225,238,247,249编制；未独立取得该原书。",
+    "前三图以粗略灰色范围叠加背景轮廓，未明确区分实控、行政、藩属，第四图将Qing sphere of influence单独表示。",
+    "700年图以Tang dynasty标题汇总；该年目录为武周，不能不说明便改名或当作确日实控图。",
+    "无经纬网或投影参数，各小图标记城市仅1—2个；尚未建立包含独立检查点的可靠配准。其他小图是否可共享底图与控制点仍待核查。"
+  ],
+  "decision": "candidate-only; no polygon, no published reference plate",
+  "reason": "只完成图幅、年代、使用说明和基本图意核查；不根据小比例尺汇总图直接补完整疆界。"
+}

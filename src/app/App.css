@@ -374,6 +374,17 @@ p {
   color: var(--muted);
   font-size: 10px;
 }
+.coverage-gap-shortcut {
+  pointer-events: auto;
+  border: 0;
+  background: transparent;
+  color: #83633a;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-size: inherit;
+  padding: 3px;
+  line-height: 1.5;
+}
 .load-error {
   position: absolute;
   left: 50%;

@@ -54,11 +54,36 @@ it("uses BCE location validity for a real Shang event point", () => {
 });
 it("locates Fei River's regional reference without claiming a precise battlefield", () => {
   const scene = queryScene(catalog, packs, defaultQuery(383), defaults);
-  const point = buildEventLocations(scene).features.features.find((f) => f.properties.eventId === "fei-383")!;
+  const point = buildEventLocations(scene).features.features.find(
+    (f) => f.properties.eventId === "fei-383",
+  )!;
   expect(point.geometry.coordinates).toEqual([116.79291, 32.58162]);
   expect(point.properties.approximate).toBe(true);
-  expect(scene.events.find((e) => e.id === "fei-383")?.interpretation).toContain("非古战场确点");
+  expect(
+    scene.events.find((e) => e.id === "fei-383")?.interpretation,
+  ).toContain("非古战场确点");
 });
+it.each([
+  [229, "wu-emperor-229", [114.83333, 30.4]],
+  [317, "eastern-jin-317", [118.77778, 32.06167]],
+  [794, "heian-794", [135.75385, 35.02107]],
+] as const)(
+  "uses a verified modern regional point without claiming an ancient palace at %i",
+  (year, id, coordinates) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    const point = buildEventLocations(scene).features.features.find(
+      (f) => f.properties.eventId === id,
+    )!;
+    expect(point.geometry.coordinates).toEqual([...coordinates]);
+    expect(point.properties.approximate).toBe(true);
+    expect(scene.events.find((e) => e.id === id)?.interpretation).toContain(
+      "地区参考",
+    );
+    expect(scene.events.find((e) => e.id === id)?.interpretation).toMatch(
+      /(非|不是).*确点/,
+    );
+  },
+);
 it.each([
   [494, "luoyang-494"],
   [634, "daming-founded"],

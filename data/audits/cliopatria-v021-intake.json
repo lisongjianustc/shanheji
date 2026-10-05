@@ -4,9 +4,9 @@
   "zipSha256": "e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4",
   "geojsonSha256": "fc6f0d1e4cc42f45da83522b3696db6f2cc85ec0d12259a85c89b31347b8fc0a",
   "sourceFeatureCount": 13797,
-  "accepted": 552,
-  "excluded": 120,
-  "entities": 87,
+  "accepted": 554,
+  "excluded": 122,
+  "entities": 88,
   "records": [
     {
       "rowIndex": 56,
@@ -5262,6 +5262,18 @@
       "displayToYear": 959
     },
     {
+      "rowIndex": 3812,
+      "sourceName": "Kingdom of Dali",
+      "fromYear": 947,
+      "toYear": 969,
+      "wikidata": "Q26472",
+      "status": "accepted",
+      "entityId": "dali",
+      "featureId": "clio-v021-3812",
+      "displayFromYear": 947,
+      "displayToYear": 969
+    },
+    {
       "rowIndex": 3817,
       "sourceName": "Wuyue",
       "fromYear": 947,
@@ -5413,6 +5425,18 @@
       "wikidata": "Q1325075",
       "status": "excluded",
       "reason": "来源区间越过已登记政权存续或阶段"
+    },
+    {
+      "rowIndex": 3931,
+      "sourceName": "Kingdom of Dali",
+      "fromYear": 970,
+      "toYear": 1055,
+      "wikidata": "Q26472",
+      "status": "accepted",
+      "entityId": "dali",
+      "featureId": "clio-v021-3931",
+      "displayFromYear": 970,
+      "displayToYear": 1055
     },
     {
       "rowIndex": 3932,
@@ -5581,6 +5605,15 @@
       "featureId": "clio-v021-4444",
       "displayFromYear": 1056,
       "displayToYear": 1125
+    },
+    {
+      "rowIndex": 4490,
+      "sourceName": "Kingdom of Dali",
+      "fromYear": 1056,
+      "toYear": 1249,
+      "wikidata": "Q26472",
+      "status": "excluded",
+      "reason": "1056—1249年完整区间越过1094—1096年高氏大中阶段；不裁分、改名或把中断吞并为连续大理疆域。"
     },
     {
       "rowIndex": 4702,
@@ -5932,6 +5965,15 @@
       "featureId": "clio-v021-5692",
       "displayFromYear": 1250,
       "displayToYear": 1259
+    },
+    {
+      "rowIndex": 5708,
+      "sourceName": "Kingdom of Dali",
+      "fromYear": 1250,
+      "toYear": 1259,
+      "wikidata": "Q26472",
+      "status": "excluded",
+      "reason": "1250—1259年跨过1253年蒙古征服与总管府阶段；不延用为独立大理国。"
     },
     {
       "rowIndex": 5808,

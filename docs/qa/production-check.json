@@ -1,12 +1,14 @@
 {
-  "checkedAt": "2026-10-05T12:31:20.117Z",
+  "checkedAt": "2026-10-05T13:07:25.010Z",
   "url": "http://127.0.0.1:4174",
-  "dataVersion": "c1a990d183016bb9",
+  "dataVersion": "810acd86debd5774",
   "years": [
     -1300,
     -300,
     -221,
+    229,
     262,
+    317,
     383,
     572,
     610,
@@ -16,6 +18,9 @@
     661,
     742,
     743,
+    794,
+    1000,
+    1095,
     1420,
     1820,
     1912
@@ -75,6 +80,14 @@
   "feiRegionalPointClickable": true,
   "tokugawaPartialScopeVisible": true,
   "researchMobileNoOverlap": true,
+  "regionalPointsClickable": [
+    229,
+    317,
+    794
+  ],
+  "regionalPointsStayInViewWithDetails": true,
+  "mapGapShortcutVerified": true,
+  "daliSupportedIntervalAndDazhongGapVerified": true,
   "disputedAdministrationVisible": true,
   "claimsOffByDefault": true,
   "mobileNoOverflow": true,

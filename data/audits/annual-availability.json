@@ -2,11 +2,11 @@
   "checkedAt": "2026-10-05",
   "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
   "packages": 9,
-  "entities": 92,
-  "uniqueTerritories": 564,
-  "territoryReferences": 619,
-  "uniqueEvents": 63,
-  "eventReferences": 66,
+  "entities": 94,
+  "uniqueTerritories": 566,
+  "territoryReferences": 621,
+  "uniqueEvents": 67,
+  "eventReferences": 70,
   "records": [
     {
       "entityId": "cao-wei",
@@ -2419,6 +2419,59 @@
         ]
       ],
       "geometryRecords": 7
+    },
+    {
+      "entityId": "dali",
+      "name": "大理国",
+      "registeredYears": [
+        [
+          937,
+          1094
+        ],
+        [
+          1096,
+          1253
+        ]
+      ],
+      "availableYears": [
+        [
+          947,
+          1055
+        ]
+      ],
+      "missingYears": [
+        [
+          937,
+          946
+        ],
+        [
+          1056,
+          1094
+        ],
+        [
+          1096,
+          1253
+        ]
+      ],
+      "geometryRecords": 2
+    },
+    {
+      "entityId": "dazhong",
+      "name": "大中国（高氏）",
+      "registeredYears": [
+        [
+          1094,
+          1096
+        ]
+      ],
+      "availableYears": [],
+      "missingYears": [
+        [
+          1094,
+          1096
+        ]
+      ],
+      "geometryRecords": 0
     }
   ]
 }

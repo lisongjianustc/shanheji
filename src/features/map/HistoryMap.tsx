@@ -5,6 +5,7 @@ import type { Scene } from "../../domain/types";
 import type { Selection } from "../../state/controller";
 import { mapStyle } from "./style";
 import { buildTerritoryLayers, buildTerritoryBorders } from "./layers";
+import { sceneBounds } from "./frame";
 import { nameAt, classifyAt, entityActiveAt } from "../../domain/time";
 import "maplibre-gl/dist/maplibre-gl.css";
 import workerUrl from "maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url";
@@ -22,33 +23,10 @@ export interface MapProps {
   selected?: Selection | null;
 }
 const empty = { type: "FeatureCollection" as const, features: [] };
-function fitTerritories(map: MapInstance, scene: Scene | null) {
-  if (!scene?.territories.length) return false;
-  let west = Infinity,
-    east = -Infinity,
-    south = Infinity,
-    north = -Infinity;
-  for (const t of scene.territories) {
-    const polygons =
-      t.geometry.type === "Polygon"
-        ? [t.geometry.coordinates]
-        : t.geometry.coordinates;
-    for (const polygon of polygons)
-      for (const [x, y] of polygon[0]) {
-        west = Math.min(west, x);
-        east = Math.max(east, x);
-        south = Math.min(south, y);
-        north = Math.max(north, y);
-      }
-  }
-  if (!Number.isFinite(west)) return false;
-  map.fitBounds(
-    [
-      [west, south],
-      [east, north],
-    ],
-    { padding: 50, maxZoom: 5, duration: 0 },
-  );
+function fitScene(map: MapInstance, scene: Scene | null) {
+  const bounds = sceneBounds(scene);
+  if (!bounds) return false;
+  map.fitBounds(bounds, { padding: 50, maxZoom: 5, duration: 0 });
   return true;
 }
 export function HistoryMap(props: MapProps) {
@@ -57,7 +35,7 @@ export function HistoryMap(props: MapProps) {
     latest = useRef(props);
   latest.current = props;
   const markers = useRef<Marker[]>([]);
-  const framedTerritories = useRef("");
+  const framedScene = useRef("");
   const [ready, setReady] = useState(false),
     [error, setError] = useState(""),
     [basemapError, setBasemapError] = useState(false);
@@ -223,7 +201,7 @@ export function HistoryMap(props: MapProps) {
           });
           observer = new ResizeObserver(() => {
             map.resize();
-            fitTerritories(
+            fitScene(
               map,
               latest.current.pending?.scene ?? latest.current.scene,
             );
@@ -257,15 +235,17 @@ export function HistoryMap(props: MapProps) {
     (map.getSource("territory-outlines") as GeoJSONSource).setData(
       buildTerritoryBorders(scene),
     );
-    const frameKey = scene.territories
-      .map((t) => t.properties.id)
-      .sort()
-      .join("/");
-    if (frameKey && frameKey !== framedTerritories.current) {
-      fitTerritories(map, scene);
-    }
-    framedTerritories.current = frameKey;
     const locations = buildEventLocations(scene);
+    const frameKey = JSON.stringify([
+      scene.territories.map((t) => t.properties.id).sort(),
+      [...locations.features.features, ...locations.areaFeatures.features]
+        .map((f) => [f.properties.eventId, f.geometry])
+        .sort((a, b) => JSON.stringify(a).localeCompare(JSON.stringify(b))),
+    ]);
+    if (frameKey !== framedScene.current) {
+      fitScene(map, scene);
+    }
+    framedScene.current = frameKey;
     (map.getSource("event-areas") as GeoJSONSource).setData(
       locations.areaFeatures,
     );
@@ -452,7 +432,7 @@ export function HistoryMap(props: MapProps) {
         className="map-reset"
         onClick={() => {
           const map = mapRef.current;
-          if (map && !fitTerritories(map, props.scene))
+          if (map && !fitScene(map, props.scene))
             map.easeTo({
               center: [108, 35],
               zoom: 3.35,

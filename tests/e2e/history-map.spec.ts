@@ -133,8 +133,12 @@ test("正式资源：边界年份、来源详情、连续年份状态与无发�
   await page.getByRole("button", { name: "并行政权", exact: true }).click();
   await year(page, 383);
   await page.locator(".event-glow").click();
-  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("淝水之战");
-  await expect(page.getByRole("complementary", { name: "条目详情" })).toContainText("非古战场确点");
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("淝水之战");
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("非古战场确点");
   await page.getByRole("button", { name: "关闭详情", exact: true }).click();
   await page.getByRole("button", { name: "展开政权带" }).click();
   await page.screenshot({ path: "docs/qa/screenshots/desktop-383.png" });
@@ -326,7 +330,10 @@ test("661年争议图幅可查看，主张单独开启，邻年不外推", async
   await expect(page.locator(".coverage-banner")).toContainText(
     "当前筛选条件下没有疆域记录",
   );
-  await expect(page.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", "");
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    "",
+  );
 });
 
 test("参考图幅可放大查阅、按年定位并在手机关闭", async ({ page }) => {
@@ -772,9 +779,13 @@ test("来源年份区间随时间轴切换：七雄、明、清，边界不延�
     "clio-v021-10503 clio-v021-11022 clio-v021-8854",
   );
   await expect(page.locator(".coverage-banner")).toContainText("非确日格局");
-  await expect(page.locator(".coverage-banner")).toContainText("德川幕府为部分岛屿复原");
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "德川幕府为部分岛屿复原",
+  );
   await expect(page.locator(".coverage-banner")).not.toContainText("null年");
-  await expect(page.locator(".coverage-banner")).not.toContainText("西部未录入");
+  await expect(page.locator(".coverage-banner")).not.toContainText(
+    "西部未录入",
+  );
   await page.locator(".filter-panel summary").click();
   await page.getByRole("checkbox", { name: "疆域复原", exact: true }).click();
   await expect(canvas).toHaveAttribute("data-rendered-territory-ids", "");
@@ -812,9 +823,40 @@ test("742年同时保留周边政权，显式来源选择可查完整研究轮�
   );
 });
 
-test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍显示东晋缺口", async ({ page }) => {
+test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍显示东晋缺口", async ({
+  page,
+}) => {
   await page.goto("/");
-  for (const [n, title] of [[634, "大明宫"], [652, "大雁塔"]] as const) {
+  for (const [n, title] of [
+    [229, "孙权在武昌称帝"],
+    [317, "东晋政权建立"],
+    [794, "迁都平安京"],
+  ] as const) {
+    await year(page, n);
+    await page.locator(".event-glow").click();
+    const detail = page.getByRole("complementary", { name: "条目详情" });
+    await expect(detail).toContainText(title);
+    await expect(detail).toContainText("地区参考");
+    await expect
+      .poll(async () => {
+        const marker = await page.locator(".event-glow").boundingBox();
+        const canvas = await page.locator(".map-canvas").boundingBox();
+        return (
+          !!marker &&
+          !!canvas &&
+          marker.x >= canvas.x &&
+          marker.x + marker.width <= canvas.x + canvas.width &&
+          marker.y >= canvas.y &&
+          marker.y + marker.height <= canvas.y + canvas.height
+        );
+      })
+      .toBe(true);
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  }
+  for (const [n, title] of [
+    [634, "大明宫"],
+    [652, "大雁塔"],
+  ] as const) {
     await year(page, n);
     await page.locator(".event-glow").click();
     const detail = page.getByRole("complementary", { name: "条目详情" });
@@ -823,7 +865,36 @@ test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍�
     await page.getByRole("button", { name: "关闭详情", exact: true }).click();
   }
   await year(page, 383);
-  await expect(page.locator(".map-canvas")).toHaveAttribute("data-rendered-territory-ids", /clio-v021-/);
-  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-/,
+  );
+  await expect(page.getByTestId("map-coverage-gap")).toContainText("东晋");
+  await page
+    .getByRole("button", { name: "查看本年疆域缺口", exact: true })
+    .click();
   await expect(page.getByTestId("missing-polities")).toContainText("东晋");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
+  await year(page, 1000);
+  await expect(
+    page.getByRole("button", {
+      name: "查看大理国 · 疆域复原来源",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(page.locator(".map-canvas")).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-3931/,
+  );
+  await year(page, 1095);
+  await expect(page.getByTestId("map-coverage-gap")).toContainText("大中国");
+  await expect(page.locator(".map-canvas")).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-(3931|4490)/,
+  );
+  await page
+    .getByRole("button", { name: "查看本年疆域缺口", exact: true })
+    .click();
+  await expect(page.getByTestId("missing-polities")).toContainText("大中国");
 });

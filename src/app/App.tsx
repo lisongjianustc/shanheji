@@ -14,6 +14,7 @@ import { MapPlateViewer } from "../features/coverage/MapPlateViewer";
 import { TerritoryPanel } from "../features/coverage/TerritoryPanel";
 import {
   CoveragePanel,
+  missingPolities,
   relationLabels,
 } from "../features/coverage/CoveragePanel";
 import { createRepository } from "../data/repository";
@@ -83,6 +84,7 @@ export default function App() {
   const polityCount = new Set(
     scene?.territories.map((t) => t.properties.entityId),
   ).size;
+  const missing = scene ? missingPolities(scene) : [];
   const partialSource = scene?.territories.some(
     (t) => t.properties.compilation.extent === "partial-source",
   );
@@ -283,6 +285,26 @@ export default function App() {
           {scene && (
             <div className="coverage-banner">
               {scene.warnings.join("；") || "显示已核验资料"}
+              {!!missing.length && (
+                <button
+                  className="coverage-gap-shortcut"
+                  data-testid="map-coverage-gap"
+                  aria-label="查看本年疆域缺口"
+                  onClick={() => {
+                    controller.setPlaying(false);
+                    controller.select(null);
+                    setTab("coverage");
+                    setSidebarOpen(true);
+                  }}
+                >
+                  本年无可用范围：
+                  {missing
+                    .slice(0, 2)
+                    .map((e) => nameAt(e.names, query.year))
+                    .join("、")}
+                  {missing.length > 2 ? `等${missing.length}个登记政权` : ""} ›
+                </button>
+              )}
               {manifest?.mapPlates
                 ?.filter((p) =>
                   p.entityIds?.some((id) =>

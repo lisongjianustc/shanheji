@@ -636,5 +636,38 @@
     "license": "CC BY 4.0",
     "redistribution": "allowed",
     "permissionEvidence": "GeoNames官方about.html和dump/readme.txt声明CC BY 4.0。保留单记录与原始ZIP SHA-256，只作现代城镇附近的地区参考，不作古战场确点。https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "neac-bai-history",
+    "title": "白族：历史沿革",
+    "creator": "国家民族事务委员会",
+    "edition": "机构网页；2026-10-05核对",
+    "url": "https://www.neac.gov.cn/seac/ztzl/bz/lsyg.shtml",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制论文、网页全文或插图，仅记录事实、定位与链接。"
+  },
+  {
+    "id": "npm-dali-chronology",
+    "title": "〈梵像卷〉作者与年代考",
+    "creator": "李玉珉／国立故宫博物院",
+    "edition": "《故宫学术季刊》23卷1期（2005秋），333—366页；337页注36",
+    "url": "https://www.npm.edu.tw/NewChineseArtDownload.ashx?bid=3702",
+    "accessedAt": "2026-10-05",
+    "license": "原来源保留权利；仅采用年代事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "未复制论文、网页全文或插图，仅记录事实、定位与链接。"
+  },
+  {
+    "id": "geonames-regional-reference",
+    "title": "GeoNames官方CN／JP地名数据：鄂州、南京、京都地区参考",
+    "creator": "GeoNames contributors",
+    "edition": "官方country dumps；2026-10-05下载；只取3条地名记录",
+    "url": "https://download.geonames.org/export/dump/",
+    "accessedAt": "2026-10-05",
+    "license": "Creative Commons Attribution 4.0 International（CC BY 4.0）",
+    "redistribution": "allowed",
+    "permissionEvidence": "官方readme.txt说明CC BY 4.0、WGS84；按geonameId记录归属与原始字段。现代地名点非古代城址或仪式确点。 许可链接：https://creativecommons.org/licenses/by/4.0/。"
   }
 ]

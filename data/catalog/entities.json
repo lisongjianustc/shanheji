@@ -4975,5 +4975,172 @@
       "japan"
     ],
     "capitals": []
+  },
+  {
+    "id": "dali",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "大理国",
+        "validity": {
+          "start": {
+            "earliest": "0937-01-01",
+            "latest": "0937-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1253-01-01",
+            "latest": "1254-01-01"
+          },
+          "precision": "range",
+          "label": "937—1253年（其中1094—1096年政权中断）"
+        },
+        "evidence": [
+          {
+            "sourceId": "neac-bai-history",
+            "locator": "历史沿革／937年建国及1253年蒙古征服",
+            "note": "采用来源公元年份口径，不把1253年征服等同于全部地区同日控制；后续大理总管府不延作独立王国。"
+          },
+          {
+            "sourceId": "npm-dali-chronology",
+            "locator": "337页注36（PDF第5页）",
+            "note": "1094年高氏改国号、1096年段氏恢复，故登记两个活动阶段；不把中断区间合为连续大理国。"
+          }
+        ]
+      },
+      {
+        "text": "后理国",
+        "validity": {
+          "start": {
+            "earliest": "1096-01-01",
+            "latest": "1096-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1253-01-01",
+            "latest": "1254-01-01"
+          },
+          "precision": "range",
+          "label": "1096—1253年（段氏恢复阶段的历史别称）"
+        },
+        "evidence": [
+          {
+            "sourceId": "npm-dali-chronology",
+            "locator": "337页注36（PDF第5页）",
+            "note": "1094年高氏改国号、1096年段氏恢复，故登记两个活动阶段；不把中断区间合为连续大理国。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0937-01-01",
+        "latest": "0937-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1253-01-01",
+        "latest": "1254-01-01"
+      },
+      "precision": "range",
+      "label": "937—1253年；含1094—1096年中断，不代表连续存续"
+    },
+    "activePeriods": [
+      {
+        "start": {
+          "earliest": "0937-01-01",
+          "latest": "0937-12-31"
+        },
+        "endExclusive": {
+          "earliest": "1094-01-01",
+          "latest": "1095-01-01"
+        },
+        "precision": "range",
+        "label": "937—1094年（前段）"
+      },
+      {
+        "start": {
+          "earliest": "1096-01-01",
+          "latest": "1096-12-31"
+        },
+        "endExclusive": {
+          "earliest": "1253-01-01",
+          "latest": "1254-01-01"
+        },
+        "precision": "range",
+        "label": "1096—1253年（恢复阶段）"
+      }
+    ],
+    "color": "#948863",
+    "regionIds": [
+      "china-core",
+      "southeast-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "dazhong",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "大中国（高氏）",
+        "validity": {
+          "start": {
+            "earliest": "1094-01-01",
+            "latest": "1094-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1096-01-01",
+            "latest": "1097-01-01"
+          },
+          "precision": "range",
+          "label": "1094—1096年（年精度转折）"
+        },
+        "evidence": [
+          {
+            "sourceId": "npm-dali-chronology",
+            "locator": "337页注36（PDF第5页）",
+            "note": "1094年高氏改国号、1096年段氏恢复，故登记两个活动阶段；不把中断区间合为连续大理国。"
+          }
+        ]
+      },
+      {
+        "text": "大中",
+        "validity": {
+          "start": {
+            "earliest": "1094-01-01",
+            "latest": "1094-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1096-01-01",
+            "latest": "1097-01-01"
+          },
+          "precision": "range",
+          "label": "1094—1096年（别称）"
+        },
+        "evidence": [
+          {
+            "sourceId": "npm-dali-chronology",
+            "locator": "337页注36（PDF第5页）",
+            "note": "1094年高氏改国号、1096年段氏恢复，故登记两个活动阶段；不把中断区间合为连续大理国。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1094-01-01",
+        "latest": "1094-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1096-01-01",
+        "latest": "1097-01-01"
+      },
+      "precision": "range",
+      "label": "1094—1096年（未核确日疆界）"
+    },
+    "color": "#ae8b69",
+    "regionIds": [
+      "china-core",
+      "southeast-asia"
+    ],
+    "capitals": []
   }
 ]
