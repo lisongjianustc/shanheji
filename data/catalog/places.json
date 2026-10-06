@@ -1008,5 +1008,102 @@
         ]
       }
     ]
+  },
+  {
+    "id": "fengxiang-region",
+    "names": [
+      {
+        "text": "凤翔附近",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0924-01-01",
+            "latest": "0925-01-01"
+          },
+          "precision": "range",
+          "label": "907—924年（来源年精度，不推定确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "baoji-qi-five",
+            "locator": "后梁开平元年907、后唐同光二年924两段",
+            "note": "李茂贞开岐王府、924年向后唐称臣；不把岐王称作皇帝，不与战国齐国合并。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            107.39127,
+            34.52301
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0908-01-01",
+            "latest": "0908-01-01"
+          },
+          "precision": "year",
+          "label": "907年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 7353795；Fengxiang / 凤翔城关镇；PPLA3；陕西26、宝鸡6103",
+            "note": "现代陕西凤翔城区附近的地区参考，不是古岐王府、宫城或称臣仪式确点。"
+          },
+          {
+            "sourceId": "baoji-qi-five",
+            "locator": "后梁开平元年907、后唐同光二年924两段",
+            "note": "李茂贞开岐王府、924年向后唐称臣；不把岐王称作皇帝，不与战国齐国合并。"
+          }
+        ]
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            107.39127,
+            34.52301
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0924-01-01",
+            "latest": "0924-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0925-01-01",
+            "latest": "0925-01-01"
+          },
+          "precision": "year",
+          "label": "924年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 7353795；Fengxiang / 凤翔城关镇；PPLA3；陕西26、宝鸡6103",
+            "note": "现代陕西凤翔城区附近的地区参考，不是古岐王府、宫城或称臣仪式确点。"
+          },
+          {
+            "sourceId": "baoji-qi-five",
+            "locator": "后梁开平元年907、后唐同光二年924两段",
+            "note": "李茂贞开岐王府、924年向后唐称臣；不把岐王称作皇帝，不与战国齐国合并。"
+          }
+        ]
+      }
+    ]
   }
 ]

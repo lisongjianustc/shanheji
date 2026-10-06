@@ -301,6 +301,34 @@
       "sourceUrl": "https://download.geonames.org/export/dump/CN.zip",
       "sourceSha256": "8142581f3db78810938d26ff92d41dc947818f8c1585ce6c472266f00becda82",
       "meaning": "现代洛阳／登封城区附近地区参考，非古宫城或投简确点。"
+    },
+    {
+      "geonameId": 7353795,
+      "name": "Fengxiang",
+      "asciiName": "Fengxiang",
+      "alternates": [
+        "Fengxiang",
+        "Fengxiang Chengguanzhen",
+        "Fengxiang Xian",
+        "feng xiang",
+        "feng xiang cheng guan zhen",
+        "feng xiang xian",
+        "凤翔",
+        "凤翔县",
+        "凤翔城关镇"
+      ],
+      "coordinates": [
+        107.39127,
+        34.52301
+      ],
+      "featureClass": "P",
+      "featureCode": "PPLA3",
+      "admin1": "26",
+      "admin2": "6103",
+      "sourceUrl": "https://download.geonames.org/export/dump/CN.zip",
+      "sourceSha256": "8142581f3db78810938d26ff92d41dc947818f8c1585ce6c472266f00becda82",
+      "meaning": "现代陕西凤翔城区附近的地区参考，不是古岐王府、宫城或称臣仪式确点。",
+      "country": "CN"
     }
   ]
 }

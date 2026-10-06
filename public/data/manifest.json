@@ -1,13 +1,13 @@
 {
-  "version": "24a38b9d1531e501",
+  "version": "536c575758cc3c1e",
   "catalog": {
-    "path": "catalog-f77313508ce4f59f.json",
-    "sha256": "f77313508ce4f59fe5fd0fc99547d6b7f34652aefc625a5f4977750e5b7ea212"
+    "path": "catalog-f499b5052f696d75.json",
+    "sha256": "f499b5052f696d752f90abec7dfd5656534957f8dd903ef9f4fd26f7dd99d83a"
   },
   "packages": [
     {
-      "path": "package-9e435c62f4543212.json",
-      "sha256": "9e435c62f45432128d0d72259252c6fdd72acbdb72b35bfe4acf924d14f1af5b",
+      "path": "package-a2573cad7ab1a01c.json",
+      "sha256": "a2573cad7ab1a01c683e6e5521d435a8f1ba5c8f9854044a1bffb974bafa9563",
       "id": "eastern-jin-sixteen-kingdoms",
       "version": "0.1.0-partial",
       "startYear": 304,
@@ -23,8 +23,8 @@
       ]
     },
     {
-      "path": "package-85526e36a03a424a.json",
-      "sha256": "85526e36a03a424a48011b9676f61bcd6b9e6a0481b2de5aaf2f20d08c5e833d",
+      "path": "package-93a91c3d6f607803.json",
+      "sha256": "93a91c3d6f6078036a473492eea0712fdaf9bbbf6813b0a1f165d1f92c544e0c",
       "id": "five-dynasties-song-yuan",
       "version": "0.1.0-partial",
       "startYear": 902,
@@ -169,8 +169,8 @@
   ],
   "scopeVersion": "3",
   "searchIndex": {
-    "path": "search-3344581164e680b4.json",
-    "sha256": "3344581164e680b4944a9f2ac8dd7283c0eb0163e8dc999eb1e552f57ed5e553"
+    "path": "search-d1a3c1daa0ee508a.json",
+    "sha256": "d1a3c1daa0ee508af59107abc94b063045849e3e394d23b335ef7c0c7d4abaa1"
   },
   "interpretations": [
     {
@@ -2134,6 +2134,20 @@
       "disputed": true
     },
     {
+      "year": 387,
+      "endYear": 389,
+      "entityId": "western-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
       "year": 390,
       "endYear": 391,
       "entityId": "former-qin",
@@ -2151,6 +2165,20 @@
       "year": 390,
       "endYear": 393,
       "entityId": "later-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 390,
+      "endYear": 391,
+      "entityId": "western-yan",
       "interpretationId": "cliopatria-v021-reviewed",
       "regionIds": [
         "china-core"
@@ -2196,6 +2224,20 @@
       "interpretationId": "cliopatria-v021-reviewed",
       "regionIds": [
         "korea"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 392,
+      "endYear": 393,
+      "entityId": "western-yan",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
       ],
       "relations": [
         "reconstruction"
@@ -5388,6 +5430,20 @@
     },
     {
       "year": 911,
+      "endYear": 921,
+      "entityId": "qi-five",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 911,
       "endYear": 925,
       "entityId": "silla",
       "interpretationId": "cliopatria-v021-reviewed",
@@ -5987,6 +6043,21 @@
     {
       "year": 1126,
       "endYear": 1138,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1126,
+      "endYear": 1138,
       "entityId": "western-xia",
       "interpretationId": "cliopatria-v021-reviewed",
       "regionIds": [
@@ -6042,10 +6113,55 @@
     },
     {
       "year": 1139,
+      "endYear": 1146,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1139,
       "endYear": 1205,
       "entityId": "western-xia",
       "interpretationId": "cliopatria-v021-reviewed",
       "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1147,
+      "endYear": 1151,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1152,
+      "endYear": 1201,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
         "china-core"
       ],
       "relations": [
@@ -6075,6 +6191,21 @@
       "interpretationId": "cliopatria-v021-reviewed",
       "regionIds": [
         "japan"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1202,
+      "endYear": 1205,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
       ],
       "relations": [
         "reconstruction"
@@ -6114,6 +6245,21 @@
     },
     {
       "year": 1206,
+      "endYear": 1209,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1206,
       "endYear": 1215,
       "entityId": "western-xia",
       "interpretationId": "cliopatria-v021-reviewed",
@@ -6135,6 +6281,21 @@
         "central-asia",
         "china-core",
         "steppe"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true
+    },
+    {
+      "year": 1210,
+      "endYear": 1215,
+      "entityId": "western-liao",
+      "interpretationId": "cliopatria-v021-reviewed",
+      "regionIds": [
+        "central-asia",
+        "china-core"
       ],
       "relations": [
         "reconstruction"
@@ -8603,6 +8764,27 @@
       "image": {
         "path": "plate-1bf6bdb1ad31dbeb.svg",
         "sha256": "1bf6bdb1ad31dbeb989ac35e017cd3a5f5e5bab88a3ab97676fab74624971a92"
+      }
+    },
+    {
+      "id": "eastern-jin-376",
+      "year": 376,
+      "entityIds": [
+        "jin",
+        "former-qin"
+      ],
+      "title": "东晋与前秦376年参考图",
+      "sourceId": "commons-eastern-jin-376",
+      "creator": "Ian Kiu",
+      "edition": "2007-11-06 12:52 UTC；原始PNG",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png",
+      "limitations": "尚未完成可靠配准，只查阅原图。LCC23/45初试最大检查残差47.5公里，但检查点集中东南、背景极值存在识别歧义，不能据此认定全图精度。所据Herrmann1935与小為原图未独立核对；376年图不代表全年持续实控，也不外推到其他年份；东晋叠加范围仍缺。",
+      "width": 556,
+      "height": 537,
+      "image": {
+        "path": "plate-025e9da56a668869.png",
+        "sha256": "025e9da56a66886953e720d5d8b12c99842418f305d704b7a550140b1ba51a44"
       }
     }
   ]

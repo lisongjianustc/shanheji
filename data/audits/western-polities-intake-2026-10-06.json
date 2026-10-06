@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-06",
+  "entityIds": [
+    "western-yan",
+    "western-liao",
+    "qi-five"
+  ],
+  "reviewedRows": [
+    1545,
+    1567,
+    1571,
+    3649,
+    4803,
+    4862,
+    4944,
+    4978,
+    5257,
+    5296,
+    5385
+  ],
+  "excludedRows": [
+    3691,
+    5437
+  ],
+  "sourceNotes": [
+    {
+      "sourceId": "liao-xianbei-society-2004",
+      "sha256": "bde7eac2f30bd8b3196f732f6776b7f090b326f2684ad948a3497c0a87e9c876",
+      "locator": "PDF第2页，西燕384—394年"
+    }
+  ],
+  "locationDecision": {
+    "geonameId": "7353795",
+    "rawFields": [
+      "7353795",
+      "Fengxiang",
+      "Fengxiang",
+      "Fengxiang,Fengxiang Chengguanzhen,Fengxiang Xian,feng xiang,feng xiang cheng guan zhen,feng xiang xian,凤翔,凤翔县,凤翔城关镇",
+      "34.52301",
+      "107.39127",
+      "P",
+      "PPLA3",
+      "CN",
+      "",
+      "26",
+      "6103",
+      "1811198",
+      "",
+      "0",
+      "",
+      "794",
+      "Asia/Shanghai",
+      "2024-02-28"
+    ],
+    "coordinates": [
+      107.39127,
+      34.52301
+    ],
+    "meaning": "现代陕西凤翔城区附近的地区参考，不是古岐王府、宫城或称臣仪式确点。",
+    "excludedHomonyms": "排除辽宁、上海及多省枫香、冯巷、风箱等同名记录"
+  },
+  "limitations": [
+    "研究轮廓保留原始年代区间与名称；身份编号一并核对，不按年代自动改名。",
+    "西辽轮廓可能包含藩属与间接控制范围，不冒充全域实控。",
+    "岐924年事件虽可查看，922—925源范围不拆段补界；西辽1216—1219同理。",
+    "尚未补齐东晋、武周、吴等核心政权范围。"
+  ]
+}

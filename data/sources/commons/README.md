@@ -130,3 +130,13 @@ The independent check points are not used in fitting. Modern city reference coor
 ## 2026-10-05 · 清代底层资料许可待澄清
 
 只读核对CHGIS V6官方Dataverse元数据、EULA及README。元数据为CC0，包内和项目页却限制非商业学术使用及电子再分发，详见`data/audits/chgis-v6-1820-license-review.json`。未下载CHGIS矢量、未接受协议。Commons清SVG作者许可声明保留，但不能据此独立确认其底层数据权利；后续几何转换暂停，界面增加此说明。既有原SVG不变。
+
+## 2026-10-06 · 东晋与前秦376年原图
+
+- 作者：Ian Kiu。
+- 来源：[Eastern Jin Dynasty 376 CE.png](https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png)。
+- 版本：2007-11-06 12:52 UTC，556×537原始PNG；2026-10-06核对。
+- 许可：采用作者提供的[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)；原图未修改，不暗示作者认可本项目。
+- 文件：`eastern-jin-376.png`。
+- SHA-256：`025e9da56a66886953e720d5d8b12c99842418f305d704b7a550140b1ba51a44`。
+- 限度：仅来源图查阅，配准仍待复核，未发布对应的东晋疆域；不外推其他年份。原图所据Herrmann1935与小為图未独立核查。

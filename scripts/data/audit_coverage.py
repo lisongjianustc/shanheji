@@ -1,4 +1,5 @@
 """Inventory available annual geometry; this does not certify historic accuracy."""
+import argparse
 import json
 from pathlib import Path
 
@@ -38,7 +39,7 @@ def fmt(ranges):
     return "、".join(y(a) if a == b else f"{y(a)}—{y(b)}" for a, b in ranges) or "无"
 
 
-def main():
+def main(checked_at="2026-10-05"):
     catalog = read(ROOT / "data/catalog/entities.json")
     packs = [read(p) for p in sorted((ROOT / "data/packages").glob("*/package.json"))]
     features = {f["properties"]["id"]: f for p in packs for f in p["territories"]}
@@ -64,7 +65,7 @@ def main():
             records.append({"entityId": entity["id"], "name": name,
                             "registeredYears": spans(scope), "availableYears": spans(scope & available),
                             "missingYears": spans(scope - available), "geometryRecords": len(fs)})
-    result = {"checkedAt": "2026-10-05", "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
+    result = {"checkedAt": checked_at, "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
               "packages": len(packs), "entities": len(catalog), "uniqueTerritories": len(features),
               "territoryReferences": sum(len(p["territories"]) for p in packs),
               "uniqueEvents": len(events), "eventReferences": sum(len(p["events"]) for p in packs),
@@ -80,4 +81,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--checked-at", default="2026-10-05")
+    main(parser.parse_args().checked_at)

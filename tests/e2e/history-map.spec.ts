@@ -3,6 +3,96 @@ import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { makeCatalog, makePackage, time } from "../fixtures/make";
 import { buildSearchIndex } from "../../src/features/search/index";
+test("376年东晋原图可查阅但不冒充主图疆域，手机关闭后年份保留", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await year(page, 376);
+  for (const viewport of [
+    { width: 1440, height: 960 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.getByRole("button", { name: /查阅376年来源原图/ }).click();
+    const dialog = page.getByRole("dialog");
+    await expect(dialog).toContainText("尚未完成可靠配准");
+    await expect(dialog).toContainText("CC BY 3.0");
+    await expect(
+      dialog.getByRole("link", { name: "CC BY 3.0", exact: true }),
+    ).toHaveAttribute("href", "https://creativecommons.org/licenses/by/3.0/");
+    await expect
+      .poll(() =>
+        dialog
+          .getByRole("img")
+          .evaluate((el: HTMLImageElement) => el.naturalWidth),
+      )
+      .toBe(556);
+    await page.keyboard.press("Escape");
+    await expect(dialog).toHaveCount(0);
+    await expect(page.getByTestId("committed-year")).toHaveText("376");
+  }
+});
+test("西燕、岐和西辽随来源区间绘制，越界终年保留缺口，凤翔亮点可点击", async ({
+  page,
+}) => {
+  test.setTimeout(60000);
+  await page.goto("/");
+  const canvas = page.locator(".map-canvas");
+  for (const [n, id, name] of [
+    [387, 1545, "西燕"],
+    [393, 1571, "西燕"],
+    [915, 3649, "岐（李茂贞）"],
+    [1126, 4803, "西辽"],
+    [1200, 4978, "西辽"],
+    [1215, 5385, "西辽"],
+  ] as const) {
+    await year(page, n);
+    await expect(canvas).toHaveAttribute(
+      "data-rendered-territory-ids",
+      new RegExp(`(?:^| )clio-v021-${id}(?: |$)`),
+    );
+    await page
+      .getByRole("button", { name: `查看${name} · 疆域复原来源`, exact: true })
+      .click();
+    await expect(
+      page.getByRole("complementary", { name: "条目详情" }),
+    ).toContainText("Cliopatria");
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  }
+  for (const [n, ids, name] of [
+    [394, [1545, 1567, 1571], "西燕"],
+    [922, [3649, 3691], "岐"],
+    [1216, [5385, 5437], "西辽"],
+  ] as const) {
+    await year(page, n);
+    for (const id of ids)
+      await expect(canvas).not.toHaveAttribute(
+        "data-rendered-territory-ids",
+        new RegExp(`(?:^| )clio-v021-${id}(?: |$)`),
+      );
+    await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+    await expect(page.getByTestId("missing-polities")).toContainText(name);
+  }
+  for (const viewport of [
+    { width: 1440, height: 960 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    const close = page.getByRole("button", { name: "关闭浏览", exact: true });
+    if (await close.isVisible()) await close.click();
+    for (const [n, title] of [
+      [907, "李茂贞开岐王府"],
+      [924, "李茂贞向后唐称臣"],
+    ] as const) {
+      await year(page, n);
+      await page.getByRole("button", { name: title, exact: true }).click();
+      await expect(
+        page.getByRole("complementary", { name: "条目详情" }),
+      ).toContainText("非古岐王府");
+      await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+    }
+  }
+});
 test("窄窗口事件亮点不被疆域与资料浮层遮挡", async ({ page }) => {
   for (const viewport of [
     { width: 767, height: 733 },

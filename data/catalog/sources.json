@@ -661,11 +661,11 @@
   },
   {
     "id": "geonames-regional-reference",
-    "title": "GeoNames官方CN／JP地名数据：鄂州、南京、京都、洛阳、登封地区参考",
+    "title": "GeoNames：鄂州、南京、京都、洛阳、登封、凤翔地区参考",
     "creator": "GeoNames contributors",
-    "edition": "官方country dumps；2026-10-05下载；只取5条地名记录",
+    "edition": "官方国家dump；本轮共取6条地名记录，WGS84；现代地区参考",
     "url": "https://download.geonames.org/export/dump/",
-    "accessedAt": "2026-10-05",
+    "accessedAt": "2026-10-06",
     "license": "Creative Commons Attribution 4.0 International（CC BY 4.0）",
     "redistribution": "allowed",
     "permissionEvidence": "官方readme.txt说明CC BY 4.0、WGS84；按geonameId记录归属与原始字段。现代地名点非古代城址或仪式确点。 许可链接：https://creativecommons.org/licenses/by/4.0/。"
@@ -702,5 +702,49 @@
     "license": "原网页保留权利；仅采用事实并独立编写摘要",
     "redistribution": "unknown",
     "permissionEvidence": "只采用684年神都、705年中宗复位后恢复东都的地方史事实与链接；不复制全文、图片或受限数据。"
+  },
+  {
+    "id": "liao-xianbei-society-2004",
+    "title": "鲜卑族宗法文化论略",
+    "creator": "廖杨；《黑龙江民族丛刊》2004年第5期，山西大学云冈学文献知识库提供",
+    "edition": "2004年第5期，总82期，62—67页；PDF原文已核对",
+    "url": "https://ygx.sxu.edu.cn/db/%E6%9C%9F%E5%88%8A/hljmzck/hljm2004/0405pdf/040515.pdf",
+    "accessedAt": "2026-10-06",
+    "license": "原网页与论文保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目、来源定位及链接，不复制原文、图片或论文文件。源图几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "sxufe-western-liao",
+    "title": "山西与丝绸之路——兼论山西在“一带一路”倡议中的地位与对策",
+    "creator": "高春平；山西财经大学晋商研究院网站",
+    "edition": "2016-01-25网页；收稿日期2015-01-12",
+    "url": "https://jsyjy.sxufe.edu.cn/info/1167/4648_1.htm",
+    "accessedAt": "2026-10-06",
+    "license": "原网页与论文保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目、来源定位及链接，不复制原文、图片或论文文件。源图几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "baoji-qi-five",
+    "title": "五代（宝鸡历史文化）",
+    "creator": "宝鸡市人民政府",
+    "edition": "2011-01-29网页；2026-10-06核对",
+    "url": "https://www.baoji.gov.cn/col26/col95/201101/t20110129_10251.html",
+    "accessedAt": "2026-10-06",
+    "license": "原网页与论文保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实条目、来源定位及链接，不复制原文、图片或论文文件。源图几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "commons-eastern-jin-376",
+    "title": "Eastern Jin Dynasty 376 CE.png（东晋与前秦376年参考图）",
+    "creator": "Ian Kiu",
+    "edition": "2007-11-06 12:52 UTC修订；556×537原始PNG，2026-10-06核对",
+    "url": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png",
+    "accessedAt": "2026-10-06",
+    "license": "CC BY 3.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons作者许可明确CC BY 3.0，采用该许可并署名、保留原图及来源链接；https://creativecommons.org/licenses/by/3.0/。原图未修改，不代表作者认可本项目。"
   }
 ]

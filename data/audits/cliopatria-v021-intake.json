@@ -4,9 +4,9 @@
   "zipSha256": "e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4",
   "geojsonSha256": "fc6f0d1e4cc42f45da83522b3696db6f2cc85ec0d12259a85c89b31347b8fc0a",
   "sourceFeatureCount": 13797,
-  "accepted": 554,
-  "excluded": 122,
-  "entities": 88,
+  "accepted": 565,
+  "excluded": 124,
+  "entities": 91,
   "records": [
     {
       "rowIndex": 56,
@@ -1923,6 +1923,18 @@
       "displayToYear": 393
     },
     {
+      "rowIndex": 1545,
+      "sourceName": "Western Yan",
+      "fromYear": 387,
+      "toYear": 389,
+      "wikidata": "Q1149230",
+      "status": "accepted",
+      "entityId": "western-yan",
+      "featureId": "clio-v021-1545",
+      "displayFromYear": 387,
+      "displayToYear": 389
+    },
+    {
       "rowIndex": 1546,
       "sourceName": "Former Qin",
       "fromYear": 387,
@@ -2025,6 +2037,18 @@
       "reason": "原始名称西晋越过316年；未据此重命名为东晋"
     },
     {
+      "rowIndex": 1567,
+      "sourceName": "Western Yan",
+      "fromYear": 390,
+      "toYear": 391,
+      "wikidata": "Q1149230",
+      "status": "accepted",
+      "entityId": "western-yan",
+      "featureId": "clio-v021-1567",
+      "displayFromYear": 390,
+      "displayToYear": 391
+    },
+    {
       "rowIndex": 1568,
       "sourceName": "Former Qin",
       "fromYear": 390,
@@ -2059,6 +2083,18 @@
       "featureId": "clio-v021-1570",
       "displayFromYear": 392,
       "displayToYear": 394
+    },
+    {
+      "rowIndex": 1571,
+      "sourceName": "Western Yan",
+      "fromYear": 392,
+      "toYear": 393,
+      "wikidata": "Q1149230",
+      "status": "accepted",
+      "entityId": "western-yan",
+      "featureId": "clio-v021-1571",
+      "displayFromYear": 392,
+      "displayToYear": 393
     },
     {
       "rowIndex": 1572,
@@ -5067,6 +5103,18 @@
       "reason": "来源区间越过已登记政权存续或阶段"
     },
     {
+      "rowIndex": 3649,
+      "sourceName": "Qi Kingdom",
+      "fromYear": 911,
+      "toYear": 921,
+      "wikidata": "Q1319681",
+      "status": "accepted",
+      "entityId": "qi-five",
+      "featureId": "clio-v021-3649",
+      "displayFromYear": 911,
+      "displayToYear": 921
+    },
+    {
       "rowIndex": 3662,
       "sourceName": "Former Shu",
       "fromYear": 922,
@@ -5098,6 +5146,15 @@
       "featureId": "clio-v021-3675",
       "displayFromYear": 922,
       "displayToYear": 925
+    },
+    {
+      "rowIndex": 3691,
+      "sourceName": "Qi Kingdom",
+      "fromYear": 922,
+      "toYear": 925,
+      "wikidata": "Q1319681",
+      "status": "excluded",
+      "reason": "岐源区间922—925年越过924归附转折，整段排除；未拆段复制旧范围"
     },
     {
       "rowIndex": 3697,
@@ -5652,6 +5709,18 @@
       "displayToYear": 1138
     },
     {
+      "rowIndex": 4803,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1126,
+      "toYear": 1138,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-4803",
+      "displayFromYear": 1126,
+      "displayToYear": 1138
+    },
+    {
       "rowIndex": 4811,
       "sourceName": "Great Jin",
       "fromYear": 1126,
@@ -5709,6 +5778,18 @@
       "displayToYear": 1205
     },
     {
+      "rowIndex": 4862,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1139,
+      "toYear": 1146,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-4862",
+      "displayFromYear": 1139,
+      "displayToYear": 1146
+    },
+    {
       "rowIndex": 4895,
       "sourceName": "Goryeo",
       "fromYear": 1139,
@@ -5719,6 +5800,30 @@
       "featureId": "clio-v021-4895",
       "displayFromYear": 1139,
       "displayToYear": 1215
+    },
+    {
+      "rowIndex": 4944,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1147,
+      "toYear": 1151,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-4944",
+      "displayFromYear": 1147,
+      "displayToYear": 1151
+    },
+    {
+      "rowIndex": 4978,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1152,
+      "toYear": 1201,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-4978",
+      "displayFromYear": 1152,
+      "displayToYear": 1201
     },
     {
       "rowIndex": 5056,
@@ -5752,6 +5857,18 @@
       "featureId": "clio-v021-5188",
       "displayFromYear": 1192,
       "displayToYear": 1325
+    },
+    {
+      "rowIndex": 5257,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1202,
+      "toYear": 1205,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-5257",
+      "displayFromYear": 1202,
+      "displayToYear": 1205
     },
     {
       "rowIndex": 5272,
@@ -5790,6 +5907,18 @@
       "displayToYear": 1215
     },
     {
+      "rowIndex": 5296,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1206,
+      "toYear": 1209,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-5296",
+      "displayFromYear": 1206,
+      "displayToYear": 1209
+    },
+    {
       "rowIndex": 5364,
       "sourceName": "Mongol Empire",
       "fromYear": 1210,
@@ -5798,6 +5927,18 @@
       "status": "accepted",
       "entityId": "mongol-yuan",
       "featureId": "clio-v021-5364",
+      "displayFromYear": 1210,
+      "displayToYear": 1215
+    },
+    {
+      "rowIndex": 5385,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1210,
+      "toYear": 1215,
+      "wikidata": "Q862304",
+      "status": "accepted",
+      "entityId": "western-liao",
+      "featureId": "clio-v021-5385",
       "displayFromYear": 1210,
       "displayToYear": 1215
     },
@@ -5848,6 +5989,15 @@
       "featureId": "clio-v021-5434",
       "displayFromYear": 1216,
       "displayToYear": 1226
+    },
+    {
+      "rowIndex": 5437,
+      "sourceName": "Kara-Khitans",
+      "fromYear": 1216,
+      "toYear": 1219,
+      "wikidata": "Q862304",
+      "status": "excluded",
+      "reason": "西辽源区间1216—1219年越过1218终点，整段排除；未裁年保留旧范围"
     },
     {
       "rowIndex": 5454,

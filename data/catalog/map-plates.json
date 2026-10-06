@@ -113,5 +113,24 @@
     "entityIds": [
       "qing"
     ]
+  },
+  {
+    "id": "eastern-jin-376",
+    "year": 376,
+    "title": "东晋与前秦376年参考图",
+    "sourceId": "commons-eastern-jin-376",
+    "creator": "Ian Kiu",
+    "edition": "2007-11-06 12:52 UTC；原始PNG",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png",
+    "limitations": "尚未完成可靠配准，只查阅原图。LCC23/45初试最大检查残差47.5公里，但检查点集中东南、背景极值存在识别歧义，不能据此认定全图精度。所据Herrmann1935与小為原图未独立核对；376年图不代表全年持续实控，也不外推到其他年份；东晋叠加范围仍缺。",
+    "width": 556,
+    "height": 537,
+    "file": "sources/commons/eastern-jin-376.png",
+    "sha256": "025e9da56a66886953e720d5d8b12c99842418f305d704b7a550140b1ba51a44",
+    "entityIds": [
+      "jin",
+      "former-qin"
+    ]
   }
 ]

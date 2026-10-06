@@ -39,6 +39,8 @@ def select_entity(p,entities,c):
   else:return None,'汉阶段跨越新莽或220年终点'
  else:id=c['mapping'].get(name)
  if not id:return None,'未在本轮逐条身份映射清单'
+ expected=c.get('reviewedIdentities',{}).get(name)
+ if expected and p.get('Wikidata')!=expected:return None,'来源身份编号与本轮核对的政权不一致'
  if p['Type']!='POLITY':return None,'关系汇总，不是独立政权'
  if name=='Western Jin' and b>316:return None,'原始名称西晋越过316年；未据此重命名为东晋'
  if name=='Later Zhou' and a<951:return None,'与春秋/战国周王室同名，不能映射五代后周'
@@ -88,7 +90,7 @@ def extract():
   prop={'id':f'clio-v021-{i}','entityId':id,'regionIds':entities[id]['regionIds'],
         'validity':interval(a,b,f"{label(a,b)} · Cliopatria疆域复原（年份区间，非确日实控）"),
         'temporalSupport':'interval','snapshotYear':None,'relation':'reconstruction','spatialPrecision':'disputed','interpretationId':VERSION,
-        'evidence':ev,'review':{'status':'verified','reviewerKind':'agent','reviewer':'Codex（来源身份、年代和几何检查；非历史专家审定）','checkedAt':'2026-10-05','evidence':ev},
+        'evidence':ev,'review':{'status':'verified','reviewerKind':'agent','reviewer':'Codex（来源身份、年代和几何检查；非历史专家审定）','checkedAt':c.get('reviewDates',{}).get(p['Name'],'2026-10-05'),'evidence':ev},
         'compilation':{'method':'CC BY 4.0源WGS84轮廓；显式身份映射，整段越界则排除；0.01度保拓扑简化、6位取整；不补界、不沿现代国界裁切、不插值。','sourceScale':None,'controlPoints':[],
                        'errorNote':'研究数据的疆域复原；底层图按不等间距年代采样，细节及政权转折可能缺漏，误差未量化。0.01度简化仅为显示处理，不是历史精度；确日查询不使用按年区间。'}}
   if part_scope:

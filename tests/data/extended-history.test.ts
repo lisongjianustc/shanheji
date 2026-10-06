@@ -8,6 +8,7 @@ import {
 } from "../../src/features/search/index";
 import { catalogSchema, packageSchema } from "../../src/domain/schema";
 import defaults from "../../data/catalog/default-interpretations.json";
+import plates from "../../data/catalog/map-plates.json";
 import { resolve } from "node:path";
 import type { Catalog, DataPackage } from "../../src/domain/types";
 let catalog: Catalog, packs: DataPackage[];
@@ -23,6 +24,18 @@ it("publishes the new chronology with complete references and retains old territ
       .flatMap((p) => p.territories)
       .filter((t) => !t.properties.id.startsWith("clio-")),
   ).toHaveLength(12);
+});
+it("keeps the 376 Eastern Jin plate as an unregistered source reference", () => {
+  const plate = plates.find((p) => p.id === "eastern-jin-376")!;
+  expect(plate.year).toBe(376);
+  expect(plate.license).toBe("CC BY 3.0");
+  expect(plate.limitations).toContain("尚未完成可靠配准");
+  expect(plate.entityIds).toContain("jin");
+  expect(
+    queryScene(catalog, packs, defaultQuery(376), defaults).territories.some(
+      (t) => t.properties.entityId === "jin",
+    ),
+  ).toBe(false);
 });
 it.each([
   -2100, -1600, -1046, -770, -221, -206, -1, 1, 9, 25, 960, 1127, 1271, 1368,
@@ -83,6 +96,31 @@ it.each([
     expect(event.interpretation).toContain("非");
     expect(
       scene.territories.some((t) => t.properties.entityId === "wu-zhou"),
+    ).toBe(false);
+    expect(
+      queryScene(catalog, packs, defaultQuery(year + 1), defaults).events.some(
+        (e) => e.id === id,
+      ),
+    ).toBe(false);
+  },
+);
+it.each([
+  [907, "qi-court-907"],
+  [924, "qi-submits-924"],
+] as const)(
+  "locates Qi's regional records without inventing a palace or extending the source territory at %i",
+  (year, id) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    const point = buildEventLocations(scene).features.features.find(
+      (f) => f.properties.eventId === id,
+    )!;
+    expect(point.geometry.coordinates).toEqual([107.39127, 34.52301]);
+    expect(point.properties.approximate).toBe(true);
+    expect(scene.events.find((e) => e.id === id)?.interpretation).toContain(
+      "非古岐王府",
+    );
+    expect(
+      scene.territories.some((t) => t.properties.entityId === "qi-five"),
     ).toBe(false);
     expect(
       queryScene(catalog, packs, defaultQuery(year + 1), defaults).events.some(

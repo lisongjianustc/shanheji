@@ -103,9 +103,11 @@ export function MapPlateViewer({
             href={
               plate.license === "CC0 1.0"
                 ? "https://creativecommons.org/publicdomain/zero/1.0/"
-                : plate.license === "CC BY-SA 3.0 CZ"
-                  ? "https://creativecommons.org/licenses/by-sa/3.0/cz/"
-                  : `https://creativecommons.org/licenses/by-sa/${plate.license.endsWith("4.0") ? "4.0" : "3.0"}/`
+                : plate.license === "CC BY 3.0"
+                  ? "https://creativecommons.org/licenses/by/3.0/"
+                  : plate.license === "CC BY-SA 3.0 CZ"
+                    ? "https://creativecommons.org/licenses/by-sa/3.0/cz/"
+                    : `https://creativecommons.org/licenses/by-sa/${plate.license.endsWith("4.0") ? "4.0" : "3.0"}/`
             }
             target="_blank"
             rel="noreferrer"

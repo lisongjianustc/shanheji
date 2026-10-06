@@ -5142,5 +5142,141 @@
       "southeast-asia"
     ],
     "capitals": []
+  },
+  {
+    "id": "western-yan",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西燕",
+        "validity": {
+          "start": {
+            "earliest": "0384-01-01",
+            "latest": "0384-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0394-01-01",
+            "latest": "0395-01-01"
+          },
+          "precision": "range",
+          "label": "384—394年（来源年精度，不推定确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "liao-xianbei-society-2004",
+            "locator": "PDF第2页：慕容部政权列表中的西燕384—394年",
+            "note": "只采用西燕身份及年精度存续，不采用同段对其他政权的冲突终年，也不认为西燕属于十六国正统名单。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0384-01-01",
+        "latest": "0384-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0394-01-01",
+        "latest": "0395-01-01"
+      },
+      "precision": "range",
+      "label": "384—394年（来源年精度，不推定确日）"
+    },
+    "color": "#b5869b",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "western-liao",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "西辽",
+        "validity": {
+          "start": {
+            "earliest": "1124-01-01",
+            "latest": "1124-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1218-01-01",
+            "latest": "1219-01-01"
+          },
+          "precision": "range",
+          "label": "1124—1218年（来源年精度，不推定确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "sxufe-western-liao",
+            "locator": "第二部分：西辽1124—1218年及创建者耶律大石",
+            "note": "纪年支持身份与阶段，不能把涵盖藩属地区的研究轮廓视为全部地区实控。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "1124-01-01",
+        "latest": "1124-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1218-01-01",
+        "latest": "1219-01-01"
+      },
+      "precision": "range",
+      "label": "1124—1218年（来源年精度，不推定确日）"
+    },
+    "color": "#b39059",
+    "regionIds": [
+      "central-asia",
+      "china-core"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qi-five",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "岐（李茂贞）",
+        "validity": {
+          "start": {
+            "earliest": "0907-01-01",
+            "latest": "0907-12-31"
+          },
+          "endExclusive": {
+            "earliest": "0924-01-01",
+            "latest": "0925-01-01"
+          },
+          "precision": "range",
+          "label": "907—924年（来源年精度，不推定确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "baoji-qi-five",
+            "locator": "后梁开平元年907、后唐同光二年924两段",
+            "note": "李茂贞开岐王府、924年向后唐称臣；不把岐王称作皇帝，不与战国齐国合并。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0907-01-01",
+        "latest": "0907-12-31"
+      },
+      "endExclusive": {
+        "earliest": "0924-01-01",
+        "latest": "0925-01-01"
+      },
+      "precision": "range",
+      "label": "907—924年（来源年精度，不推定确日）"
+    },
+    "color": "#9271a5",
+    "regionIds": [
+      "china-core"
+    ],
+    "capitals": []
   }
 ]

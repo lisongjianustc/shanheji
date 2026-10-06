@@ -85,8 +85,40 @@ it("retains source interval endpoints in the navigation index and deduplicates o
     ).toBe(true);
     expect(t.properties.validity.precision).toBe("year");
   }
-  expect(seen.size).toBe(554);
+  expect(seen.size).toBe(565);
 });
+it.each([
+  [387, "western-yan", "clio-v021-1545"],
+  [390, "western-yan", "clio-v021-1567"],
+  [393, "western-yan", "clio-v021-1571"],
+  [915, "qi-five", "clio-v021-3649"],
+  [1126, "western-liao", "clio-v021-4803"],
+  [1200, "western-liao", "clio-v021-4978"],
+  [1215, "western-liao", "clio-v021-5385"],
+] as const)("shows the reviewed western polity at %i", (year, entityId, id) => {
+  const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+  const feature = scene.territories.find((t) => t.properties.id === id)!;
+  expect(feature.properties.entityId).toBe(entityId);
+  expect(feature.properties.relation).toBe("reconstruction");
+  expect(feature.properties.spatialPrecision).toBe("disputed");
+  expect(missingPolities(scene).map((e) => e.id)).not.toContain(entityId);
+});
+it.each([
+  [394, "western-yan"],
+  [922, "qi-five"],
+  [924, "qi-five"],
+  [1216, "western-liao"],
+  [1218, "western-liao"],
+] as const)(
+  "keeps a western polity's unsupported terminal year visible as a gap at %i",
+  (year, id) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    expect(scene.territories.some((t) => t.properties.entityId === id)).toBe(
+      false,
+    );
+    expect(missingPolities(scene).map((e) => e.id)).toContain(id);
+  },
+);
 it("keeps Dali's supported early intervals separate from Dazhong and Mongol administration", () => {
   for (const year of [950, 1000, 1055]) {
     expect(

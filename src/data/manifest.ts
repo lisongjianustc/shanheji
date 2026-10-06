@@ -15,7 +15,12 @@ export interface MapPlate {
   sourceId: string;
   creator: string;
   edition: string;
-  license: "CC BY-SA 3.0" | "CC BY-SA 3.0 CZ" | "CC BY-SA 4.0" | "CC0 1.0";
+  license:
+    | "CC BY 3.0"
+    | "CC BY-SA 3.0"
+    | "CC BY-SA 3.0 CZ"
+    | "CC BY-SA 4.0"
+    | "CC0 1.0";
   sourceUrl: string;
   limitations: string;
   width: number;
@@ -62,6 +67,7 @@ export const mapPlateSchema = z
     creator: z.string().min(1),
     edition: z.string().min(1),
     license: z.enum([
+      "CC BY 3.0",
       "CC BY-SA 3.0",
       "CC BY-SA 3.0 CZ",
       "CC BY-SA 4.0",

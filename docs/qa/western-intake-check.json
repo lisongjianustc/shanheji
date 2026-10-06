@@ -1,0 +1,100 @@
+{
+  "checkedAt": "2026-10-06T11:24:41.933Z",
+  "url": "http://127.0.0.1:4174",
+  "dataVersion": "536c575758cc3c1e",
+  "painted": {
+    "387": [
+      "clio-v021-1476",
+      "clio-v021-1529",
+      "clio-v021-1542",
+      "clio-v021-1543",
+      "clio-v021-1545",
+      "clio-v021-1546",
+      "clio-v021-1549",
+      "clio-v021-1551",
+      "clio-v021-1552",
+      "clio-v021-1553",
+      "clio-v021-1555"
+    ],
+    "393": [
+      "clio-v021-1529",
+      "clio-v021-1542",
+      "clio-v021-1543",
+      "clio-v021-1551",
+      "clio-v021-1552",
+      "clio-v021-1555",
+      "clio-v021-1562",
+      "clio-v021-1569",
+      "clio-v021-1570",
+      "clio-v021-1571",
+      "clio-v021-1572"
+    ],
+    "915": [
+      "clio-v021-3056",
+      "clio-v021-3596",
+      "clio-v021-3601",
+      "clio-v021-3606",
+      "clio-v021-3614",
+      "clio-v021-3618",
+      "clio-v021-3620",
+      "clio-v021-3631",
+      "clio-v021-3641",
+      "clio-v021-3642",
+      "clio-v021-3649"
+    ],
+    "1126": [
+      "clio-v021-3787",
+      "clio-v021-4702",
+      "clio-v021-4798",
+      "clio-v021-4803",
+      "clio-v021-4811"
+    ],
+    "1200": [
+      "clio-v021-4844",
+      "clio-v021-4847",
+      "clio-v021-4855",
+      "clio-v021-4895",
+      "clio-v021-4978",
+      "clio-v021-5188"
+    ],
+    "1215": [
+      "clio-v021-4844",
+      "clio-v021-4895",
+      "clio-v021-5188",
+      "clio-v021-5277",
+      "clio-v021-5293",
+      "clio-v021-5364",
+      "clio-v021-5385"
+    ]
+  },
+  "missing": {
+    "394": "西燕",
+    "922": "岐",
+    "1216": "西辽"
+  },
+  "pointChecks": [
+    {
+      "year": 907,
+      "width": 1440
+    },
+    {
+      "year": 924,
+      "width": 1440
+    },
+    {
+      "year": 907,
+      "width": 390
+    },
+    {
+      "year": 924,
+      "width": 390
+    }
+  ],
+  "reference376": {
+    "naturalWidth": 556,
+    "license": "CC BY 3.0",
+    "retainsYear": true,
+    "missingEasternJinVisible": true
+  },
+  "errors": []
+}
