@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-06",
+  "entityIds": [
+    "ganzhou-uyghur",
+    "qocho-uyghur"
+  ],
+  "reviewedRows": [
+    3492,
+    3630,
+    3687,
+    3706,
+    3463,
+    4163,
+    4373,
+    4816
+  ],
+  "excludedRows": [
+    3180,
+    4070,
+    4309,
+    3210
+  ],
+  "chronologyDecisions": [
+    "甘州始年848／872异说，目录保留起点范围，只接入896年后完整区间；终点采用1028甘州陷落，非所有河西回鹘终点。",
+    "高昌采用866建立，本轮展示至1283本土王室东迁；1209归附不当作王统终止；1332归附耶律大石的冲突段没有自动改年。",
+    "高昌研究轮廓可能覆盖臣属阶段，不冒充全部范围直接实控。",
+    "于阗候选仍待独立学术年代核查，未采用门户中前232年等冲突或传说口径。东晋376年仍缺更广的可确认独立配准点，未生成疆域。"
+  ],
+  "sourceIds": [
+    "zhangye-ganzhou-2026",
+    "zhangye-ganzhou-rise",
+    "neac-qocho-chen",
+    "nopss-gaochang-oasis"
+  ],
+  "locationDecision": {
+    "sourceSha256": "8142581f3db78810938d26ff92d41dc947818f8c1585ce6c472266f00becda82",
+    "rawFields": [
+      [
+        "1529114",
+        "Turpan",
+        "Turpan",
+        "Lukchun,T'u-lu-fan,T'u-lu-fan-chen,T'u-lu-fan-hsien,T'urfang,TLQ,Tourfan,Tufan,Tulupan,Tulupan Xian,Turfan,Turfán,Turpan,T’u-lu-fan,T’u-lu-fan-chen,T’u-lu-fan-hsien,T’urfang,torufan shi,tu lu fan,tu lu fan shi,tu lu fan xian,tulupan si,Турпан,Турфан,تۇرپان,トルファン市,吐鲁番,吐鲁番县,吐鲁番市,투루판 시",
+        "42.94769",
+        "89.17886",
+        "P",
+        "PPLA2",
+        "CN",
+        "",
+        "13",
+        "6504",
+        "",
+        "",
+        "273385",
+        "",
+        "41",
+        "Asia/Urumqi",
+        "2022-02-04"
+      ],
+      [
+        "1785036",
+        "Zhangye",
+        "Zhangye",
+        "Campichu,Cang-jie,Chang-i,Chang-yeh,Chang-yeh-hsien,Chang-yeh-shih,Changyen,Chzhanue,Diong-ik,Diŏng-ĭk,Dzhanie,Ganzhou,Kan-chou,Kanchow,Tiuⁿ-e̍k-chhī,Truong Dich,Trương Dịch,YZY,Zhangye,Zhangye Shi,Zhanue,gan zhou,jang-ye si,zhang ye,zhang ye shi,Čang-jie,Джание,Жанъе,Чжанъе,Չժանիե,ژانگیے,ژانگیۓ,张掖,张掖市,張掖,張掖市,甘州,장예 시",
+        "38.93417",
+        "100.45167",
+        "P",
+        "PPLA2",
+        "CN",
+        "",
+        "15",
+        "6207",
+        "",
+        "",
+        "507433",
+        "",
+        "1481",
+        "Asia/Shanghai",
+        "2021-12-17"
+      ]
+    ],
+    "meaning": "现代城市附近参考，非古城或仪式确点。",
+    "excludedHomonyms": "张掖取甘肃15／6207的PPLA2，不取江西章叶7636217或河北同名9526734；吐鲁番取1529114，不采用库尔勒1529376；张掖不采用万宁1791779。"
+  }
+}

@@ -3,6 +3,121 @@ import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { makeCatalog, makePackage, time } from "../fixtures/make";
 import { buildSearchIndex } from "../../src/features/search/index";
+test("河西与高昌回鹘轮廓按来源年份切换，990年播放停止时不延用甘州旧图", async ({
+  page,
+}) => {
+  test.setTimeout(60000);
+  await page.goto("/");
+  const canvas = page.locator(".map-canvas");
+  for (const [n, ids] of [
+    [888, [3463]],
+    [896, [3492, 3463]],
+    [911, [3630, 3463]],
+    [925, [3687, 3463]],
+    [989, [3706, 3463]],
+    [1010, [4163]],
+    [1125, [4373]],
+    [1138, [4816]],
+  ] as const) {
+    await year(page, n);
+    for (const id of ids)
+      await expect(canvas).toHaveAttribute(
+        "data-rendered-territory-ids",
+        new RegExp(`(?:^| )clio-v021-${id}(?: |$)`),
+      );
+  }
+  await year(page, 989);
+  await page.getByRole("button", { name: "播放时间轴", exact: true }).click();
+  await expect(page.getByTestId("committed-year")).toHaveText("990");
+  await expect(
+    page.getByRole("button", { name: "播放时间轴", exact: true }),
+  ).toBeVisible();
+  for (const id of [3706, 4070, 4309])
+    await expect(canvas).not.toHaveAttribute(
+      "data-rendered-territory-ids",
+      new RegExp(`(?:^| )clio-v021-${id}(?: |$)`),
+    );
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await expect(page.getByTestId("missing-polities")).toContainText("甘州回鹘");
+  await expect(page.locator(".coverage-panel")).not.toContainText(
+    "新扩展时段尚无配准疆域切片",
+  );
+  await year(page, 1139);
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /clio-v021-4816/,
+  );
+  await expect(page.getByTestId("missing-polities")).toContainText("高昌回鹘");
+  await year(page, 1209);
+  await expect(page.getByTestId("missing-polities")).toContainText("高昌回鹘");
+});
+test("回鹘纪事的地区亮点在桌面、窄窗、手机无遮挡，点击可查看位置限度", async ({
+  page,
+}) => {
+  test.setTimeout(60000);
+  await page.goto("/");
+  for (const viewport of [
+    { width: 1440, height: 960 },
+    { width: 767, height: 733 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    for (const [n, title, place] of [
+      [866, "高昌回鹘建立", "吐鲁番"],
+      [1028, "甘州陷落，甘州回鹘本土政权结束", "张掖"],
+      [1209, "高昌回鹘归附蒙古", "吐鲁番"],
+    ] as const) {
+      await year(page, n);
+      const point = page
+        .locator(".event-glow")
+        .and(page.getByRole("button", { name: title, exact: true }));
+      await expect
+        .poll(() =>
+          point.evaluate((el) => {
+            const r = el.getBoundingClientRect();
+            const canvas = document
+              .querySelector(".map-canvas")!
+              .getBoundingClientRect();
+            return (
+              r.left >= canvas.left &&
+              r.right <= canvas.right &&
+              r.top >= canvas.top &&
+              r.bottom <= canvas.bottom &&
+              document
+                .elementFromPoint(r.x + r.width / 2, r.y + r.height / 2)
+                ?.closest(".event-glow") === el &&
+              [
+                ...document.querySelectorAll(
+                  ".map-territory-key, .coverage-banner",
+                ),
+              ].every((overlay) => {
+                const b = overlay.getBoundingClientRect();
+                return (
+                  r.right <= b.left ||
+                  r.left >= b.right ||
+                  r.bottom <= b.top ||
+                  r.top >= b.bottom
+                );
+              })
+            );
+          }),
+        )
+        .toBe(true);
+      await point.click();
+      const detail = page.getByRole("complementary", { name: "条目详情" });
+      await expect(detail).toContainText(title);
+      await expect(detail).toContainText(place);
+      await expect(detail).toContainText("地区参考");
+      await expect(detail).toContainText("确点");
+      if (n === 1209)
+        await expect(detail).toContainText("不将归附当作政权立即消失");
+      await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+      expect(
+        await page.evaluate(() => document.documentElement.scrollWidth),
+      ).toBeLessThanOrEqual(viewport.width);
+    }
+  }
+});
 test("376年东晋原图可查阅但不冒充主图疆域，手机关闭后年份保留", async ({
   page,
 }) => {

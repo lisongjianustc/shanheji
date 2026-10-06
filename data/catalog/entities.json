@@ -5278,5 +5278,106 @@
       "china-core"
     ],
     "capitals": []
+  },
+  {
+    "id": "ganzhou-uyghur",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "甘州回鹘",
+        "validity": {
+          "start": {
+            "earliest": "0848-01-01",
+            "latest": "0872-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1028-01-01",
+            "latest": "1029-01-01"
+          },
+          "precision": "range",
+          "label": "9世纪形成—1028年（848／872年起点有不同记载；非确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "zhangye-ganzhou-2026",
+            "locator": "872年甘州设牙帐、1028年甘州陷落段",
+            "note": "采用1028年本土政权终点；872年与另一来源848年始年口径不同，保留起点不确定性。其他朝代的泛化或冲突年代不采用。"
+          },
+          {
+            "sourceId": "zhangye-ganzhou-rise",
+            "locator": "末段848—1028年；与2026年概况对照",
+            "note": "848年与872年形成口径不一致；不据其中一项断言准确建国年。860—895年候选跨该分歧，未接入。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0848-01-01",
+        "latest": "0872-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1028-01-01",
+        "latest": "1029-01-01"
+      },
+      "precision": "range",
+      "label": "9世纪形成—1028年（848／872年起点有不同记载；非确日）"
+    },
+    "color": "#9a7758",
+    "regionIds": [
+      "china-core",
+      "central-asia"
+    ],
+    "capitals": []
+  },
+  {
+    "id": "qocho-uyghur",
+    "kind": "polity",
+    "names": [
+      {
+        "text": "高昌回鹘",
+        "validity": {
+          "start": {
+            "earliest": "0866-01-01",
+            "latest": "0866-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1283-01-01",
+            "latest": "1284-01-01"
+          },
+          "precision": "range",
+          "label": "866—1283年（本轮高昌本土阶段；1209年归附，1283年王室东迁；非王统终点）"
+        },
+        "evidence": [
+          {
+            "sourceId": "neac-qocho-chen",
+            "locator": "陈爱峰访谈：866年建立、13世纪初归顺、13世纪末王室东迁段",
+            "note": "866年建立采用研究员访谈；归附与王室迁移不混作整个王统消失。"
+          },
+          {
+            "sourceId": "nopss-gaochang-oasis",
+            "locator": "第二部分：866年建立、1209年臣服、1283年王室东迁段",
+            "note": "1283年为本轮高昌本土阶段展示终点，不断言亦都护王统此后不存在；同段1332年归附耶律大石明显冲突，未采用或自动改成1132。"
+          }
+        ]
+      }
+    ],
+    "existence": {
+      "start": {
+        "earliest": "0866-01-01",
+        "latest": "0866-12-31"
+      },
+      "endExclusive": {
+        "earliest": "1283-01-01",
+        "latest": "1284-01-01"
+      },
+      "precision": "range",
+      "label": "866—1283年（本轮高昌本土阶段；1209年归附，1283年王室东迁；非王统终点）"
+    },
+    "color": "#709a91",
+    "regionIds": [
+      "central-asia"
+    ],
+    "capitals": []
   }
 ]

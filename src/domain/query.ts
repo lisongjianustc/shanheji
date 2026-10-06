@@ -208,13 +208,9 @@ export function queryScene(
   );
   const warnings: string[] = [];
   if (territories.some((t) => t.properties.spatialPrecision === "disputed"))
-    warnings.push(
-      "本来源版本存在边界争议；行政、复原与主张范围不等于已证实实控疆域",
-    );
+    warnings.push("存在边界争议；行政、复原与主张不等于实控");
   if (territories.some((t) => t.properties.relation === "reconstruction"))
-    warnings.push(
-      "部分疆域采用研究来源的年份区间复原，转折与细节可能缺漏；不表示确日格局",
-    );
+    warnings.push("研究来源按年份区间复原；转折可能缺漏，非确日格局");
   if (multiplePhases)
     warnings.push("本年存在多个疆域阶段；每个政权默认显示较晚切片，可切换阶段");
   if (
@@ -228,7 +224,7 @@ export function queryScene(
       ),
     ).size > 1
   )
-    warnings.push("本年资料，参考时点不一；各切片不代表同一瞬间");
+    warnings.push("本年资料，参考时点不一；不代表同一瞬间");
   if (q.at && f.nearbyReference)
     warnings.push("具体日期模式仅显示该日有效资料，不使用近年参考切片");
   if (!territories.length)
@@ -245,7 +241,7 @@ export function queryScene(
     );
   if (!coverage.length) warnings.push("当前区域资料覆盖情况未知");
   if (coverage.some((x) => x.status !== "verified"))
-    warnings.push("部分地区或主题资料尚未完成核验");
+    warnings.push("完整疆界及事件资料仍待补齐");
   if (referenceYears.length)
     warnings.push(
       `邻近年份参考：${[...new Set(referenceYears)]

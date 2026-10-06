@@ -661,9 +661,9 @@
   },
   {
     "id": "geonames-regional-reference",
-    "title": "GeoNames：鄂州、南京、京都、洛阳、登封、凤翔地区参考",
+    "title": "GeoNames地区参考子集（鄂州、南京、京都、洛阳、登封、凤翔、张掖、吐鲁番）",
     "creator": "GeoNames contributors",
-    "edition": "官方国家dump；本轮共取6条地名记录，WGS84；现代地区参考",
+    "edition": "CN/JP country dumps，保留8条原始记录；2026-10-06增补",
     "url": "https://download.geonames.org/export/dump/",
     "accessedAt": "2026-10-06",
     "license": "Creative Commons Attribution 4.0 International（CC BY 4.0）",
@@ -746,5 +746,49 @@
     "license": "CC BY 3.0",
     "redistribution": "allowed",
     "permissionEvidence": "Commons作者许可明确CC BY 3.0，采用该许可并署名、保留原图及来源链接；https://creativecommons.org/licenses/by/3.0/。原图未修改，不代表作者认可本项目。"
+  },
+  {
+    "id": "zhangye-ganzhou-2026",
+    "title": "张掖历史概况",
+    "creator": "张鸿清；张掖市史志办／方志张掖",
+    "edition": "2026-08-21网页",
+    "url": "https://www.zhangye.gov.cn/szb/dzdt/gjzy/202608/t20260821_1577496.html",
+    "accessedAt": "2026-10-06",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实、来源定位和链接，不复制网页全文、照片或图幅。疆域复原几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "zhangye-ganzhou-rise",
+    "title": "甘州回鹘兴与衰",
+    "creator": "张掖市史志办／张掖地方志网",
+    "edition": "页面日期2020-01-01；URL目录2019-12-31",
+    "url": "https://www.zhangye.gov.cn/szb/dzdt/gjzy/201912/t20191231_368026_ghb.html",
+    "accessedAt": "2026-10-06",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实、来源定位和链接，不复制网页全文、照片或图幅。疆域复原几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "neac-qocho-chen",
+    "title": "柏孜克里克石窟因何与敦煌齐名？",
+    "creator": "陈爱峰研究员访谈；中国民族报道中华；国家民委网站",
+    "edition": "2022-10-29网页",
+    "url": "https://www.neac.gov.cn/seac/c103391/202210/1159447.shtml",
+    "accessedAt": "2026-10-06",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实、来源定位和链接，不复制网页全文、照片或图幅。疆域复原几何另依Cliopatria CC BY 4.0许可。"
+  },
+  {
+    "id": "nopss-gaochang-oasis",
+    "title": "西域绿洲人与自然的互动与演变——以高昌绿洲为例",
+    "creator": "戊己；中国人民大学国学院西域所；全国哲学社会科学工作办公室网站",
+    "edition": "2013-04-22网页",
+    "url": "https://www.nopss.gov.cn/n/2013/0422/c362362-21233214.html",
+    "accessedAt": "2026-10-06",
+    "license": "原网页保留权利；仅采用事实并独立编写摘要",
+    "redistribution": "unknown",
+    "permissionEvidence": "只发布独立事实、来源定位和链接，不复制网页全文、照片或图幅。疆域复原几何另依Cliopatria CC BY 4.0许可。"
   }
 ]

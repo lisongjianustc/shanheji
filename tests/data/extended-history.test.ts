@@ -15,6 +15,42 @@ let catalog: Catalog, packs: DataPackage[];
 beforeAll(
   async () => ({ catalog, packs } = await readDataset(resolve("data"))),
 );
+it.each([
+  [866, "qocho-founded-866", [89.17886, 42.94769]],
+  [1028, "ganzhou-falls-1028", [100.45167, 38.93417]],
+  [1209, "qocho-submits-1209", [89.17886, 42.94769]],
+] as const)(
+  "uses the reviewed modern regional reference for an oasis event at %i",
+  (year, id, coordinates) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    const point = buildEventLocations(scene).features.features.find(
+      (f) => f.properties.eventId === id,
+    )!;
+    expect(point.geometry.coordinates).toEqual([...coordinates]);
+    expect(point.properties.approximate).toBe(true);
+    expect(scene.events.find((e) => e.id === id)?.interpretation).toContain(
+      "确点",
+    );
+    expect(
+      queryScene(catalog, packs, defaultQuery(year + 1), defaults).events.some(
+        (e) => e.id === id,
+      ),
+    ).toBe(false);
+  },
+);
+it("retains Qocho after Mongol submission and preserves Ganzhou's uncertain beginning", () => {
+  const qocho = catalog.entities.find((e) => e.id === "qocho-uyghur")!;
+  expect(entityActiveInYear(qocho, 1209)).toBe(true);
+  expect(entityActiveInYear(qocho, 1283)).toBe(true);
+  expect(entityActiveInYear(qocho, 1284)).toBe(false);
+  expect(qocho.existence.label).toContain("本土阶段");
+  const gan = catalog.entities.find((e) => e.id === "ganzhou-uyghur")!;
+  expect(gan.existence.start).toEqual({
+    earliest: "0848-01-01",
+    latest: "0872-12-31",
+  });
+  expect(entityActiveInYear(gan, 1029)).toBe(false);
+});
 it("publishes the new chronology with complete references and retains old territories", () => {
   expect(validateDataset(catalog, packs)).toEqual([]);
   expect(catalogSchema.safeParse(catalog).success).toBe(true);

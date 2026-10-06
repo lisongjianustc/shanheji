@@ -85,8 +85,44 @@ it("retains source interval endpoints in the navigation index and deduplicates o
     ).toBe(true);
     expect(t.properties.validity.precision).toBe("year");
   }
-  expect(seen.size).toBe(565);
+  expect(seen.size).toBe(573);
 });
+it.each([
+  [896, "ganzhou-uyghur", "clio-v021-3492"],
+  [911, "ganzhou-uyghur", "clio-v021-3630"],
+  [925, "ganzhou-uyghur", "clio-v021-3687"],
+  [989, "ganzhou-uyghur", "clio-v021-3706"],
+  [888, "qocho-uyghur", "clio-v021-3463"],
+  [1010, "qocho-uyghur", "clio-v021-4163"],
+  [1125, "qocho-uyghur", "clio-v021-4373"],
+  [1138, "qocho-uyghur", "clio-v021-4816"],
+] as const)(
+  "keeps an oasis reconstruction within its reviewed interval at %i",
+  (year, entityId, id) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    const t = scene.territories.find((f) => f.properties.id === id)!;
+    expect(t.properties.entityId).toBe(entityId);
+    expect(t.properties.relation).toBe("reconstruction");
+    expect(t.properties.spatialPrecision).toBe("disputed");
+  },
+);
+it.each([
+  [866, "qocho-uyghur"],
+  [880, "ganzhou-uyghur"],
+  [990, "ganzhou-uyghur"],
+  [1028, "ganzhou-uyghur"],
+  [1139, "qocho-uyghur"],
+  [1209, "qocho-uyghur"],
+] as const)(
+  "retains unsupported oasis years as gaps at %i",
+  (year, entityId) => {
+    const scene = queryScene(catalog, packs, defaultQuery(year), defaults);
+    expect(
+      scene.territories.some((f) => f.properties.entityId === entityId),
+    ).toBe(false);
+    expect(missingPolities(scene).map((e) => e.id)).toContain(entityId);
+  },
+);
 it.each([
   [387, "western-yan", "clio-v021-1545"],
   [390, "western-yan", "clio-v021-1567"],

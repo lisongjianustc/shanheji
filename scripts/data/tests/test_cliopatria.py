@@ -15,8 +15,17 @@ class CliopatriaTest(unittest.TestCase):
   for index in [6943,11022]:
    g=shape(ids[f'clio-v021-{index}']['geometry']);self.assertTrue(g.is_valid)
    for xy in [(116.4,39.9),(113.25,23.12)]:self.assertTrue(g.contains(Point(xy)))
-  self.assertEqual(len(ids),565)
-  self.assertEqual(self.audit['excluded'],124)
+  self.assertEqual(len(ids),573)
+  self.assertEqual(self.audit['excluded'],128)
+ def test_oasis_early_conflicts_and_terminal_records_stay_quarantined(self):
+  rejected={r['rowIndex'] for r in self.audit['records'] if r['status']=='excluded'}
+  self.assertTrue({3180,3210,4070,4309}.issubset(rejected))
+  ids={f['properties']['id']:f for f in self.fs}
+  for index in [3492,3630,3687,3706,3463,4163,4373,4816]:
+   self.assertTrue(shape(ids[f'clio-v021-{index}']['geometry']).is_valid)
+  entities={e['id']:e for e in read(ROOT/'data/catalog/entities.json')};c=read(CONFIG)
+  self.assertIsNone(select_entity(dict(Name='Ganzhou Kingdom',FromYear=990,ToYear=1033,Type='POLITY',Wikidata='Q1000124'),entities,c)[0])
+  self.assertIsNone(select_entity(dict(Name='Qocho Kingdom',FromYear=888,ToYear=1009,Type='POLITY',Wikidata='Q1923401'),entities,c)[0])
  def test_new_identity_checks_do_not_merge_warring_states_qi_or_extend_terminal_records(self):
   entities={e['id']:e for e in read(ROOT/'data/catalog/entities.json')};c=read(CONFIG)
   self.assertIsNone(select_entity(dict(Name='Qi Kingdom',FromYear=911,ToYear=921,Type='POLITY',Wikidata='Q750739'),entities,c)[0])

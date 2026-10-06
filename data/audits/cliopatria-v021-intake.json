@@ -4,9 +4,9 @@
   "zipSha256": "e10a4e429fca708788ff9e7572a95fce801fae55852d217cffabc1c59cd4eed4",
   "geojsonSha256": "fc6f0d1e4cc42f45da83522b3696db6f2cc85ec0d12259a85c89b31347b8fc0a",
   "sourceFeatureCount": 13797,
-  "accepted": 565,
-  "excluded": 124,
-  "entities": 91,
+  "accepted": 573,
+  "excluded": 128,
+  "entities": 93,
   "records": [
     {
       "rowIndex": 56,
@@ -4839,6 +4839,15 @@
       "displayToYear": 910
     },
     {
+      "rowIndex": 3180,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 860,
+      "toYear": 895,
+      "wikidata": "Q1000124",
+      "status": "excluded",
+      "reason": "860—895年跨甘州形成始年不同记载（848／872等），未用宽泛目录起点批准该轮廓；整段隔离"
+    },
+    {
       "rowIndex": 3199,
       "sourceName": "Nanzhao",
       "fromYear": 860,
@@ -4849,6 +4858,15 @@
       "featureId": "clio-v021-3199",
       "displayFromYear": 860,
       "displayToYear": 865
+    },
+    {
+      "rowIndex": 3210,
+      "sourceName": "Qocho Kingdom",
+      "fromYear": 860,
+      "toYear": 887,
+      "wikidata": "Q2662180",
+      "status": "excluded",
+      "reason": "860—887年跨本目录采用的866年高昌回鹘建立节点；整段隔离，不裁年"
     },
     {
       "rowIndex": 3214,
@@ -4947,6 +4965,18 @@
       "displayToYear": 899
     },
     {
+      "rowIndex": 3463,
+      "sourceName": "Qocho Kingdom",
+      "fromYear": 888,
+      "toYear": 1009,
+      "wikidata": "Q2662180",
+      "status": "accepted",
+      "entityId": "qocho-uyghur",
+      "featureId": "clio-v021-3463",
+      "displayFromYear": 888,
+      "displayToYear": 1009
+    },
+    {
       "rowIndex": 3472,
       "sourceName": "Unified Silla",
       "fromYear": 892,
@@ -4956,6 +4986,18 @@
       "entityId": "silla",
       "featureId": "clio-v021-3472",
       "displayFromYear": 892,
+      "displayToYear": 910
+    },
+    {
+      "rowIndex": 3492,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 896,
+      "toYear": 910,
+      "wikidata": "Q1000124",
+      "status": "accepted",
+      "entityId": "ganzhou-uyghur",
+      "featureId": "clio-v021-3492",
+      "displayFromYear": 896,
       "displayToYear": 910
     },
     {
@@ -5058,6 +5100,18 @@
       "displayToYear": 921
     },
     {
+      "rowIndex": 3630,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 911,
+      "toYear": 921,
+      "wikidata": "Q1000124",
+      "status": "accepted",
+      "entityId": "ganzhou-uyghur",
+      "featureId": "clio-v021-3630",
+      "displayFromYear": 911,
+      "displayToYear": 921
+    },
+    {
       "rowIndex": 3631,
       "sourceName": "Wuyue",
       "fromYear": 911,
@@ -5148,6 +5202,18 @@
       "displayToYear": 925
     },
     {
+      "rowIndex": 3687,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 922,
+      "toYear": 925,
+      "wikidata": "Q1000124",
+      "status": "accepted",
+      "entityId": "ganzhou-uyghur",
+      "featureId": "clio-v021-3687",
+      "displayFromYear": 922,
+      "displayToYear": 925
+    },
+    {
       "rowIndex": 3691,
       "sourceName": "Qi Kingdom",
       "fromYear": 922,
@@ -5179,6 +5245,18 @@
       "featureId": "clio-v021-3699",
       "displayFromYear": 922,
       "displayToYear": 925
+    },
+    {
+      "rowIndex": 3706,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 926,
+      "toYear": 989,
+      "wikidata": "Q1000124",
+      "status": "accepted",
+      "entityId": "ganzhou-uyghur",
+      "featureId": "clio-v021-3706",
+      "displayFromYear": 926,
+      "displayToYear": 989
     },
     {
       "rowIndex": 3714,
@@ -5604,6 +5682,27 @@
       "reason": "来源区间越过已登记政权存续或阶段"
     },
     {
+      "rowIndex": 4070,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 990,
+      "toYear": 1033,
+      "wikidata": "Q1000124",
+      "status": "excluded",
+      "reason": "990—1033年跨1028年甘州陷落；未裁年份或复制旧图为稳定范围"
+    },
+    {
+      "rowIndex": 4163,
+      "sourceName": "Qocho Kingdom",
+      "fromYear": 1010,
+      "toYear": 1039,
+      "wikidata": "Q2662180",
+      "status": "accepted",
+      "entityId": "qocho-uyghur",
+      "featureId": "clio-v021-4163",
+      "displayFromYear": 1010,
+      "displayToYear": 1039
+    },
+    {
       "rowIndex": 4308,
       "sourceName": "Western Xia",
       "fromYear": 1034,
@@ -5614,6 +5713,15 @@
       "featureId": "clio-v021-4308",
       "displayFromYear": 1034,
       "displayToYear": 1039
+    },
+    {
+      "rowIndex": 4309,
+      "sourceName": "Ganzhou Kingdom",
+      "fromYear": 1034,
+      "toYear": 1039,
+      "wikidata": "Q1000124",
+      "status": "excluded",
+      "reason": "1034—1039年晚于1028年甘州本土政权终点；不把河西其他回鹘残部直接合并"
     },
     {
       "rowIndex": 4348,
@@ -5638,6 +5746,18 @@
       "featureId": "clio-v021-4364",
       "displayFromYear": 1040,
       "displayToYear": 1055
+    },
+    {
+      "rowIndex": 4373,
+      "sourceName": "Qocho Kingdom",
+      "fromYear": 1040,
+      "toYear": 1125,
+      "wikidata": "Q2662180",
+      "status": "accepted",
+      "entityId": "qocho-uyghur",
+      "featureId": "clio-v021-4373",
+      "displayFromYear": 1040,
+      "displayToYear": 1125
     },
     {
       "rowIndex": 4380,
@@ -5729,6 +5849,18 @@
       "status": "accepted",
       "entityId": "jurchen-jin",
       "featureId": "clio-v021-4811",
+      "displayFromYear": 1126,
+      "displayToYear": 1138
+    },
+    {
+      "rowIndex": 4816,
+      "sourceName": "Qocho Kingdom",
+      "fromYear": 1126,
+      "toYear": 1138,
+      "wikidata": "Q2662180",
+      "status": "accepted",
+      "entityId": "qocho-uyghur",
+      "featureId": "clio-v021-4816",
       "displayFromYear": 1126,
       "displayToYear": 1138
     },

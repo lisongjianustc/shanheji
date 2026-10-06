@@ -2,11 +2,11 @@
   "checkedAt": "2026-10-06",
   "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
   "packages": 9,
-  "entities": 97,
-  "uniqueTerritories": 577,
-  "territoryReferences": 632,
-  "uniqueEvents": 72,
-  "eventReferences": 75,
+  "entities": 99,
+  "uniqueTerritories": 585,
+  "territoryReferences": 642,
+  "uniqueEvents": 75,
+  "eventReferences": 78,
   "records": [
     {
       "entityId": "cao-wei",
@@ -2553,6 +2553,60 @@
         ]
       ],
       "geometryRecords": 1
+    },
+    {
+      "entityId": "ganzhou-uyghur",
+      "name": "甘州回鹘",
+      "registeredYears": [
+        [
+          848,
+          1028
+        ]
+      ],
+      "availableYears": [
+        [
+          896,
+          989
+        ]
+      ],
+      "missingYears": [
+        [
+          848,
+          895
+        ],
+        [
+          990,
+          1028
+        ]
+      ],
+      "geometryRecords": 4
+    },
+    {
+      "entityId": "qocho-uyghur",
+      "name": "高昌回鹘",
+      "registeredYears": [
+        [
+          866,
+          1283
+        ]
+      ],
+      "availableYears": [
+        [
+          888,
+          1138
+        ]
+      ],
+      "missingYears": [
+        [
+          866,
+          887
+        ],
+        [
+          1139,
+          1283
+        ]
+      ],
+      "geometryRecords": 4
     }
   ]
 }

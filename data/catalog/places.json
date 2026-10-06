@@ -1105,5 +1105,180 @@
         ]
       }
     ]
+  },
+  {
+    "id": "zhangye-region",
+    "names": [
+      {
+        "text": "甘州（今张掖附近）",
+        "validity": {
+          "start": {
+            "earliest": "1028-01-01",
+            "latest": "1028-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1028-01-01",
+            "latest": "1029-01-01"
+          },
+          "precision": "range",
+          "label": "1028—1028年（来源年精度，非确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "zhangye-ganzhou-2026",
+            "locator": "872年甘州设牙帐、1028年甘州陷落段",
+            "note": "采用1028年本土政权终点；872年与另一来源848年始年口径不同，保留起点不确定性。其他朝代的泛化或冲突年代不采用。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            100.45167,
+            38.93417
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "1028-01-01",
+            "latest": "1028-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1029-01-01",
+            "latest": "1029-01-01"
+          },
+          "precision": "year",
+          "label": "1028年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1785036；Zhangye；PPLA2；admin1=15、admin2=6207",
+            "note": "现代甘肃张掖城区附近的地区参考，非1028年战场、城墙或军队行进确点。"
+          },
+          {
+            "sourceId": "zhangye-ganzhou-2026",
+            "locator": "872年甘州设牙帐、1028年甘州陷落段",
+            "note": "采用1028年本土政权终点；872年与另一来源848年始年口径不同，保留起点不确定性。其他朝代的泛化或冲突年代不采用。"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "turpan-region",
+    "names": [
+      {
+        "text": "高昌地区（今吐鲁番附近）",
+        "validity": {
+          "start": {
+            "earliest": "0866-01-01",
+            "latest": "0866-12-31"
+          },
+          "endExclusive": {
+            "earliest": "1209-01-01",
+            "latest": "1210-01-01"
+          },
+          "precision": "range",
+          "label": "866—1209年（来源年精度，非确日）"
+        },
+        "evidence": [
+          {
+            "sourceId": "neac-qocho-chen",
+            "locator": "陈爱峰访谈：866年建立、13世纪初归顺、13世纪末王室东迁段",
+            "note": "866年建立采用研究员访谈；归附与王室迁移不混作整个王统消失。"
+          },
+          {
+            "sourceId": "nopss-gaochang-oasis",
+            "locator": "第二部分：866年建立、1209年臣服、1283年王室东迁段",
+            "note": "1283年为本轮高昌本土阶段展示终点，不断言亦都护王统此后不存在；同段1332年归附耶律大石明显冲突，未采用或自动改成1132。"
+          }
+        ]
+      }
+    ],
+    "locations": [
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            89.17886,
+            42.94769
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "0866-01-01",
+            "latest": "0866-01-01"
+          },
+          "endExclusive": {
+            "earliest": "0867-01-01",
+            "latest": "0867-01-01"
+          },
+          "precision": "year",
+          "label": "866年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1529114；Turpan；PPLA2；admin1=13、admin2=6504",
+            "note": "现代吐鲁番城区附近的地区参考，非高昌故城、宫城或建立／归附仪式确点。"
+          },
+          {
+            "sourceId": "neac-qocho-chen",
+            "locator": "陈爱峰访谈：866年建立、13世纪初归顺、13世纪末王室东迁段",
+            "note": "866年建立采用研究员访谈；归附与王室迁移不混作整个王统消失。"
+          },
+          {
+            "sourceId": "nopss-gaochang-oasis",
+            "locator": "第二部分：866年建立、1209年臣服、1283年王室东迁段",
+            "note": "1283年为本轮高昌本土阶段展示终点，不断言亦都护王统此后不存在；同段1332年归附耶律大石明显冲突，未采用或自动改成1132。"
+          }
+        ]
+      },
+      {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            89.17886,
+            42.94769
+          ]
+        },
+        "validity": {
+          "start": {
+            "earliest": "1209-01-01",
+            "latest": "1209-01-01"
+          },
+          "endExclusive": {
+            "earliest": "1210-01-01",
+            "latest": "1210-01-01"
+          },
+          "precision": "year",
+          "label": "1209年（来源纪年，非确日）"
+        },
+        "spatialPrecision": "approximate",
+        "evidence": [
+          {
+            "sourceId": "geonames-regional-reference",
+            "locator": "CN.txt 1529114；Turpan；PPLA2；admin1=13、admin2=6504",
+            "note": "现代吐鲁番城区附近的地区参考，非高昌故城、宫城或建立／归附仪式确点。"
+          },
+          {
+            "sourceId": "neac-qocho-chen",
+            "locator": "陈爱峰访谈：866年建立、13世纪初归顺、13世纪末王室东迁段",
+            "note": "866年建立采用研究员访谈；归附与王室迁移不混作整个王统消失。"
+          },
+          {
+            "sourceId": "nopss-gaochang-oasis",
+            "locator": "第二部分：866年建立、1209年臣服、1283年王室东迁段",
+            "note": "1283年为本轮高昌本土阶段展示终点，不断言亦都护王统此后不存在；同段1332年归附耶律大石明显冲突，未采用或自动改成1132。"
+          }
+        ]
+      }
+    ]
   }
 ]

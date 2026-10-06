@@ -114,7 +114,7 @@ export function MapPlateViewer({
           >
             {plate.license}
           </a>{" "}
-          · 按原图展示，未将图中边线转换为地理疆界。
+          · 本窗口按原图展示；主地图采用情况见上方限度说明。
         </p>
       </footer>
     </dialog>

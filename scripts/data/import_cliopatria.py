@@ -115,6 +115,7 @@ if __name__=='__main__':
    # Same immutable feature IDs across overlapping packages deduplicate in the scene.
    p['territories'] += [f for f in fs if y(f['properties']['validity']['start']['earliest'])<=end and last_year(f['properties']['validity'])>=start]
    for v in p['coverage']:
+    v['reason']=v['reason'].replace('新扩展时段尚无配准疆域切片。','本时段尚未完成完整逐年实控疆界编制。')
     if v['topic']=='territory' and any(v['regionId'] in f['properties']['regionIds'] for f in p['territories'] if f['properties']['interpretationId']==VERSION):
      if 'Cliopatria' not in v['reason']:v['reason']+=' 已加入逐条筛查的Cliopatria年份区间复原；不等于此地区完整疆界。'
    write(path,p)
