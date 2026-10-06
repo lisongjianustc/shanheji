@@ -362,6 +362,52 @@ try {
     /clio-v021-(3931|4490)/,
   );
   await expect(page.getByTestId("missing-polities")).toContainText("大中国");
+  for (const viewport of [
+    { width: 767, height: 733 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    const closeBrowse = page.getByRole("button", {
+      name: "关闭浏览",
+      exact: true,
+    });
+    if (await closeBrowse.isVisible()) await closeBrowse.click();
+    await entry.fill("700");
+    await entry.press("Enter");
+    await expect(page.getByTestId("committed-year")).toHaveText("700");
+    const point = page.getByRole("button", {
+      name: "武则天金简纪年",
+      exact: true,
+    });
+    await expect
+      .poll(() =>
+        point.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return [
+            ...document.querySelectorAll(
+              ".map-territory-key, .coverage-banner",
+            ),
+          ].every((overlay) => {
+            const b = overlay.getBoundingClientRect();
+            return (
+              r.right <= b.left ||
+              r.left >= b.right ||
+              r.bottom <= b.top ||
+              r.top >= b.bottom
+            );
+          });
+        }),
+      )
+      .toBe(true);
+    await point.click();
+    await expect(
+      page.getByRole("complementary", { name: "条目详情" }),
+    ).toContainText("武则天金简纪年");
+    await page.screenshot({
+      path: `docs/qa/screenshots/production-point-700-${viewport.width}.png`,
+    });
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  }
   await entry.fill("1912");
   await entry.press("Enter");
   await expect(page.getByTestId("committed-year")).toHaveText("1912");
@@ -402,6 +448,7 @@ try {
         researchMobileNoOverlap: true,
         regionalPointsClickable: [229, 317, 690, 700, 705, 794],
         regionalPointsStayInViewWithDetails: true,
+        narrowEventPointUnobstructed: [767, 390],
         mapGapShortcutVerified: true,
         daliSupportedIntervalAndDazhongGapVerified: true,
         disputedAdministrationVisible: true,

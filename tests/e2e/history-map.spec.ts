@@ -3,6 +3,59 @@ import { createHash } from "node:crypto";
 import { mkdirSync, writeFileSync } from "node:fs";
 import { makeCatalog, makePackage, time } from "../fixtures/make";
 import { buildSearchIndex } from "../../src/features/search/index";
+test("窄窗口事件亮点不被疆域与资料浮层遮挡", async ({ page }) => {
+  for (const viewport of [
+    { width: 767, height: 733 },
+    { width: 390, height: 844 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/");
+    await year(page, 700);
+    const point = page.getByRole("button", {
+      name: "武则天金简纪年",
+      exact: true,
+    });
+    await expect
+      .poll(() =>
+        point.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return [
+            ...document.querySelectorAll(
+              ".map-territory-key, .coverage-banner",
+            ),
+          ].every((overlay) => {
+            const b = overlay.getBoundingClientRect();
+            return (
+              r.right <= b.left ||
+              r.left >= b.right ||
+              r.bottom <= b.top ||
+              r.top >= b.bottom
+            );
+          });
+        }),
+      )
+      .toBe(true);
+    await expect
+      .poll(() =>
+        point.evaluate((el) => {
+          const r = el.getBoundingClientRect();
+          return el.contains(
+            document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2),
+          );
+        }),
+      )
+      .toBe(true);
+    await point.click();
+    await expect(
+      page.getByRole("complementary", { name: "条目详情" }),
+    ).toContainText("武则天金简纪年");
+    await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+    await page
+      .getByRole("button", { name: "查看本年疆域缺口", exact: true })
+      .click();
+    await expect(page.getByTestId("missing-polities")).toContainText("武周");
+  }
+});
 async function expectCuratedPaint(target: Locator, ids: string) {
   await expect
     .poll(async () =>

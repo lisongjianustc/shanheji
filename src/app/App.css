@@ -1372,10 +1372,28 @@ p {
 }
 @media (max-width: 900px) {
   .map-territory-key {
-    top: 170px;
-    max-height: 110px;
+    top: 100px;
+    max-height: 45px;
     right: 12px;
     max-width: calc(100% - 24px);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  .map-territory-key > * {
+    flex-shrink: 0;
+  }
+  .map-caption {
+    top: 62px;
+  }
+  .map-caption > span {
+    display: none;
+  }
+  .map-caption h2 {
+    font-size: 18px;
+    margin: 0;
+    line-height: 24px;
   }
 }
 

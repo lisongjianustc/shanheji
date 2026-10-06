@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-05T13:25:54.057Z",
+  "checkedAt": "2026-10-06T04:58:31.843Z",
   "url": "http://127.0.0.1:4174",
   "dataVersion": "24a38b9d1531e501",
   "years": [
@@ -92,6 +92,10 @@
     794
   ],
   "regionalPointsStayInViewWithDetails": true,
+  "narrowEventPointUnobstructed": [
+    767,
+    390
+  ],
   "mapGapShortcutVerified": true,
   "daliSupportedIntervalAndDazhongGapVerified": true,
   "disputedAdministrationVisible": true,

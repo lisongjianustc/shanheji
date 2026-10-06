@@ -26,7 +26,32 @@ const empty = { type: "FeatureCollection" as const, features: [] };
 function fitScene(map: MapInstance, scene: Scene | null) {
   const bounds = sceneBounds(scene);
   if (!bounds) return false;
-  map.fitBounds(bounds, { padding: 50, maxZoom: 5, duration: 0 });
+  let padding:
+    number | { top: number; bottom: number; left: number; right: number } = 50;
+  if (window.matchMedia("(max-width: 900px)").matches) {
+    const host = map.getContainer();
+    const canvas = host.getBoundingClientRect();
+    const region = host.closest(".map-region");
+    const upper = [".map-caption", ".map-territory-key"].map(
+      (selector) =>
+        region?.querySelector(selector)?.getBoundingClientRect().bottom ??
+        canvas.top,
+    );
+    const banner = region
+      ?.querySelector(".coverage-banner")
+      ?.getBoundingClientRect();
+    let top = Math.max(60, ...upper.map((bottom) => bottom - canvas.top + 20));
+    let bottom = Math.max(50, banner ? canvas.bottom - banner.top + 20 : 50);
+    // Keep a usable viewport even when the window is very short.
+    const available = Math.max(0, canvas.height - 64);
+    if (top + bottom > available) {
+      const scale = available / (top + bottom);
+      top *= scale;
+      bottom *= scale;
+    }
+    padding = { top, bottom, left: 35, right: 35 };
+  }
+  map.fitBounds(bounds, { padding, maxZoom: 5, duration: 0 });
   return true;
 }
 export function HistoryMap(props: MapProps) {
@@ -36,6 +61,7 @@ export function HistoryMap(props: MapProps) {
   latest.current = props;
   const markers = useRef<Marker[]>([]);
   const framedScene = useRef("");
+  const overlayFrame = useRef("");
   const [ready, setReady] = useState(false),
     [error, setError] = useState(""),
     [basemapError, setBasemapError] = useState(false);
@@ -62,7 +88,7 @@ export function HistoryMap(props: MapProps) {
             style: mapStyle,
             center: [108, 35],
             zoom: 3.35,
-            minZoom: 1.6,
+            minZoom: 0.5,
             maxZoom: 8,
             attributionControl: { compact: true },
           });
@@ -221,6 +247,37 @@ export function HistoryMap(props: MapProps) {
       mapRef.current = null;
     };
   }, []);
+  useEffect(() => {
+    const map = mapRef.current;
+    const region = host.current?.closest(".map-region");
+    if (!ready || !map || !region) return;
+    // These overlays render after the pending map scene is committed. Reframe
+    // once their final heights are known, including wrapped source warnings.
+    const observer = new ResizeObserver(() => {
+      if (!window.matchMedia("(max-width: 900px)").matches) return;
+      const signature = JSON.stringify(
+        [".map-caption", ".map-territory-key", ".coverage-banner"].map(
+          (selector) => {
+            const box = region.querySelector(selector)?.getBoundingClientRect();
+            return box ? [box.top, box.bottom] : null;
+          },
+        ),
+      );
+      if (signature !== overlayFrame.current) {
+        overlayFrame.current = signature;
+        fitScene(map, latest.current.scene);
+      }
+    });
+    for (const selector of [
+      ".map-caption",
+      ".map-territory-key",
+      ".coverage-banner",
+    ]) {
+      const overlay = region.querySelector(selector);
+      if (overlay) observer.observe(overlay);
+    }
+    return () => observer.disconnect();
+  }, [ready, props.scene]);
   useEffect(() => {
     const map = mapRef.current;
     const scene = props.pending?.scene ?? props.scene;

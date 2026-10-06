@@ -1,0 +1,303 @@
+{
+  "checkedAt": "2026-10-06",
+  "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_Jin_Dynasty_376_CE.png",
+  "sourceSha256": "025e9da56a66886953e720d5d8b12c99842418f305d704b7a550140b1ba51a44",
+  "sourceCreator": "Ian Kiu",
+  "sourceRevision": "2007-11-06 12:52",
+  "sourceLicense": "CC BY 3.0",
+  "coordinateUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+  "coordinateSha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+  "coordinateLicense": "Natural Earth public domain",
+  "coordinateMeaning": "现代地理参考背景的极值顶点，只用于配准，不推定古代归属",
+  "pixelMeaning": "556×537原图的人工初读，沿浅灰现代背景线与岛屿外缘；背景线粗细、底图修订及低分辨率存在识别歧义",
+  "controls": [
+    {
+      "label": "China-N",
+      "coordinates": [
+        123.30957,
+        53.555615
+      ],
+      "pixel": [
+        440,
+        20
+      ],
+      "role": "fit"
+    },
+    {
+      "label": "China-W",
+      "coordinates": [
+        73.607324,
+        39.229199
+      ],
+      "pixel": [
+        8,
+        178
+      ],
+      "role": "fit"
+    },
+    {
+      "label": "China-E",
+      "coordinates": [
+        134.752344,
+        47.71543
+      ],
+      "pixel": [
+        544,
+        63
+      ],
+      "role": "fit"
+    },
+    {
+      "label": "Hainan-S",
+      "coordinates": [
+        109.519336,
+        18.218262
+      ],
+      "pixel": [
+        361,
+        470
+      ],
+      "role": "fit"
+    },
+    {
+      "label": "Taiwan-N",
+      "coordinates": [
+        121.51709,
+        25.276904
+      ],
+      "pixel": [
+        491,
+        365
+      ],
+      "role": "check"
+    },
+    {
+      "label": "Taiwan-S",
+      "coordinates": [
+        120.839844,
+        21.925
+      ],
+      "pixel": [
+        484,
+        403
+      ],
+      "role": "check"
+    },
+    {
+      "label": "Hainan-N",
+      "coordinates": [
+        110.651758,
+        20.137744
+      ],
+      "pixel": [
+        377,
+        447
+      ],
+      "role": "check"
+    }
+  ],
+  "acceptanceGateKm": 50,
+  "models": [
+    {
+      "crs": "+proj=eqc +lat_ts=0 +lon_0=0 +datum=WGS84",
+      "affine": [
+        [
+          8.07539514540932e-05,
+          1.2771493971302986e-06
+        ],
+        [
+          -1.2044919133184131e-05,
+          -0.00011814165833228668
+        ],
+        [
+          -600.0611284317431,
+          688.9142640140758
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "China-N",
+          "role": "fit",
+          "errorPixels": 18.206203612374864,
+          "errorKm": 151.61843902931403
+        },
+        {
+          "label": "China-W",
+          "role": "fit",
+          "errorPixels": 5.554105852850336,
+          "errorKm": 46.23351664851494
+        },
+        {
+          "label": "China-E",
+          "role": "fit",
+          "errorPixels": 17.854665765698993,
+          "errorKm": 148.66921825160344
+        },
+        {
+          "label": "Hainan-S",
+          "role": "fit",
+          "errorPixels": 5.202568006174173,
+          "errorKm": 43.28265673488701
+        },
+        {
+          "label": "Taiwan-N",
+          "role": "check",
+          "errorPixels": 33.73454610231024,
+          "errorKm": 382.6022335148901
+        },
+        {
+          "label": "Taiwan-S",
+          "role": "check",
+          "errorPixels": 30.9151805225954,
+          "errorKm": 352.7650246364818
+        },
+        {
+          "label": "Hainan-N",
+          "role": "check",
+          "errorPixels": 11.805720200874656,
+          "errorKm": 116.88891365550626
+        }
+      ],
+      "maxCheckErrorKm": 382.6022335148901,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "passesNumericalGate": false
+    },
+    {
+      "crs": "EPSG:3857",
+      "affine": [
+        [
+          8.104255340152345e-05,
+          4.204657297495294e-06
+        ],
+        [
+          -9.604206745198354e-06,
+          -9.455604347079457e-05
+        ],
+        [
+          -608.874454167697,
+          603.0475902185411
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "China-N",
+          "role": "fit",
+          "errorPixels": 29.642732914697145,
+          "errorKm": 187.4703241945425
+        },
+        {
+          "label": "China-W",
+          "role": "fit",
+          "errorPixels": 10.04377753149282,
+          "errorKm": 80.63052107215617
+        },
+        {
+          "label": "China-E",
+          "role": "fit",
+          "errorPixels": 30.494679133360435,
+          "errorKm": 210.14548707168052
+        },
+        {
+          "label": "Hainan-S",
+          "role": "fit",
+          "errorPixels": 10.895723750155703,
+          "errorKm": 107.77584312161156
+        },
+        {
+          "label": "Taiwan-N",
+          "role": "check",
+          "errorPixels": 37.23280567827731,
+          "errorKm": 425.40386737637857
+        },
+        {
+          "label": "Taiwan-S",
+          "role": "check",
+          "errorPixels": 33.378453332846526,
+          "errorKm": 389.30908733177284
+        },
+        {
+          "label": "Hainan-N",
+          "role": "check",
+          "errorPixels": 12.91405193370827,
+          "errorKm": 130.1434699715811
+        }
+      ],
+      "maxCheckErrorKm": 425.40386737637857,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "passesNumericalGate": false
+    },
+    {
+      "crs": "+proj=lcc +lat_1=23 +lat_2=45 +lat_0=0 +lon_0=105 +datum=WGS84",
+      "affine": [
+        [
+          0.00011108288511473803,
+          -3.6495196785179034e-06
+        ],
+        [
+          -2.188583677280847e-06,
+          -0.00011171839411784532
+        ],
+        [
+          311.30567069716255,
+          715.572725632072
+        ]
+      ],
+      "residuals": [
+        {
+          "label": "China-N",
+          "role": "fit",
+          "errorPixels": 2.9868442000994238,
+          "errorKm": 25.80823826270111
+        },
+        {
+          "label": "China-W",
+          "role": "fit",
+          "errorPixels": 0.7973547641759914,
+          "errorKm": 7.306755557635461
+        },
+        {
+          "label": "China-E",
+          "role": "fit",
+          "errorPixels": 2.7615217018494986,
+          "errorKm": 24.653863312516133
+        },
+        {
+          "label": "Hainan-S",
+          "role": "fit",
+          "errorPixels": 0.572032265923996,
+          "errorKm": 5.069865665079358
+        },
+        {
+          "label": "Taiwan-N",
+          "role": "check",
+          "errorPixels": 3.8618092084010045,
+          "errorKm": 35.094189031023554
+        },
+        {
+          "label": "Taiwan-S",
+          "role": "check",
+          "errorPixels": 4.3035811806322775,
+          "errorKm": 38.75101251964193
+        },
+        {
+          "label": "Hainan-N",
+          "role": "check",
+          "errorPixels": 5.315381319364317,
+          "errorKm": 47.51719145471242
+        }
+      ],
+      "maxCheckErrorKm": 47.51719145471242,
+      "accuracyMeaning": "配准残差包括古今城址移动，不是历史疆界精度，也不是全图误差上限",
+      "passesNumericalGate": true
+    }
+  ],
+  "decision": "pending-identification-review",
+  "geometryPublished": false,
+  "limitations": [
+    "拟合用现代中国背景北、西、东端与海南南端；独立检查用台湾南北端和海南北端。检查点集中东南，不能证明西北部空间误差上限。",
+    "LCC23/45初试最大检查残差47.5公里，贴近50公里门槛；未据此认定原图投影或历史精度。",
+    "尚未独立取得原图列出的Herrmann1935依据图与小為原图；376标题不代表全年持续实控。",
+    "需复核现代背景极值是否与参考数据为同一地理点，并增加可独立定位、分布更广的检查点；不得为通过而把现有检查点改作拟合点或提高门槛。",
+    "没有发布东晋或前秦轮廓；没有将现代背景线当作历史边界。"
+  ]
+}
