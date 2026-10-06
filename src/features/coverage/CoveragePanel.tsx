@@ -41,7 +41,13 @@ export const relationLabels: Record<Relation, string> = {
   influence: "影响范围",
   claim: "主张范围",
 };
-export function CoveragePanel({ scene }: { scene: Scene }) {
+export function CoveragePanel({
+  scene,
+  children,
+}: {
+  scene: Scene;
+  children?: import("react").ReactNode;
+}) {
   const missing = missingPolities(scene);
   return (
     <section className="coverage-panel">
@@ -60,6 +66,7 @@ export function CoveragePanel({ scene }: { scene: Scene }) {
           </small>
         </div>
       )}
+      {children}
       {scene.coverage.map((c) => (
         <div className="coverage-row" key={c.id}>
           <span className={`coverage-status ${c.status}`}>

@@ -132,5 +132,59 @@
       "jin",
       "former-qin"
     ]
+  },
+  {
+    "id": "eastern-jin-327",
+    "year": 327,
+    "entityIds": [
+      "jin"
+    ],
+    "title": "约327年原图所示部分东晋疆域",
+    "sourceId": "commons-eastern-jin-327",
+    "creator": "Zunkir；Kanguole底图",
+    "edition": "2016-09-28 20:46 UTC版；约327年",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_327.svg",
+    "limitations": "已转换为该年部分东晋争议复原轮廓；约27.55°N以南不在图幅内，不能视为完整疆界或全年实控。383年反击后边界没有明确年份，未采纳；原图城市位置有偏差。",
+    "width": 2000,
+    "height": 1335,
+    "file": "sources/commons/seize-royaumes-327.svg",
+    "sha256": "a2fbbb596d4b790cb2f02c403277f1ba5981e0cd0c6cbbf963be2ae016851fa9"
+  },
+  {
+    "id": "eastern-jin-383",
+    "year": 383,
+    "entityIds": [
+      "jin"
+    ],
+    "title": "383年淝水之战前部分东晋疆域",
+    "sourceId": "commons-eastern-jin-383",
+    "creator": "Zunkir；Kanguole底图",
+    "edition": "2016-09-28 20:54 UTC版；只采用383年战前边界",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_383.svg",
+    "limitations": "已转换为该年部分东晋争议复原轮廓；约27.55°N以南不在图幅内，不能视为完整疆界或全年实控。383年反击后边界没有明确年份，未采纳；原图城市位置有偏差。",
+    "width": 2000,
+    "height": 1335,
+    "file": "sources/commons/seize-royaumes-383.svg",
+    "sha256": "0b5c9be1a41d5aa938378acdcaa405617194c3f5bcf20091e52fcda6ed41a288"
+  },
+  {
+    "id": "eastern-jin-409",
+    "year": 409,
+    "entityIds": [
+      "jin"
+    ],
+    "title": "409年原图所示部分东晋疆域",
+    "sourceId": "commons-eastern-jin-409",
+    "creator": "Zunkir；Kanguole底图",
+    "edition": "2016-10-02 13:51 UTC版；含409年复国的西秦",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_409.svg",
+    "limitations": "已转换为该年部分东晋争议复原轮廓；约27.55°N以南不在图幅内，不能视为完整疆界或全年实控。383年反击后边界没有明确年份，未采纳；原图城市位置有偏差。",
+    "width": 2000,
+    "height": 1335,
+    "file": "sources/commons/seize-royaumes-409.svg",
+    "sha256": "33e9f1ed791607e9532b8fc8edd92961b56f0a9ae6465d2da6c3bf9591166beb"
   }
 ]

@@ -1125,7 +1125,7 @@ test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍�
     await expect(detail).toContainText("遗址附近");
     await page.getByRole("button", { name: "关闭详情", exact: true }).click();
   }
-  await year(page, 383);
+  await year(page, 384);
   await expect(page.locator(".map-canvas")).toHaveAttribute(
     "data-rendered-territory-ids",
     /clio-v021-/,
@@ -1158,4 +1158,60 @@ test("遗址事件点优先于疆域填色响应点击，邻国有范围时仍�
     .getByRole("button", { name: "查看本年疆域缺口", exact: true })
     .click();
   await expect(page.getByTestId("missing-polities")).toContainText("大中国");
+});
+
+test("逐年清单区分东晋部分图幅与缺失年份，跳转实时换图且不沿用", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await year(page, 383);
+  const canvas = page.locator(".map-canvas");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /jin-383-partial-reconstruction/,
+  );
+  await expectCuratedPaint(canvas, "jin-383-partial-reconstruction");
+  await expect(page.locator(".coverage-banner")).toContainText(
+    "东晋仅录入原图部分图幅",
+  );
+  await page.locator(".event-glow").click();
+  await expect(
+    page.getByRole("complementary", { name: "条目详情" }),
+  ).toContainText("淝水之战");
+  await page.getByRole("button", { name: "关闭详情", exact: true }).click();
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await page.getByRole("textbox", { name: "查找逐年覆盖政权" }).fill("东晋");
+  await expect(page.getByTestId("annual-coverage-summary")).toContainText(
+    "仅部分图幅 3 年 · 尚无范围 101 年",
+  );
+  await page
+    .getByRole("button", { name: "384—408年 尚无范围", exact: true })
+    .click();
+  await expect(page.getByTestId("committed-year")).toHaveText("384");
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /jin-383/,
+  );
+  await expect(page.getByTestId("missing-polities")).toContainText("东晋");
+  await page
+    .getByRole("button", { name: "409年 仅部分图幅", exact: true })
+    .click();
+  await expect(page.getByTestId("committed-year")).toHaveText("409");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /jin-409-partial-reconstruction/,
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole("button", { name: "条目 · 搜索 · 图层", exact: true }).click();
+  await expect(
+    page.getByRole("combobox", { name: "逐年覆盖政权阶段" }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "327年 仅部分图幅", exact: true })
+    .click();
+  await expect(page.getByTestId("committed-year")).toHaveText("327");
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /jin-327-partial-reconstruction/,
+  );
 });

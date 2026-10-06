@@ -59,7 +59,7 @@ it("publishes the new chronology with complete references and retains old territ
     packs
       .flatMap((p) => p.territories)
       .filter((t) => !t.properties.id.startsWith("clio-")),
-  ).toHaveLength(12);
+  ).toHaveLength(15);
 });
 it("keeps the 376 Eastern Jin plate as an unregistered source reference", () => {
   const plate = plates.find((p) => p.id === "eastern-jin-376")!;

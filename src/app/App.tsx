@@ -11,6 +11,7 @@ import {
 import { SearchPanel } from "../features/search/SearchPanel";
 import { FilterPanel } from "../features/search/FilterPanel";
 import { MapPlateViewer } from "../features/coverage/MapPlateViewer";
+import { AnnualCoveragePanel } from "../features/coverage/AnnualCoveragePanel";
 import { TerritoryPanel } from "../features/coverage/TerritoryPanel";
 import {
   CoveragePanel,
@@ -112,10 +113,32 @@ export default function App() {
     ...new Set(
       scene?.territories
         .filter((t) => t.properties.compilation.extent === "partial-source")
-        .map((t) => t.properties.compilation.extentNote)
+        .map((t) =>
+          t.properties.entityId === "tokugawa"
+            ? "德川幕府为部分岛屿复原；琉球、虾夷及北方争议范围未录入，详情可查。"
+            : t.properties.compilation.extentNote,
+        )
         .filter(Boolean),
     ),
   ];
+  const relatedPlates = (manifest?.mapPlates ?? []).filter((p) =>
+    p.entityIds?.some((id) =>
+      scene?.catalog.entities.some(
+        (e) => e.id === id && entityActiveInYear(e, query.year),
+      ),
+    ),
+  );
+  const yearPlates = relatedPlates.filter(
+    (p) => query.year >= p.year && query.year <= (p.endYear ?? p.year),
+  );
+  const shortcutPlates = yearPlates.length
+    ? yearPlates
+    : relatedPlates
+        .sort(
+          (a, b) =>
+            Math.abs(a.year - query.year) - Math.abs(b.year - query.year),
+        )
+        .slice(0, 1);
   const reconstructed = scene?.territories.some(
     (t) => t.properties.relation === "reconstruction",
   );
@@ -305,31 +328,20 @@ export default function App() {
                   {missing.length > 2 ? `等${missing.length}个登记政权` : ""} ›
                 </button>
               )}
-              {manifest?.mapPlates
-                ?.filter((p) =>
-                  p.entityIds?.some((id) =>
-                    scene.catalog.entities.some(
-                      (e) => e.id === id && entityActiveInYear(e, query.year),
-                    ),
-                  ),
-                )
-                .map((p) => (
-                  <button
-                    key={p.id}
-                    className="source-plate-shortcut"
-                    onClick={() => {
-                      controller.setPlaying(false);
-                      controller.select(null);
-                      setPlate(p);
-                    }}
-                  >
-                    查阅{formatYearRange(p.year, p.endYear ?? p.year)}来源原图
-                    {p.year !== query.year && !p.endYear
-                      ? "（其他年份）"
-                      : ""}{" "}
-                    ↗
-                  </button>
-                ))}
+              {shortcutPlates.map((p) => (
+                <button
+                  key={p.id}
+                  className="source-plate-shortcut"
+                  onClick={() => {
+                    controller.setPlaying(false);
+                    controller.select(null);
+                    setPlate(p);
+                  }}
+                >
+                  查阅{formatYearRange(p.year, p.endYear ?? p.year)}来源原图
+                  {p.year !== query.year && !p.endYear ? "（其他年份）" : ""} ↗
+                </button>
+              ))}
               {!!scene.territories.length && (
                 <span
                   title={Object.values(scene.territoryTimeLabels).join("；")}
@@ -358,8 +370,7 @@ export default function App() {
                       t.properties.id === "tang-742-eastern-administration",
                   ) && "仅105°E以东；"}
                   {westernPartial && "填色截断处为资料空缺，未绘制为国界。"}
-                  {!!otherPartialNotes.length &&
-                    "德川幕府为部分岛屿复原；琉球、虾夷及北方争议范围未录入，详情可查。"}
+                  {otherPartialNotes.join("；")}
                 </span>
               )}
               {!!scene.snapshotChoices?.length && (
@@ -553,7 +564,27 @@ export default function App() {
                 }}
               />
             )}
-            {tab === "coverage" && scene && <CoveragePanel scene={scene} />}
+            {tab === "coverage" && scene && (
+              <CoveragePanel scene={scene}>
+                {manifest && (
+                  <AnnualCoveragePanel
+                    scene={scene}
+                    slices={manifest.territorySlices ?? []}
+                    defaults={manifest.defaultInterpretationIds}
+                    onYear={(year) => {
+                      controller.setPlaying(false);
+                      request({
+                        ...query,
+                        year,
+                        at: null,
+                        snapshotId: null,
+                        filters: { ...query.filters, nearbyReference: false },
+                      });
+                    }}
+                  />
+                )}
+              </CoveragePanel>
+            )}
           </div>
           <div className="browse-foot">
             阶段性内容 · 疆域资料仍在编制

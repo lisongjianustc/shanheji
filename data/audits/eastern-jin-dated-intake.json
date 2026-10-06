@@ -1,0 +1,147 @@
+{
+  "interpretationId": "zunkir-eastern-jin-dated",
+  "features": 3,
+  "registrationMethod": "source-declared projection and identified crop; no fitted parameters",
+  "baseSha256": "351bf5975528af0e33d1985ba58bff4cbc7432e4a7f14efd4aa974b6d8602999",
+  "embeddedBackgroundSha256": "9cb64979f8916adfabc4a759b08555dc525191d23c704d0337472db5e743ea45",
+  "orientationCorrection": "Geobox页面误写N18/S42.5；SVG中湖泊及海岸的独立检查支持42.5在上、18在下，不据误写倒置。",
+  "checks": [
+    {
+      "sourcePathId": "lakes_58",
+      "name": "Qinghai Hu",
+      "pixel": [
+        53.28628401626524,
+        500.23721457616506
+      ],
+      "predicted": [
+        100.19805032061308,
+        36.89905340944635
+      ],
+      "reference": [
+        100.2039021919135,
+        36.88107468088683
+      ],
+      "errorKm": 2.062261959183373
+    },
+    {
+      "sourcePathId": "lakes_2",
+      "name": "Tai Hu",
+      "pixel": [
+        1580.1344146579559,
+        1007.8060373958097
+      ],
+      "predicted": [
+        120.19976083201922,
+        31.21601787189307
+      ],
+      "reference": [
+        120.20536630817655,
+        31.206135337480493
+      ],
+      "errorKm": 1.21897725144998
+    },
+    {
+      "sourcePathId": "lakes_1",
+      "name": "Hongze Hu",
+      "pixel": [
+        1447.805044845998,
+        824.7455219758541
+      ],
+      "predicted": [
+        118.46624608748257,
+        33.265669796680605
+      ],
+      "reference": [
+        118.47701726255931,
+        33.23818562449996
+      ],
+      "errorKm": 3.2092438033875474
+    },
+    {
+      "sourcePathId": "lakes_5",
+      "name": "Poyang Hu",
+      "pixel": [
+        1282.178674523108,
+        1187.2159182215873
+      ],
+      "predicted": [
+        116.29654063625271,
+        29.20724057375829
+      ],
+      "reference": [
+        116.2829130307204,
+        29.21316990880346
+      ],
+      "errorKm": 1.479180246524386
+    }
+  ],
+  "maxCheckErrorKm": 3.2092438033875474,
+  "registrationGateKm": 50,
+  "records": [
+    {
+      "year": 327,
+      "featureId": "jin-327-partial-reconstruction",
+      "sourceSha256": "a2fbbb596d4b790cb2f02c403277f1ba5981e0cd0c6cbbf963be2ae016851fa9",
+      "boundaryPathIds": [
+        "path2987",
+        "path2989",
+        "path3075"
+      ],
+      "excludedPathIds": [],
+      "junctionGapsPx": [
+        1.146910000000048,
+        2.8800220344862457
+      ],
+      "pixelArea": 502830.51107675175,
+      "bounds": [
+        108.26769631196912,
+        27.552564102564098,
+        122.14021739130435,
+        33.79454349397476
+      ],
+      "extent": "partial-source"
+    },
+    {
+      "year": 383,
+      "featureId": "jin-383-partial-reconstruction",
+      "sourceSha256": "0b5c9be1a41d5aa938378acdcaa405617194c3f5bcf20091e52fcda6ed41a288",
+      "boundaryPathIds": [
+        "path2987",
+        "path3911"
+      ],
+      "excludedPathIds": [
+        "path2987-7"
+      ],
+      "junctionGapsPx": [
+        0.0
+      ],
+      "pixelArea": 488684.5589639738,
+      "bounds": [
+        101.655747266,
+        27.552564102564098,
+        122.14021739130435,
+        33.31306774615385
+      ],
+      "extent": "partial-source"
+    },
+    {
+      "year": 409,
+      "featureId": "jin-409-partial-reconstruction",
+      "sourceSha256": "33e9f1ed791607e9532b8fc8edd92961b56f0a9ae6465d2da6c3bf9591166beb",
+      "boundaryPathIds": [
+        "path2987"
+      ],
+      "excludedPathIds": [],
+      "junctionGapsPx": [],
+      "pixelArea": 779695.6068928875,
+      "bounds": [
+        102.45166756543402,
+        27.552564102564098,
+        122.14021739130435,
+        36.15705031452991
+      ],
+      "extent": "partial-source"
+    }
+  ],
+  "limitations": "图幅南部缺失；只编制所标年份的东晋部分图幅；不证明全年实控。旧383城市点试配仍保留为失败；本次不使用其拟合或误差结果。395图caption/filename年份矛盾未采纳。"
+}

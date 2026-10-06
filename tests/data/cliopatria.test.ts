@@ -71,7 +71,7 @@ it("retains source interval endpoints in the navigation index and deduplicates o
   expect(territoryAvailabilityYears([row!])).toEqual([1415, 1422]);
   const seen = new Set<string>();
   for (const t of fs.filter(
-    (t) => t.properties.relation === "reconstruction",
+    (t) => t.properties.relation === "reconstruction" && t.properties.id.startsWith("clio-"),
   )) {
     if (seen.has(t.properties.id)) continue;
     seen.add(t.properties.id);
@@ -175,7 +175,7 @@ it("keeps Dali's supported early intervals separate from Dazhong and Mongol admi
   }
 });
 it("reports a missing Eastern Jin outline even when its northern neighbors are drawn", () => {
-  const scene = queryScene(catalog, packs, defaultQuery(383), defaults);
+  const scene = queryScene(catalog, packs, defaultQuery(384), defaults);
   expect(scene.territories.length).toBeGreaterThan(0);
   expect(missingPolities(scene).map((e) => e.id)).toContain("jin");
   const q = defaultQuery(1820);

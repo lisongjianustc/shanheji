@@ -89,3 +89,46 @@ def svg_polygon_relative(d):
         if upper == 'M':
             cmd = 'l' if cmd == 'm' else 'L'
     return svg_polygon(' '.join(output))
+
+
+def svg_polyline(d):
+    """Read one explicit open M/L/C boundary stroke, without closing it.
+
+    Historical dividers are open paths. Closing an open path would introduce an
+    unsupported border; callers must separately record their frame closure.
+    """
+    from shapely.geometry import LineString
+    tokens = re.findall(r'[A-Za-z]|[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?', d)
+    i = 0
+    cmd = None
+    cursor = np.zeros(2)
+    output = []
+    while i < len(tokens):
+        if tokens[i].isalpha():
+            cmd = tokens[i]
+            i += 1
+            if cmd not in ('M', 'm', 'L', 'l', 'C', 'c'):
+                raise ValueError(f'Unsupported open SVG command {cmd}')
+        count = {'M': 2, 'L': 2, 'C': 6}.get((cmd or '').upper())
+        if count is None or i + count > len(tokens):
+            raise ValueError('Malformed open SVG path')
+        points = np.array(list(map(float, tokens[i:i+count]))).reshape(-1, 2)
+        i += count
+        if cmd.islower():
+            points += cursor
+        if cmd.upper() == 'M':
+            if output:
+                raise ValueError('Multiple subpaths are not one boundary')
+            output.append(points[0].tolist())
+            cmd = 'l' if cmd == 'm' else 'L'
+        elif cmd.upper() == 'L':
+            steps = max(1, math.ceil(np.linalg.norm(points[0]-cursor)/2))
+            output.extend((cursor+(points[0]-cursor)*t).tolist() for t in np.linspace(0,1,steps+1)[1:])
+        else:
+            p0,p1,p2,p3=cursor,*points
+            steps=max(1, math.ceil(sum(np.linalg.norm(b-a) for a,b in zip((p0,p1,p2),(p1,p2,p3)))/.5))
+            output.extend(((1-t)**3*p0+3*(1-t)**2*t*p1+3*(1-t)*t*t*p2+t**3*p3).tolist() for t in np.linspace(0,1,steps+1)[1:])
+        cursor = points[-1].copy()
+    if len(output) < 2:
+        raise ValueError('Boundary has fewer than two points')
+    return LineString(output)

@@ -53,6 +53,11 @@ def main(checked_at="2026-10-05"):
         available = set().union(*(
             {f["properties"]["snapshotYear"]} if f["properties"]["temporalSupport"] == "snapshot"
             else years(f["properties"]["validity"]) for f in fs))
+        nonpartial = set().union(*(
+            {f["properties"]["snapshotYear"]} if f["properties"]["temporalSupport"] == "snapshot"
+            else years(f["properties"]["validity"]) for f in fs
+            if f["properties"]["compilation"].get("extent") != "partial-source"))
+        partial_only = available - nonpartial
         # The first active name is the displayed identity; overlapping aliases
         # do not represent additional historical phases.
         phase_years = {}
@@ -64,8 +69,8 @@ def main(checked_at="2026-10-05"):
                 continue
             records.append({"entityId": entity["id"], "name": name,
                             "registeredYears": spans(scope), "availableYears": spans(scope & available),
-                            "missingYears": spans(scope - available), "geometryRecords": len(fs)})
-    result = {"checkedAt": checked_at, "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权。",
+                            "missingYears": spans(scope - available), "partialOnlyYears": spans(scope & partial_only), "geometryRecords": len(fs)})
+    result = {"checkedAt": checked_at, "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权与所有已核验来源。页面按筛选和默认来源的实际查询结果另见annual-query-sweep.md。",
               "packages": len(packs), "entities": len(catalog), "uniqueTerritories": len(features),
               "territoryReferences": sum(len(p["territories"]) for p in packs),
               "uniqueEvents": len(events), "eventReferences": sum(len(p["events"]) for p in packs),
@@ -73,9 +78,9 @@ def main(checked_at="2026-10-05"):
     (ROOT / "data/audits/annual-availability.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     lines = ["# 登记政权的年度疆域资料可用性", "", result["meaning"], "",
              "起点可能是目录展示范围，不代表建国年份。研究区间以来源两端包含口径统计；确日查询另行排除年度数据。", "",
-             "| 名称阶段 | 已登记年份 | 有范围资料的年份 | 尚无范围资料的年份 |",
-             "| --- | --- | --- | --- |"]
-    lines += [f"| {r['name']} | {fmt(r['registeredYears'])} | {fmt(r['availableYears'])} | {fmt(r['missingYears'])} |" for r in records]
+             "| 名称阶段 | 已登记年份 | 有任一范围资料的年份 | 其中仅部分图幅的年份 | 尚无范围资料的年份 |",
+             "| --- | --- | --- | --- | --- |"]
+    lines += [f"| {r['name']} | {fmt(r['registeredYears'])} | {fmt(r['availableYears'])} | {fmt(r['partialOnlyYears'])} | {fmt(r['missingYears'])} |" for r in records]
     (ROOT / "docs/data/annual-availability.md").write_text("\n".join(lines) + "\n")
     print(json.dumps({k: v for k, v in result.items() if k != "records"}, ensure_ascii=False))
 

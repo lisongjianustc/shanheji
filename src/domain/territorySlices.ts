@@ -10,6 +10,13 @@ export interface TerritorySlice {
   relations: Relation[];
   featureCount: number;
   disputed: boolean;
+  partial?: boolean;
+  parts?: {
+    relation: Relation;
+    partial: boolean;
+    featureCount: number;
+    regionIds: string[];
+  }[];
 }
 export function territoryAvailabilityYears(slices: TerritorySlice[]): number[] {
   return [
@@ -37,10 +44,28 @@ export function buildTerritorySlices(features: Territory[]): TerritorySlice[] {
       relations: [],
       featureCount: 0,
       disputed: false,
+      partial: true,
+      parts: [],
     };
     row.regionIds = [...new Set([...row.regionIds, ...p.regionIds])].sort();
     row.relations = [...new Set([...row.relations, p.relation])].sort();
     row.featureCount++;
+    const partial = p.compilation.extent === "partial-source";
+    const part = row.parts?.find(
+      (r) =>
+        r.relation === p.relation &&
+        r.partial === partial &&
+        r.regionIds.join("/") === [...p.regionIds].sort().join("/"),
+    );
+    if (part) part.featureCount++;
+    else
+      (row.parts ??= []).push({
+        relation: p.relation,
+        partial,
+        featureCount: 1,
+        regionIds: [...p.regionIds].sort(),
+      });
+    row.partial &&= p.compilation.extent === "partial-source";
     row.disputed ||= p.spatialPrecision === "disputed";
     groups.set(key, row);
   }

@@ -117,6 +117,24 @@ export const manifestSchema = z.object({
         ),
         featureCount: z.number().int().positive(),
         disputed: z.boolean(),
+        partial: z.boolean().optional(),
+        parts: z
+          .array(
+            z.object({
+              relation: z.enum([
+                "control",
+                "administration",
+                "reconstruction",
+                "vassal",
+                "influence",
+                "claim",
+              ]),
+              partial: z.boolean(),
+              featureCount: z.number().int().positive(),
+              regionIds: z.array(z.string()),
+            }),
+          )
+          .optional(),
       }),
     )
     .default([]),

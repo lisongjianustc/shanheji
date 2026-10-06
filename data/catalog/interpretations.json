@@ -80,5 +80,32 @@
         "note": "年份区间两端包含；现代底图上的手绘复原，不等于实际边界测量；源记录编号保留。"
       }
     ]
+  },
+  {
+    "id": "zunkir-eastern-jin-dated",
+    "label": "东晋327／383／409年部分图幅复原（争议）",
+    "reason": "只转换原图所标年份与部分图幅，不延用至相邻年份；383年只采用战前线。专业史学复核待完成。",
+    "evidence": [
+      {
+        "sourceId": "commons-eastern-jin-327",
+        "locator": "原SVG；data/registration/eastern-jin-dated.json",
+        "note": "保留原图边界与图幅局限，非全年实控。"
+      },
+      {
+        "sourceId": "commons-eastern-jin-383",
+        "locator": "原SVG；data/registration/eastern-jin-dated.json",
+        "note": "保留原图边界与图幅局限，非全年实控。"
+      },
+      {
+        "sourceId": "commons-eastern-jin-409",
+        "locator": "原SVG；data/registration/eastern-jin-dated.json",
+        "note": "保留原图边界与图幅局限，非全年实控。"
+      },
+      {
+        "sourceId": "commons-eastern-china-relief",
+        "locator": "原SVG；data/registration/eastern-jin-dated.json",
+        "note": "保留原图边界与图幅局限，非全年实控。"
+      }
+    ]
   }
 ]

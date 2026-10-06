@@ -140,3 +140,7 @@ The independent check points are not used in fitting. Modern city reference coor
 - 文件：`eastern-jin-376.png`。
 - SHA-256：`025e9da56a66886953e720d5d8b12c99842418f305d704b7a550140b1ba51a44`。
 - 限度：仅来源图查阅，配准仍待复核，未发布对应的东晋疆域；不外推其他年份。原图所据Herrmann1935与小為图未独立核查。
+
+## 东晋327／383／409年部分图幅
+
+`seize-royaumes-327.svg`、`seize-royaumes-383.svg`、`seize-royaumes-409.svg`为Zunkir原始文件，`eastern-china-relief.svg`为Kanguole原始底图；均CC BY-SA 4.0。原文件未修改，引用链接见来源目录。SHA-256、原图笔画、独立检查及图幅裁切见 `data/registration/eastern-jin-dated.json`。派生 `data/derived/eastern-jin-dated.geojson`同许可，须保留双方作者、来源与修改说明。三年只显示部分图幅，383年采用战前线；未定年的反击后线未采用。原图城市点不参与转换。

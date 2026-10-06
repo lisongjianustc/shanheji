@@ -1,0 +1,57 @@
+{
+  "baseFile": "sources/commons/eastern-china-relief.svg",
+  "baseSha256": "351bf5975528af0e33d1985ba58bff4cbc7432e4a7f14efd4aa974b6d8602999",
+  "backgroundSha256": "9cb64979f8916adfabc4a759b08555dc525191d23c704d0337472db5e743ea45",
+  "lakeFile": "sources/natural-earth/eastern-relief-check-lakes.geojson",
+  "lakeSha256": "f0398a84e4637ac8ed5aeed66c42aa77eab86c5595a7e2350158eb9c1a1f2f55",
+  "projection": "source-declared equirectangular; source SVG scale(1,1.17)",
+  "longitudeWest": 99.5,
+  "longitudeEast": 125.7,
+  "latitudeTop": 42.5,
+  "width": 2000,
+  "height": 1335,
+  "scaleY": 1.17,
+  "maxCheckErrorKm": 50,
+  "maxJunctionGapPx": 3,
+  "checks": {
+    "lakes_58": "Qinghai Hu",
+    "lakes_2": "Tai Hu",
+    "lakes_1": "Hongze Hu",
+    "lakes_5": "Poyang Hu"
+  },
+  "sourcePageCorrection": "Geobox页面误写N18/S42.5；SVG中湖泊及海岸的独立检查支持42.5在上、18在下，不据误写倒置。",
+  "years": {
+    "327": {
+      "file": "sources/commons/seize-royaumes-327.svg",
+      "sha256": "a2fbbb596d4b790cb2f02c403277f1ba5981e0cd0c6cbbf963be2ae016851fa9",
+      "boundaryPathIds": [
+        "path2987",
+        "path2989",
+        "path3075"
+      ],
+      "excludedPathIds": [],
+      "label": "约327年原图所示部分东晋疆域"
+    },
+    "383": {
+      "file": "sources/commons/seize-royaumes-383.svg",
+      "sha256": "0b5c9be1a41d5aa938378acdcaa405617194c3f5bcf20091e52fcda6ed41a288",
+      "boundaryPathIds": [
+        "path2987",
+        "path3911"
+      ],
+      "excludedPathIds": [
+        "path2987-7"
+      ],
+      "label": "383年淝水之战前部分东晋疆域"
+    },
+    "409": {
+      "file": "sources/commons/seize-royaumes-409.svg",
+      "sha256": "33e9f1ed791607e9532b8fc8edd92961b56f0a9ae6465d2da6c3bf9591166beb",
+      "boundaryPathIds": [
+        "path2987"
+      ],
+      "excludedPathIds": [],
+      "label": "409年原图所示部分东晋疆域"
+    }
+  }
+}
