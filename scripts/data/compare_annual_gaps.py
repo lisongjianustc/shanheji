@@ -13,6 +13,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--baseline-ref',required=True)
     parser.add_argument('--checked-at',required=True)
+    parser.add_argument('--output',help='Project-relative audit path; preserve earlier same-day comparisons')
     args=parser.parse_args()
     before=baseline(args.baseline_ref,'data/audits/annual-query-sweep.json')
     after=json.loads((ROOT/'data/audits/annual-query-sweep.json').read_text())
@@ -47,7 +48,8 @@ def main():
         change['newFeatureIds']=[id for id in sorted(added) if current_ids[id]['properties']['entityId']==change['entityId'] and current_ids[id]['properties']['snapshotYear']==change['year']]
         if not change['newFeatureIds']:raise ValueError('Annual improvement has no corresponding new sourced snapshot')
     result={'checkedAt':args.checked_at,'baselineRef':args.baseline_ref,'baselineVersion':baseline(args.baseline_ref,'public/data/manifest.json')['version'],'currentVersion':json.loads((ROOT/'public/data/manifest.json').read_text())['version'],'meaning':'比较政权-年资料缺口；有原图范围不等于历史疆界完整、准确或全年实控。仅比较同一批登记名称阶段，未经史学专家审定。','improvedPolityYears':len(changes),'addedUniqueFeatures':len(added),'preservedRecords':preserved,'beforeYearsWithoutAnyGeometry':before['yearsWithoutGeometry'],'afterYearsWithoutAnyGeometry':after['yearsWithoutGeometry'],'changes':changes}
-    (ROOT/'data/audits/annual-gap-progress-2026-10-07.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
+    output=ROOT/(args.output or f'data/audits/annual-gap-progress-{args.checked_at}.json')
+    output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(result,ensure_ascii=False))
 
 if __name__=='__main__':main()

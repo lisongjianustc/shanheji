@@ -1240,7 +1240,10 @@ test("逐年缺口新增西晋、汉赵、后赵、北燕范围只在来源年�
         ...(n === 327
           ? ["jin-327-partial-reconstruction"]
           : n === 409
-            ? ["jin-409-partial-reconstruction"]
+            ? [
+                "jin-409-partial-reconstruction",
+                "xia-409-partial-reconstruction",
+              ]
             : []),
       ].join(" "),
     );
@@ -1284,10 +1287,64 @@ test("逐年缺口新增西晋、汉赵、后赵、北燕范围只在来源年�
     .click();
   await expectCuratedPaint(
     canvas,
-    "northern-yan-409-gap-reconstruction jin-409-partial-reconstruction",
+    "northern-yan-409-gap-reconstruction jin-409-partial-reconstruction xia-409-partial-reconstruction",
   );
   await expect(page.getByTestId("annual-coverage-summary")).toContainText(
     "有范围资料 17 年 · 仅部分图幅 0 年 · 尚无范围 11 年",
   );
   await expect(page.getByTestId("missing-polities")).toContainText("西秦");
+});
+
+test("409年夏部分范围与逐年清单同步，手机查阅原图且邻年不延用", async ({
+  page,
+}) => {
+  await page.goto("/");
+  const canvas = page.locator(".map-canvas");
+  await year(page, 409);
+  await expectCuratedPaint(
+    canvas,
+    "northern-yan-409-gap-reconstruction jin-409-partial-reconstruction xia-409-partial-reconstruction",
+  );
+  await expect(
+    page.getByRole("button", { name: /查看夏（赫连氏）.*来源/ }),
+  ).toContainText("部分范围");
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await page
+    .getByRole("textbox", { name: "查找逐年覆盖政权" })
+    .fill("夏（赫连氏）");
+  await expect(page.getByTestId("annual-coverage-summary")).toContainText(
+    "有范围资料 16 年 · 仅部分图幅 1 年 · 尚无范围 8 年",
+  );
+  await page
+    .getByRole("button", { name: "407—408年 尚无范围", exact: true })
+    .click();
+  await expect(page.getByTestId("committed-year")).toHaveText("407");
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /xia-409-partial-reconstruction/,
+  );
+  await page
+    .getByRole("button", { name: "409年 仅部分图幅", exact: true })
+    .click();
+  await expect(canvas).toHaveAttribute(
+    "data-rendered-territory-ids",
+    /xia-409-partial-reconstruction/,
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page
+    .getByRole("button", { name: "条目 · 搜索 · 图层", exact: true })
+    .click();
+  await expect(page.getByTestId("annual-coverage-summary")).toContainText(
+    "尚无范围 8 年",
+  );
+  await page.getByRole("button", { name: "关闭浏览", exact: true }).click();
+  await page.getByRole("button", { name: /查阅409年来源原图/ }).click();
+  await expect(page.getByRole("dialog")).toContainText("12像素");
+  await expect(page.getByRole("dialog")).toContainText("CC BY-SA 4.0");
+  await page.getByRole("button", { name: "关闭参考图幅", exact: true }).click();
+  await year(page, 410);
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /xia-409-partial-reconstruction/,
+  );
 });

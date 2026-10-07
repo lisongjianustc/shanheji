@@ -5,7 +5,7 @@
   "yearsWithGeometry": 3331,
   "yearsWithoutGeometry": 681,
   "registeredPhases": 105,
-  "uniqueTerritories": 592,
+  "uniqueTerritories": 593,
   "rows": [
     {
       "id": "xia-ancient/-2100",
@@ -1076,13 +1076,18 @@
       "startYear": 407,
       "endYear": 431,
       "availableYears": 16,
-      "partialYears": 0,
-      "missingYears": 9,
+      "partialYears": 1,
+      "missingYears": 8,
       "spans": [
         {
           "startYear": 407,
-          "endYear": 409,
+          "endYear": 408,
           "status": "missing"
+        },
+        {
+          "startYear": 409,
+          "endYear": 409,
+          "status": "partial"
         },
         {
           "startYear": 410,
@@ -20237,10 +20242,10 @@
     },
     {
       "year": 409,
-      "territoryCount": 14,
-      "polityCount": 14,
-      "partialPolityCount": 1,
-      "missingPolityCount": 2
+      "territoryCount": 15,
+      "polityCount": 15,
+      "partialPolityCount": 2,
+      "missingPolityCount": 1
     },
     {
       "year": 410,

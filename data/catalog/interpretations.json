@@ -134,5 +134,22 @@
         "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
       }
     ]
+  },
+  {
+    "id": "zunkir-xia-409-partial",
+    "label": "夏（赫连氏）409年原图部分范围（争议）",
+    "reason": "只补409年部分来源范围；11.68与3.77像素的未连接边线交接及周围12像素带剔除，切边不绘为国界。不放宽3像素门槛，不延用407、408年或其他年份；非全年实控及专家审定。",
+    "evidence": [
+      {
+        "sourceId": "commons-eastern-jin-409",
+        "locator": "原SVG path3129、path3133、path3886及Xia标签；data/registration/xia-409-partial.json",
+        "note": "部分轮廓与缺口剔除复核；所据书目尚未逐页独立核验。"
+      },
+      {
+        "sourceId": "commons-eastern-china-relief",
+        "locator": "data/registration/eastern-jin-dated.json；原图投影与同源底图",
+        "note": "坐标转换及四湖独立检查，非历史疆界精度。"
+      }
+    ]
   }
 ]

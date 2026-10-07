@@ -1,13 +1,13 @@
 {
-  "version": "477a4a361d8b0b61",
+  "version": "74be55cc977e3ee2",
   "catalog": {
     "path": "catalog-9ac93f6c326ae920.json",
     "sha256": "9ac93f6c326ae9209bc3e38f91c4fbaecb15c139862bcce0ac07ab91ebc336ea"
   },
   "packages": [
     {
-      "path": "package-f853c519d1c5c109.json",
-      "sha256": "f853c519d1c5c109da03007fd03a3de95841c10c833d60093679f86303fce544",
+      "path": "package-b61461ab84578eb5.json",
+      "sha256": "b61461ab84578eb50caafaa04da446e8d7cebfdd75a478778e1f4702a456e523",
       "id": "eastern-jin-sixteen-kingdoms",
       "version": "0.1.0-partial",
       "startYear": 304,
@@ -167,7 +167,8 @@
     "yug-742-eastern-administration",
     "cliopatria-v021-reviewed",
     "zunkir-eastern-jin-dated",
-    "zunkir-jin-gap-snapshots"
+    "zunkir-jin-gap-snapshots",
+    "zunkir-xia-409-partial"
   ],
   "scopeVersion": "3",
   "searchIndex": {
@@ -308,6 +309,23 @@
           "sourceId": "commons-eastern-china-relief",
           "locator": "原SVG年份说明与政权标签；data/registration/jin-gap-snapshots.json",
           "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
+        }
+      ]
+    },
+    {
+      "id": "zunkir-xia-409-partial",
+      "label": "夏（赫连氏）409年原图部分范围（争议）",
+      "reason": "只补409年部分来源范围；11.68与3.77像素的未连接边线交接及周围12像素带剔除，切边不绘为国界。不放宽3像素门槛，不延用407、408年或其他年份；非全年实控及专家审定。",
+      "evidence": [
+        {
+          "sourceId": "commons-eastern-jin-409",
+          "locator": "原SVG path3129、path3133、path3886及Xia标签；data/registration/xia-409-partial.json",
+          "note": "部分轮廓与缺口剔除复核；所据书目尚未逐页独立核验。"
+        },
+        {
+          "sourceId": "commons-eastern-china-relief",
+          "locator": "data/registration/eastern-jin-dated.json；原图投影与同源底图",
+          "note": "坐标转换及四湖独立检查，非历史疆界精度。"
         }
       ]
     }
@@ -4735,6 +4753,30 @@
         {
           "relation": "reconstruction",
           "partial": false,
+          "featureCount": 1,
+          "regionIds": [
+            "china-core"
+          ]
+        }
+      ]
+    },
+    {
+      "year": 409,
+      "entityId": "xia",
+      "interpretationId": "zunkir-xia-409-partial",
+      "regionIds": [
+        "china-core"
+      ],
+      "relations": [
+        "reconstruction"
+      ],
+      "featureCount": 1,
+      "disputed": true,
+      "partial": true,
+      "parts": [
+        {
+          "relation": "reconstruction",
+          "partial": true,
           "featureCount": 1,
           "regionIds": [
             "china-core"
@@ -15944,15 +15986,16 @@
       "year": 409,
       "entityIds": [
         "jin",
-        "northern-yan"
+        "northern-yan",
+        "xia"
       ],
-      "title": "409年东晋、北燕与并行政权来源图",
+      "title": "409年东晋、北燕、夏与并行政权来源图",
       "sourceId": "commons-eastern-jin-409",
       "creator": "Zunkir；Kanguole底图",
       "edition": "2016-10-02 13:51 UTC版；含409年复国的西秦",
       "license": "CC BY-SA 4.0",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_409.svg",
-      "limitations": "已转换409年东晋部分图幅与北燕所示外轮廓，不延用其他年份；东晋南部图外疆域仍缺。西秦新增线与原内部分界的归属尚未确认，本年西秦范围仍缺。原图城市位置有偏差；非全年实控或完整周边。",
+      "limitations": "已转换409年东晋部分图幅、北燕外轮廓与夏（赫连氏）部分范围，不延用其他年份；夏的两处较大边线交接及周围12像素带剔除，切边不是国界。东晋南部图外仍缺；西秦新增线与原内部分界归属未确认，本年范围仍缺。原图城市位置有偏差；非全年实控或完整周边。",
       "width": 2000,
       "height": 1335,
       "image": {

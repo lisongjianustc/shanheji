@@ -144,3 +144,9 @@ The independent check points are not used in fitting. Modern city reference coor
 ## 东晋327／383／409年部分图幅
 
 `seize-royaumes-327.svg`、`seize-royaumes-383.svg`、`seize-royaumes-409.svg`为Zunkir原始文件，`eastern-china-relief.svg`为Kanguole原始底图；均CC BY-SA 4.0。原文件未修改，引用链接见来源目录。SHA-256、原图笔画、独立检查及图幅裁切见 `data/registration/eastern-jin-dated.json`。派生 `data/derived/eastern-jin-dated.geojson`同许可，须保留双方作者、来源与修改说明。三年只显示部分图幅，383年采用战前线；未定年的反击后线未采用。原图城市点不参与转换。
+
+## 夏（赫连氏）409年部分范围 · 2026-10-07
+
+本项目从同一Zunkir的[409年原SVG](https://commons.wikimedia.org/wiki/File:Seize_Royaumes_409.svg)另提取夏的部分范围。派生`data/derived/xia-409-partial.geojson`采用[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)，署名Zunkir、Kanguole，本项目完成部分笔画提取、缺口剔除与坐标转换；不暗示原作者认可。原SVG未修改，哈希保持。
+
+修改：选择`path3129`、`path3133`、`path3886`，剔除两处未连接交接及周围12像素带，剔除切边不描为国界。仅409年部分轮廓，非全年实控或完整疆界；登记与限制见`docs/data/xia-409-gap-intake-2026-10-07.md`。

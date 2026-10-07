@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-07",
+  "interpretationId": "zunkir-xia-409-partial",
+  "sharedRegistration": "data/registration/eastern-jin-dated.json",
+  "sourceYear": 409,
+  "sourceId": "commons-eastern-jin-409",
+  "boundaryPathIds": ["path3129", "path3133", "path3886"],
+  "sourceLabelId": "text3262-7",
+  "sourceLabel": "Xia",
+  "sourceLabelCheck": [650, 350],
+  "excludedLabelChecks": [
+    [1000, 350],
+    [250, 400],
+    [650, 700]
+  ],
+  "maxReviewedJunctionGapPx": 3,
+  "omissionBufferPx": 12,
+  "reason": "原图夏与魏、凉、后秦之间的三条笔画；11.68与3.77像素的未连接交接不补画，剔除其线段周围12像素带；仅保留其余部分范围，缺口切边不绘为国界。"
+}

@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-10-07",
+  "baselineRef": "e68cd1f",
+  "baselineVersion": "477a4a361d8b0b61",
+  "currentVersion": "74be55cc977e3ee2",
+  "meaning": "比较政权-年资料缺口；有原图范围不等于历史疆界完整、准确或全年实控。仅比较同一批登记名称阶段，未经史学专家审定。",
+  "improvedPolityYears": 1,
+  "addedUniqueFeatures": 1,
+  "preservedRecords": {
+    "territoryReferences": 649,
+    "eventReferences": 78
+  },
+  "beforeYearsWithoutAnyGeometry": 681,
+  "afterYearsWithoutAnyGeometry": 681,
+  "changes": [
+    {
+      "phaseId": "xia/407",
+      "entityId": "xia",
+      "name": "夏（赫连氏）",
+      "year": 409,
+      "before": "missing",
+      "after": "partial",
+      "remainingMissingYears": 8,
+      "remainingPartialYears": 1,
+      "newFeatureIds": [
+        "xia-409-partial-reconstruction"
+      ]
+    }
+  ]
+}

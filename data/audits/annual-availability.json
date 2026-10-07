@@ -3,8 +3,8 @@
   "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权与所有已核验来源。页面按筛选和默认来源的实际查询结果另见annual-query-sweep.md。",
   "packages": 9,
   "entities": 99,
-  "uniqueTerritories": 592,
-  "territoryReferences": 649,
+  "uniqueTerritories": 593,
+  "territoryReferences": 650,
   "uniqueEvents": 75,
   "eventReferences": 78,
   "records": [
@@ -420,22 +420,27 @@
       ],
       "availableYears": [
         [
-          410,
+          409,
           425
         ]
       ],
       "missingYears": [
         [
           407,
-          409
+          408
         ],
         [
           426,
           431
         ]
       ],
-      "partialOnlyYears": [],
-      "geometryRecords": 3
+      "partialOnlyYears": [
+        [
+          409,
+          409
+        ]
+      ],
+      "geometryRecords": 4
     },
     {
       "entityId": "northern-yan",

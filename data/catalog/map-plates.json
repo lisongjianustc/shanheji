@@ -176,15 +176,16 @@
     "year": 409,
     "entityIds": [
       "jin",
-      "northern-yan"
+      "northern-yan",
+      "xia"
     ],
-    "title": "409年东晋、北燕与并行政权来源图",
+    "title": "409年东晋、北燕、夏与并行政权来源图",
     "sourceId": "commons-eastern-jin-409",
     "creator": "Zunkir；Kanguole底图",
     "edition": "2016-10-02 13:51 UTC版；含409年复国的西秦",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_409.svg",
-    "limitations": "已转换409年东晋部分图幅与北燕所示外轮廓，不延用其他年份；东晋南部图外疆域仍缺。西秦新增线与原内部分界的归属尚未确认，本年西秦范围仍缺。原图城市位置有偏差；非全年实控或完整周边。",
+    "limitations": "已转换409年东晋部分图幅、北燕外轮廓与夏（赫连氏）部分范围，不延用其他年份；夏的两处较大边线交接及周围12像素带剔除，切边不是国界。东晋南部图外仍缺；西秦新增线与原内部分界归属未确认，本年范围仍缺。原图城市位置有偏差；非全年实控或完整周边。",
     "width": 2000,
     "height": 1335,
     "file": "sources/commons/seize-royaumes-409.svg",
