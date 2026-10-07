@@ -1,10 +1,10 @@
 {
-  "checkedAt": "2026-10-06",
+  "checkedAt": "2026-10-07",
   "meaning": "年度资料存在性清单；有记录不表示范围完整或历史事实已审定；仅统计已登记政权与所有已核验来源。页面按筛选和默认来源的实际查询结果另见annual-query-sweep.md。",
   "packages": 9,
   "entities": 99,
-  "uniqueTerritories": 588,
-  "territoryReferences": 645,
+  "uniqueTerritories": 592,
+  "territoryReferences": 649,
   "uniqueEvents": 75,
   "eventReferences": 78,
   "records": [
@@ -103,6 +103,10 @@
       ],
       "availableYears": [
         [
+          280,
+          280
+        ],
+        [
           283,
           312
         ]
@@ -110,6 +114,10 @@
       "missingYears": [
         [
           265,
+          279
+        ],
+        [
+          281,
           282
         ],
         [
@@ -117,8 +125,13 @@
           316
         ]
       ],
-      "partialOnlyYears": [],
-      "geometryRecords": 8
+      "partialOnlyYears": [
+        [
+          280,
+          280
+        ]
+      ],
+      "geometryRecords": 9
     },
     {
       "entityId": "jin",
@@ -175,7 +188,7 @@
           409
         ]
       ],
-      "geometryRecords": 8
+      "geometryRecords": 9
     },
     {
       "entityId": "han-zhao",
@@ -190,6 +203,10 @@
         [
           306,
           323
+        ],
+        [
+          327,
+          327
         ]
       ],
       "missingYears": [
@@ -199,11 +216,15 @@
         ],
         [
           324,
+          326
+        ],
+        [
+          328,
           329
         ]
       ],
       "partialOnlyYears": [],
-      "geometryRecords": 2
+      "geometryRecords": 3
     },
     {
       "entityId": "cheng-han",
@@ -427,22 +448,18 @@
       ],
       "availableYears": [
         [
-          410,
+          409,
           425
         ]
       ],
       "missingYears": [
-        [
-          409,
-          409
-        ],
         [
           426,
           436
         ]
       ],
       "partialOnlyYears": [],
-      "geometryRecords": 1
+      "geometryRecords": 2
     },
     {
       "entityId": "liu-song",
@@ -1812,6 +1829,10 @@
       ],
       "availableYears": [
         [
+          327,
+          327
+        ],
+        [
           337,
           346
         ]
@@ -1819,6 +1840,10 @@
       "missingYears": [
         [
           319,
+          326
+        ],
+        [
+          328,
           336
         ],
         [
@@ -1827,7 +1852,7 @@
         ]
       ],
       "partialOnlyYears": [],
-      "geometryRecords": 1
+      "geometryRecords": 2
     },
     {
       "entityId": "former-liang",

@@ -107,5 +107,32 @@
         "note": "保留原图边界与图幅局限，非全年实控。"
       }
     ]
+  },
+  {
+    "id": "zunkir-jin-gap-snapshots",
+    "label": "西晋280、汉赵／后赵327、北燕409年原图复原（争议）",
+    "reason": "对照逐年清单，只补四个确有来源范围的政权年份；约280年仍为部分图幅，约327年保留约。不开延用、插值或全年实控假定；409年西秦线条归属未确认，继续缺失。",
+    "evidence": [
+      {
+        "sourceId": "commons-western-jin-280",
+        "locator": "原SVG年份说明与政权标签；data/registration/jin-gap-snapshots.json",
+        "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
+      },
+      {
+        "sourceId": "commons-eastern-jin-327",
+        "locator": "原SVG年份说明与政权标签；data/registration/jin-gap-snapshots.json",
+        "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
+      },
+      {
+        "sourceId": "commons-eastern-jin-409",
+        "locator": "原SVG年份说明与政权标签；data/registration/jin-gap-snapshots.json",
+        "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
+      },
+      {
+        "sourceId": "commons-eastern-china-relief",
+        "locator": "原SVG年份说明与政权标签；data/registration/jin-gap-snapshots.json",
+        "note": "原图轮廓与同源底图坐标转换复核；所列书目未独立逐页核对，史学专家审定待完成。"
+      }
+    ]
   }
 ]

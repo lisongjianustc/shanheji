@@ -1202,7 +1202,9 @@ test("逐年清单区分东晋部分图幅与缺失年份，跳转实时换图�
     /jin-409-partial-reconstruction/,
   );
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.getByRole("button", { name: "条目 · 搜索 · 图层", exact: true }).click();
+  await page
+    .getByRole("button", { name: "条目 · 搜索 · 图层", exact: true })
+    .click();
   await expect(
     page.getByRole("combobox", { name: "逐年覆盖政权阶段" }),
   ).toBeVisible();
@@ -1214,4 +1216,78 @@ test("逐年清单区分东晋部分图幅与缺失年份，跳转实时换图�
     "data-rendered-territory-ids",
     /jin-327-partial-reconstruction/,
   );
+});
+
+test("逐年缺口新增西晋、汉赵、后赵、北燕范围只在来源年份绘制，原图可查看", async ({
+  page,
+}) => {
+  test.setTimeout(90000);
+  await page.goto("/");
+  const canvas = page.locator(".map-canvas");
+  for (const [n, ids] of [
+    [280, ["jin-280-gap-reconstruction"]],
+    [
+      327,
+      ["han-zhao-327-gap-reconstruction", "later-zhao-327-gap-reconstruction"],
+    ],
+    [409, ["northern-yan-409-gap-reconstruction"]],
+  ] as const) {
+    await year(page, n);
+    await expectCuratedPaint(
+      canvas,
+      [
+        ...ids,
+        ...(n === 327
+          ? ["jin-327-partial-reconstruction"]
+          : n === 409
+            ? ["jin-409-partial-reconstruction"]
+            : []),
+      ].join(" "),
+    );
+    await year(page, n + 1);
+    for (const id of ids)
+      await expect(canvas).not.toHaveAttribute(
+        "data-rendered-territory-ids",
+        new RegExp(id),
+      );
+  }
+  await year(page, 280);
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await page.getByRole("textbox", { name: "查找逐年覆盖政权" }).fill("西晋");
+  await expect(page.getByTestId("annual-coverage-summary")).toContainText(
+    "有范围资料 30 年 · 仅部分图幅 1 年 · 尚无范围 21 年",
+  );
+  await page
+    .getByRole("button", { name: "280年 仅部分图幅", exact: true })
+    .click();
+  await expectCuratedPaint(canvas, "jin-280-gap-reconstruction");
+  await page.getByRole("button", { name: /查阅280年来源原图/ }).click();
+  await expect(page.locator(".plate-viewer img")).toBeVisible();
+  await expect(page.getByRole("dialog")).toContainText("CC BY-SA 4.0");
+  await expect(page.getByRole("dialog")).toContainText("图幅外仍缺");
+  await page.getByRole("button", { name: "关闭参考图幅", exact: true }).click();
+  await page
+    .getByRole("button", { name: "281—282年 尚无范围", exact: true })
+    .click();
+  await expect(canvas).not.toHaveAttribute(
+    "data-rendered-territory-ids",
+    /jin-280-gap-reconstruction/,
+  );
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page
+    .getByRole("button", { name: "条目 · 搜索 · 图层", exact: true })
+    .click();
+  await page.getByRole("button", { name: "资料覆盖", exact: true }).click();
+  await page.getByRole("textbox", { name: "查找逐年覆盖政权" }).fill("北燕");
+  await page
+    .getByRole("button", { name: "409—425年 有范围资料", exact: true })
+    .click();
+  await expectCuratedPaint(
+    canvas,
+    "northern-yan-409-gap-reconstruction jin-409-partial-reconstruction",
+  );
+  await expect(page.getByTestId("annual-coverage-summary")).toContainText(
+    "有范围资料 17 年 · 仅部分图幅 0 年 · 尚无范围 11 年",
+  );
+  await expect(page.getByTestId("missing-polities")).toContainText("西秦");
 });

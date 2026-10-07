@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-06",
+  "checkedAt": "2026-10-07",
   "meaning": "4012年逐年调用正式查询，与页面资料清单逐项核对；资料存在性测试，不证明历史疆界完整或准确。仅覆盖已登记政权，未把相邻快照延用。",
   "checkedYears": 4012,
   "yearsWithGeometry": 3331,
   "yearsWithoutGeometry": 681,
   "registeredPhases": 105,
-  "uniqueTerritories": 588,
+  "uniqueTerritories": 592,
   "rows": [
     {
       "id": "xia-ancient/-2100",
@@ -506,11 +506,21 @@
       "startYear": 265,
       "endYear": 316,
       "availableYears": 30,
-      "partialYears": 0,
-      "missingYears": 22,
+      "partialYears": 1,
+      "missingYears": 21,
       "spans": [
         {
           "startYear": 265,
+          "endYear": 279,
+          "status": "missing"
+        },
+        {
+          "startYear": 280,
+          "endYear": 280,
+          "status": "partial"
+        },
+        {
+          "startYear": 281,
           "endYear": 282,
           "status": "missing"
         },
@@ -559,9 +569,9 @@
       "name": "汉赵（前赵）",
       "startYear": 304,
       "endYear": 329,
-      "availableYears": 18,
+      "availableYears": 19,
       "partialYears": 0,
-      "missingYears": 8,
+      "missingYears": 7,
       "spans": [
         {
           "startYear": 304,
@@ -575,6 +585,16 @@
         },
         {
           "startYear": 324,
+          "endYear": 326,
+          "status": "missing"
+        },
+        {
+          "startYear": 327,
+          "endYear": 327,
+          "status": "available"
+        },
+        {
+          "startYear": 328,
           "endYear": 329,
           "status": "missing"
         }
@@ -633,12 +653,22 @@
       "name": "后赵",
       "startYear": 319,
       "endYear": 350,
-      "availableYears": 10,
+      "availableYears": 11,
       "partialYears": 0,
-      "missingYears": 22,
+      "missingYears": 21,
       "spans": [
         {
           "startYear": 319,
+          "endYear": 326,
+          "status": "missing"
+        },
+        {
+          "startYear": 327,
+          "endYear": 327,
+          "status": "available"
+        },
+        {
+          "startYear": 328,
           "endYear": 336,
           "status": "missing"
         },
@@ -1072,17 +1102,12 @@
       "name": "北燕",
       "startYear": 409,
       "endYear": 436,
-      "availableYears": 16,
+      "availableYears": 17,
       "partialYears": 0,
-      "missingYears": 12,
+      "missingYears": 11,
       "spans": [
         {
           "startYear": 409,
-          "endYear": 409,
-          "status": "missing"
-        },
-        {
-          "startYear": 410,
           "endYear": 425,
           "status": "available"
         },
@@ -19309,10 +19334,10 @@
     },
     {
       "year": 280,
-      "territoryCount": 1,
-      "polityCount": 1,
-      "partialPolityCount": 0,
-      "missingPolityCount": 4
+      "territoryCount": 2,
+      "polityCount": 2,
+      "partialPolityCount": 1,
+      "missingPolityCount": 3
     },
     {
       "year": 281,
@@ -19638,10 +19663,10 @@
     },
     {
       "year": 327,
-      "territoryCount": 4,
-      "polityCount": 4,
+      "territoryCount": 6,
+      "polityCount": 6,
       "partialPolityCount": 1,
-      "missingPolityCount": 4
+      "missingPolityCount": 2
     },
     {
       "year": 328,
@@ -20212,10 +20237,10 @@
     },
     {
       "year": 409,
-      "territoryCount": 13,
-      "polityCount": 13,
+      "territoryCount": 14,
+      "polityCount": 14,
       "partialPolityCount": 1,
-      "missingPolityCount": 3
+      "missingPolityCount": 2
     },
     {
       "year": 410,

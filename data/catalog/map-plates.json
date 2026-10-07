@@ -137,15 +137,17 @@
     "id": "eastern-jin-327",
     "year": 327,
     "entityIds": [
-      "jin"
+      "jin",
+      "han-zhao",
+      "later-zhao"
     ],
-    "title": "约327年原图所示部分东晋疆域",
+    "title": "约327年东晋、汉赵与后赵来源图",
     "sourceId": "commons-eastern-jin-327",
     "creator": "Zunkir；Kanguole底图",
     "edition": "2016-09-28 20:46 UTC版；约327年",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_327.svg",
-    "limitations": "已转换为该年部分东晋争议复原轮廓；约27.55°N以南不在图幅内，不能视为完整疆界或全年实控。383年反击后边界没有明确年份，未采纳；原图城市位置有偏差。",
+    "limitations": "仅转换约327年东晋部分图幅与汉赵、后赵所示外轮廓；不延用其他年份。东晋南部图外疆域仍缺；原图其他政权未全部编制。原图城市位置有偏差，不作为位置控制；非全年实控，专业史学复核待完成。",
     "width": 2000,
     "height": 1335,
     "file": "sources/commons/seize-royaumes-327.svg",
@@ -173,18 +175,37 @@
     "id": "eastern-jin-409",
     "year": 409,
     "entityIds": [
-      "jin"
+      "jin",
+      "northern-yan"
     ],
-    "title": "409年原图所示部分东晋疆域",
+    "title": "409年东晋、北燕与并行政权来源图",
     "sourceId": "commons-eastern-jin-409",
     "creator": "Zunkir；Kanguole底图",
     "edition": "2016-10-02 13:51 UTC版；含409年复国的西秦",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seize_Royaumes_409.svg",
-    "limitations": "已转换为该年部分东晋争议复原轮廓；约27.55°N以南不在图幅内，不能视为完整疆界或全年实控。383年反击后边界没有明确年份，未采纳；原图城市位置有偏差。",
+    "limitations": "已转换409年东晋部分图幅与北燕所示外轮廓，不延用其他年份；东晋南部图外疆域仍缺。西秦新增线与原内部分界的归属尚未确认，本年西秦范围仍缺。原图城市位置有偏差；非全年实控或完整周边。",
     "width": 2000,
     "height": 1335,
     "file": "sources/commons/seize-royaumes-409.svg",
     "sha256": "33e9f1ed791607e9532b8fc8edd92961b56f0a9ae6465d2da6c3bf9591166beb"
+  },
+  {
+    "id": "western-jin-280",
+    "year": 280,
+    "entityIds": [
+      "jin"
+    ],
+    "title": "约280年西晋统一后部分来源范围",
+    "sourceId": "commons-western-jin-280",
+    "creator": "Zunkir；Kanguole底图",
+    "edition": "2017-01-24 11:12 UTC原SVG；约280年",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jin_occidentaux_280.svg",
+    "limitations": "采用原图统一后外轮廓，只补约280年；省界与族群标注不转为独立政权疆域。西侧99.5°E、北侧42.5°N等图幅外仍缺，裁切边不作国界；无归属岛屿不补绘。所列书目未逐页独立核对，非全年实控或史学定论。",
+    "width": 920,
+    "height": 1006,
+    "file": "sources/commons/jin-occidentaux-280.svg",
+    "sha256": "1138945a7f43bc92823e23ad6ad3e4afe9bf3deaeadec12c8cb06d0807c41ae9"
   }
 ]

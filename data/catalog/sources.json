@@ -834,5 +834,16 @@
     "license": "CC BY-SA 4.0",
     "redistribution": "allowed",
     "permissionEvidence": "作者声明CC BY-SA 4.0；底图基于Natural Earth、GSHHG、ETOPO5等自然地理资料。作者声明等距圆柱投影与117%南北伸长；Geobox N/S颠倒已用独立湖泊检查确认方向。"
+  },
+  {
+    "id": "commons-western-jin-280",
+    "title": "约280年西晋各省与外轮廓（Jin occidentaux 280.svg）",
+    "creator": "Zunkir；自然地理底图Kanguole",
+    "edition": "2017-01-24 11:12 UTC原SVG；约280年；920×1006",
+    "url": "https://commons.wikimedia.org/wiki/File:Jin_occidentaux_280.svg",
+    "accessedAt": "2026-10-07",
+    "license": "CC BY-SA 4.0",
+    "redistribution": "allowed",
+    "permissionEvidence": "Commons作者明确CC BY-SA 4.0；https://creativecommons.org/licenses/by-sa/4.0/；原SVG及SHA-256保留，派生轮廓同许可，标明坐标转换和图幅裁切；Xiong与Chaussende书目未逐页独立核对，不表示作者认可本项目。"
   }
 ]

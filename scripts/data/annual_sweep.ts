@@ -95,7 +95,9 @@ for (let year = MIN_YEAR; year <= MAX_YEAR; year = nextYear(year)) {
   });
 }
 const result = {
-  checkedAt: "2026-10-06",
+  checkedAt: process.argv.includes("--checked-at")
+    ? process.argv[process.argv.indexOf("--checked-at") + 1]
+    : new Date().toISOString().slice(0, 10),
   meaning:
     "4012年逐年调用正式查询，与页面资料清单逐项核对；资料存在性测试，不证明历史疆界完整或准确。仅覆盖已登记政权，未把相邻快照延用。",
   checkedYears,

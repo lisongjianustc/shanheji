@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-07",
+  "baselineRef": "a3d7c40",
+  "baselineVersion": "e9789e1d0a74ea74",
+  "currentVersion": "477a4a361d8b0b61",
+  "meaning": "比较政权-年资料缺口；有原图范围不等于历史疆界完整、准确或全年实控。仅比较同一批登记名称阶段，未经史学专家审定。",
+  "improvedPolityYears": 4,
+  "addedUniqueFeatures": 4,
+  "preservedRecords": {
+    "territoryReferences": 645,
+    "eventReferences": 78
+  },
+  "beforeYearsWithoutAnyGeometry": 681,
+  "afterYearsWithoutAnyGeometry": 681,
+  "changes": [
+    {
+      "phaseId": "jin/265",
+      "entityId": "jin",
+      "name": "西晋",
+      "year": 280,
+      "before": "missing",
+      "after": "partial",
+      "remainingMissingYears": 21,
+      "remainingPartialYears": 1,
+      "newFeatureIds": [
+        "jin-280-gap-reconstruction"
+      ]
+    },
+    {
+      "phaseId": "han-zhao/304",
+      "entityId": "han-zhao",
+      "name": "汉赵（前赵）",
+      "year": 327,
+      "before": "missing",
+      "after": "available",
+      "remainingMissingYears": 7,
+      "remainingPartialYears": 0,
+      "newFeatureIds": [
+        "han-zhao-327-gap-reconstruction"
+      ]
+    },
+    {
+      "phaseId": "later-zhao/319",
+      "entityId": "later-zhao",
+      "name": "后赵",
+      "year": 327,
+      "before": "missing",
+      "after": "available",
+      "remainingMissingYears": 21,
+      "remainingPartialYears": 0,
+      "newFeatureIds": [
+        "later-zhao-327-gap-reconstruction"
+      ]
+    },
+    {
+      "phaseId": "northern-yan/409",
+      "entityId": "northern-yan",
+      "name": "北燕",
+      "year": 409,
+      "before": "missing",
+      "after": "available",
+      "remainingMissingYears": 11,
+      "remainingPartialYears": 0,
+      "newFeatureIds": [
+        "northern-yan-409-gap-reconstruction"
+      ]
+    }
+  ]
+}

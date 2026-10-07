@@ -1,0 +1,38 @@
+{
+  "version": "477a4a361d8b0b61",
+  "years": {
+    "279": "clio-v021-1339",
+    "280": "clio-v021-1339 jin-280-gap-reconstruction",
+    "281": "clio-v021-1339",
+    "326": "clio-v021-1435 clio-v021-1438 clio-v021-1445",
+    "327": "clio-v021-1435 clio-v021-1438 clio-v021-1445 han-zhao-327-gap-reconstruction jin-327-partial-reconstruction later-zhao-327-gap-reconstruction",
+    "328": "clio-v021-1435 clio-v021-1438 clio-v021-1445",
+    "408": "clio-v021-1529 clio-v021-1584 clio-v021-1605 clio-v021-1619 clio-v021-1621 clio-v021-1636 clio-v021-1641 clio-v021-1645 clio-v021-1648 clio-v021-1649 clio-v021-1651 clio-v021-1652",
+    "409": "clio-v021-1529 clio-v021-1584 clio-v021-1605 clio-v021-1619 clio-v021-1621 clio-v021-1636 clio-v021-1641 clio-v021-1645 clio-v021-1648 clio-v021-1649 clio-v021-1651 clio-v021-1652 jin-409-partial-reconstruction northern-yan-409-gap-reconstruction",
+    "410": "clio-v021-1529 clio-v021-1584 clio-v021-1619 clio-v021-1621 clio-v021-1636 clio-v021-1653 clio-v021-1657 clio-v021-1658 clio-v021-1660 clio-v021-1662 clio-v021-1664 clio-v021-1670"
+  },
+  "summaries": {
+    "西晋": "西晋 · 265—316年\n\n有范围资料 30 年 · 仅部分图幅 1 年 · 尚无范围 21 年",
+    "汉赵": "汉赵（前赵） · 304—329年\n\n有范围资料 19 年 · 仅部分图幅 0 年 · 尚无范围 7 年",
+    "后赵": "后赵 · 319—350年\n\n有范围资料 11 年 · 仅部分图幅 0 年 · 尚无范围 21 年",
+    "北燕": "北燕 · 409—436年\n\n有范围资料 17 年 · 仅部分图幅 0 年 · 尚无范围 11 年"
+  },
+  "errors": [],
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 960
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "sourcePlate280": {
+    "loaded": true,
+    "naturalWidth": 920,
+    "naturalHeight": 1006,
+    "license": "CC BY-SA 4.0"
+  },
+  "limitations": "浏览器验证来源记录、年份切换与显示；不证明历史疆界完整或史学定论。"
+}

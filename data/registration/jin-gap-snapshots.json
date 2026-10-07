@@ -1,0 +1,79 @@
+{
+  "interpretationId": "zunkir-jin-gap-snapshots",
+  "checkedAt": "2026-10-07",
+  "sharedRegistration": "data/registration/eastern-jin-dated.json",
+  "maxJunctionGapPx": 3,
+  "westernJin": {
+    "file": "sources/commons/jin-occidentaux-280.svg",
+    "sha256": "1138945a7f43bc92823e23ad6ad3e4afe9bf3deaeadec12c8cb06d0807c41ae9",
+    "backgroundSha256": "55cd32bb4add9b73a00e79a5b47abd128583967f0beead2c36a1ef431ebd6ca8",
+    "width": 920,
+    "height": 1006,
+    "boundaryPathIds": ["path2987", "path3759"],
+    "sourceLabelChecks": [
+      [450, 500],
+      [630, 588],
+      [231, 881]
+    ],
+    "excludedLabelChecks": [
+      [420, 85],
+      [70, 250]
+    ],
+    "backgroundComparison": {
+      "method": "Same-size original embedded PNG versus Chrome rendering of the unchanged source relief SVG; no fit, shift or stretch",
+      "exactPixelFraction": 0.8782414210389835,
+      "meanAbsoluteRgbDifference": 2.2888815656783934,
+      "limitations": "Rendered edge/antialias differences; comparison identifies the source background and does not establish historical border accuracy"
+    }
+  },
+  "records": [
+    {
+      "year": 280,
+      "entityId": "jin",
+      "name": "西晋",
+      "sourceId": "commons-western-jin-280",
+      "label": "约280年西晋原图所示部分范围",
+      "boundaryPathIds": ["path2987", "path3759"]
+    },
+    {
+      "year": 327,
+      "entityId": "han-zhao",
+      "name": "汉赵（前赵）",
+      "sourceId": "commons-eastern-jin-327",
+      "label": "约327年汉赵（前赵）原图范围",
+      "boundaryPathIds": ["path3759", "path2987"],
+      "sourceLabelCheck": [450, 630]
+    },
+    {
+      "year": 327,
+      "entityId": "later-zhao",
+      "name": "后赵",
+      "sourceId": "commons-eastern-jin-327",
+      "label": "约327年后赵原图范围",
+      "boundaryPathIds": ["path3761", "path3759", "path2987"],
+      "sourceLabelCheck": [1000, 450]
+    },
+    {
+      "year": 409,
+      "entityId": "northern-yan",
+      "name": "北燕",
+      "sourceId": "commons-eastern-jin-409",
+      "label": "409年北燕原图范围",
+      "boundaryPathIds": ["path3884", "path3922"],
+      "sourceLabelCheck": [1600, 180]
+    }
+  ],
+  "deferred": [
+    {
+      "year": 409,
+      "entityId": "western-qin",
+      "reason": "原图新增path3145与原path3903南段同时保留，内部分界线归属尚未充分确认；不根据标签猜测外轮廓，不发布本年范围。"
+    },
+    {
+      "entityId": "jin",
+      "startYear": 265,
+      "endYear": 282,
+      "reason": "Cliopatria原features[1376]混合统一前后，不含江南；新280年图只补原图标注一年，其余年份不延用。"
+    }
+  ]
+}
