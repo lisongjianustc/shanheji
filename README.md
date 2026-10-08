@@ -12,6 +12,8 @@
 
 [页面预览](#页面预览) · [快速启动](#快速启动) · [如何探索](#如何探索) · [内容状态](#内容状态) · [数据构建](#数据构建) · [资料索引](#资料索引)
 
+**开源许可：**原创程序代码与说明文档采用 [MIT](LICENSE)；历史地图、数据及第三方材料保留各自许可，见 [许可范围与第三方资料](THIRD_PARTY_NOTICES.md)。欢迎按 [贡献指南](CONTRIBUTING.md)参与。
+
 ## 功能概览
 
 | 功能             | 使用方式与表现                                                                         |
@@ -66,7 +68,7 @@ npm ci
 npm run dev -- --port 4173 --strictPort
 ```
 
-开发页面：<http://127.0.0.1:4173/>。私有仓库克隆需要使用具有访问权限的 GitHub 账号。
+开发页面：<http://127.0.0.1:4173/>。公开仓库可直接克隆。
 
 构建并启动本地生产预览：
 
@@ -207,6 +209,8 @@ React 19、TypeScript、Vite、MapLibre GL JS；Zod用于数据结构校验，Vi
 | [Commons图幅署名与许可](data/sources/commons/README.md)       | 各图幅作者、来源和使用条件                      |
 
 ## 许可与后续完善
+
+原创程序代码与说明文档采用 [MIT License](LICENSE)。历史地图、数据、原图、包含第三方材料的截图及软件依赖按各自许可使用，详见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)；不将这些材料统一改为 MIT。参与开发或提供资料请参阅 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 MapLibre依赖自身许可，其他依赖许可见对应包。Natural Earth归属和下载来源记录在 `public/basemap/attribution.json`。历史来源的链接不表示获得其原图或原文的再分发授权。
 
