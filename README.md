@@ -1,31 +1,53 @@
-# 山河纪
+<div align="center">
 
-**Shanheji · 中国历史疆域与事件时间轴地图**
+<h1>山河纪</h1>
+<p><strong>Shanheji · 中国历史疆域与事件时间轴地图</strong></p>
+<p><em>沿时间探索，循来源求证。</em></p>
 
-> 沿时间探索，循来源求证。
+<p>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/Code_license-MIT-668772?style=flat-square" alt="原创代码许可：MIT" /></a>
+  <a href="#内容状态"><img src="https://img.shields.io/badge/Content-In_progress-b49959?style=flat-square" alt="历史内容：持续编制中" /></a>
+  <a href="https://github.com/lisongjianustc/shanheji/stargazers"><img src="https://img.shields.io/github/stars/lisongjianustc/shanheji?style=flat-square&amp;color=b49959" alt="GitHub Stars" /></a>
+  <a href="https://github.com/lisongjianustc/shanheji/issues"><img src="https://img.shields.io/github/issues/lisongjianustc/shanheji?style=flat-square&amp;color=7991a1" alt="GitHub Issues" /></a>
+  <a href="https://github.com/lisongjianustc/shanheji/commits/main"><img src="https://img.shields.io/github/last-commit/lisongjianustc/shanheji/main?style=flat-square&amp;color=668772" alt="最近一次提交" /></a>
+</p>
+
+<p>
+  <a href="package.json"><img src="https://img.shields.io/badge/React-19-149eca?style=flat-square&amp;logo=react&amp;logoColor=white" alt="React 19" /></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/TypeScript-7-3178c6?style=flat-square&amp;logo=typescript&amp;logoColor=white" alt="TypeScript 7" /></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/Vite-8-646cff?style=flat-square&amp;logo=vite&amp;logoColor=white" alt="Vite 8" /></a>
+  <a href="package.json"><img src="https://img.shields.io/badge/MapLibre_GL_JS-6-396cb2?style=flat-square" alt="MapLibre GL JS 6" /></a>
+  <a href="#快速启动"><img src="https://img.shields.io/badge/Node.js-22-5fa04e?style=flat-square&amp;logo=nodedotjs&amp;logoColor=white" alt="已验证运行环境：Node.js 22" /></a>
+</p>
+
+<p>
+  <a href="#页面预览">页面预览</a> ·
+  <a href="#快速启动">快速启动</a> ·
+  <a href="#功能概览">功能概览</a> ·
+  <a href="#内容状态">内容状态</a> ·
+  <a href="#参与贡献">参与贡献</a> ·
+  <a href="#许可与后续完善">许可说明</a>
+</p>
+
+</div>
+
+---
 
 山河纪将历史年份、并行政权、疆域资料和重大事件放在同一张可交互地图中。拖动时间轴、输入年份或逐年播放，即可查看该时点已有资料支持的疆域分布；点击事件亮点，进一步了解事件、相关政权、地点与来源。
 
 目前时间范围为**约公元前2100年至公元1912年**，从夏商周至明清，以中国历史各政权及已收录周边政权为内容范围。原三国至隋唐样板保留，并持续扩充其他时期。完整周边国家及全球内容尚未接入。
 
-**当前交付：可运行的交互应用与阶段性历史内容。历史疆域样板尚未完成。**
-
-[页面预览](#页面预览) · [快速启动](#快速启动) · [如何探索](#如何探索) · [内容状态](#内容状态) · [数据构建](#数据构建) · [资料索引](#资料索引)
+> **内容仍在编制中。** 当前应用可运行，历史疆域资料尚未完整覆盖。空白表示资料缺口，不表示当时没有政权；有范围资料也不等于完整、确日的疆界。
 
 **开源许可：**原创程序代码与说明文档采用 [MIT](LICENSE)；历史地图、数据及第三方材料保留各自许可，见 [许可范围与第三方资料](THIRD_PARTY_NOTICES.md)。欢迎按 [贡献指南](CONTRIBUTING.md)参与。
 
-## 功能概览
+## 项目一览
 
-| 功能             | 使用方式与表现                                                                         |
-| ---------------- | -------------------------------------------------------------------------------------- |
-| 时间轴与年份查询 | 输入年份、拖动滑块、逐年播放，地图随查询年份更新；支持前后年份、前后节点和23个时期入口 |
-| 疆域与并行政权   | 同年显示多政权资料，区分实控、行政设置、朝贡／藩属、影响与主张，支持图层和地区筛选     |
-| 事件亮点         | 已有坐标的事件显示地图亮点，支持聚合与点击查看；未定位事件保留在文字列表               |
-| 详情与检索       | 查看事件、政权、地点、关系、日期精度及逐项来源，支持异名搜索                           |
-| 来源原图         | 查看已收录图幅、作者、许可、适用年代和局部范围说明                                     |
-| 逐年资料清单     | 搜索政权，查看有范围资料、仅部分图幅和缺失区间，点击区间跳转地图                       |
-| 桌面与手机       | 桌面侧栏、手机资料抽屉，支持键盘操作与降低动效；无 WebGL 时保留文字浏览                |
-| 加载与恢复       | 资源校验、过期响应隔离、超时重试，避免较早请求覆盖最新年份                             |
+| 时间范围 | 时段数据包 | 政权目录 | 历史事件 |
+| --- | ---: | ---: | ---: |
+| 约公元前2100年—公元1912年 | 9 个 | 99 个 | 75 件 |
+
+当前资料版本：`74be55cc977e3ee2`。覆盖数字来自已提交数据；逐年查询可用性与内容缺口见 [逐年查询清单](docs/data/annual-query-sweep.md)。
 
 ## 页面预览
 
@@ -37,23 +59,31 @@
 
 ![山河纪桌面地图：262年魏蜀吴疆域资料与时间轴](docs/images/territories-262.png)
 
-### 点击历史事件
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <strong>事件互动 · 383年</strong><br />
+      点击亮点查看淝水之战简介、关联政权、地点精度和来源。位置为现代寿春附近地区参考，非古战场确点。
+      <a href="docs/images/event-383.png"><img src="docs/images/event-383.png" alt="383年淝水之战事件详情" width="100%" /></a>
+    </td>
+    <td width="50%" valign="top">
+      <strong>逐年资料清单 · 327年</strong><br />
+      按政权检查有资料、部分图幅及缺失区间，点击区间即可跳转地图。
+      <a href="docs/qa/screenshots/production-jin-gaps-327.png"><img src="docs/qa/screenshots/production-jin-gaps-327.png" alt="327年汉赵与并行政权年度资料清单" width="100%" /></a>
+    </td>
+  </tr>
+</table>
 
-383年淝水之战：点击地图亮点展开事件详情，查看简介、相关政权、地点精度和资料来源。亮点为现代寿春附近地区参考，不是古战场确点。
-
-![山河纪事件详情：383年淝水之战](docs/images/event-383.png)
-
-### 按政权查看逐年资料覆盖
-
-327年汉赵资料清单：地图展示该年已录入范围，左侧列出覆盖与缺失区间，方便逐年检查。
-
-![山河纪年度资料清单：327年汉赵与并行政权](docs/qa/screenshots/production-jin-gaps-327.png)
-
-### 手机端浏览
+<details>
+<summary><strong>查看手机端截图</strong></summary>
 
 409年夏（赫连氏）资料清单：在手机资料抽屉中查看政权阶段与年度覆盖，底部保留年份输入、播放和节点跳转。
 
-<img src="docs/qa/screenshots/production-xia-409-mobile.png" alt="山河纪手机端：夏409年部分范围与逐年资料清单" width="390" />
+<p align="center">
+  <a href="docs/qa/screenshots/production-xia-409-mobile.png"><img src="docs/qa/screenshots/production-xia-409-mobile.png" alt="山河纪手机端：夏409年部分范围与逐年资料清单" width="320" /></a>
+</p>
+
+</details>
 
 更多截图与各版本验收记录见 [功能验收](docs/qa/acceptance.md)。
 
@@ -78,6 +108,19 @@ npx vite preview --host 127.0.0.1 --port 4174 --strictPort
 ```
 
 预览页面：<http://127.0.0.1:4174/>。构建结果在 `dist/`，当前未部署公网。端口如被其他程序占用，可改用空闲端口。
+
+## 功能概览
+
+| 功能             | 使用方式与表现                                                                         |
+| ---------------- | -------------------------------------------------------------------------------------- |
+| 时间轴与年份查询 | 输入年份、拖动滑块、逐年播放，地图随查询年份更新；支持前后年份、前后节点和23个时期入口 |
+| 疆域与并行政权   | 同年显示多政权资料，区分实控、行政设置、朝贡／藩属、影响与主张，支持图层和地区筛选     |
+| 事件亮点         | 已有坐标的事件显示地图亮点，支持聚合与点击查看；未定位事件保留在文字列表               |
+| 详情与检索       | 查看事件、政权、地点、关系、日期精度及逐项来源，支持异名搜索                           |
+| 来源原图         | 查看已收录图幅、作者、许可、适用年代和局部范围说明                                     |
+| 逐年资料清单     | 搜索政权，查看有范围资料、仅部分图幅和缺失区间，点击区间跳转地图                       |
+| 桌面与手机       | 桌面侧栏、手机资料抽屉，支持键盘操作与降低动效；无 WebGL 时保留文字浏览                |
+| 加载与恢复       | 资源校验、过期响应隔离、超时重试，避免较早请求覆盖最新年份                             |
 
 ## 如何探索
 
@@ -117,6 +160,9 @@ npx vite preview --host 127.0.0.1 --port 4174 --strictPort
 
 打开应用默认展示661年行政范围参考。输入或拖动年份、播放经过节点时，主地图自动更新已有边界；时间轴下方的绿色疆域节点可以直接点击，上一／下一节点包括事件和疆域资料年份。默认显示实控、行政设置和年份区间复原，浅色及争议提示保留，主张单独开启。未知年份不外推；下拉入口和上一／下一节点包含资料起点与结束后的切换年。
 
+<details>
+<summary><strong>展开各时期的范围限制与编制说明</strong></summary>
+
 262年同时显示魏、蜀、吴，572年同时显示北周、北齐、陈、西梁（江陵）；主图政权标识可点击查看依据。约610年显示隋朝部分行政参考，西部渐隐及画布外不补界，资料裁切线不绘制为国界。742年显示105°E以东的唐代部分行政参考，排除西部异时资料；裁切经线不是历史边界。“疆域图幅”提供本年全部已录入政权的入口，以及十二张来源原图。
 
 新增可查看公元前300年战国七雄、1120年宋辽金夏、1420年明／朝鲜／足利幕府、1820年清／朝鲜／德川幕府的研究轮廓，以及634年大明宫、652年大雁塔事件点。1000年另可查看大理国947—1055年的研究范围；1056年起缺少可用范围，1094—1096年中断及大中阶段不使用旧图补齐。研究区间不表示确日格局。德川只保留完整源图内本州、四国、九州及附近岛屿组成部分；琉球、虾夷及北方争议范围未录入。淝水之战亮点为现代寿春附近参考，不是古战场确点。
@@ -128,6 +174,8 @@ npx vite preview --host 127.0.0.1 --port 4174 --strictPort
 甘州回鹘896—989、高昌回鹘888—1138新增8段研究范围；990年移除甘州旧图，1139年起高昌仍缺范围。866、1028、1209年有地区参考亮点；1209归附蒙古后保留高昌本土阶段目录。
 
 不能将当前地图用于引用完整古代疆界。空白表示尚缺资料，不表示当时没有国家、疆域或事件。现代海岸与河流仅作地理参考。未知疆域不插值。
+
+</details>
 
 当前版本 `74be55cc977e3ee2`，最新补入夏（赫连氏）409年部分轮廓，较大边线交接剔除，407—408、426—431年仍缺，见[本轮编制记录](docs/data/xia-409-gap-intake-2026-10-07.md)。此前西晋约280年、汉赵与后赵约327年、北燕409年补入记录保留，见[晋代缺口记录](docs/data/jin-gap-snapshots-2026-10-07.md)。当前逐年缺口见[正式查询清单](docs/data/annual-query-sweep.md)，所有来源资料可用性另见[年度可用性表](docs/data/annual-availability.md)。东晋已有327、383、409三年部分图幅，其余101年仍无范围；409年西秦线条归属未确认，继续保留缺口。
 
@@ -220,7 +268,27 @@ MapLibre依赖自身许可，其他依赖许可见对应包。Natural Earth归�
 
 后续对照逐年缺口清单补入有明确年代和来源的疆域，继续扩充重大事件与可核实位置、改善局部图幅和争议范围表达，并推进历史专家复核。在中国历史与周边资料基础更完整后，再按需求扩展全球内容。
 
+## 参与贡献
+
+欢迎开发者、历史爱好者及具有相关研究经验的读者参与。贡献前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+| 参与方式 | 建议提供的内容 | 入口 |
+| --- | --- | --- |
+| 报告程序问题 | 复现步骤、浏览器、查询年份和截图 | [提交 Issue](https://github.com/lisongjianustc/shanheji/issues/new) |
+| 提供历史资料 | 作者、来源、年份、图幅／页码及许可 | [逐年缺口清单](docs/data/annual-query-sweep.md) · [提交线索](https://github.com/lisongjianustc/shanheji/issues/new) |
+| 修改代码或编制数据 | 说明改动目的、证据、影响范围与验证结果 | [贡献指南](CONTRIBUTING.md) · [Pull Requests](https://github.com/lisongjianustc/shanheji/pulls) |
+
+### 后续方向
+
+- [ ] 对照逐年缺口清单补齐有明确年代和许可的资料，优先完善十六国及隋唐变动年份。
+- [ ] 补充已登记政权的地区缺口、周边疆域与重大事件位置依据。
+- [ ] 完善局部图幅、争议范围及边界性质的表达，推进历史专家复核。
+- [ ] 在中国历史与周边资料基础更完整后，按需求扩展全球内容。
+
 ## 历史编制记录 · 2026-10-05起
+
+<details>
+<summary><strong>展开早期版本记录与审查限制</strong></summary>
 
 以下记录保留当时的增量与限制，当前数据状态以上方统计、最新接入记录及发布manifest为准。
 
@@ -233,3 +301,9 @@ MapLibre依赖自身许可，其他依赖许可见对应包。Natural Earth归�
 最新接入与失败审计见[742年及明清资料检查](docs/data/boundary-intake-tang742-2026-10-05.md)。
 
 327、383年战前、409年新增东晋部分图幅争议复原；约27.55°N以南仍缺，其他年份不延用。资料覆盖新增可搜索的逐年清单，可点击有资料／部分／缺失区间跳转地图。全部4012个年份已核对查询与清单一致，仍不等于完整疆界。[来源与限度](docs/data/eastern-jin-dated-2026-10-06.md)、[逐年查询清单](docs/data/annual-query-sweep.md)。
+
+</details>
+
+---
+
+<p align="center"><strong>以地图理解时间，以来源核对地图。</strong><br />山河纪 · Shanheji</p>
